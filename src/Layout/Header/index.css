@@ -1,0 +1,23 @@
+.oak-header {
+    padding: 30px 0;
+    border-bottom: var(--primary-color) solid 1px;
+    z-index: 9999;
+    width: 100%;
+}
+
+.nav-item {
+    color: var(--primary-color);
+    font-size: 15px;
+    font-family: var(--cd500);
+    font-weight: 500;
+    margin-right: 100px;
+}
+
+.nav-item:last-child {
+    margin-right: 0px !important;
+
+}
+
+.dropdown-wrapper {
+    margin-left: 8px;
+}

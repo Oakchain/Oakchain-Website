@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #00002F;
+    --secondary-color: #FF4E00;
+    --cd100: 'ClashDisplay-Variable';
+    --cd200: 'ClashDisplay-Extralight';
+    --cd300: 'ClashDisplay-Light';
+    --cd400: 'ClashDisplay-Regular';
+    --cd500: 'ClashDisplay-Medium';
+    --cd600: 'ClashDisplay-Semibold';
+    --cd700: 'ClashDisplay-Bold';
+}
+
+.oak-container-fluid {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+}
+
+
+.oak-btn,
+.oak-btn:hover,
+.oak-btn-secondary,
+.oak-btn-secondary:hover {
+    font-family: var(--cd500);
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #00002F;
+    background: #FFF;
+    padding: 16px 21px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 7px 7px 4px rgb(0, 0, 47);
+}
+
+.oak-btn:active,
+.oak-btn-secondary:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+.oak-btn-secondary,
+.oak-btn-secondary:hover {
+    background: var(--secondary-color);
+    box-shadow: unset;
+    border: var(--secondary-color) 1px solid;
+    color: #FFF;
+}
+
+input,
+input:active,
+input:focus {
+    background: transparent !important;
+    outline: none !important;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
