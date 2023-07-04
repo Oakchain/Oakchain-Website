@@ -9,7 +9,6 @@
 .hero-cta__cointainer {
     width: 63%;
     padding-top: 4em;
-
 }
 
 .oak-socials-hero__wrapper {
@@ -167,4 +166,16 @@
     background-size: cover;
     background-position: top center;
     padding-top: 8em;
+}
+
+
+/* GET LATEST WEB3 NEWS SECTION */
+
+.oak-getLatest__container {
+    min-height: 70vh;
+    background: url('../images/Rectangle.png');
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
 }

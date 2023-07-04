@@ -5,11 +5,15 @@ import LandingPage from './pages/'
 
 
 
+
+
 const RouterConfig = () => {
     return (
         <BrowserRouter>
             <Routes>
                 <Route exact path='/' element={<LandingPage />} />
+              
+             
             </Routes>
         </BrowserRouter>
     )

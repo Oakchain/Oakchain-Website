@@ -3,7 +3,7 @@ import './index.css'
 import logo from '../../assets/images/logo.svg'
 import dropdown from '../../assets/images/dropdown.svg'
 import arrow from '../../assets/images/arrow.svg'
-import { logoutWallet} from '../../utils/walletConnect'
+import { connectWallet} from '../../utils/walletConnect'
 
 const Header = () => {
     return (
@@ -33,7 +33,7 @@ const Header = () => {
                 </ul>
 
                 <div>
-                    <button className='oak-btn btn' onClick={logoutWallet}>
+                    <button className='oak-btn btn' onClick={connectWallet}>
                         Connect to Web3 <span>
                             <img src={arrow} alt='icon' />
                         </span>
