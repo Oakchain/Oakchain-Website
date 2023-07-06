@@ -179,3 +179,57 @@
     background-repeat: no-repeat;
     margin-top: 2rem;
 }
+
+.card-title{
+    padding-top: 1rem;
+    padding-left: .5rem;
+    color: white !important;
+    font-size: 15px;
+}
+
+.card-text{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.card-text__last-child{
+    color: white;
+    font-size: 8px;
+    margin-bottom: 1rem;
+}
+
+.card-body{
+    backdrop-filter: blur(50px) !important;
+    background: rgba(0, 0, 0, 0.50);
+    
+}
+.card-body__logo{
+    display: flex;
+}
+
+.card-time{
+    color:white;
+    font-size: 10px;
+    text-align: right;
+}
+
+.oak-getLatest__container{
+    display: flex;
+   justify-content: space-between;
+   
+}
+
+.card{
+    height: 18vh !important;
+    border-radius: 1rem !important;
+}
+
+.card-img-top{
+    height:33vh !important;
+}
+
+
+
+

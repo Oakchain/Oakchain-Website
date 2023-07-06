@@ -15,11 +15,22 @@ import feat1 from "../assets/images/feat1.png";
 import feat2 from "../assets/images/feat2.png";
 import feat3 from "../assets/images/feat3.png";
 import polygon from "../assets/images/polygon.png";
-import logo from "../assets/images/logo.svg"
+import logo from "../assets/images/logoLatest.png";
+import googleCloud from "../assets/images/googleCloud.png";
+import googleEyes from "../assets/images/googleEyes.png";
 
 // import connectWallet from '../utils/walletConnect'
 
 const LandingPage = () => {
+  const myDate = new Date();
+  const month = myDate.toLocaleString("default", { month: "long" });
+  const day = String(myDate.getDay()).padStart(2, 0);
+  const year = myDate.getFullYear();
+  const mins = myDate.getMinutes();
+
+  console.log(mins);
+  const date = `${month} ${day}, ${year}.${mins} mins read`;
+
   return (
     <Layout>
       <div className="oak-hero__wrapper ">
@@ -149,23 +160,70 @@ const LandingPage = () => {
       {/* GET LATEST WEB3 NEWS */}
 
       <section className="oak-container-fluid ">
-        <div className=" align-items-center justify-content-center oak-getLatest__container">
-          <div className="">
+        <div className="  oak-getLatest__container">
+          {/* Card component */}
+          <div class="card" style={{ width: "400px" }}>
+            <img src={polygon} class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-body__logo">
+                <img src={logo} alt="logo" />
+                <h5 class="card-title">Oak news</h5>
+              </span>
 
-            {/* Card component */}
-            <div class="card" style={{ width: "390px" }}>
-              <img src={polygon} class="card-img-top" alt="..." />
-              <div class="card-body">
-              <img src={logo} alt='logo' />
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#g" class="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
+              <p class="card-text">
+                Polygon Labs and Google Partner to Boost Web3 Development
+              </p>
+
+              <p className="card-text__last-child">
+                Learning about Web3, blockchain, and NFTs can help individuals
+                understand the potential for decentralized technologies to...
+              </p>
+
+              <p className="card-time">{date}</p>
+            </div>
+          </div>
+
+          <div class="card" style={{ width: "400px", }}>
+            <img src={googleCloud} class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-body__logo">
+                <img src={logo} alt="logo" />
+                <h5 class="card-title">Oak news</h5>
+              </span>
+
+              <p class="card-text">
+                Google Cloud broadens Web3 startup program with 11 blockchain
+                firms
+              </p>
+
+              <p className="card-text__last-child">
+                Learning about Web3, blockchain, and NFTs can help individuals
+                understand the potential for decentralized technologies to...
+              </p>
+
+              <p className="card-time">{date}</p>
+            </div>
+          </div>
+
+          <div class="card" style={{ width: "400px"}}>
+            <img src={googleEyes} class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-body__logo">
+                <img src={logo} alt="logo" />
+                <h5 class="card-title">Oak news</h5>
+              </span>
+
+              <p class="card-text">
+                Google Cloud Expands Partnerships, Wants More Web3 Startups To
+                Leverage
+              </p>
+
+              <p className="card-text__last-child">
+                Learning about Web3, blockchain, and NFTs can help individuals
+                understand the potential for decentralized technologies to...
+              </p>
+
+              <p className="card-time">{date}</p>
             </div>
           </div>
         </div>
