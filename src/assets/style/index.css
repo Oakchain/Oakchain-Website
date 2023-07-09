@@ -42,10 +42,19 @@ li {
     box-shadow: 7px 7px 4px rgb(0, 0, 47);
 }
 
+.oak-btn:hover{
+    background: orangered;
+    color: #fff;
+    transition: 0.5s;
+    border: none    ;
+ 
+}
+
 .oak-btn:active,
 .oak-btn-secondary:active {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transform: translateY(2px);
+    border: 1px solid #00002F;
 }
 
 .oak-btn-secondary,

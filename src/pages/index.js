@@ -18,6 +18,11 @@ import polygon from "../assets/images/polygon.png";
 import logo from "../assets/images/logoLatest.png";
 import googleCloud from "../assets/images/googleCloud.png";
 import googleEyes from "../assets/images/googleEyes.png";
+import mic from "../assets/images/mic.png";
+import typewriter from "../assets/images/typewriter.png";
+import btc from "../assets/images/btc-clear.png";
+import btcBlur from "../assets/images/btc-blur.png";
+import oakvice from "../assets/images/oakDevices.png";
 
 // import connectWallet from '../utils/walletConnect'
 
@@ -29,7 +34,7 @@ const LandingPage = () => {
   const mins = myDate.getMinutes();
 
   console.log(mins);
-  const date = `${month} ${day}, ${year}.${mins} mins read`;
+  const date = `${month} ${day}, ${year}. ${mins} mins read`;
 
   return (
     <Layout>
@@ -183,7 +188,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div class="card" style={{ width: "400px", }}>
+          <div class="card" style={{ width: "400px" }}>
             <img src={googleCloud} class="card-img-top" alt="..." />
             <div class="card-body">
               <span class="card-body__logo">
@@ -205,7 +210,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div class="card" style={{ width: "400px"}}>
+          <div class="card" style={{ width: "400px" }}>
             <img src={googleEyes} class="card-img-top" alt="..." />
             <div class="card-body">
               <span class="card-body__logo">
@@ -227,7 +232,163 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+
+        <p className="oak-seeMore">See more</p>
       </section>
+
+      {/* Podcast section */}
+      <section className="podcast-section">
+        <div className=" align-items-center podcast-section-header">
+          <h3 className="oak-section__wrapper">
+            <span className="px-3">
+              <img src={s1} alt="icon" />
+            </span>
+            Listen to Web3 Podcasts
+            <span className="px-3">
+              <img src={s2} alt="icon" />
+            </span>
+          </h3>
+        </div>
+
+        <div className="oak-podcast__container">
+          <img src={mic} alt="podcast" className="podcast-img" />
+
+          <div className="oak-podcast__text">
+            <h2 className="podcast-text">
+              Unlocking the Future:
+              <br /> Exploring the Possibilities of <br />
+              Web3 on Our Podcast
+            </h2>
+
+            <p className="podcast-text-p">
+              Ready to explore the revolutionary world of Web3? Our podcast has
+              got you covered! Join us as we dive into the exciting
+              possibilities of decentralized technology, blockchain, and beyond.
+              Tune in now and unlock the future of the internet!
+            </p>
+
+            <button className="btn oak-btn">Learn more</button>
+          </div>
+        </div>
+
+        {/* nest nft */}
+      </section>
+
+      <section className="nest-section">
+        <div className="d-flex align-items-center justify-content-center nest-section-header">
+          <h3 className="oak-section__wrapper">
+            <span className="px-3">
+              <img src={s1} alt="icon" />
+            </span>
+            Browse our NFT collection
+            <span className="px-3">
+              <img src={s2} alt="icon" />
+            </span>
+          </h3>
+        </div>
+
+        <div className="oak-nest__container">
+          <div className="oak-nest__text">
+            <h1 className="nest-text">
+              Keep tabs on your Oaks
+              <br /> Nest NFT
+            </h1>
+            <p>
+              Ready to dive into the world of NFTs and explore the endless
+              possibilities of buying and selling unique digital assets? Join us
+              on this thrilling journey as we discover the vibrant world of
+              non-fungible tokens and unlock the potential of blockchain
+              technology. Don't miss out on this exciting opportunity to own a
+              piece of digital history!
+            </p>
+
+            <button className="btn oak-btn">Buy now</button>
+          </div>
+          <div className="oak-nest__img"></div>
+        </div>
+      </section>
+
+      {/* OAK WRITER SECTION */}
+
+      <section className="writer-section__header">
+        <div className="d-flex align-items-center justify-content-center writer-section-header">
+          <h3 className="oak-section__wrapper">
+            <span className="px-3">
+              <img src={s1} alt="icon" />
+            </span>
+            Become an Oak writer
+            <span className="px-3">
+              <img src={s2} alt="icon" />
+            </span>
+          </h3>
+        </div>
+
+        <div className="oak-writer__container">
+          <img className="writer-img" src={typewriter} alt="typewriter" />
+
+          <div className="writer-text">
+            <h2>
+              Come Onboard become an <br /> Oak writer and earn <br /> rewards
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Faucibus purus consequat
+              cursus iaculis in nulla. Et nascetur vulputate leo ut. Euismod
+              vehicula tincidunt quis nec. Tristique donec ipsum non leo a
+              euismod viverra. Risus molestie a tincidunt sed. At id consectetur
+              sit a metus urna mattis. Eu nibh.
+            </p>
+            <button className="btn oak-btn">Learn more</button>
+          </div>
+        </div>
+      </section>
+
+      {/* BEST-SELLING COURSE SECTION */}
+
+      <section className="writer-section__header">
+        <div className="courses-section">
+          <p>Our bestselling course</p>
+          <p>
+            Reasons why you should understand how the <br /> internet and Web3
+            works.
+          </p>
+          <button>View our courses &#8594;</button>
+          <img src={btc} alt="eth-icon" className="btc-icon" />
+          <img src={btcBlur} alt="blur-icon" className="btcBlur-icon" />
+        </div>
+      </section>
+
+      {/* OAK VICE SECTION */}
+      <section className="oakvice-section">
+        <div className=" align-items-center oakvice-section__header">
+          <h3 className="oak-section__wrapper">
+            <span className="px-3">
+              <img src={s1} alt="icon" />
+            </span>
+            Introducting Oakvice
+            <span className="px-3">
+              <img src={s2} alt="icon" />
+            </span>
+          </h3>
+        </div>
+
+        <div className="oakvice-container">
+          <div className="oakvice-container__text">
+            <h2>Learn about Web3 in multiple Languages</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Molestie pulvinar quis
+              dignissim nulla dolor tincidunt integer amet fermentum. Penatibus
+              tempor non nec pharetra. Viverra amet vel a eu maecenas. Ac
+              viverra pellentesque suspendisse sed ut aliquam.
+            </p>
+            <button className="btn oak-btn">Learn more</button>
+          </div>
+
+          <img src={oakvice} alt="oakvice" className="oakvice-img" />
+        </div>
+      </section>
+
+      {/* USERS REVIEW SECTION */}
     </Layout>
   );
 };
