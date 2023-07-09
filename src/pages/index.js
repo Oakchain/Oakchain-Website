@@ -344,7 +344,7 @@ const LandingPage = () => {
 
       {/* BEST-SELLING COURSE SECTION */}
 
-      <section className="writer-section__header">
+      <section className="courses-section__header">
         <div className="courses-section">
           <p>Our bestselling course</p>
           <p>
@@ -389,6 +389,20 @@ const LandingPage = () => {
       </section>
 
       {/* USERS REVIEW SECTION */}
+
+      <section className="review-section__header">
+        <div className="d-flex align-items-center justify-content-center review-section-header">
+          <h3 className="oak-section__wrapper">
+            <span className="px-3">
+              <img src={s1} alt="icon" />
+            </span>
+           Users Review
+            <span className="px-3">
+              <img src={s2} alt="icon" />
+            </span>
+          </h3>
+        </div>
+        </section>
     </Layout>
   );
 };

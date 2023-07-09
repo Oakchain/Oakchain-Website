@@ -414,6 +414,11 @@
     
 }
 
+.courses-section__header{
+    margin-top: 15rem;
+    
+}
+
 .courses-section{
     background-image: url('../images/coursesBG.png');
     background-repeat:no-repeat;
@@ -528,9 +533,20 @@ padding-top: 8rem;
     padding-left: 10rem;
     padding-right: 3rem;
     margin-left: 2rem;
-    margin-right:4rem ;
-   
-    
+    margin-right:4rem ; 
+}
+
+.review-section__header{
+    margin-top: 10rem;
+}
+
+.review-section-header{
+    background: url('../images/Our\ Reviews.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: top center;
+    padding-top: 10em;
+    margin-top: 5rem;
 }
 
 
