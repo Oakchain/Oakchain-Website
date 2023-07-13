@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/style/home.css";
 import Layout from "../Layout";
 import discord from "../assets/images/discord.svg";
@@ -28,6 +28,12 @@ import userOne from "../assets/images/Component 6.png";
 import userTwo from "../assets/images/Component 7.png";
 import userThree from "../assets/images/Component 8.png";
 import userFour from "../assets/images/Component 9.png";
+import WalletModal from "../component/WalletModal";
+import n1 from "../assets/images/n1.svg";
+import n2 from "../assets/images/n2.svg";
+import n3 from "../assets/images/n3.svg";
+import n4 from "../assets/images/n4.svg";
+import n5 from "../assets/images/n5.png";
 
 // import connectWallet from '../utils/walletConnect'
 
@@ -40,6 +46,15 @@ const LandingPage = () => {
 
   console.log(mins);
   const date = `${month} ${day}, ${year}. ${mins} mins read`;
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleModal = () => {
+    setIsOpen(!isOpen)
+  }
+  const arrayGenerator = (length) => {
+    return Array.from({ length }, (_, index) => index + 1);
+  };
+
 
   return (
     <Layout>
@@ -292,7 +307,7 @@ const LandingPage = () => {
           </h3>
         </div>
 
-        <div className="oak-nest__container">
+        <div className="oak-nest__container ">
           <div className="oak-nest__text">
             <h1 className="nest-text">
               Keep tabs on your Oaks
@@ -309,7 +324,89 @@ const LandingPage = () => {
 
             <button className="btn oak-btn">Buy now</button>
           </div>
-          <div className="oak-nest__img"></div>
+          <div className="oak-nest__img overflow-hidden">
+            <div className="d-flex align-items-center justify-content-betwee nft-animation-wrapper " style={{
+              gap:'1em'
+            }}>
+              <div className="">
+                {arrayGenerator(5).map(() => (
+                  <div className="nft-collections_wrapper">
+                    <div className="nft-img__container bg-danger mb-3">
+                      <img src={n1} alt='nft' />
+                    </div>
+                    <div className="nft-img__container bg-info mb-3">
+                      <img src={n2} alt='nft' />
+
+                    </div>
+                    <div className="nft-img__container bg-success mb-3">
+                      <img src={n3} alt='nft' />
+
+                    </div>
+                    <div className="nft-img__container bg-danger mb-3">
+                      <img src={n4} alt='nft' />
+
+                    </div>
+                    <div className="nft-img__container bg-info mb-3">
+                      <img src={n5} alt='nft' />
+                    </div>
+
+                  </div>
+                ))}
+              </div>
+              <div>
+                {arrayGenerator(5).map(() => (
+                  <div className=" direction-up">
+                    <div className="nft-img__container bg-danger mb-3">
+                      <img src={n5} alt='nft' />
+                    </div>
+                    <div className="nft-img__container bg-info mb-3">
+                      <img src={n4} alt='nft' />
+
+                    </div>
+                    <div className="nft-img__container bg-success mb-3">
+                      <img src={n3} alt='nft' />
+
+                    </div>
+                    <div className="nft-img__container bg-danger mb-3">
+                      <img src={n2} alt='nft' />
+
+                    </div>
+                    <div className="nft-img__container bg-info mb-3">
+                      <img src={n1} alt='nft' />
+                    </div>
+
+                  </div>
+                ))}
+              </div>
+              <div>
+
+                {arrayGenerator(5).map(() => (
+                  <div className="nft-collections_wrapper">
+                    <div className="nft-img__container bg-danger mb-3">
+                      <img src={n1} alt='nft' />
+                    </div>
+                    <div className="nft-img__container bg-info mb-3">
+                      <img src={n2} alt='nft' />
+
+                    </div>
+                    <div className="nft-img__container bg-success mb-3">
+                      <img src={n3} alt='nft' />
+
+                    </div>
+                    <div className="nft-img__container bg-danger mb-3">
+                      <img src={n4} alt='nft' />
+
+                    </div>
+                    <div className="nft-img__container bg-info mb-3">
+                      <img src={n5} alt='nft' />
+                    </div>
+
+                  </div>
+                ))}
+              </div>
+
+            </div>
+          </div>
         </div>
       </section>
 

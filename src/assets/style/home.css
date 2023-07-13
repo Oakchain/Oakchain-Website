@@ -180,7 +180,7 @@
     margin-top: 2rem;
 }
 
-.card-title{
+.card-title {
     padding-top: 1rem;
     padding-left: .5rem;
     color: white !important;
@@ -188,7 +188,7 @@
     font-family: var(--cd400);
 }
 
-.card-text{
+.card-text {
     color: white;
     font-weight: 600;
     font-size: 18px;
@@ -196,45 +196,46 @@
     font-family: var(--cd600);
 }
 
-.card-text__last-child{
+.card-text__last-child {
     color: white;
     font-size: 6px;
     margin-bottom: 1rem;
     font-family: var(--cd300);
 }
 
-.card-body{
+.card-body {
     backdrop-filter: blur(50px) !important;
     background: rgba(0, 0, 0, 0.50);
-    
+
 }
-.card-body__logo{
+
+.card-body__logo {
     display: flex;
 }
 
-.card-time{
-    color:white;
+.card-time {
+    color: white;
     font-size: 8px;
     text-align: right;
     font-family: var(--cd500);
 }
 
-.oak-getLatest__container{
+.oak-getLatest__container {
     display: flex;
-   justify-content: space-between;
-   
+    justify-content: space-between;
+
 }
 
-.card{
+.card {
     height: 18vh !important;
     border-radius: 1rem !important;
 }
 
-.card-img-top{
-    height:33vh !important;
+.card-img-top {
+    height: 33vh !important;
 }
 
-.oak-seeMore{
+.oak-seeMore {
     text-align: center;
     padding-top: .5rem;
     font-family: var(--cd500);
@@ -253,29 +254,29 @@
 
 }
 
-.podcast-section{
-    margin-top:5rem;
-   
+.podcast-section {
+    margin-top: 5rem;
+
 }
 
 .podcast-section-header {
     background: url('../images/Podcast.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: contain;
-    
+
     width: 70%;
-   margin: auto;
+    margin: auto;
     padding-top: 10em;
 }
 
-.oak-podcast__container{
+.oak-podcast__container {
     display: flex;
 }
 
 
-.podcast-img{
+.podcast-img {
     background-image: url('../images/Ellipse.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 70% 30%;
     width: 40%;
@@ -283,32 +284,32 @@
     object-fit: cover;
 }
 
-.oak-podcast__text{
+.oak-podcast__text {
     padding: 12rem;
-   
+
 }
 
-.podcast-text{
+.podcast-text {
     color: var(--primary-color);
     font-family: var(--cd600);
     padding-bottom: 1rem;
 }
 
-.podcast-text-p{
-   font-weight: 300;
-   font-family: var(--cd400);
-   padding-bottom: 1rem;
+.podcast-text-p {
+    font-weight: 300;
+    font-family: var(--cd400);
+    padding-bottom: 1rem;
 }
 
-.nest-section{
+.nest-section {
     margin-top: 3rem;
 
 }
 
 
-.nest-section-header{
+.nest-section-header {
     background: url('../images/Nest\ NFT.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
     width: 70%;
@@ -316,22 +317,22 @@
     padding-top: 10em;
 }
 
-.oak-nest__container{
+.oak-nest__container {
     display: flex;
     justify-content: space-between;
 }
 
-.oak-nest__text{
+.oak-nest__text {
     background: url('../images/Cylinder\ 5.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: 49%;
     background-position: 0% -20%;
     padding-left: 4rem;
     padding-right: 8rem;
-    flex:5
+    flex: 5
 }
 
-.oak-nest__text h1{
+.oak-nest__text h1 {
     color: var(--primary-color);
     font-family: var(--cd600);
     padding-top: 22.5rem;
@@ -339,106 +340,106 @@
     padding-left: 2.3rem;
 }
 
-.oak-nest__text p{
+.oak-nest__text p {
     color: var(--primary-color);
     font-family: var(--cd500);
     /* font-size: 18px; */
     padding-left: 2.3rem;
     padding-bottom: 1rem;
-  
+
 }
 
-.oak-nest__text button{
+.oak-nest__text button {
     margin-left: 2.3rem;
-    
+
 }
 
-.oak-nest__img{
+.oak-nest__img {
     flex: 7;
 }
 
-.oak-container__img{
+.oak-container__img {
     background: url('../images/Rectangle\ 114.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: 49%;
     background-position: 0% -20%;
 }
 
-.writer-section__header{
+.writer-section__header {
     margin-top: 10rem;
     /* border: 2px solid red; */
 }
 
 
-.writer-section-header{
+.writer-section-header {
     background: url('../images/Web3\ Writer.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
     padding-top: 10em;
     margin-top: 5rem;
 }
 
-.oak-writer__container{
+.oak-writer__container {
     display: flex;
     justify-content: space-around;
     padding-top: 5rem;
-   
+
 }
 
-.writer-img{
+.writer-img {
     height: 50vh;
     width: 50%;
-    padding-left:4rem ;
-    
+    padding-left: 4rem;
+
 }
 
-.writer-text{
+.writer-text {
     padding-left: 3rem;
     padding-right: 5rem;
     padding-top: 2rem;
 }
 
-.writer-text h2{
+.writer-text h2 {
     padding-right: 8rem;
-   color: var(--primary-color);
-    font-family: var(--cd600); 
+    color: var(--primary-color);
+    font-family: var(--cd600);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
-.writer-text p{
+.writer-text p {
     padding-right: 8rem;
     color: var(--primary-color);
     font-family: var(--cd400);
-    
+
 }
 
-.courses-section__header{
+.courses-section__header {
     margin-top: 15rem;
-    
+
 }
 
-.courses-section{
+.courses-section {
     background-image: url('../images/coursesBG.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 85%;
     margin: auto;
-    border-radius: 15px; 
-    text-align: center;  
+    border-radius: 15px;
+    text-align: center;
     position: relative;
-   
+
 }
 
-.courses-section p{
+.courses-section p {
     color: white;
     font-family: var(--cd500);
     padding-top: 8rem;
     font-size: 22px;
 }
 
-.courses-section p + p{
+.courses-section p+p {
     color: white;
     font-family: var(--cd500);
     padding-top: 1rem;
@@ -446,7 +447,7 @@
     font-size: 40px;
 }
 
-.courses-section button{
+.courses-section button {
     margin-bottom: 6rem;
     font-family: var(--cd400);
     font-size: small;
@@ -458,20 +459,20 @@
     box-shadow: 4px 4px 1px rgba(255, 255, 255, 1);
 }
 
-.courses-section button:hover{
+.courses-section button:hover {
     background: #fff;
     background: orangered;
     transition: 0.5s;
     border: none;
 }
 
-.courses-section button:active{
+.courses-section button:active {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transform: translateY(2px);
     border: 1px solid #fff;
 }
 
-.btc-icon{
+.btc-icon {
     width: 13%;
     height: 20vh;
     position: absolute;
@@ -479,70 +480,70 @@
     bottom: 77%;
 }
 
-.btcBlur-icon{
+.btcBlur-icon {
     width: 25%;
     height: 42vh;
     position: absolute;
     right: 85%;
 }
 
-.oakvice-section{
- margin-top: 15rem;
+.oakvice-section {
+    margin-top: 15rem;
 }
 
-.oakvice-section__header{
+.oakvice-section__header {
     background: url('../images/Oakvice.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
     padding-top: 10em;
     margin-top: 5rem;
 }
 
-.oakvice-container{
+.oakvice-container {
     display: flex;
     justify-content: space-around;
-  width: 85%;
-  margin: auto;
-  padding-top: 2rem;
+    width: 85%;
+    margin: auto;
+    padding-top: 2rem;
 }
 
-.oakvice-container__text{
-padding-right: 8rem;
-margin-right:2rem;
-padding-top: 8rem;
+.oakvice-container__text {
+    padding-right: 8rem;
+    margin-right: 2rem;
+    padding-top: 8rem;
 }
 
-.oakvice-container__text h2{
+.oakvice-container__text h2 {
     color: var(--primary-color);
     font-family: var(--cd600);
     padding-bottom: 1rem;
     font-size: 57px;
 }
 
-.oakvice-container__text p{
+.oakvice-container__text p {
     color: var(--primary-color);
     font-family: var(--cd400);
     padding-bottom: 1rem;
     font-size: 15px;
 }
 
-.oakvice-img{
+.oakvice-img {
     width: 43%;
     height: 80vh;
     padding-left: 10rem;
     padding-right: 3rem;
     margin-left: 2rem;
-    margin-right:4rem ; 
+    margin-right: 4rem;
 }
 
-.review-section__header{
+.review-section__header {
     margin-top: 10rem;
 }
 
-.review-section-header{
+.review-section-header {
     background: url('../images/Our\ Reviews.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
     padding-top: 10em;
@@ -599,6 +600,55 @@ padding-top: 8rem;
     justify-content: end;
 }
 
+.oak-nest__img {
+    background: url('../images/nftBg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    height: 70vh;
+    padding: 25px;
+    box-sizing: border-box;
+
+}
+
+.nft-animation-wrapper {
+    max-height: 100% ;
+    overflow: auto;
+}
+
+.nft-img__container {
+    width: 199.52px;
+    height: 229.78px;
+    border-radius: 10.26px;
+
+}
+
+.nft-collections_wrapper {
+    animation: scrollAnimation 25s linear infinite;
+    /* white-space: nowrap; */
+}
+
+.direction-up {
+    animation: scrollAnimationUp 28s linear infinite !important;
+}
 
 
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0);
+    }
 
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes scrollAnimationUp {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
