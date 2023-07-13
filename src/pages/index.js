@@ -23,6 +23,11 @@ import typewriter from "../assets/images/typewriter.png";
 import btc from "../assets/images/btc-clear.png";
 import btcBlur from "../assets/images/btc-blur.png";
 import oakvice from "../assets/images/oakDevices.png";
+import quote from "../assets/images/quote.png";
+import userOne from "../assets/images/Component 6.png";
+import userTwo from "../assets/images/Component 7.png";
+import userThree from "../assets/images/Component 8.png";
+import userFour from "../assets/images/Component 9.png";
 
 // import connectWallet from '../utils/walletConnect'
 
@@ -396,13 +401,78 @@ const LandingPage = () => {
             <span className="px-3">
               <img src={s1} alt="icon" />
             </span>
-           Users Review
+            Users Review
             <span className="px-3">
               <img src={s2} alt="icon" />
             </span>
           </h3>
         </div>
-        </section>
+
+        <div className="review-section">
+          <div className="review-card">
+            <img className="review-img" alt="user-img" src={userOne} />
+            <div className="review-text">
+              <img className="review-quote" alt="quote" src={quote} />
+              <p>
+                Oakchain has revolutionized the way our business operates. The
+                platform is <br /> intuitive and easy to use, saving us valuable
+                time and resources. The support team <br /> is also top-notch
+                and always available to assist us with any questions or
+                concerns.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* --------------------------right */}
+
+        <div className="review-section">
+          <div className="review-card__right">
+            <div className="review-text">
+              <img className="review-quote" alt="quote" src={quote} />
+              <p>
+                Working with Oakchain has been a fantastic experience. Their
+                technology-driven <br /> approach to digital experience is
+                unmatched, and the results have been <br /> phenomenal.
+              </p>
+            </div>
+            <img className="review-img" alt="user-img" src={userTwo} />
+          </div>
+        </div>
+
+        {/* --------------------------left */}
+
+        <div className="review-section">
+          <div className="review-card">
+            <img className="review-img" alt="user-img" src={userFour} />
+            <div className="review-text">
+              <img className="review-quote" alt="quote" src={quote} />
+              <p>
+                The level of expertise and professionalism at Oakchain is
+                unparalleled. We highly <br /> recommend Oakchain to any
+                business looking to improve its digital footprint.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* --------------------------right */}
+
+        <div className="review-section">
+          <div className="review-card__right">
+            <div className="review-text">
+              <img className="review-quote" alt="quote" src={quote} />
+              <p>
+                Oakchain has been a valuable partner in our digital journey.
+                Their <br/> comprehensive approach to digital experience, including
+                web3 and more, has <br/> allowed us to stay ahead of the curve in a
+                rapidly changing digital landscape.
+              </p>
+            </div>
+            <img className="review-img" alt="user-img" src={userThree} />
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };

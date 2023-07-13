@@ -549,6 +549,55 @@ padding-top: 8rem;
     margin-top: 5rem;
 }
 
+.review-section{
+    padding: 3rem;
+}
+
+.review-card{
+    padding-top: 0px;
+    padding-left: 10px;
+    /* padding-right: 100px; */
+    padding-bottom: 0px;
+    display:flex
+}
+
+.review-img{
+    width: 12%;
+   /* height: 10vh; */
+}
+
+
+.review-quote{
+    width: 4%;
+    padding-bottom: 5px;
+    
+}
+
+.review-text{
+    padding: 22px 60px 10px 20px;
+    background: rgba(197, 178, 178, 0.1);
+    border-radius: 1rem;
+    font-family: var(--cd500);
+}
+
+.review-text p{
+    font-size: 14px;
+}
+
+
+
+.review-text__right{
+    padding: 22px 60px 0px 20px;
+    background: rgba(197, 178, 178, 0.1);
+    border-radius: 1rem;
+    font-family: var(--cd500);
+    
+}
+
+.review-card__right{
+    display: flex;
+    justify-content: end;
+}
 
 
 
