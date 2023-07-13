@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/style/home.css";
 import Layout from "../Layout";
 import discord from "../assets/images/discord.svg";
@@ -23,7 +23,7 @@ import typewriter from "../assets/images/typewriter.png";
 import btc from "../assets/images/btc-clear.png";
 import btcBlur from "../assets/images/btc-blur.png";
 import oakvice from "../assets/images/oakDevices.png";
-
+import WalletModal from "../component/WalletModal";
 // import connectWallet from '../utils/walletConnect'
 
 const LandingPage = () => {
@@ -35,6 +35,11 @@ const LandingPage = () => {
 
   console.log(mins);
   const date = `${month} ${day}, ${year}. ${mins} mins read`;
+  const [isOpen, setIsOpen] = useState(false)
+  
+  const toggleModal = () => {
+    setIsOpen(!isOpen)
+  }
 
   return (
     <Layout>
@@ -396,13 +401,18 @@ const LandingPage = () => {
             <span className="px-3">
               <img src={s1} alt="icon" />
             </span>
-           Users Review
+            Users Review
             <span className="px-3">
               <img src={s2} alt="icon" />
             </span>
           </h3>
         </div>
-        </section>
+      </section>
+
+      <WalletModal
+        isOpen={isOpen}
+        toggle={toggleModal}
+      />
     </Layout>
   );
 };

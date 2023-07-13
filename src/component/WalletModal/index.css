@@ -1,0 +1,122 @@
+.oak-modal__card .modal-content {
+    border-radius: 23px !important;
+    overflow: hidden;
+    background: none;
+    width: 426px;
+
+}
+
+.oak-modal__card .modal-dialog {
+    max-width: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    /* margin: 1.75rem auto; */
+}
+
+.modal-guide_text {
+    color: #FFF;
+    font-family: var(--cd600);
+    font-size: 30px;
+}
+
+.oak-modal__header {
+    background-image: linear-gradient(180deg, rgba(0, 0, 47, 0.00) 0%, #00002F 70.99%), url('../../assets/images/oak-modal-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 23px 23px 0 0 !important;
+    padding: 16px;
+}
+
+.modal-tool_item:first-child {
+    border-right: 1px solid #fff;
+}
+
+.oak-wallet__container {
+    background: #fff;
+    padding: 19px 25px;
+}
+
+.scan-text {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 15px;
+}
+
+.oak-barcode__wrapper {
+    padding-bottom: 7px;
+    border-bottom: 1px solid #D4D4D4;
+    margin-bottom: 10px;
+    height: 372.329px;
+}
+
+.oak-barcode__wrapper img {
+    object-fit: contain;
+    height: 372.329px;
+
+}
+
+.oak-wallet_img__container,
+.oak-all_wallet__wrapper {
+    border-radius: 20px;
+    background: #EFEFEF;
+    width: 75.358px;
+    height: 75.358px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+}
+
+.oak-wallet_img__container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.wallet-name {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 12px;
+}
+
+.wallet-is_installed {
+    color: #959595;
+    font-family: var(--cd500);
+    font-size: 10px;
+}
+
+.oak-all_wallet__wrapper .oak-wallet_img__container {
+    width: 27px;
+    height: 27px;
+    margin-bottom: 0px !important;
+
+}
+
+.oak-wallet_img__container img {
+    object-fit: cover;
+    height: 100;
+}
+
+.search-wallet__wrapper {
+    border-radius: 25px;
+    background: #F1F1F1;
+    padding: 0 16px;
+}
+
+.search-wallet__input,
+.search-wallet__input:active,
+i.search-wallet__input:focus {
+    border: none;
+}
+
+.guide-main__text {
+    color: var(--primary-color);
+    font-family: var(--cd600);
+    font-size: 20px;
+}
+
+.guide-sub__text {
+    color: #7A7A7A;
+    text-align: center;
+    font-family: var(--cd500);
+    font-size: 15px;
+}
