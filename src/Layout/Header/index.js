@@ -3,7 +3,6 @@ import './index.css'
 import logo from '../../assets/images/logo.svg'
 import dropdown from '../../assets/images/dropdown.svg'
 import arrow from '../../assets/images/arrow.svg'
-import { connectWallet } from '../../utils/walletConnect'
 import WalletModal from '../../component/WalletModal'
 
 const Header = () => {
