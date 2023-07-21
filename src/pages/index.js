@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "../assets/style/home.css";
 import Layout from "../Layout";
 import discord from "../assets/images/discord.svg";
@@ -28,7 +28,7 @@ import userOne from "../assets/images/Component 6.png";
 import userTwo from "../assets/images/Component 7.png";
 import userThree from "../assets/images/Component 8.png";
 import userFour from "../assets/images/Component 9.png";
-import WalletModal from "../component/WalletModal";
+// import WalletModal from "../component/WalletModal";
 import n1 from "../assets/images/n1.svg";
 import n2 from "../assets/images/n2.svg";
 import n3 from "../assets/images/n3.svg";
@@ -46,11 +46,11 @@ const LandingPage = () => {
 
   console.log(mins);
   const date = `${month} ${day}, ${year}. ${mins} mins read`;
-  const [isOpen, setIsOpen] = useState(false)
+  // const [isOpen, setIsOpen] = useState(false)
 
-  const toggleModal = () => {
-    setIsOpen(!isOpen)
-  }
+  // const toggleModal = () => {
+  //   setIsOpen(!isOpen)
+  // }
   const arrayGenerator = (length) => {
     return Array.from({ length }, (_, index) => index + 1);
   };
@@ -184,71 +184,71 @@ const LandingPage = () => {
 
       {/* GET LATEST WEB3 NEWS */}
 
-      <section className="oak-container-fluid ">
+      <section className="oak-container-fluid">
         <div className="  oak-getLatest__container">
           {/* Card component */}
-          <div class="card" style={{ width: "400px" }}>
-            <img src={polygon} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <span class="card-body__logo">
-                <img src={logo} alt="logo" />
-                <h5 class="card-title">Oak news</h5>
+          <div class="card">
+            <img src={polygon} class="card-img-top poly" alt="..." />
+            <div class="card-body google">
+              <span class="card-body__logo google">
+                <img  src={logo} alt="logo" />
+                <h5 class="card-title google">Oak news</h5>
               </span>
 
               <p class="card-text">
                 Polygon Labs and Google Partner to Boost Web3 Development
               </p>
 
-              <p className="card-text__last-child">
+              <p className="card-text__last-child google">
                 Learning about Web3, blockchain, and NFTs can help individuals
                 understand the potential for decentralized technologies to...
               </p>
 
-              <p className="card-time">{date}</p>
+              <p className="card-time google">{date}</p>
             </div>
           </div>
 
-          <div class="card" style={{ width: "400px" }}>
-            <img src={googleCloud} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <span class="card-body__logo">
+          <div class="card google" style={{ width: "400px" }}>
+            <img src={googleCloud} class="card-img-top google" alt="..." />
+            <div class="card-body google">
+              <span class="card-body__logo google">
                 <img src={logo} alt="logo" />
                 <h5 class="card-title">Oak news</h5>
               </span>
 
-              <p class="card-text">
+              <p class="card-text google">
                 Google Cloud broadens Web3 startup program with 11 blockchain
                 firms
               </p>
 
-              <p className="card-text__last-child">
+              <p className="card-text__last-child google">
                 Learning about Web3, blockchain, and NFTs can help individuals
                 understand the potential for decentralized technologies to...
               </p>
 
-              <p className="card-time">{date}</p>
+              <p className="card-time google">{date}</p>
             </div>
           </div>
 
-          <div class="card" style={{ width: "400px" }}>
+          <div class="card google" style={{ width: "400px" }}>
             <img src={googleEyes} class="card-img-top" alt="..." />
             <div class="card-body">
-              <span class="card-body__logo">
-                <img src={logo} alt="logo" />
-                <h5 class="card-title">Oak news</h5>
+              <span class="card-body__logo google">
+                <img class="google" src={logo} alt="logo" />
+                <h5 class="card-title google">Oak news</h5>
               </span>
 
-              <p class="card-text">
+              <p class="card-text  google">
                 Google Cloud Expands Partnerships, Wants More Web3 Startups To
                 Leverage
               </p>
 
-              <p className="card-text__last-child">
+              <p className="card-text__last-child google">
                 Learning about Web3, blockchain, and NFTs can help individuals
                 understand the potential for decentralized technologies to...
               </p>
 
-              <p className="card-time">{date}</p>
+              <p className="card-time google">{date}</p>
             </div>
           </div>
         </div>

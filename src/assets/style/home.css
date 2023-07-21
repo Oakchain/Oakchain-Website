@@ -171,6 +171,54 @@
 
 /* GET LATEST WEB3 NEWS SECTION */
 
+@media screen and (max-width:412px) {
+    
+    .oak-hero__wrapper{
+        width: 90%;
+    }
+    section{
+        width: 100%;
+    }
+    .oak-container-fluid{
+        width: 100%;
+        background: pink;
+        height: 100vh;
+        /* position: relative; */
+    }
+    .card{
+        width: 400px;
+        position: absolute;
+        margin-left: 2v0px;
+    }
+    .poly{
+        width: 400px;
+        position: absolute;
+    }
+/* 
+    .card-img-top{
+        width: 100%;
+        position: absolute;
+        min-height: 300px;
+        border: 2px solid red;
+    }
+
+    .card-body__logo{
+        border: 2px solid yellowgreen;
+        display: none;
+    }
+
+
+    .google{
+        display: none;
+    }
+    .card-text{
+        display: none;
+    } */
+
+
+}
+
+
 .oak-getLatest__container {
     min-height: 75vh;
     background: url('../images/Rectangle.png');
@@ -229,6 +277,7 @@
 .card {
     height: 18vh !important;
     border-radius: 1rem !important;
+    width: 400px;
 }
 
 .card-img-top {
@@ -605,15 +654,17 @@
     background-repeat: no-repeat;
     background-size: contain;
     overflow: hidden;
-    height: 70vh;
+    height: 90vh;
     padding: 25px;
     box-sizing: border-box;
+    margin-top: 5rem;
 
 }
 
 .nft-animation-wrapper {
     max-height: 100% ;
     overflow: auto;
+    
 }
 
 .nft-img__container {
@@ -622,6 +673,7 @@
     border-radius: 10.26px;
 
 }
+
 
 .nft-collections_wrapper {
     animation: scrollAnimation 25s linear infinite;
