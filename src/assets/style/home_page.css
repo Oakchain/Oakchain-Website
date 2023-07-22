@@ -1,0 +1,71 @@
+.oak-home-banner {
+    padding: 60px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 47, 0.00) 0%, #00002F 70.99%), url('../../assets/images/coursesBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+.oak-banner-text {
+    color: #FFF;
+    font-family: var(--cd500);
+    font-size: 30px;
+    line-height: normal;
+}
+
+.oak-banner-header {
+    color: #FFF;
+    font-family: var(--cd600);
+    font-size: 60px;
+    line-height: normal;
+}
+
+.oak-banner-sub-text {
+    color: #FFF;
+    font-family: var(--cd300);
+    font-size: 20px;
+
+}
+
+.oak-home__banner-img {
+    top: 45px;
+    right: 0px;
+}
+
+.oak-banner__text-wrapper {
+    width: 60%;
+}
+
+.oak-section__title {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 25px;
+    position: relative
+}
+
+.oak-section__title::after {
+    content: '';
+    position: absolute;
+    width: 34%;
+    height: 3px;
+    background: var(--secondary-color);
+    right: 0;
+    bottom: -10px;
+    border-radius: 7px;
+}
+
+.oak-redirect__text {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 15px;
+    font-style: normal;
+}
+
+.home-future__podcast_wrapper {
+    background: url('../images/sphere.svg'), url('../images/fdBg2.svg');
+    background-repeat: no-repeat;
+    background-position: left 47%, 100% 47%;
+    background-size: contain, 30%;
+}

@@ -1,0 +1,108 @@
+import AuthGuard from "../../Layout/AuthGuard";
+import React from 'react'
+import "../../assets/style/home_page.css";
+import bannerImg from '../../assets/images/hand-banner.svg'
+import rightArrow from '../../assets/images/rightArrow.svg'
+import { Trending } from "../../component/News";
+import { Banner as AcademyBanner } from "../../component/Academy";
+import { FuturePodcast } from "../../component/Podcast";
+import Tasks from "../../component/Tasks";
+import { Row, Col } from 'reactstrap'
+import { useNavigate } from "react-router-dom";
+
+const Home = () => {
+    const navigate = useNavigate()
+    return (
+        <AuthGuard>
+            <div className=" ">
+                <div className=" oak-container-fluid oak-home-banner d-flex position-relative oak-mb">
+                    <div className="oak-banner__text-wrapper">
+                        <p className="oak-banner-text">Step into the future with Web3</p>
+                        <h3 className="oak-banner-header mb-4">Unlocking a new world of learning and possibilities!</h3>
+                        <p className="oak-banner-sub-text">Learning about Web3 is not only important for staying current with technological advancements, but it also offers exciting opportunities for innovation and growth in various industries.</p>
+                    </div>
+                    <div className="position-absolute oak-home__banner-img ">
+                        <img src={bannerImg} alt='banner-img' />
+                    </div>
+                </div>
+                <section className="oak-container-fluid oak-mb">
+                    <div className="d-flex align-items-center justify-content-between oak-mb">
+                        <h5 className="oak-section__title">Get Updated with Web3 News</h5>
+                        <div className="d-flex align-items-center" role='button' onClick={() => {
+                            navigate('/news')
+                        }}>
+                            <p className="oak-redirect__text mb-0 pe-3">See all</p>
+                            <div>
+                                <img src={rightArrow} alt='icon' />
+                            </div>
+                        </div>
+                    </div>
+                    <Trending />
+                </section>
+
+                <section className=" oak-container-fluid oak-mb">
+                    <div className="d-flex align-items-center justify-content-between oak-mb">
+                        <h5 className="oak-section__title">Learn on our Academy</h5>
+                        <div className="d-flex align-items-center" role='button'>
+                            <p className="oak-redirect__text mb-0 pe-3">See all</p>
+                            <div>
+                                <img src={rightArrow} alt='icon' />
+                            </div>
+                        </div>
+                    </div>
+                    <AcademyBanner />
+                </section>
+
+
+
+                <section className="oak-mb">
+                    <div className="oak-container-fluid d-flex align-items-center justify-content-between ">
+                        <h5 className="oak-section__title">Explore top podcasts</h5>
+                        <div className="d-flex align-items-center" role='button'>
+                            <p className="oak-redirect__text mb-0 pe-3">See all</p>
+                            <div>
+                                <img src={rightArrow} alt='icon' />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="home-future__podcast_wrapper">
+                        <div className="ps-5 ms-4 py-5">
+                            <FuturePodcast />
+                        </div>
+                    </div>
+                </section>
+
+                <section className="oak-mb oak-container-fluid">
+                    <div className="d-flex align-items-center justify-content-between oak-mb">
+                        <h5 className="oak-section__title">Complete tasks and earn</h5>
+                        <div className="d-flex align-items-center" role='button'>
+                            <p className="oak-redirect__text mb-0 pe-3">See all</p>
+                            <div>
+                                <img src={rightArrow} alt='icon' />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <Row>
+                            <Col md='4' sm='12'>
+                                <Tasks />
+                            </Col>
+                            <Col md='4' sm='12'>
+                                <Tasks />
+                            </Col>
+                            <Col md='4' sm='12'>
+                                <Tasks />
+                            </Col>
+                        </Row>
+                    </div>
+                    {/* <Trending /> */}
+                </section>
+
+
+
+            </div>
+        </AuthGuard>
+    )
+}
+
+export default Home

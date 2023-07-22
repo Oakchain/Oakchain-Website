@@ -1,0 +1,16 @@
+.oak-crypto_key {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 15px;
+    line-height: normal;
+}
+
+.oak-crypto_value {
+    color: var(--secondary-color);
+}
+
+.oak-crypto_updates {
+    padding: 19px;
+    border-bottom: 1px solid #D4D4D4;
+    ;
+}
