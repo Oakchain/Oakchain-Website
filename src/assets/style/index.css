@@ -42,12 +42,12 @@ li {
     box-shadow: 7px 7px 4px rgb(0, 0, 47);
 }
 
-.oak-btn:hover{
+.oak-btn:hover {
     background: orangered;
     color: #fff;
     transition: 0.5s;
-    border: none    ;
- 
+    border: none;
+
 }
 
 .oak-btn:active,
@@ -80,3 +80,12 @@ input:focus {
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+.oak-mb {
+    margin-bottom: 43px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+

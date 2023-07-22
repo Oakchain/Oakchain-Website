@@ -1,0 +1,121 @@
+.oak-main__news {
+    border-radius: 7.726px;
+    background: #FFF;
+    box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.10);
+}
+
+.news-grid__img_wrapper img {
+    width: 172px;
+    height: 172px;
+    flex-shrink: 0;
+    border-radius: 7.726px;
+}
+
+.oak-news__text {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 15px;
+}
+
+.oak-news__title {
+    color: var(--primary-color);
+    font-family: var(--cd600);
+    font-size: 20px;
+    line-height: normal;
+}
+
+.oak-news__title.all-news {
+    font-size: 18.319px;
+
+}
+
+.oak-news__date {
+    color: #ADADAD;
+    font-family: var(--cd500);
+    font-size: 11.589px;
+    line-height: normal;
+}
+
+.trending-main_img {
+    height: 416px;
+    overflow: hidden;
+    border-radius: 7.726px;
+}
+
+.oak-news__stats {
+    color: var(--primary-color);
+    font-family: var(--cd600);
+    font-size: 14.68px;
+    line-height: normal;
+}
+
+.oak-stats__icon img {
+    width: 20.979px;
+    height: 20.978px;
+    flex-shrink: 0;
+}
+
+.oak-main-news_details__wrapper {
+    padding: 3px 23px 17px 23px;
+}
+
+.featured-news__card {
+    width: 367px;
+    height: 441px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: inline-flex;
+}
+
+.featured-news__tags_wrapper {
+    top: 18px;
+    right: 18px;
+}
+
+.featured-news__details_wrapper {
+    padding: 18px;
+    bottom: 0px;
+}
+
+.featured-news__tag {
+    color: #FFF;
+    font-family: var(--cd500);
+    font-size: 12px;
+    padding: 7px 11px;
+    border-radius: 40px;
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 47, 0.50);
+}
+
+.featured-news__container {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.grid-main_img {
+    height: 300px;
+    border-radius: 7.077px;
+    overflow: hidden;
+}
+
+.oak-news__title.grid-display__type {
+    font-size: 18.319px;
+    margin-bottom: 18px !important;
+}
+
+.grid-display__type .oak-news__stats {
+    font-size: 9.65px;
+}
+
+.oak-main-news_details__wrapper.grid-display__type {
+    padding: 0px 5px 18px 5px;
+}
+
+.grid-display__type .oak-stats__icon img {
+    width: 16.755px;
+    height: 12.93px;
+    flex-shrink: 0;
+}

@@ -1,6 +1,6 @@
 .oak-header {
     padding: 30px 0;
-    border-bottom: var(--primary-color) solid 1px;
+    border-bottom: #d4d4d4 solid 1px;
     z-index: 9999;
     width: 100%;
 }
@@ -20,4 +20,29 @@
 
 .dropdown-wrapper {
     margin-left: 8px;
+}
+
+.header-auth_item {
+    border-right: 1px solid var(--secondary-color);
+}
+
+.oak-wallet_point {
+    color: #00002F;
+    font-family: var(--cd600);
+    font-size: 15px;
+}
+
+.oak-wallet_name {
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--cd600);
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

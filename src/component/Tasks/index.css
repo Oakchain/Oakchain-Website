@@ -1,0 +1,29 @@
+.oak-task_card {
+    padding: 26px;
+    border-radius: 10px;
+    border: 1px solid #CFCFCF;
+    background: #FFF;
+}
+
+.oak-task-brand {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 15px;
+    line-height: normal;
+}
+
+.oak-task-title {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 20px;
+    font-style: normal;
+    /* margin-bottom: 8px; */
+}
+
+.oak-task__description {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 12px;
+    line-height: normal;
+    margin-bottom: 23px;
+}

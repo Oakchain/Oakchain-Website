@@ -3,10 +3,7 @@ import './index.css'
 import logo from '../../assets/images/logo.svg'
 import dropdown from '../../assets/images/dropdown.svg'
 import arrow from '../../assets/images/arrow.svg'
-<<<<<<< HEAD
 // import { connectWallet } from '../../utils/walletConnect'
-=======
->>>>>>> fe7090f09c886dab73979ccd90dcfda82b8c7c53
 import WalletModal from '../../component/WalletModal'
 
 const Header = () => {
