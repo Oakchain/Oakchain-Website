@@ -61,13 +61,31 @@
     border-radius: 10px;
     margin-right: 20px;
     display: inline-flex;
-    padding: 18px;
 }
 
 .featured-news__tags_wrapper {
-    top: 0;
+    top: 18px;
+    right: 18px;
 }
 
 .featured-news__details_wrapper {
-    bottom: 0;
+    padding: 18px;
+    bottom: 0px;
+}
+
+.featured-news__tag {
+    color: #FFF;
+    font-family: var(--cd500);
+    font-size: 12px;
+    padding: 7px 11px;
+    border-radius: 40px;
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 47, 0.50);
+}
+
+.featured-news__container {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
