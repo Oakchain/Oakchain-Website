@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import AuthGuard from "../../Layout/AuthGuard";
-import { Trending, Featured, List } from "../../component/News";
+import { Trending, Featured, List, Grid } from "../../component/News";
 import ft1 from '../../assets/images/feat1.svg'
 import ft2 from '../../assets/images/feat2.svg'
 import ft3 from '../../assets/images/feat4.svg'
@@ -17,6 +17,9 @@ import { Row, Col } from 'reactstrap'
 import '../../assets/style/event.css'
 
 const newsTag = ['All', 'NFT', 'Gaming', 'Collectibles', 'DeFi', 'Metaverse', 'Startup', 'Infrastructure', 'Education']
+const arrayGenerator = (length) => {
+    return Array.from({ length }, (_, index) => index + 1);
+};
 
 const News = () => {
     const [activeTag, setActiveTag] = useState('All');
@@ -100,47 +103,27 @@ const News = () => {
                     <h5 className="oak-section__title oak-mb">All News</h5>
                 </div>
                 <div className='oak-container-fluid '>
-                    <Row className='g-3'>
-                        <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col>
-                        <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> <Col md='6' lg='4' sm='12'>
-                            <List />
-                        </Col> 
-                      
-                    </Row>
+                    {
+                        displayType == 'list' ? <Row className='g-3'>
+                            {arrayGenerator(15).map(el =>
+                                <Col md='6' lg='4' sm='12'>
+                                    <List type={'all-news'} />
+                                </Col>
+                            )}
+                        </Row> :
+                            <Row className='g-3'>
+                                {arrayGenerator(16).map(el =>
+                                    <Col md='4' lg='3' sm='12'>
+                                        <Grid />
+                                    </Col>)
+                                }
+                            </Row>
+                    }
+
+
+
+
+
                 </div>
 
 

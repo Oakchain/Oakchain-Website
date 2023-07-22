@@ -1,7 +1,7 @@
 import React from 'react'
 import defaultImg from '../../../assets/images/n1.svg'
 import logo from '../../../assets/images/onLogo.svg'
-const NewsGrid = ({ image }) => {
+const NewsGrid = ({ image, type }) => {
     return (
         <div className='d-flex align-items-center'>
             <div className='news-grid__img_wrapper pe-3'>
@@ -15,7 +15,7 @@ const NewsGrid = ({ image }) => {
                     <p className='mb-0 oak-news__text pt-1'>Oak News</p>
                 </div>
 
-                <h3 className='oak-news__title'>
+                <h3 className={`oak-news__title ${type === 'all-news' ? 'all-news' : ""}`}>
                     Lorem ipsum dolor sit amet consectetur dolor sit amet consectetur.
                 </h3>
                 <p className='text-right oak-news__date mb-0 d-flex justify-content-end'>

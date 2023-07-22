@@ -24,6 +24,11 @@
     line-height: normal;
 }
 
+.oak-news__title.all-news {
+    font-size: 18.319px;
+
+}
+
 .oak-news__date {
     color: #ADADAD;
     font-family: var(--cd500);
@@ -88,4 +93,29 @@
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+}
+
+.grid-main_img {
+    height: 300px;
+    border-radius: 7.077px;
+    overflow: hidden;
+}
+
+.oak-news__title.grid-display__type {
+    font-size: 18.319px;
+    margin-bottom: 18px !important;
+}
+
+.grid-display__type .oak-news__stats {
+    font-size: 9.65px;
+}
+
+.oak-main-news_details__wrapper.grid-display__type {
+    padding: 0px 5px 18px 5px;
+}
+
+.grid-display__type .oak-stats__icon img {
+    width: 16.755px;
+    height: 12.93px;
+    flex-shrink: 0;
 }
