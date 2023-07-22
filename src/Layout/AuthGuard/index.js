@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import CryptoUpdate from './CryptoUpdate'
 import NavItems from './AuthItems'
+import Footer from '../Footer'
 
 const AuthGuard = ({ children }) => {
     return (
@@ -10,10 +11,11 @@ const AuthGuard = ({ children }) => {
             <CryptoUpdate />
             <NavItems />
             <div className='oak-auth-wrapper' style={{
-                padding:'20px 0'
+                padding: '20px 0'
             }}>
                 {children}
             </div>
+            <Footer />
         </div>
     )
 }
