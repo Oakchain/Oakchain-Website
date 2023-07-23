@@ -171,52 +171,7 @@
 
 /* GET LATEST WEB3 NEWS SECTION */
 
-@media screen and (max-width:412px) {
-    
-    .oak-hero__wrapper{
-        width: 90%;
-    }
-    section{
-        width: 100%;
-    }
-    .oak-container-fluid{
-        width: 100%;
-        background: pink;
-        height: 100vh;
-        /* position: relative; */
-    }
-    .card{
-        width: 400px;
-        position: absolute;
-        margin-left: 2v0px;
-    }
-    .poly{
-        width: 400px;
-        position: absolute;
-    }
-/* 
-    .card-img-top{
-        width: 100%;
-        position: absolute;
-        min-height: 300px;
-        border: 2px solid red;
-    }
 
-    .card-body__logo{
-        border: 2px solid yellowgreen;
-        display: none;
-    }
-
-
-    .google{
-        display: none;
-    }
-    .card-text{
-        display: none;
-    } */
-
-
-}
 
 
 .oak-getLatest__container {
@@ -584,6 +539,21 @@
     padding-right: 3rem;
     margin-left: 2rem;
     margin-right: 4rem;
+}
+
+/* review section */
+
+/* media-queries */
+
+@media screen and (max-width:412px) {
+    .review-section__header{
+        width: 100%;
+    }
+
+    .review-section__wrapper{
+        font-size: 16px;
+        font-family: var(--cd600);
+    }
 }
 
 .review-section__header {

@@ -159,6 +159,7 @@ const LandingPage = () => {
         <div className="d-flex align-items-center justify-content-center oak-features__container">
           <div className="oak-feature__wrapper d-flex justify-content-center">
             <img src={feat1} alt="icon" />
+            {/* <h1>CRYPTONIRE</h1> */}
           </div>
           <div className="oak-feature__wrapper even-child d-flex justify-content-center">
             <img src={feat2} alt="icon" />
@@ -175,7 +176,7 @@ const LandingPage = () => {
               <img src={s1} alt="icon" />
             </span>
             Get Latest Web3 News
-            <span className="px-3">
+            <span className="px-3">`
               <img src={s2} alt="icon" />
             </span>
           </h3>
@@ -490,11 +491,12 @@ const LandingPage = () => {
         </div>
       </section>
 
+
       {/* USERS REVIEW SECTION */}
 
       <section className="review-section__header">
         <div className="d-flex align-items-center justify-content-center review-section-header">
-          <h3 className="oak-section__wrapper">
+          <h3 className="review-section__wrapper">
             <span className="px-3">
               <img src={s1} alt="icon" />
             </span>
