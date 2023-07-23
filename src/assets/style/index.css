@@ -79,6 +79,7 @@ input:focus {
     background-clip: padding-box;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border: none;
 }
 
 .oak-mb {
@@ -89,3 +90,8 @@ input:focus {
     display: none;
 }
 
+.page-details__title {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 15px;
+}

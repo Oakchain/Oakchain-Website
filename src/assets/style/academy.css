@@ -1,0 +1,53 @@
+.academy-banner {
+    height: 434px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url('../../assets/images/coursesBG.png'), linear-gradient(to left, rgba(0, 0, 47, 0.00) 0%, #00002F 70.99%), url('../../assets/images/academyBg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.academy-left__side {
+
+    /* width: 100%; */
+    padding: 0 30px;
+}
+
+.academy-banner__text {
+    color: #FFF;
+    font-family: var(--cd600);
+    font-size: 60px;
+    width: 70%;
+
+
+}
+
+.academy-right__side {
+    background-image: url('../../assets/images/academyBg.svg');
+    background-position: right;
+
+}
+
+.academy-tab__item {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 20px;
+    position: relative;
+}
+
+.academy-tab__item.active::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    background: var(--secondary-color);
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    border-radius: 5px;
+}
+
+.academy-tab__item_wrapper {
+    border-bottom: 1px solid #D4D4D4;
+}
