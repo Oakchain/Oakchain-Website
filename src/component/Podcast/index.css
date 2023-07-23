@@ -1,0 +1,9 @@
+.future-podcast__img_wrapper {
+    width: 480px;
+    height: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    margin-right: 30px;
+    display: inline-flex;
+    overflow: hidden;
+}

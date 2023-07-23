@@ -1,0 +1,39 @@
+.oak-academy-banner__card {
+    /* background: ; */
+    height: 496px;
+    flex-shrink: 0;
+    padding: 40px 0 0 40px;
+    background: url('../../assets/images/academyBg1.svg') right bottom no-repeat, url('../../assets/images/academyBg2.svg') right no-repeat, var(--secondary-color) !important;
+    /* background-repeat: no-repeat; */
+    background-position: right;
+    background-size: cover;
+    border-radius: 10px;
+    width: 55%;
+
+}
+
+.oak-academy__banner-text {
+    color: #FFF;
+    font-family: var(--cd500);
+    font-size: 48.79px;
+    line-height: normal;
+    width: 50%;
+}
+
+.oak-academy__banner_title {
+    color: var(--primary-color);
+    font-family: var(--cd600);
+    font-size: 30px;
+    font-style: normal;
+}
+
+.oak-academy__features {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 20px;
+    line-height: normal;
+}
+
+.oak-academy__features.secondary {
+    color: var(--secondary-color);
+}

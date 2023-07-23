@@ -29,15 +29,16 @@ import userTwo from "../assets/images/Component 7.png";
 import userThree from "../assets/images/Component 8.png";
 import userFour from "../assets/images/Component 9.png";
 // import WalletModal from "../component/WalletModal";
-import n1 from "../assets/images/n1.svg";
-import n2 from "../assets/images/n2.svg";
-import n3 from "../assets/images/n3.svg";
+import n1 from "../assets/images/nft4.svg";
+import n2 from "../assets/images/nfti2.svg";
+import n3 from "../assets/images/nfti3.svg";
 import n4 from "../assets/images/n4.svg";
 import n5 from "../assets/images/n5.png";
-
+import { useNavigate } from "react-router-dom";
 // import connectWallet from '../utils/walletConnect'
 
 const LandingPage = () => {
+  const navigate = useNavigate()
   const myDate = new Date();
   const month = myDate.toLocaleString("default", { month: "long" });
   const day = String(myDate.getDay()).padStart(2, 0);
@@ -90,7 +91,11 @@ const LandingPage = () => {
                   with technological advancements, but it also offers exciting
                   opportunities for innovation and growth in various industries.
                 </p>
-                <button className="btn oak-btn mb-5">Get Started</button>
+                <button className="btn oak-btn mb-5"
+                  onClick={() => {
+                    navigate('/home')
+                  }}
+                >Get Started</button>
 
                 <div className="oak-newsletter__wrapper d-flex align-items-center mb-3">
                   <input
@@ -327,7 +332,7 @@ const LandingPage = () => {
           </div>
           <div className="oak-nest__img overflow-hidden">
             <div className="d-flex align-items-center justify-content-betwee nft-animation-wrapper " style={{
-              gap:'1em'
+              gap: '1em'
             }}>
               <div className="">
                 {arrayGenerator(5).map(() => (
