@@ -48,7 +48,7 @@
 .oak-section__title::after {
     content: '';
     position: absolute;
-    width: 34%;
+    width: 20%;
     height: 3px;
     background: var(--secondary-color);
     right: 0;

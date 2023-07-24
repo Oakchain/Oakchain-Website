@@ -4,13 +4,21 @@ import defaultImg from '../../../assets/images/n1.svg'
 import views from '../../../assets/images/views.svg'
 import share from '../../../assets/images/share.svg'
 import comment from '../../../assets/images/comment.svg'
+import { useNavigate } from 'react-router-dom'
 
 
 
 const Grid = () => {
-  return (
+  const navigate = useNavigate()
 
-    <div className='oak-grid__news  bg-white h-100' >
+  return (
+    <div className='oak-grid__news  bg-white h-100'
+      role='button'
+      onClick={
+        () => {
+          navigate('/news/1')
+        }
+      }>
       <div className='oak-grid__news_img__wrapper position-relative'>
         <div className='w-100 grid-main_img'>
           <img src={defaultImg} alt='main_img' className='w-100 h-100' style={{
