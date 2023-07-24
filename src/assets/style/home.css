@@ -714,6 +714,61 @@
 
 }
 
+/* *MEDIA QUERIES FOR WRITERS SECTION*/ 
+@media screen and (max-width:428px){
+    .writer-section__header {
+        margin-top: 0;
+        /* border: 2px solid red; */
+    }
+    .writer-section-header {
+        background: url("http://localhost:3000/static/media/Web3%20Writer.1ae387ed34127965aec8.png");
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: top center;
+        padding-top: 10em;
+        margin-top: -4rem;
+    }
+    .pullUp{
+        transform: translateY(-25px) !important;
+    }
+    .oak-writer__container {
+        display: block !important;
+        padding-top: 0;
+        margin-top: -20px !important;
+    }
+    .writer-img {
+        height: 20vh;
+        width: 80%;
+        padding-left: 2rem;
+        transform: translateX(25px);
+    }
+    .writer-text h2 {
+        padding-right: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        font-size: 20px;
+        text-align: center;
+    }
+    .writer-text p {
+        padding-right: 0;
+        font-size: 10px;
+        width: 85%;
+        text-align: center;
+        transform: translate(30px,-9px);
+
+    }
+    .writeBTN{
+        transform: translateX(-15px);
+        width: 130px !important;
+    }
+}
+
+
+/* courses section */
+
 .courses-section__header {
     margin-top: 15rem;
 
