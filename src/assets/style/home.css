@@ -938,22 +938,58 @@
     margin-right: 4rem;
 }
 
+/* MEDIA QUERIES FOR OAKVICE SECTION  */
+@media screen and (max-width:428px){
+    .oakvice-section {
+        margin-top: 4rem;
+    }
+
+    .oakvice-section__header {
+        background-size: 80% !important;
+        background-position: top center;
+        padding-top: 10em;
+        margin-top: 5rem;
+    }
+
+    .viceUp{
+        transform: translate(20px,60px);
+    }
+    .oakvice-container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 85%;
+        margin: auto;
+    }
+    .oakvice-img {
+        width: 43%;
+        height: 35vh;
+        padding-left: 0;
+        padding-right: 3rem;
+        margin-left:35%;
+        margin-top: -70px;
+    }
+    .oakvice-container__text h2 {
+        text-align: center;
+        width: 180%;
+        padding-bottom: 1rem;
+        font-size: 20px;
+    }
+
+    .oakvice-container__text p {
+        padding-bottom: 1rem;
+        font-size: 10px !important;
+        width: 170%;
+        text-align: center;
+    }
+    .viceBTN{
+        width: 70% !important;
+    }
+}
+
 /* review section */
 
-/* media-queries */
 
-@media screen and (max-width:412px) {
-    .review-section__header{
-        width: 100%;
-    }
 
-    .review-section__wrapper{
-        font-size: 16px;
-        font-family: var(--cd600);
-    }
-
-    
-}
 
 .review-section__header {
     margin-top: 10rem;
@@ -1017,6 +1053,58 @@
     display: flex;
     justify-content: end;
 }
+
+/* MEDIA QUERY FOR REVIEW SECTION  */
+@media screen and (max-width:428px){
+    .review-section__header {
+        margin-top: 0;
+    }
+
+    .review-section-header {
+        background-repeat: repeat;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top center;
+        padding-top: 10em;
+        margin-top: 5rem;
+    }
+
+    .shift{
+        transform: translate(40px,-25px);
+    }
+
+    .review-section {
+        padding: 0;
+    }
+    .review-img {
+        width: 150%;
+        height: 7.5vh;
+    }
+
+    .review-card {
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 100px;
+        padding-bottom: 0px;
+        width: 100% !important;
+    }
+
+    .review-text {
+        padding: 22px 20px 10px 20px;
+        width: 900%;
+    }
+
+    .review-text p {
+        font-size: 8px !important;
+        width: 100%;
+    }
+}
+
+
+
+
+/* nest animation */
 
 .oak-nest__img {
     background: url('../images/nftBg.svg');
