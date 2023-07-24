@@ -580,6 +580,90 @@
     background-position: 0% -20%;
 }
 
+/* MEDIA QUERY NEST SECTION  */
+@media screen and (max-width:428px){
+    .nest-section {
+        display: block;
+        margin-top: 3rem;
+    }
+    .oak-section__wrapper {
+        transform: translateY(-20px);
+        font-size: 13px;
+        width: 150% !important;
+    }
+    .nest-section-header {
+        width: 100%;
+        background-size: 80% !important;
+    }
+    .oak-nest__container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .oak-nest__text {
+        background-size: 50%;
+        background-position: -40% 0%;
+        padding-left: 0;
+        padding-right: 8rem;
+        flex: 5 1;
+        height: 15vh !important;
+        /* border: 2px solid red; */
+        display: block;
+        width: 100% !important;
+        display: block !important;
+    }
+    .oak-nest__text h1 {
+        padding-top: 18.5rem;
+        font-size: 20px;
+        padding-left: 3.25rem;
+        width: 100% !important;
+        text-align: center;
+        transform: translate(60px,-200px);
+
+    }
+    .oak-nest__text p {
+        font-size: 10px;
+        text-align: center;
+        padding-bottom: 1rem;
+        width: 120% !important;
+        transform: translate(40px,-200px);
+    }
+    .nestBtn, .nestBtn:hover{
+        transform: translate(130px,-200px) !important;
+        transition: none !important;
+        animation: none !important;
+    }
+
+    .oak-nest__img {
+        height: 140px !important;
+        padding: 25px;
+        box-sizing: border-box;
+        margin-top: -1rem !important;
+        margin-left: 40px;
+    }
+
+    .nft-animation-wrapper {
+        height: 40vh !important;
+        overflow: hidden;
+    }
+
+    .nft-collections_wrapper {
+        white-space: nowrap;
+    }
+
+    .nft-img__container {
+        width: 190px !important;
+        height: 220px !important;
+        border-radius: 10.26px;
+        
+    }
+}
+
+
+
+
+/* writer section */
+
 .writer-section__header {
     margin-top: 10rem;
     /* border: 2px solid red; */
