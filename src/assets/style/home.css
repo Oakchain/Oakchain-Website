@@ -841,6 +841,53 @@
     right: 85%;
 }
 
+/* MEDIA QUERIES FOR COURSES SECTION*/
+@media screen and (max-width:428px){
+    .courses-section__header {
+        margin-top: 6rem !important;
+        /* border: 2px solid red; */
+        /* overflow: hidden; */
+    }
+    .courses-section {
+        background-size: cover;
+        width: 90%;
+        margin: auto;
+        border-radius: 15px;
+        text-align: center;
+        position: relative;
+    }
+    .courses-section p {
+        padding-top: 8rem;
+        font-size: 15px;
+    }
+    .btc-icon {
+        width: 30%;
+        height: 15vh;
+        position: absolute;
+        left: 80%;
+        bottom: 90%;
+        overflow-x: hidden;
+    }
+    .courses-section p + p {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 65%;
+        transform: translateX(80px);
+        font-size: 20px;
+    }
+
+    .btcBlur-icon {
+        width: 50%;
+        height: 22vh;
+        position: absolute;
+        right: 75%;
+    }
+
+}
+
+
+/* oakvice section */
+
 .oakvice-section {
     margin-top: 15rem;
 }
