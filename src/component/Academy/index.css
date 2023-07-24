@@ -37,3 +37,112 @@
 .oak-academy__features.secondary {
     color: var(--secondary-color);
 }
+
+.oak-grid__article_img__wrapper {
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+
+.oak-main-article_details__wrapper {
+    background: #ffff;
+    border-radius: 0 0 10px 10px;
+    background: #FFF;
+    box-shadow: 10px 10px 30px 4px rgba(0, 0, 0, 0.15);
+    padding: 8px 20px 20px 20px;
+}
+
+.oak-article__title {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 32px;
+    margin-bottom: 34px !important;
+}
+
+.article-tag {
+    color: #4D4D4D;
+    font-family: var(--cd500);
+    font-size: 15px;
+    padding: 8px 14px;
+    border-radius: 7px;
+}
+
+.article-tag.tag-1 {
+    background-color: #CBDCFF;
+}
+
+.article-tag.tag-2 {
+    background-color: #FDBFA3;
+}
+
+.article-tag.tag-3 {
+    background-color: #FD97AC;
+}
+
+.dot-icon {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-flex;
+    flex-shrink: 0;
+}
+
+.article-tag.tag-1 .dot-icon {
+    background-color: #082B73;
+}
+
+.article-tag.tag-2 .dot-icon {
+    background-color: #FF4E00;
+}
+
+.article-tag.tag-3 .dot-icon {
+    background-color: #BF0A30;
+}
+
+.oak-video__course_wrapper {
+    border-radius: 10px;
+    border: 1px solid #CFCFCF;
+    background: #FFF;
+}
+
+.oak-video__course_details__wrapper {
+    padding: 0 30px;
+}
+
+.video-course__title {
+    color: var(--primary-color);
+    font-family: var(--cd600);
+    font-size: 30px;
+    margin-bottom: 38px;
+}
+
+.video-content__wrapper {
+    margin-bottom: 40px;
+
+}
+
+.course-progress-bar {
+    border-radius: 30px;
+    background: #ECECEC;
+    height: 10px;
+    overflow: hidden;
+    width: 60%;
+}
+
+.course-progress {
+    height: 100%;
+    background-color: var(--secondary-color);
+    width: 87%;
+    transition: width 0.3s ease;
+}
+
+.course-progress__percentage {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 20px;
+}
+
+.video-content_feature {
+    margin-right: 50px;
+    width: 100%;
+}

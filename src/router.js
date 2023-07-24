@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import LandingPage from './pages/'
 import Home from './pages/Home'
 import News from './pages/News'
-
+import NewsDetails from './pages/News/[id]'
+import Academy from './pages/Academy'
 
 
 
@@ -15,6 +16,8 @@ const RouterConfig = () => {
                 <Route exact path='/' element={<LandingPage />} />
                 <Route exact path='/home' element={<Home />} />
                 <Route exact path='/news' element={<News />} />
+                <Route exact path='/news/:id' element={<NewsDetails />} />
+                <Route exact path='/academy' element={<Academy />} />
 
             </Routes>
         </BrowserRouter>
