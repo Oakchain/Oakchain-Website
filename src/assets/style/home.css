@@ -272,30 +272,24 @@
     }
     .oak-container-fluid{
         width: 100%;
-        /* border:2px solid brown; */
         height: 70vh;
         display: flex;
         flex-direction: row;
         gap: 5rem
-        /* position: relative; */
+   
     }
     .oak-getLatest__container {
         min-height: 70vh;
         width: 300vw;
-        background: url(http://localhost:3000/static/media/Rectangle.a383eda39b38cfe50c3f.png);
-        /* background-position-x: 0%;
-        background-position-y: 0%;
-        background-repeat: repeat;
-        background-size: cover; */
+        /* background-image: url('../images/Rectangle.png'); */
         background-position:center;
-        background-size:contain;
+        background-size:80%;
         background-repeat: no-repeat;
         margin-top: 2rem;
         transform-box: border-box;
         transform: translateX(-380px);
-        /* overflow-x: hidden !important; */
         animation-name: carouselLikeShake;
-        animation-duration: 5s;
+        animation-duration: 8s;
         animation-fill-mode: both;
         animation-iteration-count: infinite;
         animation-play-state: running;
@@ -314,9 +308,10 @@
     .card{
         width: 400px;
         position: absolute;
-        margin-left: 2v0px;
+        margin-left: 20px;
         border: none !important;
         background-color: none !important;
+        height: 50vh !important;
     }
 
     .card-img-top {
@@ -345,9 +340,11 @@
     }
 
     .oak-seeMore {
-        transform: translate(-1100px,500px);
-        width:100% !important;
+        transform: translate(-1190px,500px);
+       
         padding-right:-80px;
+        border: 2px solid black;
+        height: 10vh;
     }
     .oak-section__wrapper{
         display: flex;
@@ -379,7 +376,7 @@
         height: 2.1px;
         background-color: var(--secondary-color);
         border-radius: 2px;
-        margin-top: 1.2rem;
+        margin-top: 1.5rem;
     }
 
     @keyframes carouselLikeShake{
@@ -400,6 +397,7 @@
         }
     }
 }
+
 
 
 /* podcast section */
