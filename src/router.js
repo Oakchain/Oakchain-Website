@@ -5,8 +5,7 @@ import Home from './pages/Home'
 import News from './pages/News'
 import NewsDetails from './pages/News/[id]'
 import Academy from './pages/Academy'
-
-
+import ArticleDetails from './pages/Academy/Article/[id]'
 
 
 const RouterConfig = () => {
@@ -18,6 +17,8 @@ const RouterConfig = () => {
                 <Route exact path='/news' element={<News />} />
                 <Route exact path='/news/:id' element={<NewsDetails />} />
                 <Route exact path='/academy' element={<Academy />} />
+                <Route exact path='/academy/article/:id' element={<ArticleDetails />} />
+
 
             </Routes>
         </BrowserRouter>
