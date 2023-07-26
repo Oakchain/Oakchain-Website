@@ -30,7 +30,9 @@ li {
 .oak-btn,
 .oak-btn:hover,
 .oak-btn-secondary,
-.oak-btn-secondary:hover {
+.oak-btn-secondary:hover,
+.oak-tertiary-btn,
+.oak-tertiary-btn:hover {
     font-family: var(--cd500);
     background-color: #fff;
     border-radius: 5px;
@@ -57,6 +59,7 @@ li {
     border: 1px solid #00002F;
 }
 
+
 .oak-btn-secondary,
 .oak-btn-secondary:hover {
     background: var(--secondary-color);
@@ -64,6 +67,18 @@ li {
     border: var(--secondary-color) 1px solid;
     color: #FFF;
 }
+
+.oak-tertiary-btn,
+.oak-btn-tertiary:hover {
+    background: var(--primary-color) !important;
+    box-shadow: unset;
+    border: var(--primary-color) 1px solid;
+    color: #FFF !important;
+    box-shadow: 7px 7px 4px #fff;
+    border: 1px solid #fff;
+
+}
+
 
 input,
 input:active,
