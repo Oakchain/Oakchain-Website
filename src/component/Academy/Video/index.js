@@ -5,12 +5,16 @@ import ac1 from '../../../assets/images/ac1.svg'
 import ac2 from '../../../assets/images/ac2.svg'
 import ac3 from '../../../assets/images/ac3.svg'
 
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 const VideoCard = ({ type }) => {
     const images = [defaultImg, defaultImg2]
+    const navigate = useNavigate()
 
     return (
         <div className='d-flex align-items-center oak-video__course_wrapper mb-3'
+            onClick={() => {
+                navigate('/academy/video/1')
+            }}
             role='button'>
             <div className=''>
                 <img src={type === 'even' ? images[0] : images[1]} alt='icon' />
