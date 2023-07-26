@@ -256,3 +256,329 @@
     margin-left: .6rem; 
 }
 
+/* media query for footer */
+@media only screen and (max-width: 900px) {
+    .footer-text{
+        width: 100%;
+        display: block;
+    }
+
+    .footer-social{
+        margin-top: 3rem;
+    }
+
+    .logo{
+        display: block;
+        padding: 0 !important;
+        padding-right: -2rem !important;
+    }
+
+    .logo-text{
+        font-size: 12px !important;
+        margin-bottom: -1.2rem;
+    }
+
+    .footerLogo{
+        width: 20% !important;
+    }
+
+    .user-links{
+        padding: 0 !important;
+    }
+
+    .join-us{
+        padding: 0 !important;
+    }
+
+    #support__email{
+        margin-top: 0.5rem;
+    }
+
+    .links-title{
+        font-size: 23px !important;
+        margin-top: 3rem !important;
+    }
+
+    .links-title::after{
+        width: 17% !important;
+        margin-bottom: -2rem !important;
+    }
+
+    .join-title::after{
+        width: 17% !important;
+        margin-bottom: -0.5rem !important;
+    }
+
+    .join-title{
+        margin-top: 3rem !important;
+    }
+
+    .join-text{
+        font-size: 12px !important;
+    }
+
+    .reddit{
+        margin-right: 0 !important;
+        width: 10% !important;
+    }
+
+    .footer__social__media__icons{
+        width: 10% !important;
+    }
+
+    .discordIcon,
+    .twitterIcon,
+    .redditIcon,
+    .telegramIcon{
+        margin-top: 0.5rem !important;
+        margin-left: 0.4rem !important;
+    }
+}
+
+.logo{
+    padding: 5rem;
+    padding-right: 2rem;
+    flex:4;
+}
+
+.user-links{
+    padding: 5rem;
+    flex: 3;
+ 
+}
+
+.join-us{
+    padding: 5rem;
+    flex:5;
+}
+
+.iconHolder{
+    margin-top: 3rem;
+}
+
+
+.logo-text{
+    color: #EAEAEA;
+    font-size: 15px;
+    font-family: var(--cd400);
+    margin-top: 2rem;
+    font-weight: 600;
+    
+}
+
+.footerLogo{
+    width: 40%;
+}
+
+.links-title{
+    color: #EAEAEA;
+    font-size: 24px;
+    font-family: var(--cd500);
+    margin-top: 2rem;
+   
+}
+
+.links-title::after{
+    content: "";
+    display: block;
+    width: 22%;
+    height: 2.5px;
+    background-color: #EAEAEA;
+    margin-top: .5rem;
+}
+
+.links{
+    color: #EAEAEA;
+    font-size: 13px;
+    font-family: var(--cd400);
+    margin-top: 3.6rem;
+    font-weight: 600;
+ 
+}
+
+.link{
+    padding-bottom: 1rem;
+}
+
+.link a{
+    text-decoration: none;
+    color: #EAEAEA;
+}
+
+.join-title{
+    color: #EAEAEA;
+    font-size: 24px;
+    font-family: var(--cd500);
+    margin-top: 2rem;
+}
+
+.join-title::after{
+    content: "";
+    display: block;
+    width: 12%;
+    height: 2.5px;
+    background-color: #EAEAEA;
+    margin-top: .5rem;
+}
+
+.join-text{
+    padding-top: 1.6rem;
+    color:#EAEAEA;
+    font-family: var(--cd500);
+    font-size: 16px;
+
+}
+
+.join-btn{
+    margin-top: .3rem;
+}
+
+
+
+.join-btn {
+    font-family: var(--cd500);
+    font-size: 12px;
+    border: .5px solid #fff;
+    background: transparent;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 1px rgba(255, 255, 255, 1);
+}
+
+.join-btn:hover {
+    background: #fff;
+    background: orangered;
+    transition: 0.5s;
+    border: none;
+}
+
+.join-btn:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    border: 1px solid #fff;}
+
+
+.phone{
+    width: 8%;
+    height: 3vh;
+  
+}
+
+.message{
+    width: 8%;
+    height: 3vh;
+   
+}
+
+.icon-number{
+    display:flex;
+
+}
+
+.number{
+    margin-left: .5rem;
+    color: #EAEAEA;
+    font-family: var(--cd500);
+    font-size: 13px;
+}
+
+
+.footer-social{
+    display: flex; 
+ justify-content: center;
+ position: relative;
+ padding-bottom: 3rem;
+
+}
+
+.discord{
+    border: 2px solid transparent;
+    width: 3.5%;
+    height: 6vh; 
+    border-radius: 50%;
+    background-color: orangered;
+    margin-right: 3rem;
+    z-index: 1;
+   
+}
+
+.discordIcon{
+    margin-top: .7rem;
+    margin-left: .6rem; 
+}
+
+.twitter{
+    border: 2px solid transparent;
+    width: 3.5%;
+    height: 6vh; 
+    border-radius: 50%;
+    background-color: orangered;
+    margin-right: 3rem;
+    z-index: 1;
+}
+
+.twitterIcon{
+    margin-top: .5rem;
+    margin-left: .6rem; 
+}
+
+.telegram{
+    border: 2px solid transparent;
+    width: 3.5%;
+    height: 6vh; 
+    border-radius: 50%;
+    background-color: orangered; 
+    margin-right: 3rem; 
+    z-index: 1;
+}
+
+.telegramIcon{
+    margin-top: .8rem;
+    margin-left: .6rem; 
+}   
+
+
+.reddit{
+    border: 2px solid transparent;
+    width: 3.5%;
+    height: 6vh; 
+    border-radius: 50%;
+    background-color: orangered;
+    margin-right: 3rem; 
+    z-index: 1; 
+}
+
+.redditIcon{
+    margin-top: .6rem;
+    margin-left: .6rem; 
+}
+
+.footer-social::before{
+    content: "";
+    display: flex;
+    width: 85%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 1.5rem;
+    position: absolute;
+    
+}
+
+.up-btn{
+    border: 2px solid transparent;
+    width: 4.5%;
+    height: 7vh; 
+    background-color: orangered; 
+    margin-right: 3rem; 
+    
+    padding-bottom: 5rem;
+
+}
+
+.upIcon{
+    margin-top: .6rem;
+    margin-left: .6rem; 
+}
+
+

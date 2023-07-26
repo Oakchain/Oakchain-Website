@@ -59,32 +59,36 @@ const LandingPage = () => {
 
   return (
     <Layout>
-      <div className="oak-hero__wrapper ">
-        <div className="hero-cta__wrapper d-flex align-items-center oak-container-fluid">
+      <div id="oak-hero-wrapper" className="oak-hero__wrapper ">
+        <div id="oak-container-fluid" className="hero-cta__wrapper d-flex align-items-center oak-container-fluid">
           <div className="hero-cta__cointainer">
-            <div className="d-flex">
+            <div id="d-flex" className="d-flex">
               <div className="oak-socials-hero__wrapper">
-                <div>
+                <div id="icon__container">
                   <div className="oak-social-hero_wrapper">
                     <img src={discord} alt="icon" />
                   </div>
+                  
                   <div className="oak-social-hero_wrapper">
                     <img src={twitter} alt="icon" />
                   </div>
+
                   <div className="oak-social-hero_wrapper">
                     <img src={telegram} alt="icon" />
                   </div>
+
                   <div className="oak-social-hero_wrapper last-child">
                     <img src={reddit} alt="icon" />
                   </div>
                 </div>
               </div>
-              <div>
+
+              <div className="oak-introduction">
                 <h3 className="oak-hero-text">
                   Step into the future with Web3
                 </h3>
                 <h3 className="oak-hero-header">
-                  Unlocking a new world of learning and possibilities!
+                  Unlocking a new world <br/> of learning and possibilities!
                 </h3>
                 <p className="oak-hero-sub-text">
                   Learning about Web3 is not only important for staying current
@@ -104,6 +108,7 @@ const LandingPage = () => {
                   />
                   <button className="oak-btn-secondary btn">Subscribe</button>
                 </div>
+
                 <p className="oak-hero-subscribe-text">
                   Join our newsletter and be the first to know about the latest
                   trends and innovations in the web3, blockchain,
@@ -118,7 +123,7 @@ const LandingPage = () => {
           </div> */}
         </div>
       </div>
-      <section className="oak-container-fluid py-3">
+      <section id="partners__overflow" className="oak-container-fluid py-3">
         <div className="d-flex align-items-center justify-content-center">
           <h3 className="oak-section__wrapper">
             <span className="px-3">
@@ -131,17 +136,17 @@ const LandingPage = () => {
           </h3>
         </div>
 
-        <div className="d-flex align-items-center justify-content-around oak-partners__wrapper mt-4 mb-5">
-          <div className="">
+        <div id="over-flow__animation" className="d-flex align-items-center justify-content-around oak-partners__wrapper mt-4 mb-5">
+          <div className="partner__brands">
             <img src={p1} alt="icon" />
           </div>
-          <div className="">
+          <div className="partner__brands">
             <img src={p2} alt="icon" />
           </div>
-          <div className="">
+          <div className="partner__brands">
             <img src={p3} alt="icon" />
           </div>
-          <div className="">
+          <div className="partner__brands">
             <img src={p4} alt="icon" />
           </div>
         </div>
@@ -164,7 +169,6 @@ const LandingPage = () => {
         <div className="d-flex align-items-center justify-content-center oak-features__container">
           <div className="oak-feature__wrapper d-flex justify-content-center">
             <img src={feat1} alt="icon" />
-            {/* <h1>CRYPTONIRE</h1> */}
           </div>
           <div className="oak-feature__wrapper even-child d-flex justify-content-center">
             <img src={feat2} alt="icon" />
@@ -176,12 +180,12 @@ const LandingPage = () => {
       </section>
       <section className="">
         <div className="d-flex align-items-center justify-content-center news-section-header">
-          <h3 className="oak-section__wrapper">
+          <h3 className="oak-section__wrapper newsLine">
             <span className="px-3">
               <img src={s1} alt="icon" />
             </span>
             Get Latest Web3 News
-            <span className="px-3">`
+            <span className="px-3">
               <img src={s2} alt="icon" />
             </span>
           </h3>
@@ -190,71 +194,71 @@ const LandingPage = () => {
 
       {/* GET LATEST WEB3 NEWS */}
 
-      <section className="oak-container-fluid">
+      <section className="oak-container-fluid web">
         <div className="  oak-getLatest__container">
           {/* Card component */}
           <div class="card">
-            <img src={polygon} class="card-img-top poly" alt="..." />
-            <div class="card-body google">
-              <span class="card-body__logo google">
+            <img src={polygon} class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-body__logo">
                 <img  src={logo} alt="logo" />
-                <h5 class="card-title google">Oak news</h5>
+                <h5 class="card-title">Oak news</h5>
               </span>
 
               <p class="card-text">
                 Polygon Labs and Google Partner to Boost Web3 Development
               </p>
 
-              <p className="card-text__last-child google">
+              <p className="card-text__last-child">
                 Learning about Web3, blockchain, and NFTs can help individuals
                 understand the potential for decentralized technologies to...
               </p>
 
-              <p className="card-time google">{date}</p>
+              <p className="card-time">{date}</p>
             </div>
           </div>
 
-          <div class="card google" style={{ width: "400px" }}>
-            <img src={googleCloud} class="card-img-top google" alt="..." />
-            <div class="card-body google">
-              <span class="card-body__logo google">
+          <div class="card" style={{ width: "400px" }}>
+            <img src={googleCloud} class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-body__logo">
                 <img src={logo} alt="logo" />
                 <h5 class="card-title">Oak news</h5>
               </span>
 
-              <p class="card-text google">
+              <p class="card-text">
                 Google Cloud broadens Web3 startup program with 11 blockchain
                 firms
               </p>
 
-              <p className="card-text__last-child google">
+              <p className="card-text__last-child">
                 Learning about Web3, blockchain, and NFTs can help individuals
                 understand the potential for decentralized technologies to...
               </p>
 
-              <p className="card-time google">{date}</p>
+              <p className="card-time">{date}</p>
             </div>
           </div>
 
-          <div class="card google" style={{ width: "400px" }}>
+          <div class="card" style={{ width: "400px" }}>
             <img src={googleEyes} class="card-img-top" alt="..." />
             <div class="card-body">
-              <span class="card-body__logo google">
-                <img class="google" src={logo} alt="logo" />
-                <h5 class="card-title google">Oak news</h5>
+              <span class="card-body__logo">
+                <img src={logo} alt="logo" />
+                <h5 class="card-title">Oak news</h5>
               </span>
 
-              <p class="card-text  google">
+              <p class="card-text">
                 Google Cloud Expands Partnerships, Wants More Web3 Startups To
                 Leverage
               </p>
 
-              <p className="card-text__last-child google">
+              <p className="card-text__last-child">
                 Learning about Web3, blockchain, and NFTs can help individuals
                 understand the potential for decentralized technologies to...
               </p>
 
-              <p className="card-time google">{date}</p>
+              <p className="card-time">{date}</p>
             </div>
           </div>
         </div>
@@ -262,10 +266,11 @@ const LandingPage = () => {
         <p className="oak-seeMore">See more</p>
       </section>
 
+
       {/* Podcast section */}
       <section className="podcast-section">
         <div className=" align-items-center podcast-section-header">
-          <h3 className="oak-section__wrapper">
+          <h3 className="oak-section__wrapper down">
             <span className="px-3">
               <img src={s1} alt="icon" />
             </span>
@@ -298,129 +303,128 @@ const LandingPage = () => {
         </div>
 
         {/* nest nft */}
-      </section>
+        </section>
 
-      <section className="nest-section">
-        <div className="d-flex align-items-center justify-content-center nest-section-header">
-          <h3 className="oak-section__wrapper">
-            <span className="px-3">
-              <img src={s1} alt="icon" />
-            </span>
-            Browse our NFT collection
-            <span className="px-3">
-              <img src={s2} alt="icon" />
-            </span>
-          </h3>
-        </div>
-
-        <div className="oak-nest__container ">
-          <div className="oak-nest__text">
-            <h1 className="nest-text">
-              Keep tabs on your Oaks
-              <br /> Nest NFT
-            </h1>
-            <p>
-              Ready to dive into the world of NFTs and explore the endless
-              possibilities of buying and selling unique digital assets? Join us
-              on this thrilling journey as we discover the vibrant world of
-              non-fungible tokens and unlock the potential of blockchain
-              technology. Don't miss out on this exciting opportunity to own a
-              piece of digital history!
-            </p>
-
-            <button className="btn oak-btn">Buy now</button>
+        <section className="nest-section">
+          <div className="d-flex align-items-center justify-content-center nest-section-header">
+            <h3 className="oak-section__wrapper">
+              <span className="px-3">
+                <img src={s1} alt="icon" />
+              </span>
+              Browse our NFT collection
+              <span className="px-3">
+                <img src={s2} alt="icon" />
+              </span>
+            </h3>
           </div>
-          <div className="oak-nest__img overflow-hidden">
-            <div className="d-flex align-items-center justify-content-betwee nft-animation-wrapper " style={{
-              gap: '1em'
-            }}>
-              <div className="">
-                {arrayGenerator(5).map(() => (
-                  <div className="nft-collections_wrapper">
-                    <div className="nft-img__container bg-danger mb-3">
-                      <img src={n1} alt='nft' />
-                    </div>
-                    <div className="nft-img__container bg-info mb-3">
-                      <img src={n2} alt='nft' />
+
+          <div className="oak-nest__container ">
+            <div className="oak-nest__text">
+              <h1 className="nest-text">
+                Keep tabs on your Oaks
+                <br /> Nest NFT
+              </h1>
+              <p>
+                Ready to dive into the world of NFTs and explore the endless
+                possibilities of buying and selling unique digital assets? Join us
+                on this thrilling journey as we discover the vibrant world of
+                non-fungible tokens and unlock the potential of blockchain
+                technology. Don't miss out on this exciting opportunity to own a
+                piece of digital history!
+              </p>
+
+              <button className="nestBtn btn oak-btn">Buy now</button>
+            </div>
+            <div className="oak-nest__img overflow-hidden">
+              <div className="d-flex align-items-center justify-content-betwee nft-animation-wrapper " style={{
+                gap:'1em'
+              }}>
+                <div className="">
+                  {arrayGenerator(5).map(() => (
+                    <div className="nft-collections_wrapper">
+                      <div className="nft-img__container bg-danger mb-3">
+                        <img src={n1} alt='nft' />
+                      </div>
+                      <div className="nft-img__container bg-info mb-3">
+                        <img src={n2} alt='nft' />
+
+                      </div>
+                      <div className="nft-img__container bg-success mb-3">
+                        <img src={n3} alt='nft' />
+
+                      </div>
+                      <div className="nft-img__container bg-danger mb-3">
+                        <img src={n4} alt='nft' />
+
+                      </div>
+                      <div className="nft-img__container bg-info mb-3">
+                        <img src={n5} alt='nft' />
+                      </div>
 
                     </div>
-                    <div className="nft-img__container bg-success mb-3">
-                      <img src={n3} alt='nft' />
+                  ))}
+                </div>
+                <div>
+                  {arrayGenerator(5).map(() => (
+                    <div className=" direction-up">
+                      <div className="nft-img__container bg-danger mb-3">
+                        <img src={n5} alt='nft' />
+                      </div>
+                      <div className="nft-img__container bg-info mb-3">
+                        <img src={n4} alt='nft' />
+
+                      </div>
+                      <div className="nft-img__container bg-success mb-3">
+                        <img src={n3} alt='nft' />
+
+                      </div>
+                      <div className="nft-img__container bg-danger mb-3">
+                        <img src={n2} alt='nft' />
+
+                      </div>
+                      <div className="nft-img__container bg-info mb-3">
+                        <img src={n1} alt='nft' />
+                      </div>
 
                     </div>
-                    <div className="nft-img__container bg-danger mb-3">
-                      <img src={n4} alt='nft' />
+                  ))}
+                </div>
+                <div>
+
+                  {arrayGenerator(5).map(() => (
+                    <div className="nft-collections_wrapper">
+                      <div className="nft-img__container bg-danger mb-3">
+                        <img src={n1} alt='nft' />
+                      </div>
+                      <div className="nft-img__container bg-info mb-3">
+                        <img src={n2} alt='nft' />
+
+                      </div>
+                      <div className="nft-img__container bg-success mb-3">
+                        <img src={n3} alt='nft' />
+
+                      </div>
+                      <div className="nft-img__container bg-danger mb-3">
+                        <img src={n4} alt='nft' />
+
+                      </div>
+                      <div className="nft-img__container bg-info mb-3">
+                        <img src={n5} alt='nft' />
+                      </div>
 
                     </div>
-                    <div className="nft-img__container bg-info mb-3">
-                      <img src={n5} alt='nft' />
-                    </div>
+                  ))}
+                </div>
 
-                  </div>
-                ))}
               </div>
-              <div>
-                {arrayGenerator(5).map(() => (
-                  <div className=" direction-up">
-                    <div className="nft-img__container bg-danger mb-3">
-                      <img src={n5} alt='nft' />
-                    </div>
-                    <div className="nft-img__container bg-info mb-3">
-                      <img src={n4} alt='nft' />
-
-                    </div>
-                    <div className="nft-img__container bg-success mb-3">
-                      <img src={n3} alt='nft' />
-
-                    </div>
-                    <div className="nft-img__container bg-danger mb-3">
-                      <img src={n2} alt='nft' />
-
-                    </div>
-                    <div className="nft-img__container bg-info mb-3">
-                      <img src={n1} alt='nft' />
-                    </div>
-
-                  </div>
-                ))}
-              </div>
-              <div>
-
-                {arrayGenerator(5).map(() => (
-                  <div className="nft-collections_wrapper">
-                    <div className="nft-img__container bg-danger mb-3">
-                      <img src={n1} alt='nft' />
-                    </div>
-                    <div className="nft-img__container bg-info mb-3">
-                      <img src={n2} alt='nft' />
-
-                    </div>
-                    <div className="nft-img__container bg-success mb-3">
-                      <img src={n3} alt='nft' />
-
-                    </div>
-                    <div className="nft-img__container bg-danger mb-3">
-                      <img src={n4} alt='nft' />
-
-                    </div>
-                    <div className="nft-img__container bg-info mb-3">
-                      <img src={n5} alt='nft' />
-                    </div>
-
-                  </div>
-                ))}
-              </div>
-
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* OAK WRITER SECTION */}
-
       <section className="writer-section__header">
         <div className="d-flex align-items-center justify-content-center writer-section-header">
-          <h3 className="oak-section__wrapper">
+          <h3 className="oak-section__wrapper pullUp">
             <span className="px-3">
               <img src={s1} alt="icon" />
             </span>
@@ -445,13 +449,14 @@ const LandingPage = () => {
               euismod viverra. Risus molestie a tincidunt sed. At id consectetur
               sit a metus urna mattis. Eu nibh.
             </p>
-            <button className="btn oak-btn">Learn more</button>
+            <button className="btn oak-btn writeBTN">Learn more</button>
           </div>
         </div>
       </section>
 
-      {/* BEST-SELLING COURSE SECTION */}
 
+
+      {/* BEST-SELLING COURSE SECTION */}
       <section className="courses-section__header">
         <div className="courses-section">
           <p>Our bestselling course</p>
@@ -465,10 +470,11 @@ const LandingPage = () => {
         </div>
       </section>
 
+
       {/* OAK VICE SECTION */}
       <section className="oakvice-section">
         <div className=" align-items-center oakvice-section__header">
-          <h3 className="oak-section__wrapper">
+          <h3 className="oak-section__wrapper viceUp">
             <span className="px-3">
               <img src={s1} alt="icon" />
             </span>
@@ -489,19 +495,17 @@ const LandingPage = () => {
               tempor non nec pharetra. Viverra amet vel a eu maecenas. Ac
               viverra pellentesque suspendisse sed ut aliquam.
             </p>
-            <button className="btn oak-btn">Learn more</button>
+            <button className="btn oak-btn viceBTN">Learn more</button>
           </div>
 
           <img src={oakvice} alt="oakvice" className="oakvice-img" />
         </div>
       </section>
-
-
       {/* USERS REVIEW SECTION */}
 
       <section className="review-section__header">
         <div className="d-flex align-items-center justify-content-center review-section-header">
-          <h3 className="review-section__wrapper">
+          <h3 className="oak-section__wrapper shift">
             <span className="px-3">
               <img src={s1} alt="icon" />
             </span>
@@ -528,6 +532,7 @@ const LandingPage = () => {
           </div>
         </div>
 
+
         {/* --------------------------right */}
 
         <div className="review-section">
@@ -536,8 +541,8 @@ const LandingPage = () => {
               <img className="review-quote" alt="quote" src={quote} />
               <p>
                 Working with Oakchain has been a fantastic experience. Their
-                technology-driven <br /> approach to digital experience is
-                unmatched, and the results have been <br /> phenomenal.
+                technology-driven approach to digital experience is
+                unmatched, and the results have been phenomenal.
               </p>
             </div>
             <img className="review-img" alt="user-img" src={userTwo} />
