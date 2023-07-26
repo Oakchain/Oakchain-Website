@@ -6,6 +6,8 @@ import News from './pages/News'
 import NewsDetails from './pages/News/[id]'
 import Academy from './pages/Academy'
 import ArticleDetails from './pages/Academy/Article/[id]'
+import VideoDetails from './pages/Academy/Video/[id]'
+
 
 
 const RouterConfig = () => {
@@ -18,6 +20,8 @@ const RouterConfig = () => {
                 <Route exact path='/news/:id' element={<NewsDetails />} />
                 <Route exact path='/academy' element={<Academy />} />
                 <Route exact path='/academy/article/:id' element={<ArticleDetails />} />
+                <Route exact path='/academy/video/:id' element={<VideoDetails />} />
+
 
 
             </Routes>

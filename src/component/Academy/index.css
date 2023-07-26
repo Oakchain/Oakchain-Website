@@ -146,3 +146,16 @@
     margin-right: 50px;
     width: 100%;
 }
+
+.episode-time__count {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--cd500);
+    font-size: 12px;
+    right: 24px;
+    bottom: 10px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(5px);
+
+}

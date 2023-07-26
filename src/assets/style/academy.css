@@ -146,3 +146,28 @@
     font-family: var(--cd500);
     font-size: 25px;
 }
+
+.video-course__img_container {
+    height: 472px;
+    border-radius: 10px;
+}
+
+.oak-video_description {
+    color: #000;
+    font-family: var(--cd500);
+    font-size: 15px;
+}
+
+.oak-video_episode__title {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 15px;
+
+}
+
+.video-episode__img_wrapper {
+    height: 177.9px;
+    flex-shrink: 0;
+    border-radius: 8.807px;
+    overflow: hidden;
+}

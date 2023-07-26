@@ -110,3 +110,15 @@ input:focus {
     font-family: var(--cd500);
     font-size: 15px;
 }
+
+.oak-cstm__row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* Create five equal-width columns */
+    grid-gap: 17px;
+}
+
+.oak-cstm__col {
+    /* padding: 10px; */
+    box-sizing: border-box;
+}
