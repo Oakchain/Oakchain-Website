@@ -188,7 +188,7 @@
     background-image: url('../../assets/images/rewardbg.svg'), linear-gradient(to right, rgba(0, 0, 47, 0.00) 0%, #00002F 0.99%);
     background-repeat: no-repeat;
     background-position: 0 -100px, center, bottom;
-    background-size:cover;
+    background-size: cover;
     border-radius: 20px;
 
 }
@@ -223,4 +223,64 @@
     flex-shrink: 0;
     border-radius: 8.807px;
     overflow: hidden;
+}
+
+.episode-title {
+    color: var(--primary-color);
+    font-family: var(--cd600);
+    font-size: 20px;
+    font-style: normal;
+}
+
+.episode-description {
+    color: #000;
+    font-family: var(--cd500);
+    font-size: 15px;
+}
+
+.main-episode__img_container {
+    height: 472px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.episode-transcript__wrapper {
+    border-radius: 10px;
+    background: #F4F4F4;
+    height: 472px;
+    overflow: auto;
+}
+
+.episode-transcript__wrapper {
+    padding: 24px 24px  10px 24px;
+}
+
+.episode-transcript_text {
+    color: var(--primary-color);
+    font-family: var(--cd500);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.transcript-download__wrapper {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: var(--primary-color);
+}
+
+.transcript-download__header {
+    border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 10px;
+}
+
+.transcript-text {
+    color: #000;
+    font-family: var(--cd600);
+    font-size: 15px;
+    padding-top: 10px;
+    height: calc(100% - 50px);
+    overflow: auto;
+
 }
