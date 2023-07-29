@@ -5,7 +5,8 @@ import Article from '../../../component/Academy/Article';
 import art1 from '../../../assets/images/art1.svg'
 import art2 from '../../../assets/images/art2.svg'
 import art3 from '../../../assets/images/art3.svg'
-import { Row, Col } from 'reactstrap'
+import { Row, Col } from 'reactstrap';
+import './index.css'
 
 
 const ArticleCourses = () => {
@@ -15,12 +16,12 @@ const ArticleCourses = () => {
 
     return (
         <div>
-            <div className='d-flex align-items-center justify-content-between oak-container-fluid oak-mb'>
+            <div className='d-flex align-items-center justify-content-between oak-container-fluid oak-mb' id='readTabbedComp'>
                 <div>
                     <h5 className="oak-section__title w-100">Read and Learn about Blockchain and Crypto</h5>
                 </div>
-                <div>
-                    <div className="d-flex align-items-center" >
+                
+                    <div className="d-flex align-items-center" id='mappedTabbedComp' >
                         {
                             academyTag.map(el => <p
                                 role='button'
@@ -33,9 +34,9 @@ const ArticleCourses = () => {
                             )
                         }
                     </div>
-                </div>
+                
             </div>
-            <div className='oak-container-fluid'>
+            <div className='oak-container-fluid' id='coursesComp'>
                 <Row className='g-3 mb-3'>
                     {arrayGenerator(3).map((el, i) =>
                         <Col sm='12' md='4'>

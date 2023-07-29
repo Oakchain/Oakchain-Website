@@ -1,0 +1,33 @@
+@media screen and  (max-width: 767px){
+    #readTabbedComp{
+        display: flex;
+        flex-direction: column;
+        /* border: 5px solid green; */
+        padding: .7rem !important;
+        justify-content:unset !important; ; 
+        
+    }
+
+    .oak-section__title{
+        font-size: 18px ;
+        margin-bottom: 0rem !important;
+        
+     
+    }
+
+    .oak-section__title::after {
+        width: 16%;
+        bottom: -5px;
+    }
+
+    #mappedTabbedComp{
+        margin-bottom: 10rem !important;
+        
+    }
+
+    #coursesComp{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

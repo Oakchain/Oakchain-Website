@@ -17,6 +17,12 @@
         justify-content: center;
     }
 
+    .needText{
+        display: block !important; 
+        width: 100% !important;
+        text-align: center !important;
+    }
+
    .academy-banner__text::after{
     content: "";
     width: 100%;
@@ -36,18 +42,16 @@
     position: relative;
     margin-top: 4px !important;
     padding: .5rem !important;
-    font-weight: 600 !important;
+    font-weight: 800 !important;
 }
 
 .academy-tab__item_wrapper {
     border-bottom: 1px solid #D4D4D4;
     width: 100% !important;
+    margin-bottom: 1rem !important;
 }
 
-
-
-
-  }
+}
   
 
 .academy-banner {
