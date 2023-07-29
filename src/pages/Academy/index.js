@@ -11,7 +11,7 @@ const Academy = () => {
         <AuthGuard>
             <div className='d-flex align-items-center bg-white academy-banner oak-container-fluid position-relat oak-mb'>
                 <div className='academy-left__side w-100 d-flex align-items-center '>
-                    <h3 className='academy-banner__text'>All the knowledge you need on Bitcoin and Crypto</h3>
+                    <h3 className='academy-banner__text'>All the knowledge you <span className='needText'> need</span> on Bitcoin and Crypto</h3>
                 </div>
                 {/* <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="297" height="436" viewBox="0 0 297 436" fill="none">
@@ -22,7 +22,7 @@ const Academy = () => {
                     <img src={academyBg} alt='academy' />
                 </div> */}
             </div>
-            <div className='academy-tab__item_wrapper d-flex align-items-center oak-container-fluid justify-content-between pb-2 oak-mb'>
+            <div className='academy-tab__item_wrapper d-flex align-items-center oak-container-fluid justify-content-between pb-2 oak-mb' id='tabbedComp'>
                 <p className={`academy-tab__item mb-0 text-center w-100 ${activeTab === 'article' ? 'active' : ""}`} role='button'
                     onClick={() => {
                         setActiveTab('article')

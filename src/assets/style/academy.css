@@ -1,3 +1,55 @@
+/* media query for academy */
+@media screen and  (max-width: 767px) {
+    .academy-banner {
+      width: 95% !important;
+      margin-top: 1rem !important;
+      height: 45vh !important;
+    }
+
+    .academy-banner__text {
+        color: #FFF;
+        font-family: var(--cd600);
+        font-size: 30px !important;
+        width: 100% !important;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+   .academy-banner__text::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #FFF;
+    margin-top: 2rem;
+   }
+
+   #tabbedComp{
+    height: 7vh !important;
+   }
+
+   .academy-tab__item {
+    color: var(--primary-color);
+    font-family: var(--cd300) !important;
+    font-size: 20px !important ;
+    position: relative;
+    margin-top: 4px !important;
+    padding: .5rem !important;
+    font-weight: 600 !important;
+}
+
+.academy-tab__item_wrapper {
+    border-bottom: 1px solid #D4D4D4;
+    width: 100% !important;
+}
+
+
+
+
+  }
+  
+
 .academy-banner {
     height: 434px;
     border-radius: 20px;
@@ -10,7 +62,6 @@
 }
 
 .academy-left__side {
-
     /* width: 100%; */
     padding: 0 30px;
 }
@@ -51,6 +102,8 @@
 .academy-tab__item_wrapper {
     border-bottom: 1px solid #D4D4D4;
 }
+
+
 
 .oak-article-title {
     color: var(--primary-color);
