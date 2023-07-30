@@ -7,7 +7,7 @@ import ac4 from '../../../assets/images/ac4.svg'
 
 const Banner = () => {
     return (
-        <div className='d-flex align-items-center'>
+        <div className='d-flex align-items-center' id='bannerCard'>
             <div className='oak-academy-banner__card me-5'>
                 <div>
                     <img src={lightLogo} alt='logo' />
@@ -27,29 +27,29 @@ const Banner = () => {
                 <div>
                     <div className='d-flex align-items-center  py-2'>
                         <div className='pe-3 oak-news_logo__wrapper'>
-                            <img src={ac1} alt='icon' />
+                            <img src={ac1} alt='icon'  id='academyLogo'/>
                         </div>
                         <p className='mb-0 oak-academy__features pt-1'>Learn the basics of blockchain & crypto</p>
                     </div>
                     <div className='d-flex align-items-center  py-2'>
                         <div className='pe-3 oak-news_logo__wrapper'>
-                            <img src={ac2} alt='icon' />
+                            <img src={ac2} alt='icon' id='academyLogo'/>
                         </div>
                         <p className='mb-0 oak-academy__features pt-1'>Read Articles, Watch videos & answer quiz questions</p>
                     </div>
                     <div className='d-flex align-items-center  py-2'>
                         <div className='pe-3 oak-news_logo__wrapper'>
-                            <img src={ac3} alt='icon' />
+                            <img src={ac3} alt='icon' id='academyLogo'/>
                         </div>
                         <p className='mb-0 oak-academy__features pt-1'>3hr 45m</p>
                     </div>
                     <div className='d-flex align-items-center  py-2'>
                         <div className='pe-3 oak-news_logo__wrapper'>
-                            <img src={ac4} alt='icon' />
+                            <img src={ac4} alt='icon' id='academyLogo'/>
                         </div>
                         <p className='mb-0 oak-academy__features secondary pt-1'>Receive NFT certificate upon completing all 6 courses</p>
                     </div>
-                    <button className='oak-btn btn mt-3'>
+                    <button className='oak-btn btn mt-3'id='academyBtn'>
                         Start Course
                     </button>
                 </div>

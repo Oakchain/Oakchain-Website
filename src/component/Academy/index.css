@@ -1,15 +1,74 @@
+@media screen and  (max-width: 767px) {
+   .oak-academy-banner__card{
+    height: 496px;
+    flex-shrink: 0;
+    padding: 40px 0 0 40px;
+    background: url('../../assets/images/academyBg1.svg') right bottom no-repeat, url('../../assets/images/academyBg2.svg') right no-repeat, var(--secondary-color) !important;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background-size: 50% !important; */
+    border-radius: 10px;
+    width: 55%;
+   }
+
+   .oak-academy__banner-text {
+    color: #FFF;
+    font-family: var(--cd600) ;
+    /* font-size: 18px !important; */
+}
+   
+   
+    #bannerCard{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .oak-academy__banner_title{
+    font-size: 25px !important;
+    padding-left: 4px !important;
+    margin-top: 1.5rem;
+   }
+
+    .oak-academy__features{
+     font-size: 15px !important;
+    }
+
+    #academyBtn{
+      margin-left: 5px !important;
+      margin-top: 2rem !important;
+      height: 6.5vh !important;
+    }
+
+    #videoImg{
+    width:195px;
+    height:119px;  
+    }
+
+    .video-course__title{
+        font-size: 15px !important;
+        
+    }
+
+   .video-content__wrapper{
+    display: flex;
+    flex-direction: column;
+   }
+
+   
+
+}
+
 .oak-academy-banner__card {
     /* background: ; */
     height: 496px;
     flex-shrink: 0;
     padding: 40px 0 0 40px;
     background: url('../../assets/images/academyBg1.svg') right bottom no-repeat, url('../../assets/images/academyBg2.svg') right no-repeat, var(--secondary-color) !important;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
     border-radius: 10px;
     width: 55%;
-
 }
 
 .oak-academy__banner-text {

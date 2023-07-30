@@ -17,7 +17,7 @@ const VideoCard = ({ type }) => {
             }}
             role='button'>
             <div className=''>
-                <img src={type === 'even' ? images[0] : images[1]} alt='icon' />
+                <img id='videoImg' src={type === 'even' ? images[0] : images[1]} alt='icon' />
             </div>
             <div className='oak-video__course_details__wrapper w-100'>
 
@@ -26,7 +26,7 @@ const VideoCard = ({ type }) => {
                 <div className='d-flex align-items-center video-content__wrapper w-100'>
                     <div className='d-flex align-items-center  py-2 video-content_feature'>
                         <div className='pe-3 oak-news_logo__wrapper'>
-                            <img src={ac1} alt='icon' />
+                            <img src={ac1} alt='icon' className='oak-video__image'/>
                         </div>
                         <p className='mb-0 oak-academy__features pt-1'>5 Assignments and 7 Lessons</p>
                     </div>

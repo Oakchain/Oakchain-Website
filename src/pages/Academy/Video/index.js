@@ -5,6 +5,7 @@ import { arrayGenerator } from '../../../utils';
 
 
 
+
 const VideoCourses = () => {
     const [activeTag, setActiveTag] = useState('All');
     const academyTag = ['All', 'In progress', 'Completed']
@@ -15,12 +16,12 @@ const VideoCourses = () => {
                 <AcademyBanner />
             </div>
             <div>
-                <div className='d-flex align-items-center justify-content-between  oak-mb'>
+                <div className='d-flex align-items-center justify-content-between  oak-mb' id='videoTabbedContainer'>
                     <div>
                         <h5 className="oak-section__title w-100">Welcome to the Academy</h5>
                     </div>
                     <div>
-                        <div className="d-flex align-items-center" >
+                        <div className="d-flex align-items-center" id='tabbedComp'>
                             {
                                 academyTag.map(el => <p
                                     role='button'
@@ -36,7 +37,7 @@ const VideoCourses = () => {
                     </div>
                 </div>
 
-                {arrayGenerator(4).map((el, i) => <VideoCard type={i % 2 === 0 ? 'even' : 'odd'} />)}
+                {arrayGenerator(4).map((el, i) => <VideoCard type={i % 2 === 0 ? 'even' : 'odd'}/>)}
             </div>
         </div>
     )
