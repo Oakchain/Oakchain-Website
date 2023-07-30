@@ -256,84 +256,6 @@
     margin-left: .6rem; 
 }
 
-/* media query for footer */
-@media only screen and (max-width: 900px) {
-    .footer-text{
-        width: 100%;
-        display: block;
-    }
-
-    .footer-social{
-        margin-top: 3rem;
-    }
-
-    .logo{
-        display: block;
-        padding: 0 !important;
-        padding-right: -2rem !important;
-    }
-
-    .logo-text{
-        font-size: 12px !important;
-        margin-bottom: -1.2rem;
-    }
-
-    .footerLogo{
-        width: 20% !important;
-    }
-
-    .user-links{
-        padding: 0 !important;
-    }
-
-    .join-us{
-        padding: 0 !important;
-    }
-
-    #support__email{
-        margin-top: 0.5rem;
-    }
-
-    .links-title{
-        font-size: 23px !important;
-        margin-top: 3rem !important;
-    }
-
-    .links-title::after{
-        width: 17% !important;
-        margin-bottom: -2rem !important;
-    }
-
-    .join-title::after{
-        width: 17% !important;
-        margin-bottom: -0.5rem !important;
-    }
-
-    .join-title{
-        margin-top: 3rem !important;
-    }
-
-    .join-text{
-        font-size: 12px !important;
-    }
-
-    .reddit{
-        margin-right: 0 !important;
-        width: 10% !important;
-    }
-
-    .footer__social__media__icons{
-        width: 10% !important;
-    }
-
-    .discordIcon,
-    .twitterIcon,
-    .redditIcon,
-    .telegramIcon{
-        margin-top: 0.5rem !important;
-        margin-left: 0.4rem !important;
-    }
-}
 
 .logo{
     padding: 5rem;
@@ -579,6 +501,85 @@
 .upIcon{
     margin-top: .6rem;
     margin-left: .6rem; 
+}
+
+
+@media only screen and (max-width: 900px) {
+    .footer-text{
+        width: 100%;
+        display: block;
+    }
+
+    .footer-social{
+        margin-top: 3rem;
+    }
+
+    .logo{
+        display: block;
+        padding: 0 !important;
+        padding-right: -2rem !important;
+    }
+
+    .logo-text{
+        font-size: 12px !important;
+        margin-bottom: -1.2rem;
+    }
+
+    .footerLogo{
+        width: 20% !important;
+    }
+
+    .user-links{
+        padding: 0 !important;
+    }
+
+    .join-us{
+        padding: 0 !important;
+    }
+
+    #support__email{
+        margin-top: 0.5rem;
+    }
+
+    .links-title{
+        font-size: 23px !important;
+        margin-top: 3rem !important;
+    }
+
+    .links-title::after{
+        width: 17% !important;
+        margin-bottom: -2rem !important;
+    }
+
+    .join-title::after{
+        width: 17% !important;
+        margin-bottom: -0.5rem !important;
+    }
+
+    .join-title{
+        margin-top: 3rem !important;
+    }
+
+    .join-text{
+        font-size: 12px !important;
+    }
+
+    .reddit{
+        margin-right: 0 !important;
+        width: 10% !important;
+    }
+
+    .footer__social__media__icons{
+        width: 10% !important;
+    }
+
+    .discordIcon,
+    .twitterIcon,
+    .redditIcon,
+    .telegramIcon{
+        margin-top: 0.5rem !important;
+        margin-left: 0.4rem !important;
+    }
 }
 
 

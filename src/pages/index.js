@@ -90,12 +90,12 @@ const LandingPage = () => {
                 <h3 className="oak-hero-header">
                   Unlocking a new world <br/> of learning and possibilities!
                 </h3>
-                <p className="oak-hero-sub-text">
+                <p id="hero__text" className="oak-hero-sub-text">
                   Learning about Web3 is not only important for staying current
                   with technological advancements, but it also offers exciting
                   opportunities for innovation and growth in various industries.
                 </p>
-                <button className="btn oak-btn mb-5"
+                <button id="get__started__btn" className="btn oak-btn mb-5"
                   onClick={() => {
                     navigate('/home')
                   }}
@@ -106,7 +106,7 @@ const LandingPage = () => {
                     className="oak-newsletter-input "
                     placeholder="Enter your email"
                   />
-                  <button className="oak-btn-secondary btn">Subscribe</button>
+                  <button id="subscribe__btn" className="oak-btn-secondary btn">Subscribe</button>
                 </div>
 
                 <p className="oak-hero-subscribe-text">
@@ -124,8 +124,8 @@ const LandingPage = () => {
         </div>
       </div>
       <section id="partners__overflow" className="oak-container-fluid py-3">
-        <div className="d-flex align-items-center justify-content-center">
-          <h3 className="oak-section__wrapper">
+        <div id="partners__container" className="d-flex align-items-center justify-content-center">
+          <h3 id="partners__header__text" className="oak-section__wrapper">
             <span className="px-3">
               <img src={s1} alt="icon" />
             </span>
@@ -152,29 +152,30 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="oak-container-fluid mb-4">
+      <section id="operation__section" className="oak-container-fluid mb-4">
         <p className="oak-section__subheading mb-0">
-          Our operation across the platform
+          <h1 id="platform-header">Our operation across the platform</h1>
+          
           <span className="px-3">
-            <img src={s2} alt="icon" />
+            <img id="operation__under-line" src={s2} alt="icon" />
           </span>
         </p>
-        <h3 className="oak-section__head mb-4">
+        <h3 id="process__text" className="oak-section__head mb-4">
           We have the best strategy and the best process
         </h3>
-        <button className="btn oak-btn ">Get Started</button>
+        <button id="strategy__section-btn" className="btn oak-btn ">Get Started</button>
       </section>
 
-      <section className="oak-container-fluid ">
-        <div className="d-flex align-items-center justify-content-center oak-features__container">
-          <div className="oak-feature__wrapper d-flex justify-content-center">
-            <img src={feat1} alt="icon" />
+      <section id="frame__animation__container__main" className="oak-container-fluid ">
+        <div id="frame__animation__container" className="d-flex align-items-center justify-content-center oak-features__container">
+          <div className="oak-feature__wrapper d-flex justify-content-center frame__container">
+            <img id="frame" src={feat1} alt="icon" />
           </div>
-          <div className="oak-feature__wrapper even-child d-flex justify-content-center">
-            <img src={feat2} alt="icon" />
+          <div className="oak-feature__wrapper even-child d-flex justify-content-center frame__container">
+            <img id="frame" src={feat2} alt="icon" />
           </div>
-          <div className="oak-feature__wrapper d-flex justify-content-center">
-            <img src={feat3} alt="icon" />
+          <div className="oak-feature__wrapper d-flex justify-content-center frame__container">
+            <img id="frame" src={feat3} alt="icon" />
           </div>
         </div>
       </section>
@@ -423,7 +424,7 @@ const LandingPage = () => {
 
       {/* OAK WRITER SECTION */}
       <section className="writer-section__header">
-        <div className="d-flex align-items-center justify-content-center writer-section-header">
+        <div id="oak__header__text__container" className="d-flex align-items-center justify-content-center writer-section-header">
           <h3 className="oak-section__wrapper pullUp">
             <span className="px-3">
               <img src={s1} alt="icon" />
@@ -457,7 +458,7 @@ const LandingPage = () => {
 
 
       {/* BEST-SELLING COURSE SECTION */}
-      <section className="courses-section__header">
+      <section id="courses-section__header" className="courses-section__header">
         <div className="courses-section">
           <p>Our bestselling course</p>
           <p>
@@ -564,6 +565,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+
 
         {/* --------------------------right */}
 
