@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import './index.css'
 import logo from '../../assets/images/logo.svg'
+import oakMenu from '../../assets/images/oak_menu.svg'
 import dropdown from '../../assets/images/dropdown.svg'
 import arrow from '../../assets/images/arrow.svg'
 // import { connectWallet } from '../../utils/walletConnect'
 import WalletModal from '../../component/WalletModal'
+
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -21,7 +23,7 @@ const Header = () => {
                     <img src={logo} alt='logo' />
                 </div>
 
-                <ul className='d-flex align-items-center justify-content-between nav-items__wrapper'>
+                <ul className='d-md-flex d-none align-items-center justify-content-between nav-items__wrapper'>
                     <li className='nav-item'>How it Works</li>
                     <li className='nav-item d-flex align-items-center'>
                         Resources
@@ -40,16 +42,21 @@ const Header = () => {
 
                 </ul>
 
-                <div>
+                <div className='d-md-block d-none'>
                     <button className='oak-btn btn' onClick={toggleModal}>
                         Connect to Web3 <span>
                             <img src={arrow} alt='icon' />
                         </span>
                     </button>
                 </div>
+
+                <div className='d-block d-md-none'>
+                    <img src={oakMenu} alt='icon' />
+
+                </div>
             </div>
 
-            <WalletModal toggle={toggleModal} isOpen={isOpen}/>
+            <WalletModal toggle={toggleModal} isOpen={isOpen} />
         </div>
 
     )
