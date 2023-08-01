@@ -92,8 +92,8 @@ const LandingPage = () => {
                 </h3>
                 <p id="hero__text" className="oak-hero-sub-text">
                   Learning about Web3 is not only important for staying current
-                  with technological advancements, but it also offers exciting
-                  opportunities for innovation and growth in various industries.
+                  with <br/>technological advancements, but it also offers exciting
+                  opportunities <br/> for innovation and growth in various industries.
                 </p>
                 <button id="get__started__btn" className="btn oak-btn mb-5"
                   onClick={() => {
@@ -542,8 +542,8 @@ const LandingPage = () => {
               <img className="review-quote" alt="quote" src={quote} />
               <p>
                 Working with Oakchain has been a fantastic experience. Their
-                technology-driven approach to digital experience is
-                unmatched, and the results have been phenomenal.
+                technology-driven <br/> approach to digital experience is
+                unmatched, and the results have been <br/> phenomenal.
               </p>
             </div>
             <img className="review-img" alt="user-img" src={userTwo} />

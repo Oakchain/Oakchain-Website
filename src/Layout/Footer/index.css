@@ -505,6 +505,9 @@
 
 
 @media only screen and (max-width: 900px) {
+    .footer{
+        margin-top: 3rem;
+    }
     .footer-text{
         width: 100%;
         display: block;
@@ -564,21 +567,31 @@
         font-size: 12px !important;
     }
 
-    .reddit{
-        margin-right: 0 !important;
-        width: 10% !important;
+    .reddit, .telegram, .twitter, .discord{
+        margin-right: .7rem !important;
+        width: 12% !important;
+        height:5vh;
     }
 
-    .footer__social__media__icons{
+    /* .footer__social__media__icons{
         width: 10% !important;
-    }
+    } */
 
-    .discordIcon,
-    .twitterIcon,
-    .redditIcon,
+    .discordIcon{
+        margin-top: 10px;
+    }
+    .twitterIcon{
+        margin-right: 3px;
+        margin-bottom: 2px;
+    }
+    .redditIcon{
+        margin-bottom:2px ;
+       
+    }
     .telegramIcon{
-        margin-top: 0.5rem !important;
-        margin-left: 0.4rem !important;
+        margin-bottom: 1px;
+        margin-right: 2px;
+      
     }
 }
 
