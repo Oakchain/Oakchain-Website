@@ -181,8 +181,8 @@
 /* GET LATEST WEB3 NEWS SECTION */
 
 
-.oak-getLatest__container {
-    min-height: 75vh;
+.home-news__card-wrapper {
+    /* min-height: 75vh; */
     background: url('../images/Rectangle.png');
     background-position: top center;
     background-size: contain;
@@ -190,60 +190,58 @@
     margin-top: 2rem;
 }
 
-.card-title {
-    padding-top: 1rem;
-    padding-left: .5rem;
-    color: white !important;
-    font-size: 15px;
-    font-family: var(--cd400);
-}
-
-.card-text {
-    color: white;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 30px;
-    font-family: var(--cd600);
-}
-
-.card-text__last-child {
-    color: white;
-    font-size: 6px;
-    margin-bottom: 1rem;
-    font-family: var(--cd300);
-}
-
-.card-body {
+.home-news__card {
     backdrop-filter: blur(50px) !important;
     background: rgba(0, 0, 0, 0.50);
-
+    border-radius: 10px;
+    /* height: 573px; */
 }
 
-.card-body__logo {
-    display: flex;
+.home-news__card-img {
+    height: 360px;
+    width: 100%;
+    border-radius: 10px;
 }
 
-.card-time {
-    color: white;
-    font-size: 8px;
-    text-align: right;
+.home-news__card-body {
+    padding: 15px;
+}
+
+
+.card-body__logo img {
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+}
+
+.card-body__logo .card-title {
+    color: #FFF;
     font-family: var(--cd500);
+    font-size: 15px;
+    margin-bottom: 0px;
 }
 
-.oak-getLatest__container {
-    display: flex;
-    justify-content: space-between;
-
+.home-news__card .card-text {
+    color: #FFF;
+    font-family: var(--cd600);
+    font-size: 30px;
+    margin-bottom: 0px;
+    width: 100%;
+    line-height: normal;
 }
 
-.card {
-    height: 18vh !important;
-    border-radius: 1rem !important;
-    width: 400px;
+.home-news__card .card-text__last-child {
+    color: #FFF;
+    font-family: var(--cd300);
+    font-size: 12px;
 }
 
-.card-img-top {
-    height: 33vh !important;
+.home-news__card .card-time {
+    color: #FFF;
+    font-family: var(--cd500);
+    font-size: 15px;
+    text-align: right;
+    margin-bottom: 0;
 }
 
 .oak-seeMore {
@@ -276,6 +274,8 @@
     margin-bottom: 30px;
 
 }
+
+
 
 /* MEDIA QUERRIES FOR GET LATEST WEB3 NEWS SECTION  */
 /*  */
@@ -442,7 +442,7 @@
     }
 
     .oak-feature__wrapper {
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
 
     .oak-feature__wrapper img {
@@ -486,461 +486,6 @@
 }
 
 
-
-
-/* * MEDIA QUERRIES FOR GET LATEST WEB3 NEWS SECTION  */
-@media screen and (max-width:528px) {
-
-
-
-    .web {
-        overflow-x: hidden !important;
-    }
-
-
-    .oak-getLatest__container {
-        min-height: 70vh;
-        width: 300vw;
-        background: url(http://localhost:3000/static/media/Rectangle.a383eda39b38cfe50c3f.png);
-        /* background-position-x: 0%;
-        background-position-y: 0%;
-        background-repeat: repeat;
-        background-size: cover; */
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: 2rem;
-        transform-box: border-box;
-        transform: translateX(-380px);
-        /* overflow-x: hidden !important; */
-        animation-name: carouselLikeShake;
-        animation-duration: 10s;
-        animation-fill-mode: both;
-        animation-iteration-count: infinite;
-        animation-play-state: running;
-        animation-delay: 2s;
-    }
-
-    .web {
-        overflow: hidden !important;
-        position: relative;
-    }
-
-    .card-body__logo {
-        display: flex;
-        width: 50%;
-    }
-
-    .card-img,
-    .card-img-bottom,
-    .card-img-top {
-        width: 80% !important;
-    }
-
-    .card {
-        width: 400px;
-        position: absolute;
-        margin-left: 20px;
-        border: none !important;
-        background-color: none !important;
-    }
-
-    .card-img-top {
-        height: 22vh !important;
-        width: 80%;
-    }
-
-    .card-body {
-        padding: 0;
-        width: 80%;
-        height: 30vh;
-    }
-
-    .card-text {
-        color: white;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 30px;
-        font-family: var(--cd600);
-    }
-
-    .card-text__last-child {
-        color: white;
-        font-size: 8px;
-        margin-bottom: 0rem;
-        font-family: var(--cd300);
-    }
-
-    .oak-seeMore {
-        transform: translate(-1145px, 400px);
-        padding-right: -200px !important;
-        flex-shrink: 0;
-    }
-
-
-
-    /* .newsLine {
-        transform: translate(15px, 1px) !important;
-        font-size: 18px;
-        width: 200%;
-        flex-direction: row;
-        margin-left: 25px;
-    } */
-
-    .podcast-img {
-        background-image: url(http://localhost:3000/static/media/Ellipse.ce9ce013d788b382b863.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        /* background-position: 70% 30%; */
-        width: 40%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        /* transform: translateX(1000px); */
-    }
-
-    .oak-seeMore::after {
-        content: "";
-        position: absolute;
-        left: 5px !important;
-        width: 63px;
-        height: 2.1px;
-        background-color: var(--secondary-color);
-        border-radius: 2px;
-        margin-top: 1.2rem;
-    }
-
-    @keyframes carouselLikeShake {
-        0% {
-            transform: translateX(-380px);
-        }
-
-        25% {
-            transform: translateX(20px);
-        }
-
-        50% {
-            transform: translateX(-380px);
-        }
-
-        75% {
-            transform: translateX(-800px);
-        }
-
-        100% {
-            transform: translateX(-380px);
-        }
-    }
-}
-
-@media screen and (max-width:480px) {
-
-
-    .web {
-        overflow-x: hidden !important;
-    }
-
-
-
-    .oak-getLatest__container {
-        min-height: 70vh;
-        width: 300vw;
-        background: url(http://localhost:3000/static/media/Rectangle.a383eda39b38cfe50c3f.png);
-        /* background-position-x: 0%;
-        background-position-y: 0%;
-        background-repeat: repeat;
-        background-size: cover; */
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: 2rem;
-        transform-box: border-box;
-        transform: translateX(-380px);
-        /* overflow-x: hidden !important; */
-        animation-name: carouselLikeShake;
-        animation-duration: 10s;
-        animation-fill-mode: both;
-        animation-iteration-count: infinite;
-        animation-play-state: running;
-        animation-delay: 2s;
-    }
-
-    .web {
-        overflow: hidden !important;
-        position: relative;
-    }
-
-    .card-body__logo {
-        display: flex;
-        width: 50%;
-    }
-
-    .card-img,
-    .card-img-bottom,
-    .card-img-top {
-        width: 80% !important;
-    }
-
-    .card {
-        width: 400px;
-        position: absolute;
-        margin-left: 20px;
-        border: none !important;
-        background-color: none !important;
-    }
-
-    .card-img-top {
-        height: 22vh !important;
-        width: 80%;
-    }
-
-    .card-body {
-        padding: 0;
-        width: 80%;
-        height: 30vh;
-    }
-
-    .card-text {
-        color: white;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 30px;
-        font-family: var(--cd600);
-    }
-
-    .card-text__last-child {
-        color: white;
-        font-size: 8px;
-        margin-bottom: 0rem;
-        font-family: var(--cd300);
-    }
-
-    .oak-seeMore {
-        transform: translate(-1150px, 400px);
-        padding-right: -200px !important;
-    }
-
-    /* .oak-section__wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 130%;
-        margin-left: -40px;
-        margin-top: -90px;
-    } */
-
-    /* .newsLine {
-        transform: translate(15px, 1px) !important;
-        font-size: 18px;
-        width: 200%;
-        flex-direction: row;
-        margin-left: 25px;
-    } */
-
-    .podcast-img {
-        background-image: url(http://localhost:3000/static/media/Ellipse.ce9ce013d788b382b863.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        /* background-position: 70% 30%; */
-        width: 40%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        /* transform: translateX(1000px); */
-    }
-
-    .oak-seeMore::after {
-        content: "";
-        position: absolute;
-        left: 5px !important;
-        width: 63px;
-        height: 2.1px;
-        background-color: var(--secondary-color);
-        border-radius: 2px;
-        margin-top: 1.2rem;
-    }
-
-    @keyframes carouselLikeShake {
-        0% {
-            transform: translateX(-380px);
-        }
-
-        25% {
-            transform: translateX(20px);
-        }
-
-        50% {
-            transform: translateX(-380px);
-        }
-
-        75% {
-            transform: translateX(-800px);
-        }
-
-        100% {
-            transform: translateX(-380px);
-        }
-    }
-}
-
-@media screen and (max-width:428px) {
-
-
-
-    section {
-        width: 100%;
-    }
-
-    .web {
-        overflow: hidden !important;
-        position: relative;
-    }
-
-    .oak-getLatest__container {
-        min-height: 70vh;
-        width: 300vw;
-        background: url(http://localhost:3000/static/media/Rectangle.a383eda39b38cfe50c3f.png);
-        /* background-position-x: 0%;
-        background-position-y: 0%;
-        background-repeat: repeat;
-        background-size: cover; */
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: 2rem;
-        transform-box: border-box;
-        transform: translateX(-380px);
-        /* overflow-x: hidden !important; */
-        animation-name: carouselLikeShake;
-        animation-duration: 10s;
-        animation-fill-mode: both;
-        animation-iteration-count: infinite;
-        animation-play-state: running;
-        animation-delay: 2s;
-    }
-
-    .card-body__logo {
-        display: flex;
-        width: 50%;
-    }
-
-    .card-img,
-    .card-img-bottom,
-    .card-img-top {
-        width: 80% !important;
-    }
-
-    .card {
-        width: 400px;
-        position: absolute;
-        margin-left: 2v0px;
-        border: none !important;
-        background-color: none !important;
-    }
-
-    .card-img-top {
-        height: 22vh !important;
-        width: 80%;
-    }
-
-    .card-body {
-        padding: 0;
-        width: 80%;
-        height: 30vh;
-    }
-
-    .card-text {
-        color: white;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 30px;
-        font-family: var(--cd600);
-    }
-
-    .card-text__last-child {
-        color: white;
-        font-size: 6px;
-        margin-bottom: 0rem;
-        font-family: var(--cd300);
-    }
-
-    .oak-seeMore {
-        transform: translate(-1350px, 400px);
-        width: 100% !important;
-        padding-right: -80px;
-        /* position:absolute; */
-    }
-
-
-
-    /* .newsLine {
-        transform: translateY(5px) !important;
-    } */
-
-    .podcast-img {
-        background-image: url(http://localhost:3000/static/media/Ellipse.ce9ce013d788b382b863.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        /* background-position: 70% 30%; */
-        width: 40%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        /* transform: translateX(1000px); */
-    }
-
-    .oak-seeMore::after {
-        content: "";
-        position: absolute;
-        left: 180px !important;
-        width: 63px;
-        height: 2.1px;
-        background-color: var(--secondary-color);
-        border-radius: 2px;
-        margin-top: 1.2rem;
-    }
-
-    @keyframes carouselLikeShake {
-        0% {
-            transform: translateX(-380px);
-        }
-
-        25% {
-            transform: translateX(20px);
-        }
-
-        50% {
-            transform: translateX(-380px);
-        }
-
-        75% {
-            transform: translateX(-800px);
-        }
-
-        100% {
-            transform: translateX(-380px);
-        }
-    }
-}
-
-@media screen and (max-width:390px) {
-    .oak-seeMore {
-        transform: translate(-1250px, 400px);
-        width: 100% !important;
-        padding-right: -80px;
-        /* position:absolute; */
-    }
-
-    .oak-seeMore::after {
-        content: "";
-        position: absolute;
-        left: 160px !important;
-        width: 63px;
-        height: 2.1px;
-        background-color: var(--secondary-color);
-        border-radius: 2px;
-        margin-top: 1.2rem;
-    }
-}
 
 
 .podcast-section {
@@ -1006,15 +551,6 @@
         padding-top: 10em;
     }
 
-    .oak-section__wrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 130%;
-        margin-left: 10px;
-        margin-top: -170px;
-        font-size: 16px;
-    }
 
     .oak-podcast__text {
         display: flex;
@@ -1076,15 +612,7 @@
         padding-top: 10em;
     }
 
-    .oak-section__wrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 130%;
-        margin-left: 10px;
-        margin-top: -170px;
-        font-size: 16px;
-    }
+
 
     .oak-podcast__text {
         display: flex;
@@ -1145,15 +673,6 @@
         padding-top: 10em;
     }
 
-    .oak-section__wrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 130%;
-        margin-left: 10px;
-        margin-top: -170px;
-        font-size: 16px;
-    }
 
     .oak-podcast__text {
         display: flex;

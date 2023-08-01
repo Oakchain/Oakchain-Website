@@ -37,7 +37,7 @@ import n5 from "../assets/images/n5.png";
 import { useNavigate } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import { Row, Col } from 'reactstrap'
 
 // import connectWallet from '../utils/walletConnect'
 
@@ -259,91 +259,80 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="oak-container-fluid web">
-        <div className="  oak-getLatest__container">
-          {/* Card component */}
-          <div class="card">
-            <img src={polygon} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <span class="card-body__logo">
-                <img src={logo} alt="logo" />
-                <h5 class="card-title">Oak news</h5>
-              </span>
+      <section className="oak-container-fluid home-news__card-wrapper">
+        <Row className="gx-4">
+          <Col sm='12' md={4}>
+            <div className="home-news__card">
+              <img src={polygon} className="home-news__card-img" alt="..." />
+              <div className="home-news__card-body">
+                <div className="card-body__logo d-flex align-items-center">
+                  <img src={logo} alt="logo" />
+                  <h5 className="card-title">Oak news</h5>
+                </div>
 
-              <p class="card-text">
-                Polygon Labs and Google Partner to Boost Web3 Development
-              </p>
+                <p className="card-text">
+                  Polygon Labs and Google Partner to Boost Web3 Development
+                </p>
 
-              <p className="card-text__last-child">
-                Learning about Web3, blockchain, and NFTs can help individuals
-                understand the potential for decentralized technologies to...
-              </p>
+                <p className="card-text__last-child">
+                  Learning about Web3, blockchain, and NFTs can help individuals
+                  understand the potential for decentralized technologies to...
+                </p>
 
-              <p className="card-time">{date}</p>
+                <p className="card-time">{date}</p>
+              </div>
             </div>
-          </div>
+          </Col>
+          <Col md={4}>
+            <div className="home-news__card" >
+              <img src={googleCloud} className="home-news__card-img" alt="..." />
+              <div className="home-news__card-body">
+                <div className="card-body__logo d-flex align-items-center">
+                  <img src={logo} alt="logo" />
+                  <h5 className="card-title">Oak news</h5>
+                </div>
 
-          <div class="card" style={{ width: "400px" }}>
-            <img src={googleCloud} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <span class="card-body__logo">
-                <img src={logo} alt="logo" />
-                <h5 class="card-title">Oak news</h5>
-              </span>
+                <p className="card-text">
+                  Google Cloud broadens Web3 startup program with 11 blockchain
+                  firms
+                </p>
 
-              <p class="card-text">
-                Google Cloud broadens Web3 startup program with 11 blockchain
-                firms
-              </p>
+                <p className="card-text__last-child">
+                  Learning about Web3, blockchain, and NFTs can help individuals
+                  understand the potential for decentralized technologies to...
+                </p>
 
-              <p className="card-text__last-child">
-                Learning about Web3, blockchain, and NFTs can help individuals
-                understand the potential for decentralized technologies to...
-              </p>
-
-              <p className="card-time">{date}</p>
+                <p className="card-time">{date}</p>
+              </div>
             </div>
-          </div>
+          </Col>
+          <Col md={4}>
+            <div className="home-news__card" >
+              <img src={googleEyes} className="home-news__card-img" alt="..." />
+              <div className="home-news__card-body">
+                <div className="card-body__logo d-flex align-items-center">
+                  <img src={logo} alt="logo" />
+                  <h5 className="card-title">Oak news</h5>
+                </div>
 
-          <div class="card" style={{ width: "400px" }}>
-            <img src={googleEyes} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <span class="card-body__logo">
-                <img src={logo} alt="logo" />
-                <h5 class="card-title">Oak news</h5>
-              </span>
+                <p className="card-text">
+                  Google Cloud Expands Partnerships, Wants More Web3 Startups To
+                  Leverage
+                </p>
 
-              <p class="card-text">
-                Google Cloud Expands Partnerships, Wants More Web3 Startups To
-                Leverage
-              </p>
+                <p className="card-text__last-child">
+                  Learning about Web3, blockchain, and NFTs can help individuals
+                  understand the potential for decentralized technologies to...
+                </p>
 
-              <p className="card-text__last-child">
-                Learning about Web3, blockchain, and NFTs can help individuals
-                understand the potential for decentralized technologies to...
-              </p>
-
-              <p className="card-time">{date}</p>
+                <p className="card-time">{date}</p>
+              </div>
             </div>
-          </div>
-        </div>
-
+          </Col>
+        </Row>
         <p className="oak-seeMore">See more</p>
       </section>
-      {/* 
-      
-
-     
-
-      
-      */}
-
-      {/* GET LATEST WEB3 NEWS */}
-
-
-
-
-      {/* Podcast section */}
+    
       <section className="podcast-section">
         <div className=" align-items-center podcast-section-header">
           <h3 className="oak-section__wrapper down">
