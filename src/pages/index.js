@@ -248,18 +248,18 @@ const LandingPage = () => {
       <section className=" ">
         <div className="d-flex align-items-center justify-content-center news-section-header">
           <h3 className="oak-section__wrapper newsLine">
-            <span className="pe-3">
+            <span className="pe-1 pe-md-3">
               <img src={s1} alt="icon" />
             </span>
             Get Latest Web3 News
-            <span className="ps-3">
+            <span className="ps-1 ps-md-3">
               <img src={s2} alt="icon" />
             </span>
           </h3>
         </div>
       </section>
 
-      <section className="oak-container-fluid home-news__card-wrapper">
+      <section className="d-md-block d-none oak-container-fluid home-news__card-wrapper">
         <Row className="gx-4">
           <Col sm='12' md={4}>
             <div className="home-news__card">
@@ -330,11 +330,92 @@ const LandingPage = () => {
             </div>
           </Col>
         </Row>
-        <p className="oak-seeMore">See more</p>
+        <div className="d-flex align-items-center justify-content-center">
+          <p className="oak-seeMore">See more</p>
+
+        </div>
       </section>
-    
+
+
+      <section className="d-block d-md-none home-news__card-wrapper">
+        <div className="d-flex align-items-center overflow-auto flex-nowrap mobile-news__card-wrapper ps-4">
+          <div className="home-news__card me-4">
+            <img src={polygon} className="home-news__card-img" alt="..." />
+            <div className="home-news__card-body">
+              <div className="card-body__logo d-flex align-items-center">
+                <img src={logo} alt="logo" />
+                <h5 className="card-title">Oak news</h5>
+              </div>
+
+              <p className="card-text">
+                Polygon Labs and Google Partner to Boost Web3 Development
+              </p>
+
+              <p className="card-text__last-child">
+                Learning about Web3, blockchain, and NFTs can help individuals
+                understand the potential for decentralized technologies to...
+              </p>
+
+              <p className="card-time">{date}</p>
+            </div>
+          </div>
+
+          <div className="home-news__card me-4" >
+            <img src={googleCloud} className="home-news__card-img" alt="..." />
+            <div className="home-news__card-body">
+              <div className="card-body__logo d-flex align-items-center">
+                <img src={logo} alt="logo" />
+                <h5 className="card-title">Oak news</h5>
+              </div>
+
+              <p className="card-text">
+                Google Cloud broadens Web3 startup program with 11 blockchain
+                firms
+              </p>
+
+              <p className="card-text__last-child">
+                Learning about Web3, blockchain, and NFTs can help individuals
+                understand the potential for decentralized technologies to...
+              </p>
+
+              <p className="card-time">{date}</p>
+            </div>
+          </div>
+
+          <div className="home-news__card me-4" >
+            <img src={googleEyes} className="home-news__card-img" alt="..." />
+            <div className="home-news__card-body">
+              <div className="card-body__logo d-flex align-items-center">
+                <img src={logo} alt="logo" />
+                <h5 className="card-title">Oak news</h5>
+              </div>
+
+              <p className="card-text">
+                Google Cloud Expands Partnerships, Wants More Web3 Startups To
+
+              </p>
+
+              <p className="card-text__last-child">
+                Learning about Web3, blockchain, and NFTs can help individuals
+                understand the potential for decentralized technologies to...
+              </p>
+
+              <p className="card-time">{date}</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div className="d-flex align-items-center justify-content-center">
+          <p className="oak-seeMore">See more</p>
+
+        </div>
+      </section>
+
+
       <section className="podcast-section">
-        <div className=" align-items-center podcast-section-header">
+        <div className="d-md-block d-none align-items-center podcast-section-header">
           <h3 className="oak-section__wrapper down">
             <span className="px-3">
               <img src={s1} alt="icon" />
@@ -345,6 +426,22 @@ const LandingPage = () => {
             </span>
           </h3>
         </div>
+
+        <div className="d-md-none d-block ">
+          <div className=" podcast-section-header">
+
+          </div>
+          <h3 className="oak-section__wrapper down">
+            <span className="pe-1 pe-md-3">
+              <img src={s1} alt="icon" />
+            </span>
+            Listen to Web3 Podcasts
+            <span className="ps-1 ps-md-3">
+              <img src={s2} alt="icon" />
+            </span>
+          </h3>
+        </div>
+
 
         <div className="oak-podcast__container">
           <img src={mic} alt="podcast" className="podcast-img" />
@@ -370,14 +467,14 @@ const LandingPage = () => {
         {/* nest nft */}
       </section>
 
-      <section className=" d-none d-md-block nest-section">
+      <section className="  nest-section">
         <div className="d-flex align-items-center justify-content-center nest-section-header">
-          <h3 className="oak-section__wrapper">
-            <span className="px-3">
+          <h3 className="oak-section__wrapper nft-mobile__text">
+            <span className="pe-1 pe-md-3 ">
               <img src={s1} alt="icon" />
             </span>
             Browse our NFT collection
-            <span className="px-3">
+            <span className="ps-1 ps-md-3 ">
               <img src={s2} alt="icon" />
             </span>
           </h3>
@@ -487,14 +584,14 @@ const LandingPage = () => {
       </section>
 
       {/* OAK WRITER SECTION */}
-      <section className=" d-none d-md-block writer-section__header">
+      <section className=" writer-section__header">
         <div className="d-flex align-items-center justify-content-center writer-section-header">
           <h3 className="oak-section__wrapper pullUp">
-            <span className="px-3">
+            <span className="pe-1 pe-md-3">
               <img src={s1} alt="icon" />
             </span>
             Become an Oak writer
-            <span className="px-3">
+            <span className="ps-1 pe-md-3">
               <img src={s2} alt="icon" />
             </span>
           </h3>
@@ -522,7 +619,7 @@ const LandingPage = () => {
 
 
       {/* BEST-SELLING COURSE SECTION */}
-      <section className=" d-none d-md-block courses-section__header">
+      <section className="d-none d-md-block courses-section__header">
         <div className="courses-section">
           <p>Our bestselling course</p>
           <p>
@@ -535,16 +632,30 @@ const LandingPage = () => {
         </div>
       </section>
 
+      <section className=" d-block d-md-none courses-section__header position-relative">
+        <div className="courses-section">
+          <p>Our bestselling course</p>
+          <p>
+            Reasons why you should understand how the <br /> internet and Web3
+            works.
+          </p>
+          <button>View our courses &#8594;</button>
+
+        </div>
+        <img src={btc} alt="eth-icon" className="btc-icon" />
+        <img src={btcBlur} alt="blur-icon" className="btcBlur-icon" />
+      </section>
+
 
       {/* OAK VICE SECTION */}
-      <section className=" d-none d-md-block oakvice-section">
+      <section className="  oakvice-section">
         <div className=" align-items-center oakvice-section__header">
           <h3 className="oak-section__wrapper viceUp">
-            <span className="px-3">
+            <span className="pe-1 pe-md-3">
               <img src={s1} alt="icon" />
             </span>
             Introducting Oakvice
-            <span className="px-3">
+            <span className="ps-1 ps-md-3">
               <img src={s2} alt="icon" />
             </span>
           </h3>
@@ -568,7 +679,7 @@ const LandingPage = () => {
       </section>
       {/* USERS REVIEW SECTION */}
 
-      <section className=" d-none d-md-block review-section__header">
+      <section className=" review-section__header">
         <div className="d-flex align-items-center justify-content-center review-section-header">
           <h3 className="oak-section__wrapper shift">
             <span className="px-3">

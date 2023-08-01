@@ -194,7 +194,7 @@
     backdrop-filter: blur(50px) !important;
     background: rgba(0, 0, 0, 0.50);
     border-radius: 10px;
-    /* height: 573px; */
+    height: 100%;
 }
 
 .home-news__card-img {
@@ -248,20 +248,11 @@
     text-align: center;
     padding-top: .5rem;
     font-family: var(--cd500);
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
+    border-bottom: var(--secondary-color) 2px solid;
+    margin-top: 20px;
 }
 
-.oak-seeMore::after {
-    content: "";
-    position: absolute;
-    left: 47.8%;
-    width: 63px;
-    height: 2.1px;
-    background-color: var(--secondary-color);
-    border-radius: 2px;
-    margin-top: 1.2rem;
-
-}
 
 
 .oak-introduction__mobile-view {
@@ -283,7 +274,7 @@
 @media(max-width:769px) {
     .hero-cta__cointainer {
         width: 100%;
-        padding-top: 30px;
+        padding-top: 5px;
     }
 
     .hero-cta__wrapper {
@@ -461,36 +452,379 @@
         font-size: 19px;
     }
 
-    .oak-getLatest__container {
-        min-height: 70vh;
-        width: 300vw;
-        background: url(http://localhost:3000/static/media/Rectangle.a383eda39b38cfe50c3f.png);
-        /* background-position-x: 0%;
-        background-position-y: 0%;
-        background-repeat: repeat;
-        background-size: cover; */
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: 2rem;
-        transform-box: border-box;
-        transform: translateX(-380px);
-        /* overflow-x: hidden !important; */
-        animation-name: carouselLikeShake;
-        animation-duration: 10s;
-        animation-fill-mode: both;
-        animation-iteration-count: infinite;
-        animation-play-state: running;
-        animation-delay: 2s;
+    .mobile-news__card-wrapper {
+        scroll-snap-type: x mandatory;
+
     }
+
+    .home-news__card-wrapper {
+        background-position: center;
+        background-size: 190%;
+        margin-top: 0px;
+
+    }
+
+
+    .home-news__card-wrapper .home-news__card {
+        display: inline-flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        width: 90%;
+        scroll-snap-align: center;
+
+    }
+
+    .home-news__card-img {
+        height: 250px;
+    }
+
+    .home-news__card-wrapper .card-text {
+        font-size: 20.876px;
+    }
+
+    .home-news__card-wrapper .card-text__last-child {
+        font-size: 8.351px;
+
+    }
+
+    .home-news__card-wrapper .card-time {
+        font-size: 10.438px;
+    }
+
+    .newsLine {
+        font-size: 18px !important;
+    }
+
+    .podcast-section-header {
+        padding-top: 4em !important;
+        width: 80% !important;
+    }
+
+    .down {
+        margin-top: -35px !important;
+        font-size: 17px;
+    }
+
+    .oak-podcast__container {
+        display: block !important;
+    }
+
+    .oak-podcast__text {
+        /* width: 90%; */
+        padding: 21px !important;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .nest-section-header {
+
+        width: 70%;
+        margin: auto;
+        padding-top: 1.5em !important;
+    }
+
+    .nft-mobile__text {
+        font-size: 16px !important;
+    }
+
+    .oak-nest__container {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        margin-top: 31px;
+    }
+
+    .oak-nest__img {
+        background-size: cover !important;
+    }
+
+    .nft-animation-wrapper {
+        height: 448px;
+    }
+
+    .oak-nest__text,
+    .oak-nest__text h1,
+    .oak-nest__text p {
+        padding-top: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .oak-nest__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: 25% !important;
+        background-position: -11% -14% !important;
+        padding-top: 24px;
+    }
+
+    .oak-nest__text h1 {
+        font-size: 21px !important;
+        font-family: (--cd600);
+        text-align: center;
+        width: 75%;
+        margin: auto;
+        margin-bottom: 18px;
+    }
+
+    .oak-nest__text p {
+        font-size: 12px;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .oak-nest__text button {
+        /* marg */
+        margin-left: 0px !important;
+    }
+
+    .writer-section__header {
+        margin-top: 76px !important;
+    }
+
+    .writer-section-header {
+
+        padding-top: 22px !important;
+        margin-top: 0px !important;
+    }
+
+    .oak-writer__container {
+        flex-flow: column;
+        justify-content: center !important;
+        align-items: center;
+        padding-top: 26px !important;
+    }
+
+    .pullUp {
+        font-size: 19px;
+
+    }
+
+    .writer-img {
+        height: 100% !important;
+        width: 90% !important;
+        padding-left: 0 !important;
+        object-fit: contain;
+    }
+
+    .writer-text {
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+        padding-top: 0rem !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .writer-text h2 {
+        padding-top: 27px !important;
+        padding-right: 0 !important;
+        padding-bottom: 1.5rem;
+        font-size: 27px;
+        text-align: center;
+        width: 88%;
+        margin: auto;
+    }
+
+    .writer-text p {
+        padding-right: 0 !important;
+        font-size: 12px;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 25px;
+
+    }
+
+    .courses-section p {
+        padding-top: 0px !important;
+        font-size: 15px !important;
+        margin-bottom: 24px !important;
+
+    }
+
+    .courses-section p+p {
+        color: white;
+        font-family: var(--cd500);
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        font-size: 27px !important;
+        line-height: normal;
+        margin-bottom: 38px;
+    }
+
+    .courses-section button {
+        margin-bottom: 0px !important;
+    }
+
+    .courses-section {
+        background-position: 62% bottom;
+        width: 90% !important;
+        padding: 20px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btcBlur-icon {
+        width: 240px !important;
+        height: 240px !important;
+        bottom: 60px !important;
+        left: -30px;
+    }
+
+    .btc-icon {
+        width: 124px !important;
+        height: 124px !important;
+        left: unset !important;
+        right: -14px !important;
+        top: 35px !important;
+        bottom: unset !important;
+        overflow-x: hidden;
+    }
+
+    .courses-section__header {
+        padding-top: 86px !important;
+        margin-top: 0px !important;
+        padding-bottom: 168px !important;
+        overflow: hidden;
+
+    }
+
+    .oakvice-section__header {
+        /* background-size: 0% !important; */
+        background-position: top center;
+        padding-top: 0px !important;
+        margin-top: 0px !important;
+        overflow: hidden;
+    }
+
+    .oakvice-section {
+        margin-top: 0px !important;
+    }
+
+    .viceUp {
+        font-size: 20px;
+        padding-top: 18px;
+    }
+
+    .oakvice-img {
+        width: 168.045px !important;
+        height: 357.436px !important;
+        margin-top: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        object-fit: cover;
+        margin-bottom: 60px !important;
+
+    }
+
+    .oakvice-container {
+        display: flex;
+        flex-direction: column-reverse;
+
+        align-items: center
+    }
+
+    .oakvice-container__text {
+        padding-right: 0rem !important;
+        margin-right: 0rem !important;
+        padding-top: 0rem !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .oakvice-container__text h2 {
+        text-align: center;
+        width: 100%;
+        font-size: 27px !important;
+        font-style: normal;
+    }
+
+    .oakvice-container__text p {
+        padding-bottom: 1rem;
+        font-size: 12px !important;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .viceBTN {
+        width: unset !important;
+    }
+
+    .review-section-header {
+        background-repeat: repeat;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top center;
+        padding-top: 0em !important;
+        margin-top: 5rem;
+        overflow: hidden;
+    }
+
+    .shift {
+        padding-top: 25px;
+    }
+
+    .review-section {
+        padding: 0 !important;
+        margin-top: 20px;
+    }
+
+    .review-img {
+        width: 62px !important;
+        height: 62px;
+        flex-shrink: 0;
+    }
+
+    .review-card,
+    .review-card__right {
+        padding-top: 0px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        padding-bottom: 0px !important;
+        width: 100% !important;
+    }
+
+    .review-text {
+        padding: 10px 21px !important;
+        border-radius: 6.9px !important;
+        width: 100%;
+        border-radius: 6.464px;
+        background: #FFF !important;
+        box-shadow: 0px 0px 0px 0px rgba(215, 207, 204, 0.10), 0px 3.447514772415161px 7.756907939910889px 0px rgba(215, 207, 204, 0.10), 0px 14.220998764038086px 14.220998764038086px 0px rgba(215, 207, 204, 0.09), 0px 32.32045364379883px 19.392271041870117px 0px rgba(215, 207, 204, 0.05), 0px 56.883995056152344px 22.839784622192383px 0px rgba(215, 207, 204, 0.01), 0px 89.20445251464844px 24.994482040405273px 0px rgba(215, 207, 204, 0.00) !important;
+
+    }
+
+    .review-text p {
+        font-size: 6px !important;
+        width: 100%;
+    }
+
+    .review-section__header {
+        margin-bottom: 3rem;
+    }
+
 }
-
-
 
 
 .podcast-section {
     margin-top: 5rem;
-
 }
 
 .podcast-section-header {
@@ -541,25 +875,8 @@
         margin-top: -90px;
     }
 
-    .podcast-section-header {
-        background-size: 70%;
-        background-position: center;
-        width: 100%;
-        /* border: 2px solid red; */
-        margin: auto;
-        margin-top: 70px;
-        padding-top: 10em;
-    }
 
 
-    .oak-podcast__text {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 2rem;
-        margin-top: 400px;
-        margin-left: -300px;
-    }
 
     .podcast-img {
         width: 80%;
@@ -578,22 +895,9 @@
         text-align: center;
     }
 
-    .oak-btn,
-    .oak-btn:hover,
-    .oak-btn-secondary,
-    .oak-btn-secondary:hover {
-        width: 40% !important;
-        height: 2.5rem !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        margin-left: 100px;
-    }
 
-    .down {
-        margin-top: -55px !important;
-        margin-left: 20px;
-    }
+
+
 }
 
 
@@ -602,26 +906,8 @@
         margin-top: -90px;
     }
 
-    .podcast-section-header {
-        background-size: 70%;
-        background-position: center;
-        width: 100%;
-        /* border: 2px solid red; */
-        margin: auto;
-        margin-top: 70px;
-        padding-top: 10em;
-    }
 
 
-
-    .oak-podcast__text {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 2rem;
-        margin-top: 400px;
-        margin-left: -300px;
-    }
 
     .podcast-img {
         width: 80%;
@@ -640,22 +926,9 @@
         text-align: center;
     }
 
-    .oak-btn,
-    .oak-btn:hover,
-    .oak-btn-secondary,
-    .oak-btn-secondary:hover {
-        width: 40% !important;
-        height: 2.5rem !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        margin-left: 100px;
-    }
 
-    .down {
-        margin-top: -55px !important;
-        margin-left: 20px;
-    }
+
+
 }
 
 @media screen and (max-width:428px) {
@@ -663,26 +936,6 @@
         margin-top: 3rem;
     }
 
-    .podcast-section-header {
-        background-size: 80%;
-        background-position: center;
-        width: 100%;
-        /* border: 2px solid red; */
-        margin: auto;
-        margin-top: -20px;
-        padding-top: 10em;
-    }
-
-
-    .oak-podcast__text {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 2rem;
-        margin-top: 400px;
-        margin-left: -300px;
-    }
-
     .podcast-img {
         width: 80%;
     }
@@ -700,21 +953,8 @@
         text-align: center;
     }
 
-    .oak-btn,
-    .oak-btn:hover,
-    .oak-btn-secondary,
-    .oak-btn-secondary:hover {
-        width: 40% !important;
-        height: 2.5rem !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        margin-left: 100px;
-    }
 
-    .down {
-        margin-top: -50px !important;
-    }
+
 }
 
 /* NEST SECTION  */
@@ -784,60 +1024,10 @@
         margin-top: 3rem;
     }
 
-    .oak-section__wrapper {
-        transform: translateY(-20px);
-        font-size: 13px;
-        width: 100% !important;
-    }
 
-    .nest-section-header {
-        width: 70%;
-        background-size: 80% !important;
-    }
 
-    .oak-nest__container {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 2rem;
-    }
 
-    .oak-nest__text {
-        background-size: 50%;
-        background-position: -40% 0%;
-        padding-left: 0;
-        padding-right: 8rem;
-        flex: 5 1;
-        height: 15vh !important;
-        /* border: 2px solid red; */
-        display: block;
-        width: 100% !important;
-        display: block !important;
-    }
 
-    .oak-nest__text h1 {
-        padding-top: 18.5rem;
-        font-size: 20px;
-        padding-left: 3.25rem;
-        width: 100% !important;
-        text-align: center;
-        transform: translate(60px, -220px);
-
-    }
-
-    .oak-nest__text p {
-        font-size: 10px;
-        text-align: center;
-        padding-bottom: 1rem;
-        width: 100% !important;
-        transform: translate(90px, -200px);
-    }
-
-    .nestBtn,
-    .nestBtn:hover {
-        transform: translate(170px, -200px) !important;
-        transition: none !important;
-        animation: none !important;
-    }
 
     .oak-nest__img {
         height: 140px !important;
@@ -847,10 +1037,7 @@
         margin-left: 40px;
     }
 
-    .nft-animation-wrapper {
-        height: 50vh !important;
-        overflow: hidden;
-    }
+
 
     .nft-collections_wrapper {
         white-space: nowrap;
@@ -863,14 +1050,8 @@
 
     }
 
-    .nestBTN {
-        transition: none !important;
-    }
 
-    .oak-btn:hover {
-        padding: 0;
-        transition: none !important;
-    }
+
 }
 
 @media screen and (max-width:480px) {
@@ -879,60 +1060,6 @@
         margin-top: 3rem;
     }
 
-    .oak-section__wrapper {
-        transform: translateY(-20px);
-        font-size: 13px;
-        width: 100% !important;
-    }
-
-    .nest-section-header {
-        width: 70%;
-        background-size: 80% !important;
-    }
-
-    .oak-nest__container {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 2rem;
-    }
-
-    .oak-nest__text {
-        background-size: 50%;
-        background-position: -40% 0%;
-        padding-left: 0;
-        padding-right: 8rem;
-        flex: 5 1;
-        height: 15vh !important;
-        /* border: 2px solid red; */
-        display: block;
-        width: 100% !important;
-        display: block !important;
-    }
-
-    .oak-nest__text h1 {
-        padding-top: 18.5rem;
-        font-size: 20px;
-        padding-left: 3.25rem;
-        width: 100% !important;
-        text-align: center;
-        transform: translate(60px, -200px);
-
-    }
-
-    .oak-nest__text p {
-        font-size: 10px;
-        text-align: center;
-        padding-bottom: 1rem;
-        width: 120% !important;
-        transform: translate(40px, -200px);
-    }
-
-    .nestBtn,
-    .nestBtn:hover {
-        transform: translate(155px, -200px) !important;
-        transition: none !important;
-        animation: none !important;
-    }
 
     .oak-nest__img {
         height: 140px !important;
@@ -942,10 +1069,6 @@
         margin-left: 40px;
     }
 
-    .nft-animation-wrapper {
-        height: 40vh !important;
-        overflow: hidden;
-    }
 
     .nft-collections_wrapper {
         white-space: nowrap;
@@ -958,14 +1081,7 @@
 
     }
 
-    .nestBTN {
-        transition: none !important;
-    }
 
-    .oak-btn:hover {
-        padding: 0;
-        transition: none !important;
-    }
 }
 
 @media screen and (max-width:428px) {
@@ -974,59 +1090,10 @@
         margin-top: 3rem;
     }
 
-    .oak-section__wrapper {
-        transform: translateY(-20px);
-        font-size: 13px;
-        width: 100% !important;
-    }
 
-    .nest-section-header {
-        width: 100%;
-        background-size: 80% !important;
-    }
 
-    .oak-nest__container {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 2rem;
-    }
 
-    .oak-nest__text {
-        background-size: 50%;
-        background-position: -40% 0%;
-        padding-left: 0;
-        padding-right: 8rem;
-        flex: 5 1;
-        height: 15vh !important;
-        /* border: 2px solid red; */
-        display: block;
-        width: 100% !important;
-        display: block !important;
-    }
 
-    .oak-nest__text h1 {
-        padding-top: 18.5rem;
-        font-size: 20px;
-        padding-left: 3.25rem;
-        width: 100% !important;
-        text-align: center;
-        transform: translate(60px, -200px);
-
-    }
-
-    .oak-nest__text p {
-        font-size: 10px;
-        text-align: center;
-        padding-bottom: 1rem;
-        width: 120% !important;
-        transform: translate(40px, -200px);
-    }
-
-    .nestBtn {
-        transform: translate(130px, -200px) !important;
-        transition: none !important;
-        animation: none !important;
-    }
 
     .oak-nest__img {
         height: 140px !important;
@@ -1036,10 +1103,7 @@
         margin-left: 40px;
     }
 
-    .nft-animation-wrapper {
-        height: 40vh !important;
-        overflow: hidden;
-    }
+
 
     .nft-collections_wrapper {
         white-space: nowrap;
@@ -1053,9 +1117,519 @@
     }
 }
 
-@media screen and (max-width:390px) {
-    .nestBtn {
-        width: 50% !important;
-        transform: translate(110px, -200px) !important;
+/* NEST SECTION  */
+
+.nest-section {
+    margin-top: 3rem;
+}
+
+
+.nest-section-header {
+    background: url('../images/Nest\ NFT.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    width: 70%;
+    margin: auto;
+    padding-top: 10em;
+}
+
+
+
+
+.oak-nest__img {
+    flex: 7;
+}
+
+
+/* MEDIA QUERY NEST SECTION  */
+@media screen and (max-width:528px) {
+    .nest-section {
+        display: block;
+        margin-top: 3rem;
     }
+
+
+
+    .oak-nest__img {
+        height: 140px !important;
+        padding: 25px;
+        box-sizing: border-box;
+        margin-top: -1rem !important;
+        margin-left: 40px;
+    }
+
+
+
+    .nft-collections_wrapper {
+        white-space: nowrap;
+    }
+
+    .nft-img__container {
+        width: 190px !important;
+        height: 220px !important;
+        border-radius: 10.26px;
+
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .nest-section {
+        display: block;
+        margin-top: 3rem;
+    }
+
+
+
+
+
+
+    .oak-nest__img {
+        height: 140px !important;
+        padding: 25px;
+        box-sizing: border-box;
+        margin-top: -1rem !important;
+        margin-left: 40px;
+    }
+
+
+
+    .nft-collections_wrapper {
+        white-space: nowrap;
+    }
+
+    .nft-img__container {
+        width: 190px !important;
+        height: 220px !important;
+        border-radius: 10.26px;
+
+    }
+
+
+
+
+}
+
+@media screen and (max-width:428px) {
+    .nest-section {
+        display: block;
+        margin-top: 3rem;
+    }
+
+
+
+    .nest-section-header {
+        width: 100%;
+        background-size: 80% !important;
+    }
+
+
+
+    .oak-nest__img {
+        height: 140px !important;
+        padding: 25px;
+        box-sizing: border-box;
+        margin-top: -1rem !important;
+        margin-left: 40px;
+    }
+
+
+    .nft-collections_wrapper {
+        white-space: nowrap;
+    }
+
+    .nft-img__container {
+        width: 190px !important;
+        height: 220px !important;
+        border-radius: 10.26px;
+
+    }
+}
+
+
+
+
+
+/*WRITERS SECTION*/
+
+
+.oak-container__img {
+    background: url('../images/Rectangle\ 114.png');
+    background-repeat: no-repeat;
+    background-size: 49%;
+    background-position: 0% -20%;
+}
+
+.writer-section__header {
+    margin-top: 10rem;
+    /* border: 2px solid red; */
+}
+
+
+.writer-section-header {
+    background: url('../images/Web3\ Writer.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    padding-top: 10em;
+    margin-top: 5rem;
+}
+
+.oak-writer__container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+
+}
+
+.writer-img {
+    height: 50vh;
+    width: 50%;
+    padding-left: 4rem;
+
+}
+
+.writer-text {
+    padding-left: 3rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+}
+
+.writer-text h2 {
+    padding-right: 8rem;
+    color: var(--primary-color);
+    font-family: var(--cd600);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.writer-text p {
+    padding-right: 8rem;
+    color: var(--primary-color);
+    font-family: var(--cd400);
+
+}
+
+
+
+
+/*COURSES SECTION*/
+
+
+.courses-section__header {
+    margin-top: 15rem;
+
+}
+
+.courses-section {
+    background-image: url('../images/coursesBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+
+}
+
+.courses-section p {
+    color: white;
+    font-family: var(--cd500);
+    padding-top: 8rem;
+    font-size: 22px;
+}
+
+.courses-section p+p {
+    color: white;
+    font-family: var(--cd500);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 40px;
+}
+
+.courses-section button {
+    margin-bottom: 6rem;
+    font-family: var(--cd400);
+    font-size: small;
+    border: .5px solid #fff;
+    background: transparent;
+    color: #fff;
+    padding: 12px 21px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 1px rgba(255, 255, 255, 1);
+}
+
+.courses-section button:hover {
+    background: #fff;
+    background: orangered;
+    transition: 0.5s;
+    border: none;
+}
+
+.courses-section button:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    border: 1px solid #fff;
+}
+
+.btc-icon {
+    width: 13%;
+    height: 20vh;
+    position: absolute;
+    left: 93%;
+    bottom: 77%;
+}
+
+.btcBlur-icon {
+    width: 25%;
+    height: 42vh;
+    position: absolute;
+    right: 85%;
+}
+
+
+
+
+
+
+/* OAK VICE SECTION  */
+
+.oakvice-section {
+    margin-top: 15rem;
+}
+
+.oakvice-section__header {
+    background: url('../images/Oakvice.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    padding-top: 10em;
+    margin-top: 5rem;
+}
+
+.oakvice-container {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.oakvice-container__text {
+    padding-right: 8rem;
+    margin-right: 2rem;
+    padding-top: 8rem;
+}
+
+.oakvice-container__text h2 {
+    color: var(--primary-color);
+    font-family: var(--cd600);
+    padding-bottom: 1rem;
+    font-size: 57px;
+}
+
+.oakvice-container__text p {
+    color: var(--primary-color);
+    font-family: var(--cd400);
+    padding-bottom: 1rem;
+    font-size: 15px;
+}
+
+.oakvice-img {
+    width: 43%;
+    height: 80vh;
+    padding-left: 10rem;
+    padding-right: 3rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+
+
+/* REVIEW SECTION  */
+
+
+.review-section__header {
+    margin-top: 10rem;
+}
+
+.review-section-header {
+    background: url('../images/Our\ Reviews.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    padding-top: 10em;
+    margin-top: 5rem;
+}
+
+.review-section {
+    padding: 3rem;
+}
+
+.review-card {
+    padding-top: 0px;
+    padding-left: 10px;
+    /* padding-right: 100px; */
+    padding-bottom: 0px;
+    display: flex
+}
+
+.review-img {
+    width: 12%;
+    /* height: 10vh; */
+}
+
+
+.review-quote {
+    width: 4%;
+    padding-bottom: 5px;
+
+}
+
+.review-text {
+    padding: 22px 60px 10px 20px;
+    background: rgba(197, 178, 178, 0.1);
+    border-radius: 1rem;
+    font-family: var(--cd500);
+}
+
+.review-text p {
+    font-size: 14px;
+}
+
+
+
+.review-text__right {
+    padding: 22px 60px 0px 20px;
+    background: rgba(197, 178, 178, 0.1);
+    border-radius: 1rem;
+    font-family: var(--cd500);
+
+}
+
+.review-card__right {
+    display: flex;
+    justify-content: end;
+}
+
+.oak-nest__img {
+    background: url('../images/nftBg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    height: 90vh;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 5rem;
+
+}
+
+.nft-animation-wrapper {
+    max-height: 100%;
+    overflow: auto;
+
+}
+
+.nft-img__container {
+    width: 199.52px;
+    height: 229.78px;
+    border-radius: 10.26px;
+
+}
+
+
+.nft-collections_wrapper {
+    animation: scrollAnimation 25s linear infinite;
+    /* white-space: nowrap; */
+}
+
+.direction-up {
+    animation: scrollAnimationUp 28s linear infinite !important;
+}
+
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes scrollAnimationUp {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* 
+hamburger menu */
+
+menu-btn__container {
+    height: 5rem;
+    width: 5rem;
+    /* border: 0.1rem dotted white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-btn__icon {
+    height: 0.3rem;
+    width: 4rem;
+    background-color: white;
+    border-radius: 0.3rem;
+}
+
+.menu-btn__icon::before,
+.menu-btn__icon::after {
+    width: 2rem;
+    content: '';
+    background-color: white;
+    height: 0.3rem;
+    position: absolute;
+    border-radius: 0.5rem;
+}
+
+.rotate {
+    transform: rotate(-45deg);
+}
+
+.menu-btn__icon::before {
+    transform: translateY(-1.5rem);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__icon::after {
+    transform: translateY(1.5rem);
+    margin-left: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+/* .open{
+    transform: rotate(-45deg);
+    transition: all 1s ease-in-out;
+  } */
+
+.menu-btn__icon {
+    transition: all 0.5s ease-in-out;
+}
+
+.open .menu-btn__icon::after {
+    transform: rotate(90deg) translate(1rem, 1rem);
+    transition: all 0.5s ease-in-out;
+}
+
+.open .menu-btn__icon::before {
+    transform: rotate(90deg) translate(-1rem, -1rem);
+    transition: all 0.5s ease-in-out;
 }
