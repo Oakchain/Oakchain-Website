@@ -129,7 +129,6 @@ input:focus {
     } 
     .oak-btn, .oak-btn:hover, .oak-btn-secondary, .oak-btn-secondary:hover, .oak-tertiary-btn, .oak-tertiary-btn:hover {
   
-        background: #FFF;
         padding: 12px 15px;
         font-size: 11.914px;
     }   
