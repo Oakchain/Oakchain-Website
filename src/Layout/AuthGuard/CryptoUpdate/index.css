@@ -14,3 +14,15 @@
     border-bottom: 1px solid #D4D4D4;
     ;
 }
+
+@media (max-width:767px) {
+    .oak-crypto_updates{
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+    .oak-crypto_key {
+       flex-shrink: 0;
+       display: inline-flex;
+    }
+    
+}

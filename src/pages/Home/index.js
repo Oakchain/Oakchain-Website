@@ -25,14 +25,14 @@ const Home = () => {
                         <img src={bannerImg} alt='banner-img' />
                     </div>
                 </div>
-                <section className="oak-container-fluid oak-mb">
-                    <div className="d-flex align-items-center justify-content-between oak-mb">
+                <section className="oak-container-fluid oak-mb ">
+                    <div className="d-flex align-items-center justify-content-between oak-mobile-news__wrpper oak-mb">
                         <h5 className="oak-section__title">Get Updated with Web3 News</h5>
                         <div className="d-flex align-items-center" role='button' onClick={() => {
                             navigate('/news')
                         }}>
-                            <p className="oak-redirect__text mb-0 pe-3">See all</p>
-                            <div>
+                            <p className="oak-redirect__text mb-0 pe-md-3 pe-1">See all</p>
+                            <div className="redirect-arrow">
                                 <img src={rightArrow} alt='icon' />
                             </div>
                         </div>
@@ -66,7 +66,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="home-future__podcast_wrapper">
-                        <div className="ps-5 ms-4 py-5">
+                        <div className="ps-md-5 ps-0 ms-md-4 ms-3 py-5">
                             <FuturePodcast />
                         </div>
                     </div>
@@ -76,14 +76,14 @@ const Home = () => {
                     <div className="d-flex align-items-center justify-content-between oak-mb">
                         <h5 className="oak-section__title">Complete tasks and earn</h5>
                         <div className="d-flex align-items-center" role='button'>
-                            <p className="oak-redirect__text mb-0 pe-3">See all</p>
+                            <p className="oak-redirect__text mb-0 pe-1 pe-md-3">See all</p>
                             <div>
                                 <img src={rightArrow} alt='icon' />
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <Row>
+                    <div className="d-none d-md-block">
+                        <Row className="gy-3">
                             <Col md='4' sm='12'>
                                 <Tasks />
                             </Col>
@@ -94,6 +94,12 @@ const Home = () => {
                                 <Tasks />
                             </Col>
                         </Row>
+                    </div>
+
+                    <div className="d-flex d-md-none align-items-center flex-nowrap w-100 overflow-auto home-mobile_task-center">
+                        <Tasks />
+                        <Tasks />
+                        <Tasks />
                     </div>
                     {/* <Trending /> */}
                 </section>

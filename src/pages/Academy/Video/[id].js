@@ -15,8 +15,8 @@ const VideoDetails = () => {
         <AuthGuard>
             <div className='oak-container-fluid'>
                 <p className="page-details__title">Home / Academy /Courses/Web3 University</p>
-                <div className='d-flex align-items-center oak-mb '>
-                    <div className=' me-5'>
+                <div className='d-block d-md-flex align-items-center oak-mb '>
+                    <div className='me-0 me-md-5'>
                         <img src={defaultImg} alt='course_img' className='video-course__img_container' />
                     </div>
                     <div>
@@ -28,19 +28,19 @@ const VideoDetails = () => {
                                 <div className='pe-3 oak-news_logo__wrapper'>
                                     <img src={ac1} alt='icon' />
                                 </div>
-                                <p className='mb-0 oak-academy__features pt-1'>5 Assignments and 7 Lessons</p>
+                                <p className='mb-0 oak-academy__features video-feature pt-1'>5 Assignments and 7 Lessons</p>
                             </div>
                             <div className='d-flex align-items-center  py-2'>
                                 <div className='pe-3 oak-news_logo__wrapper'>
                                     <img src={ac2} alt='icon' />
                                 </div>
-                                <p className='mb-0 oak-academy__features pt-1'>6 courses and 29 modules in total</p>
+                                <p className='mb-0 oak-academy__features video-feature pt-1'>6 courses and 29 modules in total</p>
                             </div>
                             <div className='d-flex align-items-center  py-2'>
                                 <div className='pe-3 oak-news_logo__wrapper'>
                                     <img src={ac3} alt='icon' />
                                 </div>
-                                <p className='mb-0 oak-academy__features pt-1'>3hr 45m</p>
+                                <p className='mb-0 oak-academy__features video-feature pt-1'>3hr 45m</p>
                             </div>
                             <p className='oak-video_description mb-0 mt-2'>
                                 Lorem ipsum dolor sit amet consectetur. Neque pellentesque porta consequat iaculis tempus ornare. Turpis viverra neque donec rhoncus consequat a aliquet eu. Ultrices blandit pellentesque posuere risus vulputate. Phasellus justo duis lacinia eu. A ac pretium proin pretium mauris ultrices. Orci volutpat erat feugiat accumsan facilisis a duis vestibulum fames. Fames mauris semper turpis ullamcorper blandit pulvinar quam. Aenean condimentum semper condimentum egestas metus. Orci ultrices scelerisque est lacinia. Convallis orci in etiam id malesuada nibh consectetur sit. Amet ac eu arcu cum a ultricies. Volutpat commodo donec non viverra. Molestie mattis mauris mi ultrices enim. Lectus viverra consectetur tellus tellus quam faucibus iaculis in. Quis velit quisque justo est.
@@ -56,10 +56,10 @@ const VideoDetails = () => {
                             <p className="oak-redirect__text mb-0 pe-3"></p>
                         </div>
                     </div>
-                    <div className='oak-cstm__row'>
+                    <div className='oak-cstm__row '>
                         {
                             arrayGenerator(8).map(el =>
-                                <div className='oak-cstm__col' sm={'20%'} md={'20%'} lg={'20%'} >
+                                <div className='oak-cstm__col '  >
                                     <VideoChapter />
                                 </div>
                             )

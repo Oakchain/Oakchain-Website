@@ -69,3 +69,115 @@
     background-position: left 47%, 100% 47%;
     background-size: contain, 30%;
 }
+
+@media(max-width:767px) {
+    .oak-home-banner {
+        padding: 30px 10px 0 10px;
+        background-position: center;
+        height: 390px;
+        margin-bottom: 150px !important;
+    }
+
+    .oak-banner__text-wrapper {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .oak-banner-text {
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+
+    .oak-banner-header {
+        font-size: 27px;
+        margin-bottom: 7px;
+    }
+
+    .oak-banner-sub-text {
+        color: #FFF;
+        font-family: var(--cd300);
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .oak-home__banner-img {
+        bottom: 0;
+        right: 0;
+        height: 345px;
+        top: 55%;
+    }
+
+    .oak-home__banner-img img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+        ;
+    }
+
+    .oak-section__title {
+
+        font-size: 15px;
+    }
+
+    .oak-redirect__text {
+        font-size: 13px;
+        flex-shrink: 0;
+
+    }
+
+    .redirect-arrow,
+    .redirect-arrow img {
+        width: 70%;
+        object-fit: contain;
+    }
+
+    .oak-section__title::after {
+        bottom: -5px;
+    }
+
+    .oak-mobile-news__wrpper.oak-mb {
+        margin-bottom: 20px;
+
+    }
+
+    .trending-main_img {
+        height: 226px !important;
+    }
+
+    .oak-news__title.w-50 {
+        font-size: 16px !important;
+        width: 90% !important;
+        margin-bottom: 5px !important;
+    }
+
+    .oak-main-news_details__wrapper {
+        padding: 0px 10px 10px 10px !important;
+    }
+
+    .oak-news__stats {
+        font-size: 10px !important;
+    }
+
+    .oak-stats__icon,
+    .oak-stats__icon img {
+        width: 14px !important;
+        height: 10.804px !important;
+        flex-shrink: 0;
+        object-fit: contain !important;
+        margin-top: 1px;
+        display: flex;
+        margin-right: 2px;
+    }
+
+    .oak-news__text {
+
+        font-size: 12px !important;
+    }
+
+    .future-podcast__img_wrapper {
+        width: 287px !important;
+        height: 287px !important;
+        flex-shrink: 0;
+    }
+}

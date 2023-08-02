@@ -117,3 +117,19 @@
     font-size: 12px;
 }
 
+
+@media (max-width:767px) {
+    .news-details__title {
+        font-size: 25px;
+    }
+    .oak-news__details_img{
+        height: 219.439px;
+    }
+    .news-details__description {
+        font-size: 12px;
+    }
+
+    .news-comment {
+        font-size: 12px;
+    }
+}

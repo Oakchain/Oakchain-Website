@@ -199,7 +199,7 @@
 }
 
 .episode-transcript__wrapper {
-    padding: 24px 24px  10px 24px;
+    padding: 24px 24px 10px 24px;
 }
 
 .episode-transcript_text {
@@ -230,4 +230,87 @@
     height: calc(100% - 50px);
     overflow: auto;
 
+}
+
+
+@media (max-width:767px) {
+    .academy-banner__text {
+        font-size: 30px;
+        width: fit-content;
+        text-align: center;
+    }
+
+    .academy-left__side {
+        /* width: 100%; */
+        padding: 0 0px;
+    }
+
+    .academy-banner.oak-mb {
+        height: 350px;
+        margin-bottom: 16px;
+    }
+
+    .academy-tab__item {
+
+        font-size: 16px;
+    }
+
+    .oak-news_tag {
+        font-size: 12px;
+        padding: 7px 15px
+    }
+
+    .oak-article-title {
+
+        font-size: 25px;
+        line-height: normal;
+    }
+
+    .oak-video__course_details__wrapper {
+        padding: 0 10px;
+    }
+
+    .video-course__title {
+        /* color: var(--primary-color);
+        font-family: var(--cd600); */
+        font-size: 20px;
+        margin-bottom: 8px;
+        line-height: normal;
+    }
+
+    .episode-description,
+    .question-text,
+    .assignment-title {
+
+        font-size: 12px;
+    }
+
+    .question-wrapper {
+        padding: 10px 15px;
+        margin-bottom: 20px;
+    }
+
+    .assignment-wrapper {
+        padding: 17px 15px;
+        margin-bottom: 10px;
+
+    }
+
+    .transcript-text {
+
+        font-size: 12px;
+
+    }
+
+    .episode-transcript_text {
+
+        font-size: 18px;
+    }
+
+    .main-episode__img_container {
+        height: 320px;
+    }
+    .player-icon{
+        width: 25% !important;
+    }
 }

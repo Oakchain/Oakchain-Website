@@ -47,7 +47,7 @@ const Tasks = () => {
 
                 </div>
                 <div className=''>
-                    <button className='oak-btn btn px-5'>
+                    <button className='oak-btn btn px-md-5 px-4 w-100'>
                         Start
                     </button>
                 </div>

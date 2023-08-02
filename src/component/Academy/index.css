@@ -203,3 +203,91 @@
     font-family: var(--cd500);
     font-size: 15px;
 }
+
+@media (max-width:767px) {
+    .oak-academy-banner__card {
+        height: 275px;
+        width: 100%;
+        padding: 20px 0 0 20px;
+        background-size: contain, 65% !important;
+        margin-bottom: 20px;
+    }
+
+    .oak-academy__banner-text {
+
+        font-size: 25.27px;
+        width: 80%;
+    }
+
+    .oak-academy__banner_title {
+        font-size: 18.003px !important;
+    }
+
+    .oak-academy__features {
+
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .oak-news_logo__wrapper,
+    .oak-news_logo__wrapper img {
+        width: 19.705px;
+        height: 19.705px;
+        flex-shrink: 0;
+        object-fit: cover;
+        display: flex;
+        margin-right: 11px;
+    }
+
+    .oak-grid__article_img__wrapper {
+        height: 275px !important;
+
+    }
+
+    .oak-article__title {
+        font-size: 25px;
+        margin-bottom: 10px !important;
+    }
+
+    .article-tag {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .oak-video__course_wrapper {
+        border-radius: 10px;
+        border: none !important;
+        background: #FFF;
+        overflow: hidden;
+    }
+
+    .oak-video-course__cover-image img {
+        width: 100% !important;
+        /* height: 119.003px !important; */
+        object-fit: cover;
+    }
+
+    .video-content__wrapper {
+        margin-bottom: 10px;
+    }
+
+    .video-course__img_container {
+        height: 240px !important;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 21px;
+    }
+    .oak-video_description {
+        font-size: 12px !important;
+    }
+    .video-episode__img_wrapper {
+        height: 112.7px !important;
+        flex-shrink: 0;
+    }
+    .oak-video_episode__title {
+        font-size: 12px !important;
+    }
+    .video-feature{
+        font-size: 15px !important;
+    }
+}

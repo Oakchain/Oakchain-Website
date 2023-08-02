@@ -29,16 +29,21 @@ const EpisodeDetails = () => {
                             </div>
                             <div className='position-absolute '
                                 style={{
-                                    bottom: '40%',
-                                    left: "45%"
+                                    textAlign: 'center',
+                                    height: '100%',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    top: 0,
+                                    width: '100%'
                                 }} >
-                                <img src={activeIcon} alt='course_img' />
+                                <img src={activeIcon} alt='course_img' className='player-icon' />
                             </div>
                         </div>
                         <div>
-                            <Row className='g-3'>
+                            <Row className='g-3 mb-md-0 mb-3'>
                                 {arrayGenerator(4).map(el =>
-                                    <Col sm='12' md='3'>
+                                    <Col xs='6' md='3'>
                                         <EpisodeChapter />
 
                                     </Col>

@@ -8,7 +8,7 @@ import './index.css'
 const AuthItems = () => {
     const location = useLocation()
     return (
-        <div className='oak-container-fluid oak-nav-item_wrapper'>
+        <div className='d-none d-md-block oak-container-fluid oak-nav-item_wrapper'>
             <div className='d-flex align-items-center justify-content-between'>
                 <Nav className=" d-flex align-items-center " >
                     {

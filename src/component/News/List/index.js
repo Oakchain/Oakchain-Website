@@ -6,17 +6,17 @@ const NewsGrid = ({ image, type }) => {
     const navigate = useNavigate()
 
     return (
-        <div className='d-flex align-items-center'
+        <div className='d-flex align-items-center flex-shrink_mobile'
             role='button'
             onClick={
                 () => {
                     navigate('/news/1')
                 }
             }>
-            <div className='news-grid__img_wrapper pe-3'>
+            <div className='news-grid__img_wrapper pe-md-3 pe-0'>
                 <img src={image ?? defaultImg} alt='icon' />
             </div>
-            <div className=''>
+            <div className='px-2 px-md-0'>
                 <div className='d-flex align-items-center mb-2'>
                     <div className='pe-1 oak-news_logo__wrapper'>
                         <img src={logo} alt='icon' />

@@ -23,10 +23,18 @@ const EpisodeChapter = () => {
                     }} />
                 </div>
                 <p className='episode-time__count position-absolute mb-0 px-2 '>4:50</p>
-                <img src={playIcon} alt='icon' className='position-absolute' style={{
-                    top: "35%",
-                    left: "37%"
-                }} />
+                <div className='position-absolute ' style={{
+                    textAlign: 'center',
+                    height: '100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    top: 0,
+                    width: '100%'
+                }} >
+                    <img src={playIcon} alt='icon' className='player-ico' />
+
+                </div>
             </div>
         </div>
 

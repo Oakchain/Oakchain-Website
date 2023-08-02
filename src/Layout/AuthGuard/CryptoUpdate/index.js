@@ -3,7 +3,7 @@ import './index.css'
 
 const CryptoUpdate = () => {
     return (
-        <div className='oak-container-fluid oak-crypto_updates d-flex align-items-center justify-content-center'>
+        <div className='d-none ak-container-fluid oak-crypto_updates d-flex align-items-center justify-content-center'>
             <div className='px-3'>
                 <p className='oak-crypto_key mb-0'>Cryptos:
                     <span className='oak-crypto_value mb-0'> 24,029</span> </p>

@@ -19,7 +19,7 @@ const VideoChapter = () => {
                     navigate('/academy/episode/1')
                 }
             }>
-            <div className='oak-grid__news_img__wrapper position-relative mb-3'>
+            <div className='oak-grid__news_img__wrapper position-relative mb-md-3 mb-2'>
                 <div className='w-100 video-episode__img_wrapper'>
                     <img src={defaultImg} alt='main_img' className='w-100 h-100' style={{
                         objectFit: 'cover'

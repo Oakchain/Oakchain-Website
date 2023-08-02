@@ -27,3 +27,35 @@
     line-height: normal;
     margin-bottom: 23px;
 }
+
+@media (max-width:767px) {
+    .oak-task__description {
+        font-size: 10px;
+    }
+
+    .oak-task-title {
+
+        font-size: 15px;
+
+    }
+
+    .oak-task_card {
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #CFCFCF;
+        background: #FFF;
+    }
+
+    .home-mobile_task-center {
+        scroll-snap-type: x mandatory;
+    }
+
+    .home-mobile_task-center .oak-task_card {
+        width: 90%;
+        margin-right: 20px;
+        flex-shrink: 0;
+        scroll-snap-align: center;
+    }
+
+
+}

@@ -122,3 +122,19 @@ input:focus {
     /* padding: 10px; */
     box-sizing: border-box;
 }
+
+@media (max-width:767px) {
+    .oak-mb {
+        margin-bottom: 30px;
+    } 
+    .oak-btn, .oak-btn:hover, .oak-btn-secondary, .oak-btn-secondary:hover, .oak-tertiary-btn, .oak-tertiary-btn:hover {
+  
+        background: #FFF;
+        padding: 12px 15px;
+        font-size: 11.914px;
+    }   
+    .oak-cstm__row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

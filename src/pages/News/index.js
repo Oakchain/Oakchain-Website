@@ -41,7 +41,7 @@ const News = () => {
                 <div className="d-flex align-items-center justify-content-start oak-container-fluid">
                     <h5 className="oak-section__title oak-mb">Featured News</h5>
                 </div>
-                <div className="d-flex align-items-center overflow-auto flex-nowrap ps-5 ms-4 featured-news__container oak-mb">
+                <div className="d-flex align-items-center overflow-auto flex-nowrap ps-md-5 ms-md-4 ms-3 featured-news__container oak-mb">
                     <Featured image={ft1} />
                     <Featured image={ft2} />
                     <Featured image={ft3} />
@@ -50,7 +50,7 @@ const News = () => {
                     <Featured image={ft3} />
                 </div>
                 <div className="d-flex align-items-center justify-content-between oak-container-fluid oak-mb">
-                    <div className="d-flex align-items-center justify-content-between">
+                    <div className="d-flex align-items-center justify-content-between news-tag_select">
                         {
                             newsTag.map(el => <p
                                 role='button'

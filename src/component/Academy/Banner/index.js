@@ -7,12 +7,12 @@ import ac4 from '../../../assets/images/ac4.svg'
 
 const Banner = () => {
     return (
-        <div className='d-flex align-items-center'>
+        <div className='d-block d-md-flex align-items-center'>
             <div className='oak-academy-banner__card me-5'>
                 <div>
                     <img src={lightLogo} alt='logo' />
                 </div>
-                <div className='h-100 d-flex mt-5 pt-4'>
+                <div className='h-100 d-flex mt-3 pt-4 mt-md-5 pt-md-4'>
                     <h3 className='oak-academy__banner-text'>
                         Blockchain for Everyone
                     </h3>
@@ -29,19 +29,19 @@ const Banner = () => {
                         <div className='pe-3 oak-news_logo__wrapper'>
                             <img src={ac1} alt='icon' />
                         </div>
-                        <p className='mb-0 oak-academy__features pt-1'>Learn the basics of blockchain & crypto</p>
+                        <p className='mb-0 oak-academy__features pt-md-1 pt-0'>Learn the basics of blockchain & crypto</p>
                     </div>
                     <div className='d-flex align-items-center  py-2'>
                         <div className='pe-3 oak-news_logo__wrapper'>
                             <img src={ac2} alt='icon' />
                         </div>
-                        <p className='mb-0 oak-academy__features pt-1'>Read Articles, Watch videos & answer quiz questions</p>
+                        <p className='mb-0 oak-academy__features pt-md-1 pt-0'>Read Articles, Watch videos & answer quiz questions</p>
                     </div>
                     <div className='d-flex align-items-center  py-2'>
                         <div className='pe-3 oak-news_logo__wrapper'>
                             <img src={ac3} alt='icon' />
                         </div>
-                        <p className='mb-0 oak-academy__features pt-1'>3hr 45m</p>
+                        <p className='mb-0 oak-academy__features pt-md-1 pt-0'>3hr 45m</p>
                     </div>
                     <div className='d-flex align-items-center  py-2'>
                         <div className='pe-3 oak-news_logo__wrapper'>

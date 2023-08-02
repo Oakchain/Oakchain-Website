@@ -121,7 +121,7 @@ const NewsDetails = () => {
                             </div>
 
                         </Col>
-                        <Col sm='12' md='4'>
+                        <Col sm='12' md='4' className="d-none d-md-block">
                             <div className=" d-flex align-items-center justify-content-between mb-4">
                                 <h5 className="oak-section__title">Related News</h5>
                                 <div className="d-flex align-items-center" role='button'>
@@ -148,6 +148,20 @@ const NewsDetails = () => {
                         </Col>
 
                     </Row>
+                    <div>
+                        <div className=" d-flex align-items-center justify-content-between mb-4">
+                            <h5 className="oak-section__title">Related News</h5>
+                            <div className="d-flex align-items-center" role='button'>
+                                <p className="oak-redirect__text mb-0 pe-3"></p>
+                            </div>
+                        </div>
+                        <div className='d-flex d-md-none align-items-center flex-nowrap trending-mobile__list'>
+                            <List />
+                            <List />
+                            <List />
+                        </div>
+                    </div>
+
 
                     <div>
                         <div className=" d-flex align-items-center justify-content-between mb-4">
@@ -156,13 +170,21 @@ const NewsDetails = () => {
                                 <p className="oak-redirect__text mb-0 pe-3"></p>
                             </div>
                         </div>
-                        <Row className='g-3'>
+
+                        <Row className='g-3 d-none d-md-block'>
                             {arrayGenerator(4).map(el =>
                                 <Col md='4' lg='3' sm='12'>
                                     <Grid />
                                 </Col>)
                             }
                         </Row>
+
+                        <div className='d-flex d-md-none align-items-center flex-nowrap trending-mobile__list'>
+                            <Grid />
+                            <Grid />
+                            <Grid />
+                        </div>
+
                     </div>
 
 

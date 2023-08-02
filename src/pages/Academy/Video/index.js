@@ -15,11 +15,14 @@ const VideoCourses = () => {
                 <AcademyBanner />
             </div>
             <div>
-                <div className='d-flex align-items-center justify-content-between  oak-mb'>
-                    <div>
-                        <h5 className="oak-section__title w-100">Welcome to the Academy</h5>
+                <div className='d-block d-md-flex align-items-center justify-content-between  oak-mb'>
+                    <div className='mb-4 mb-md-0 d-md-block d-flex justify-content-between '>
+                        <h5 className="oak-section__title ">Welcome to the Academy</h5>
+                        <div className='d-block d-md-none pe-2 '>
+                            {''}
+                        </div>
                     </div>
-                    <div>
+                    <div className='mb-4 mb-md-0'>
                         <div className="d-flex align-items-center" >
                             {
                                 academyTag.map(el => <p

@@ -15,12 +15,17 @@ const ArticleCourses = () => {
 
     return (
         <div>
-            <div className='d-flex align-items-center justify-content-between oak-container-fluid oak-mb'>
-                <div>
-                    <h5 className="oak-section__title w-100">Read and Learn about Blockchain and Crypto</h5>
+            <div className='d-block d-md-flex align-items-center justify-content-between oak-container-fluid oak-mb'>
+                <div className='d-flex d-md-block'>
+                    <h5 className="oak-section__title w-100 mb-4 mb-md-0">Read and Learn about Blockchain and Crypto</h5>
+                    <div className='d-block d-md-none px-1' style={{
+                        width:'4%'
+                    }}>
+                        <p>{''}</p>
+                    </div>
                 </div>
                 <div>
-                    <div className="d-flex align-items-center" >
+                    <div className="d-flex align-items-center mb-4 mb-md-0" >
                         {
                             academyTag.map(el => <p
                                 role='button'

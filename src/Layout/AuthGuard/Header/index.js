@@ -4,6 +4,8 @@ import logo from '../../../assets/images/logo.svg'
 import dropdown from '../../../assets/images/dropdown.svg'
 import auth1 from '../../../assets/images/auth1.svg'
 import auth2 from '../../../assets/images/auth2.svg'
+import oakMenu from '../../../assets/images/oak_menu.svg'
+
 
 const Header = () => {
     return (
@@ -13,7 +15,7 @@ const Header = () => {
                     <img src={logo} alt='logo' />
                 </div>
 
-                <ul className='d-flex align-items-center justify-content-between nav-items__wrapper'>
+                <ul className='d-none d-flex align-items-center justify-content-between nav-items__wrapper'>
                     <li className='nav-item'>How it Works</li>
                     <li className='nav-item d-flex align-items-center'>
                         Resources
@@ -32,7 +34,7 @@ const Header = () => {
 
                 </ul>
 
-                <div className='d-flex align-items-center'>
+                <div className='d-none d-flex align-items-center'>
                     <div className='header-auth_item d-flex align-items-center px-3'>
                         <div>
                             <img src={auth1} alt='icon'/>
@@ -45,6 +47,11 @@ const Header = () => {
                     <div className='px-3'>
                         <p className=' oak-wallet_name mb-0'>P</p>
                     </div>
+                </div>
+
+                <div className='d-block d-md-none'>
+                    <img src={oakMenu} alt='icon' />
+
                 </div>
             </div>
 

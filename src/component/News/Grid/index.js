@@ -12,7 +12,7 @@ const Grid = () => {
   const navigate = useNavigate()
 
   return (
-    <div className='oak-grid__news  bg-white h-100'
+    <div className='oak-grid__news  bg-white h-100 flex-shrink_mobile'
       role='button'
       onClick={
         () => {
