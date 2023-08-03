@@ -9,6 +9,7 @@ import telegramIcon from "../../assets/images/footerTelegram.png";
 import redditIcon from "../../assets/images/footerReddit.png";
 import upBtn from "../../assets/images/up.png";
 
+
 const Footer = () => {
   return (
     <footer className="footer">
