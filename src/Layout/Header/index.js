@@ -8,7 +8,7 @@ import arrow from '../../assets/images/arrow.svg'
 import WalletModal from '../../component/WalletModal'
 
 
-const Header = () => {
+const Header = ({ toggle }) => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggleModal = () => {
@@ -50,9 +50,8 @@ const Header = () => {
                     </button>
                 </div>
 
-                <div className='d-block d-md-none'>
+                <div className='d-block d-md-none' onClick={toggle}>
                     <img src={oakMenu} alt='icon' />
-
                 </div>
             </div>
 

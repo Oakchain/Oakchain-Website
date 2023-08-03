@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './Header'
 import CryptoUpdate from './CryptoUpdate'
 import NavItems from './AuthItems'
 import Footer from '../Footer'
+import Sidebar from './Sidebar'
+
 
 const AuthGuard = ({ children }) => {
+    const [showSideBar, setShowSidebar] = useState(false)
+
+    const toggleSidebar = () => {
+        setShowSidebar(!showSideBar)
+    }
     return (
         <div>
-            <Header />
+            <Header toggle={toggleSidebar} />
             <CryptoUpdate />
             <NavItems />
             <div className='oak-auth-wrapper' style={{
@@ -16,6 +23,7 @@ const AuthGuard = ({ children }) => {
                 {children}
             </div>
             <Footer />
+            <Sidebar show={showSideBar} toggle={toggleSidebar} />
         </div>
     )
 }

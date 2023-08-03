@@ -1,0 +1,58 @@
+.oak-sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    top: 0;
+    backdrop-filter: 5px;
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+
+
+.oak-sidebar.show {
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+
+}
+
+.nav-item {
+    margin-bottom: 20px;
+}
+
+.oak-left__sidebar {
+    background: #fff;
+    width: 0%;
+    height: 100%;
+    padding: 0 15px;
+    display: none;
+}
+
+.oak-sidebar.show.w-100 .oak-left__sidebar {
+    display: block;
+    width: 75%;
+
+}
+
+.mobile-nav_item .nav-link {
+    padding-left: 0 !important;
+    color: var(--primary-color) !important;
+
+}
+
+.mobile-nav_item {
+    margin-bottom: 5px;
+}
+
+.oak-user__details-mobile {
+    border-radius: 40px;
+    background: #EFEFFF;
+    width: 80%;
+}
+
+.oak-wallet_user-name {
+    color: #000;
+    font-size: 15px;
+    font-family: var(--cd500);
+}

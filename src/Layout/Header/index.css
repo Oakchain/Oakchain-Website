@@ -52,4 +52,23 @@
         border-bottom: none;
     }
 
+    .mobile-auth__items {
+        width: 35px;
+        height: 35px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: #F4F4F4;
+    }
+
+    .mobile-language__select {
+        color: #000;
+        font-family: var(--cd600);
+        font-size: 12px;
+    }
+
+    .header-authorized {
+        padding-bottom: 10px;
+        border-bottom: #d4d4d4 solid 1px;
+    }
+
 }
