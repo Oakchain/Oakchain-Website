@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../../assets/font/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+        url('../../assets/font/fonts/ClashDisplay-Regular.woff') format('woff'),
+        url('../../assets/font/fonts/ClashDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .oak-header {
     padding: 30px 0;
     border-bottom: #d4d4d4 solid 1px;
@@ -35,57 +44,146 @@
     width: 43px;
     height: 43px;
     flex-shrink: 0;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-family: var(--cd600);
-    font-size: 20px;
-    line-height: 20px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
- .menu{
-    display: none;
- }
 
-.menu__display__items{
+.oak-profile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    border-radius: 10px;
+    top: 90px;
+    padding: 0;
+    right: 6%;
+    gap: 10px;
+    border: 1px solid #00002F;
+    background-color: #FFFFFF;
+    height: 178px;
+    width: 300px;
+    z-index: 10;
+}
+
+.oak-profile ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.oak-profile ul li {
+    height: 40px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+}
+
+.oak-profile ul li img {
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+    object-fit: contain;
+    image-rendering: optimizeQuality;
+    margin-right: 15px;
+}
+
+
+.oak-profile ul li button {
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    height: 35px;
+    width: 100%;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+
+.oak-profile ul li h3 {
+    color: #00002F;
+    margin: 0;
+    height: 100%;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    padding-left: 10px;
+    font-family: 'Clash Display';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.oak-profile ul li h3:hover {
+    background-color: #FF4E00;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+
+
+.menu {
     display: none;
 }
 
- #connect__btn{
+.menu__display__items {
+    display: none;
+}
+
+#connect__btn {
     margin-left: 15rem;
-} 
+}
+
+
 
 @media only screen and (max-width: 900px) {
-    .oak-header{
+    .oak-profile {
+        display: none;
+    }
+
+    .oak-header {
         display: flex;
         align-items: center !important;
         /* background-color: yellow; */
     }
 
-    #connect__btn{
+    #connect__btn {
         display: none !important;
     }
-    
+
 
     #resources,
     #company,
-    .nav-item{
+    .nav-item {
         display: none !important;
     }
 
-    #logo img{
+    #logo img {
         width: 4rem;
         height: 4rem;
         margin-top: -5rem;
         margin-left: 1rem;
     }
+
     /* #oak-nav-container{
         padding-top: -5rem !important;
     } */
 
-    .menu{
+    .menu {
         margin-bottom: 18%;
         margin-right: 8%;
         width: 2.2rem;
@@ -96,7 +194,7 @@
         justify-content: center;
     }
 
-    .menu__icon{
+    .menu__icon {
         width: 2rem;
         height: 0.2rem;
         background-color: black;
@@ -106,7 +204,7 @@
     }
 
     .menu__icon::before,
-    .menu__icon::after{
+    .menu__icon::after {
         background-color: black;
         content: '';
         width: 1.2rem;
@@ -115,47 +213,48 @@
         border-radius: 0.3rem;
     }
 
-    .menu__icon::before{
+    .menu__icon::before {
         transform: translateY(-0.6rem);
         transition: all 0.5s linear;
         margin-left: 0.8rem;
     }
-    .menu__icon::after{
+
+    .menu__icon::after {
         transform: translateY(0.6rem);
         transition: all 0.5s linear;
     }
 
-    .open .menu__icon{
+    .open .menu__icon {
         transform: rotate(90deg);
     }
 
-    .open .menu__icon::before{
+    .open .menu__icon::before {
         transform: rotate(-90deg) translate(0.4rem, -0.4rem);
         transition: all 0.5s linear;
         /* display: none; */
     }
 
-    .open .menu__icon::after{
+    .open .menu__icon::after {
         transform: rotate(-90deg) translate(-0.4rem, 0.4rem);
         transition: all 0.5s linear;
     }
 
     /* menu items styling */
-    .menu__display__items{
+    .menu__display__items {
         display: contents;
         width: 20rem;
         height: 100vh;
     }
-    
-    ul{
+
+    ul {
         list-style: none;
     }
-    
-    .list__header{
+
+    .list__header {
         margin: 1.5rem 0 1rem 0;
     }
-    
-    .sub-list__container{
+
+    .sub-list__container {
         /* background-color: yellowgreen; */
         width: 10rem;
         border-radius: 5px;
@@ -164,7 +263,6 @@
         border: black 0.05rem solid;
         line-height: 2rem;
     }
-   
+
     /* menu items styling // */
 }
-
