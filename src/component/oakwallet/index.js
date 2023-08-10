@@ -20,7 +20,7 @@ const OakWallet = ({ isWOpen, toggle }) => {
   };
 
   return (
-    <Modal isOpen={isWOpen} toggle={toggle} className='modal-dialog-centered' modalClassName='oak-modal__card'>
+    <Modal isOpen={isWOpen} toggle={toggle} className='modal-dialog-centered' modalClassName='oak-modal__card user-card'>
       <div className='Top'>
         <div className='accountTopp'>
           <h3>Oak Wallet</h3>
@@ -39,8 +39,8 @@ const OakWallet = ({ isWOpen, toggle }) => {
           </div>
         </div>
       </div>
-      <div className="navbar">
-        <Nav className='nab' tabs>
+      <div className="navbar w-100">
+        <Nav className='nab w-100 d-flex align-items-center justify-content-between px-4' tabs>
           <NavItem className='tab'>
             <NavLink
               className={classnames({ active: activeTab === '1' })}

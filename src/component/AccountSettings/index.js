@@ -33,7 +33,7 @@ const AccountSettings = ({ isOpen, toggle }) => {
   <Modal
    isOpen={isOpen}
    toggle={toggle} className='modal-dialog-centered'
-   modalClassName='oak-modal__card'
+   modalClassName='oak-modal__card user-card'
   >
    <div className='accountTop'>
     <h3>Account Settings</h3>

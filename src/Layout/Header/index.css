@@ -72,3 +72,221 @@
     }
 
 }
+
+
+.oak-profile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    border-radius: 10px;
+    top: 90px;
+    padding: 0;
+    right: 6%;
+    gap: 10px;
+    border: 1px solid #00002F;
+    background-color: #FFFFFF;
+    height: 178px;
+    width: 300px;
+    z-index: 10;
+}
+
+.oak-profile ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.oak-profile ul li {
+    height: 40px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+}
+
+.oak-profile ul li img {
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+    object-fit: contain;
+    image-rendering: optimizeQuality;
+    margin-right: 15px;
+}
+
+
+.oak-profile ul li button {
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    height: 35px;
+    width: 100%;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+
+.oak-profile ul li h3 {
+    color: #00002F;
+    margin: 0;
+    height: 100%;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    padding-left: 10px;
+    font-family: 'Clash Display';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.oak-profile ul li h3:hover {
+    background-color: #FF4E00;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+
+
+.menu {
+    display: none;
+}
+
+.menu__display__items {
+    display: none;
+}
+
+#connect__btn {
+    margin-left: 15rem;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .oak-profile {
+        display: none;
+    }
+
+    .oak-header {
+        display: flex;
+        align-items: center !important;
+        /* background-color: yellow; */
+    }
+
+    #connect__btn {
+        display: none !important;
+    }
+
+
+    #resources,
+    #company,
+    .nav-item {
+        display: none !important;
+    }
+
+    #logo img {
+        width: 4rem;
+        height: 4rem;
+        margin-top: -5rem;
+        margin-left: 1rem;
+    }
+
+    /* #oak-nav-container{
+        padding-top: -5rem !important;
+    } */
+
+    .menu {
+        margin-bottom: 18%;
+        margin-right: 8%;
+        width: 2.2rem;
+        height: 2.2rem;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu__icon {
+        width: 2rem;
+        height: 0.2rem;
+        background-color: black;
+        border-radius: 0.25rem;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu__icon::before,
+    .menu__icon::after {
+        background-color: black;
+        content: '';
+        width: 1.2rem;
+        position: absolute;
+        height: 0.2rem;
+        border-radius: 0.3rem;
+    }
+
+    .menu__icon::before {
+        transform: translateY(-0.6rem);
+        transition: all 0.5s linear;
+        margin-left: 0.8rem;
+    }
+
+    .menu__icon::after {
+        transform: translateY(0.6rem);
+        transition: all 0.5s linear;
+    }
+
+    .open .menu__icon {
+        transform: rotate(90deg);
+    }
+
+    .open .menu__icon::before {
+        transform: rotate(-90deg) translate(0.4rem, -0.4rem);
+        transition: all 0.5s linear;
+        /* display: none; */
+    }
+
+    .open .menu__icon::after {
+        transform: rotate(-90deg) translate(-0.4rem, 0.4rem);
+        transition: all 0.5s linear;
+    }
+
+    /* menu items styling */
+    .menu__display__items {
+        display: contents;
+        width: 20rem;
+        height: 100vh;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .list__header {
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    .sub-list__container {
+        /* background-color: yellowgreen; */
+        width: 10rem;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0.2rem 0.2rem;
+        border: black 0.05rem solid;
+        line-height: 2rem;
+    }
+
+    /* menu items styling // */
+}

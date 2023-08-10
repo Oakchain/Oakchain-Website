@@ -7,7 +7,7 @@
     font-style: normal;
    }
    
-   .oak-modal__card .modal-content {
+   .oak-modal__card.user-card .modal-content {
     width: 1000px;
     padding: 0;
     margin: 0;
@@ -187,7 +187,7 @@
    }
    
    .tab {
-    width: 234px;
+    /* width: 100%; */
     color: #00002F;
     font-family: 'Clash Display';
     font-size: 20px;

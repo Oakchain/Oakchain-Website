@@ -7,7 +7,7 @@
     font-style: normal;
    }
    
-   .oak-modal__card .modal-content {
+   .oak-modal__card.user-card .modal-content {
     width: 1000px;
     padding: 0;
     margin: 0;
