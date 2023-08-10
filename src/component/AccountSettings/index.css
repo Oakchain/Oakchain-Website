@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../../assets/font/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+     url('../../assets/font/fonts/ClashDisplay-Regular.woff') format('woff'),
+     url('../../assets/font/fonts/ClashDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+   
+   .oak-modal__card .modal-content {
+    width: 1000px;
+    padding: 0;
+    margin: 0;
+    height: 631px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px !important;
+    background-color: #FFFFFF;
+   }
+   
+   .accountTop {
+    width: 890px;
+    border-bottom: 2px solid #959595;
+    height: 93px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+   }
+   
+   .accountTop h3 {
+    color: #00002F;
+    margin: 0;
+    height: 47px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding: 0;
+    font-family: 'Clash Display';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-bottom: 7px;
+   }
+   
+   .accountTop button {
+    width: 47px;
+    background-color: transparent;
+    height: 47px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+   }
+   
+   .accountTop button img {
+    width: 47px;
+    height: 47px;
+    object-fit: cover;
+   }
+   
+   .accountBody {
+    width: 720px;
+    height: 527px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+   }
+   
+   .accountBody input {
+    height: 50px !important;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 10px;
+   
+   }
+   
+   .upLoad {
+    margin-top: 40px;
+    color: #00002F;
+    font-family: 'Clash Display';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   }
+   
+   .profileImage {
+    margin-top: 17px;
+    height: 145px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+   }
+   
+   .profileImage img {
+    height: 144px;
+    background-color: #F0F0F0;
+    width: 144px;
+    border-radius: 50%;
+   }
+   
+   .uBtn {
+    outline: none;
+    border: 0;
+    position: relative;
+    width: 40px;
+    left: -90px;
+    height: 33px;
+    background-color: transparent;
+   }
+   
+   .uBtn img {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0;
+    height: 100%;
+   }
+   
+   .recomm {
+    margin-top: 17px;
+    color: #959595;
+    font-family: 'Clash Display';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   }
+   
+   .username {
+    margin-top: 34px;
+    color: #00002F;
+    font-family: 'Clash Display';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   }
+   
+   
+   
+   #inPut {
+    margin-top: 12px;
+    width: 100%;
+    height: 50px;
+    background-color: #F2F2F2;
+    color: #959595;
+    font-family: 'Clash Display';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 20px;
+   }
+   
+   #eth {
+    margin-top: 12px;
+    width: 100%;
+    height: 50px;
+    background-color: #F2F2F2;
+    color: #00002F;
+    font-family: 'Clash Display';
+    font-size: 15px;
+    border-radius: 20px;
+    font-weight: 800;
+   }
+   
+   .socialCon {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 34px;
+   }
+   
+   .socialCon h1 {
+    margin: 0;
+    padding: 0;
+    color: #00002F;
+    font-family: 'Clash Display';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   }
+   
+   .socialCon .brands {
+    color: #00002F;
+    font-size: 25px;
+   }
+   
+   .socialConne {
+    margin-top: 12px;
+    width: 100%;
+    height: 50px !important;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+   }
+   
+   .socialConne input {
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    outline: none;
+    border: none;
+   }
+   
+   .socialConne button {
+    width: 144px;
+    height: 40px;
+    margin-right: 5px;
+    background-color: #00002F;
+    color: #FFFFFF;
+    outline: none;
+    padding: 0;
+    font-family: 'Clash Display';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    border-radius: 20px;
+   }
+   
+   .delete {
+    margin-top: 60px;
+    color: #F00;
+    font-family: 'Clash Display';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+   }
+   
+   .deleteCon {
+    margin-top: 12px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+   }
+   
+   .deleteCon h1 {
+    width: 350px;
+    padding: 0;
+    margin: 0;
+    color: #959595;
+    font-family: 'Clash Display';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   }
+   
+   .deleteCon button {
+    width: 170px;
+    height: 40px;
+    background-color: #00002F;
+    color: #FFFFFF;
+    margin-right: 5px;
+    outline: none;
+    padding: 0;
+    font-family: 'Clash Display';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    border-radius: 20px;
+   }
