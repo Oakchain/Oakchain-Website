@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 const CryptoUpdate = () => {
     return (
         <>
-            <div className='d-none ak-container-fluid oak-crypto_updates d-md-flex align-items-center justify-content-center'>
+            <div className='d-none oak-container-fluid oak-crypto_updates d-md-flex align-items-center justify-content-center'>
                 <div className='px-3'>
                     <p className='oak-crypto_key mb-0'>Cryptos:
                         <span className='oak-crypto_value mb-0'> 24,029</span> </p>
