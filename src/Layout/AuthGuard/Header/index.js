@@ -37,7 +37,7 @@ const Header = ({ toggle }) => {
 
                 </ul>
 
-                <div className='d-none d-flex align-items-center'>
+                <div className='d-none d-md-flex align-items-center'>
                     <div className='header-auth_item d-flex align-items-center px-3'>
                         <div>
                             <img src={auth1} alt='icon' />
