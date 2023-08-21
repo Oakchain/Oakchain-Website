@@ -48,15 +48,15 @@ const Sidebar = ({ show, toggle }) => {
                     </div>
 
                     <ul className=' nav-items__wrapper'>
-                        <li className='nav-item'>How it Works</li>
-                        <li className='nav-item d-flex align-items-center'>
+                        <li className='nav-item mobile'>How it Works</li>
+                        <li className='nav-item mobile d-flex align-items-center'>
                             Resources
                             <span className='dropdown-wrapper'>
                                 <img src={dropdown} alt='logo' />
                             </span>
 
                         </li>
-                        <li className='nav-item d-flex align-items-center'>
+                        <li className='nav-item mobile d-flex align-items-center'>
                             Company
 
                             <span className='dropdown-wrapper'>
