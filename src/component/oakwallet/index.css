@@ -20,7 +20,19 @@
  background-color: #FFFFFF;
 }
 
-.Top {
+.mobileView {
+ display: none;
+}
+
+.desktopView {
+ display: flex;
+ width: 100%;
+ height: 100%;
+ flex-direction: column;
+ align-items: center;
+}
+
+.desktopView .Top {
  height: 347px;
  width: 100%;
  display: flex;
@@ -32,7 +44,7 @@
  border-radius: 10px;
 }
 
-.accountTopp {
+.desktopView .accountTopp {
  width: 890px;
  height: 96px;
  margin-bottom: 10px;
@@ -43,7 +55,7 @@
  align-items: end;
 }
 
-.accountTopp h3 {
+.desktopView .accountTopp h3 {
  color: #FFFFFF;
  margin: 0;
  height: 47px;
@@ -59,7 +71,7 @@
  padding-bottom: 7px;
 }
 
-.accountTopp button {
+.desktopView .accountTopp button {
  width: 47px;
  background-color: transparent;
  height: 47px;
@@ -70,14 +82,14 @@
  border: 0;
 }
 
-.accountTopp button img {
+.desktopView .accountTopp button img {
  width: 47px;
  height: 47px;
  background-color: transparent;
  object-fit: cover;
 }
 
-.oakC {
+.desktopView .oakC {
  height: 32px;
  width: 100%;
  display: flex;
@@ -85,7 +97,7 @@
  align-items: center;
 }
 
-.oakC img {
+.desktopView .oakC img {
  height: 31px;
  width: 23px;
  margin: 0;
@@ -93,7 +105,7 @@
  margin-right: 10px;
 }
 
-.oakC h3 {
+.desktopView .oakC h3 {
  color: #FFF;
  margin: 0;
  padding: 0;
@@ -104,7 +116,7 @@
  line-height: normal;
 }
 
-.amounT {
+.desktopView .amounT {
  color: #FFF;
  font-family: 'Clash Display';
  font-size: 60px;
@@ -114,7 +126,7 @@
  line-height: normal;
 }
 
-.buttonss {
+.desktopView .buttonss {
  width: 100%;
  height: 112px;
  display: flex;
@@ -126,7 +138,7 @@
  background: linear-gradient(#00002F, #00002F);
 }
 
-.btnHolder {
+.desktopView .btnHolder {
  width: 400px;
  height: 100%;
  background-color: transparent;
@@ -136,7 +148,7 @@
  align-items: center;
 }
 
-.btnHolder div {
+.desktopView .btnHolder div {
  height: 100%;
  width: 70px;
  display: flex;
@@ -145,7 +157,7 @@
  justify-content: center;
 }
 
-.btnHolder div button {
+.desktopView .btnHolder div button {
  height: 70px;
  width: 70px;
  background-color: #FF4E00;
@@ -155,11 +167,11 @@
  border-radius: 50%;
 }
 
-.btnHolder div button img {
+.desktopView .btnHolder div button img {
  object-fit: contain;
 }
 
-.btnHolder div h3 {
+.desktopView .btnHolder div h3 {
  color: #FFF;
  text-align: center;
  font-family: 'Clash Display';
@@ -169,7 +181,7 @@
  line-height: normal;
 }
 
-.navbar {
+.desktopView .navbar {
  display: flex;
  align-items: center;
  background-color: #FFFFFF;
@@ -178,7 +190,7 @@
  position: relative;
 }
 
-.nab {
+.desktopView .nab {
  width: 882px;
  padding: 0;
  display: flex;
@@ -186,8 +198,8 @@
  flex-wrap: nowrap;
 }
 
-.tab {
- width: 234px;
+.desktopView .tab {
+ width: 200px;
  color: #00002F;
  font-family: 'Clash Display';
  font-size: 20px;
@@ -199,26 +211,26 @@
  transition: color 0.3s ease-in-out;
 }
 
-.navbar .nab .nav-item .nav-link {
+.desktopView .navbar .nab .nav-item .nav-link {
  color: #00002F;
 
 }
 
-.navbar .nab .nav-item .nav-link.active {
+.desktopView .navbar .nab .nav-item .nav-link.active {
  background-color: transparent;
  border: none;
  color: inherit;
  box-shadow: none;
 }
 
-.navbar .nab .nav-item .nav-link:hover {
+.desktopView .navbar .nab .nav-item .nav-link:hover {
  background-color: transparent;
  border: none;
  color: inherit;
  box-shadow: none;
 }
 
-.active-bar {
+.desktopView .active-bar {
  position: absolute;
  height: 3px;
  top: 50px;
@@ -228,14 +240,14 @@
  transition: left 0.3s ease-in-out;
 }
 
-.trans {
+.desktopView .trans {
  display: flex;
  flex-direction: row;
  justify-content: center;
  align-items: center;
 }
 
-.trans h3 {
+.desktopView .trans h3 {
  color: #00002F;
  font-family: 'Clash Display';
  font-size: 20px;
@@ -245,14 +257,14 @@
  line-height: normal;
 }
 
-.tokens {
+.desktopView .tokens {
  display: flex;
  flex-direction: row;
  justify-content: center;
  align-items: center;
 }
 
-.tokens h3 {
+.desktopView .tokens h3 {
  color: #00002F;
  font-family: 'Clash Display';
  font-size: 20px;
@@ -262,14 +274,14 @@
  line-height: normal;
 }
 
-.nft {
+.desktopView .nft {
  display: flex;
  flex-direction: row;
  justify-content: center;
  align-items: center;
 }
 
-.nft h3 {
+.desktopView .nft h3 {
  color: #00002F;
  font-family: 'Clash Display';
  font-size: 20px;
@@ -279,9 +291,337 @@
  line-height: normal;
 }
 
-.detailTab {
+.desktopView .detailTab {
  width: 800px;
  height: 220px;
  overflow-y: scroll;
  scroll-behavior: smooth;
+}
+
+@media (max-width: 999px) and (min-width: 280px) {
+ .modal.oak-modal__card {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+ }
+
+ .oak-modal__card .modal-dialog {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0;
+  justify-content: center;
+  align-items: start;
+  margin: 0;
+  top: 0;
+ }
+
+ .desktopView {
+  display: none;
+ }
+
+ .oak-modal__card .modal-content {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px !important;
+  background-color: #FFFFFF;
+ }
+
+ .mobileView {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .mobileView .Top {
+  height: 347px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: 0;
+  align-items: center;
+  background: url('../../assets/images/userP/lines.svg'), linear-gradient(#00002F, #00002F);
+  border-radius: 10px;
+ }
+
+ .mobileView .accountTopp {
+  width: 95%;
+  height: 96px;
+  margin-bottom: 10px;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+ }
+
+ .mobileView .accountTopp h3 {
+  color: #FFFFFF;
+  margin: 0;
+  height: 47px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  padding: 0;
+  font-family: 'Clash Display';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 7px;
+ }
+
+ .mobileView .accountTopp button {
+  width: 30px;
+  background-color: transparent;
+  height: 30px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+ }
+
+ .mobileView .accountTopp button img {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  object-fit: cover;
+ }
+
+ .mobileView .oakC {
+  height: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .mobileView .oakC img {
+  height: 31px;
+  width: 23px;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+ }
+
+ .mobileView .oakC h3 {
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  font-family: 'Clash Display';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+ }
+
+ .mobileView .amounT {
+  color: #FFF;
+  font-family: 'Clash Display';
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  margin-bottom: 24px;
+  line-height: normal;
+ }
+
+ .mobileView .buttonss {
+  width: 100%;
+  height: 112px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: linear-gradient(#00002F, #00002F);
+ }
+
+ .mobileView .btnHolder {
+  width: 400px;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .mobileView .btnHolder div {
+  height: 100%;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .mobileView .btnHolder div button {
+  height: 70px;
+  width: 70px;
+  background-color: #FF4E00;
+  border: 0;
+  outline: none;
+  margin-bottom: 5px;
+  border-radius: 50%;
+ }
+
+ .mobileView .btnHolder div button img {
+  object-fit: contain;
+ }
+
+ .mobileView .btnHolder div h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Clash Display';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+ }
+
+ .mobileView .navbar {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 10px;
+  width: 95%;
+  justify-content: center;
+  position: relative;
+ }
+
+ .mobileView .nab {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+ }
+
+ .mobileView .tab {
+  width: 33.3%;
+  display: contents !important;
+  color: #00002F;
+  font-family: 'Clash Display';
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+ }
+
+ .mobileView .navbar .nab .nav-item .nav-link {
+  color: #00002F;
+  width: 33.3%;
+ }
+
+ .mobileView .navbar .nab .nav-item .nav-link.active {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  box-shadow: none;
+ }
+
+ .mobileView .navbar .nab .nav-item .nav-link:hover {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  box-shadow: none;
+ }
+
+ .mobileView .active-bar {
+  position: absolute;
+  height: 3px;
+  top: 50px;
+  width: 33.3%;
+  background-color: #FF4E00;
+  bottom: 0;
+  transition: left 0.3s ease-in-out;
+ }
+
+ .mobileView .trans {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  overflow-y: scroll;
+ }
+
+ .mobileView .trans h3 {
+  color: #00002F;
+  font-family: 'Clash Display';
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+ }
+
+ .mobileView .tokens {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  overflow-y: scroll;
+ }
+
+ .mobileView .tokens h3 {
+  color: #00002F;
+  font-family: 'Clash Display';
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+ }
+
+ .mobileView .nft {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  overflow-y: scroll;
+ }
+
+ .mobileView .nft h3 {
+  color: #00002F;
+  font-family: 'Clash Display';
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+ }
+
+ .mobileView .detailTab {
+  width: 800px;
+  height: 220px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+ }
 }

@@ -19,7 +19,19 @@
  background-color: #FFFFFF;
 }
 
-.accountTop {
+.mobileView {
+ display: none;
+}
+
+.desktopView {
+ display: flex;
+ width: 100%;
+ height: 100%;
+ flex-direction: column;
+ align-items: center;
+}
+
+.desktopView .accountTop {
  width: 890px;
  border-bottom: 2px solid #959595;
  height: 93px;
@@ -30,7 +42,7 @@
  align-items: end;
 }
 
-.accountTop h3 {
+.desktopView .accountTop h3 {
  color: #00002F;
  margin: 0;
  height: 47px;
@@ -46,7 +58,7 @@
  padding-bottom: 7px;
 }
 
-.accountTop button {
+.desktopView .accountTop button {
  width: 47px;
  background-color: transparent;
  height: 47px;
@@ -57,13 +69,13 @@
  border: 0;
 }
 
-.accountTop button img {
+.desktopView .accountTop button img {
  width: 47px;
  height: 47px;
  object-fit: cover;
 }
 
-.accountBody {
+.desktopView .accountBody {
  width: 720px;
  height: 527px;
  background-color: #FFFFFF;
@@ -72,7 +84,7 @@
  overflow-y: scroll;
 }
 
-.accountBody input {
+.desktopView .accountBody input {
  height: 50px !important;
  padding: 0px;
  margin: 0px;
@@ -80,7 +92,7 @@
 
 }
 
-.upLoad {
+.desktopView .upLoad {
  margin-top: 40px;
  color: #00002F;
  font-family: 'Clash Display';
@@ -90,7 +102,7 @@
  line-height: normal;
 }
 
-.profileImage {
+.desktopView .profileImage {
  margin-top: 17px;
  height: 145px;
  width: 100%;
@@ -100,14 +112,14 @@
  align-items: center;
 }
 
-.profileImage img {
+.desktopView .profileImage img {
  height: 144px;
  background-color: #F0F0F0;
  width: 144px;
  border-radius: 50%;
 }
 
-.uBtn {
+.desktopView .uBtn {
  outline: none;
  border: 0;
  position: relative;
@@ -117,14 +129,14 @@
  background-color: transparent;
 }
 
-.uBtn img {
+.desktopView .uBtn img {
  width: 100%;
  background-color: transparent;
  border-radius: 0;
  height: 100%;
 }
 
-.recomm {
+.desktopView .recomm {
  margin-top: 17px;
  color: #959595;
  font-family: 'Clash Display';
@@ -134,7 +146,7 @@
  line-height: normal;
 }
 
-.username {
+.desktopView .username {
  margin-top: 34px;
  color: #00002F;
  font-family: 'Clash Display';
@@ -146,7 +158,7 @@
 
 
 
-#inPut {
+.desktopView #inPut {
  margin-top: 12px;
  width: 100%;
  height: 50px;
@@ -160,7 +172,7 @@
  border-radius: 20px;
 }
 
-#eth {
+.desktopView #eth {
  margin-top: 12px;
  width: 100%;
  height: 50px;
@@ -172,7 +184,7 @@
  font-weight: 800;
 }
 
-.socialCon {
+.desktopView .socialCon {
  display: flex;
  width: 100%;
  height: 50px;
@@ -182,7 +194,7 @@
  margin-top: 34px;
 }
 
-.socialCon h1 {
+.desktopView .socialCon h1 {
  margin: 0;
  padding: 0;
  color: #00002F;
@@ -193,12 +205,12 @@
  line-height: normal;
 }
 
-.socialCon .brands {
+.desktopView .socialCon .brands {
  color: #00002F;
  font-size: 25px;
 }
 
-.socialConne {
+.desktopView .socialConne {
  margin-top: 12px;
  width: 100%;
  height: 50px !important;
@@ -210,7 +222,7 @@
  border-radius: 20px;
 }
 
-.socialConne input {
+.desktopView .socialConne input {
  width: 100%;
  background-color: transparent;
  height: 100%;
@@ -218,7 +230,7 @@
  border: none;
 }
 
-.socialConne button {
+.desktopView .socialConne button {
  width: 144px;
  height: 40px;
  margin-right: 5px;
@@ -235,7 +247,7 @@
  border-radius: 20px;
 }
 
-.delete {
+.desktopView .delete {
  margin-top: 60px;
  color: #F00;
  font-family: 'Clash Display';
@@ -245,7 +257,7 @@
  line-height: normal;
 }
 
-.deleteCon {
+.desktopView .deleteCon {
  margin-top: 12px;
  width: 100%;
  height: 50px;
@@ -257,7 +269,7 @@
  border-radius: 20px;
 }
 
-.deleteCon h1 {
+.desktopView .deleteCon h1 {
  width: 350px;
  padding: 0;
  margin: 0;
@@ -269,7 +281,7 @@
  line-height: normal;
 }
 
-.deleteCon button {
+.desktopView .deleteCon button {
  width: 170px;
  height: 40px;
  background-color: #00002F;
@@ -284,4 +296,320 @@
  line-height: normal;
  border: none;
  border-radius: 20px;
+}
+
+@media (max-width: 999px) and (min-width: 280px) {
+ .modal.oak-modal__card {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+ }
+
+ .oak-modal__card .modal-dialog {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0;
+  margin: 0;
+ }
+
+ .desktopView {
+  display: none;
+ }
+
+ .oak-modal__card .modal-content {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 631px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px !important;
+  background-color: #FFFFFF;
+ }
+
+ .mobileView {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .mobileView .accountTop {
+  width: 95%;
+  border-bottom: 2px solid #959595;
+  height: 73px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+ }
+
+ .mobileView .accountTop h3 {
+  color: #00002F;
+  margin: 0;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  padding: 0;
+  font-family: 'Clash Display';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-bottom: 7px;
+ }
+
+ .mobileView .accountTop button {
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 30px;
+  display: flex;
+  margin-right: 20px;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+ }
+
+ .mobileView .accountTop button img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+ }
+
+ .mobileView .accountBody {
+  width: 90%;
+  height: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+ }
+
+ .mobileView .accountBody input {
+  height: 50px !important;
+  padding: 0px;
+  margin: 0px;
+  padding-left: 10px;
+
+ }
+
+ .mobileView .upLoad {
+  margin-top: 40px;
+  color: #00002F;
+  font-family: 'Clash Display';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+ }
+
+ .mobileView .profileImage {
+  margin-top: 17px;
+  height: 145px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+ }
+
+ .mobileView .profileImage img {
+  height: 144px;
+  background-color: #F0F0F0;
+  width: 144px;
+  border-radius: 50%;
+ }
+
+ .mobileView .uBtn {
+  outline: none;
+  border: 0;
+  position: relative;
+  width: 40px;
+  left: -90px;
+  height: 33px;
+  background-color: transparent;
+ }
+
+ .mobileView .uBtn img {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 0;
+  height: 100%;
+ }
+
+ .mobileView .recomm {
+  margin-top: 17px;
+  color: #959595;
+  font-family: 'Clash Display';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+ }
+
+ .mobileView .username {
+  margin-top: 34px;
+  color: #00002F;
+  font-family: 'Clash Display';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+ }
+
+
+
+ .mobileView #inPut {
+  margin-top: 12px;
+  width: 100%;
+  height: 50px;
+  background-color: #F2F2F2;
+  color: #959595;
+  font-family: 'Clash Display';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 20px;
+ }
+
+ .mobileView #eth {
+  margin-top: 12px;
+  width: 100%;
+  height: 50px;
+  background-color: #F2F2F2;
+  color: #00002F;
+  font-family: 'Clash Display';
+  font-size: 15px;
+  border-radius: 20px;
+  font-weight: 800;
+ }
+
+ .mobileView .socialCon {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
+ }
+
+ .mobileView .socialCon h1 {
+  margin: 0;
+  padding: 0;
+  color: #00002F;
+  font-family: 'Clash Display';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+ }
+
+ .mobileView .socialCon .brands {
+  color: #00002F;
+  font-size: 25px;
+ }
+
+ .mobileView .socialConne {
+  margin-top: 12px;
+  width: 100%;
+  height: 50px !important;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+ }
+
+ .mobileView .socialConne input {
+  width: 100%;
+  background-color: transparent;
+  height: 100%;
+  outline: none;
+  border: none;
+ }
+
+ .mobileView .socialConne button {
+  width: 144px;
+  height: 40px;
+  margin-right: 5px;
+  background-color: #00002F;
+  color: #FFFFFF;
+  outline: none;
+  padding: 0;
+  font-family: 'Clash Display';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  border-radius: 20px;
+ }
+
+ .mobileView .delete {
+  margin-top: 60px;
+  color: #F00;
+  font-family: 'Clash Display';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+ }
+
+ .mobileView .deleteCon {
+  margin-top: 12px;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  border-radius: 20px;
+ }
+
+ .mobileView .deleteCon h1 {
+  width: 350px;
+  padding: 0;
+  margin: 0;
+  color: #959595;
+  font-family: 'Clash Display';
+  font-size: 12px;
+  font-style: normal;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: normal;
+ }
+
+ .mobileView .deleteCon button {
+  width: 170px;
+  height: 40px;
+  background-color: #00002F;
+  color: #FFFFFF;
+  margin-right: 5px;
+  outline: none;
+  padding: 0;
+  font-family: 'Clash Display';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  border-radius: 20px;
+ }
 }
