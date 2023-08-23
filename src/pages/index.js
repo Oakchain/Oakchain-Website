@@ -717,8 +717,8 @@ const LandingPage = () => {
               <img className="review-quote" alt="quote" src={quote} />
               <p>
                 Working with Oakchain has been a fantastic experience. Their
-                technology-driven approach to digital experience is
-                unmatched, and the results have been phenomenal.
+                technology-driven <br/> approach to digital experience is
+                unmatched, and the results have been<br/> phenomenal.
               </p>
             </div>
             <img className="review-img" alt="user-img" src={userTwo} />

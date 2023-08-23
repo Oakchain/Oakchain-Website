@@ -7,14 +7,15 @@ import NewsDetails from './pages/News/[id]'
 import Academy from './pages/Academy'
 import ArticleDetails from './pages/Academy/Article/[id]'
 import VideoDetails from './pages/Academy/Video/[id]'
-import EpisodeDetails from './pages/Academy/Video/Episode/[id]'
-
+import EpisodeDetails from './pages/Academy/Video/Episode/[id]';
 
 
 
 const RouterConfig = () => {
+    
     return (
-        <BrowserRouter>
+        
+            <BrowserRouter>
             <Routes>
                 <Route exact path='/' element={<LandingPage />} />
                 <Route exact path='/home' element={<Home />} />
@@ -26,6 +27,8 @@ const RouterConfig = () => {
                 <Route exact path='/academy/episode/:id' element={<EpisodeDetails />} />
             </Routes>
         </BrowserRouter>
+    
+        
     )
 }
 export default RouterConfig

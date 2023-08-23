@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import '../../Header/index.css'
 import logo from '../../../assets/images/logo.svg'
 import dropdown from '../../../assets/images/dropdown.svg'
@@ -14,9 +14,11 @@ import login from '../../../assets/images/userP/login.svg'
 import { useNavigate } from "react-router-dom";
 import AccountSettings from '../../../component/AccountSettings';
 import OakWallet from '../../../component/oakwallet'
+import { ThemeContext } from '../../../App';
 
 
 const Header = ({ toggle }) => {
+    const { toggler } = useContext(ThemeContext);
 
     const navigate = useNavigate()
     // State to keep track of whether the profile is displayed or not
@@ -76,7 +78,7 @@ const Header = ({ toggle }) => {
                         </div>
                         <p className='ps-2 oak-wallet_point mb-0'>11.5k</p>
                     </div>
-                    <div className='header-auth_item px-3'>
+                    <div className='header-auth_item px-3' id='toggleSwitch' onClick={toggler}>
                         <img src={auth2} alt='icon' />
                     </div>
                     <div className='px-3'>

@@ -7,7 +7,7 @@ import discordIcon  from "../../assets/images/footerDiscord.png";
 import twitterIcon from "../../assets/images/footerTwitter.png";
 import telegramIcon from "../../assets/images/footerTelegram.png";
 import redditIcon from "../../assets/images/footerReddit.png";
-import upBtn from "../../assets/images/up.png";
+// import upBtn from "../../assets/images/up.png";
 
 
 const Footer = () => {

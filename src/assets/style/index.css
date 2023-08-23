@@ -137,3 +137,12 @@ input:focus {
     }
 }
 
+#light{
+
+    background-color: white;
+}
+
+#dark{
+    background-color: rgb(25, 23, 23);
+}
+
