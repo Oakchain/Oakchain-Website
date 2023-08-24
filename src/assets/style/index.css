@@ -236,3 +236,7 @@ input:focus {
 #dark .academy-tab__item{
     color: #FFF;
 }
+
+#dark .news-details__title{
+    color: #FFF;
+}
