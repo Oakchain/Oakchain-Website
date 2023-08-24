@@ -2,6 +2,7 @@ import React from 'react'
 import defaultImg from '../../../assets/images/n1.svg'
 import logo from '../../../assets/images/onLogo.svg'
 import { useNavigate } from 'react-router-dom'
+import "../../../assets/style/index.css"
 const NewsGrid = ({ image, type }) => {
     const navigate = useNavigate()
 

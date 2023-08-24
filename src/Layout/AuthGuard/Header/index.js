@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react'
 import '../../Header/index.css'
+import '../../../assets/style/index.css'
 import logo from '../../../assets/images/logo.svg'
 import dropdown from '../../../assets/images/dropdown.svg'
 import auth1 from '../../../assets/images/auth1.svg'
@@ -57,7 +58,7 @@ const Header = ({ toggle }) => {
                     <li className='nav-item d-flex align-items-center'>
                         Resources
                         <span className='dropdown-wrapper'>
-                            <img src={dropdown} alt='logo' />
+                            <img src={dropdown} alt='logo' className='dropdown'/>
                         </span>
 
                     </li>
@@ -65,7 +66,7 @@ const Header = ({ toggle }) => {
                         Company
 
                         <span className='dropdown-wrapper'>
-                            <img src={dropdown} alt='logo' />
+                            <img src={dropdown} alt='logo' className='dropdown' />
                         </span>
                     </li>
 

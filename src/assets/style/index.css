@@ -143,6 +143,88 @@ input:focus {
 }
 
 #dark{
-    background-color: rgb(25, 23, 23);
+    background-color: rgb(37, 34, 34);
+    
 }
 
+#dark .nav-item{
+    color:#FFF
+}
+
+#dark .oak-crypto_key{
+    color: #FFF;
+}
+
+#dark .nav-items{
+    color:#FFF
+}
+
+#dark .oak-section__title{
+    color:#FFF
+}
+
+#dark .oak-redirect__text{
+    color:#FFF
+}
+
+#dark .oak-news__text{
+    color:#FFF
+}
+
+#dark .oak-news__title{
+    color:#FFF
+}
+
+#dark .oak-news__date{
+    color:#FFF
+}
+
+#dark .oak-academy__banner_title{
+    color:#FFF
+}
+
+
+#dark .academy-info {
+    color:#FFF
+}
+
+#dark .dark-btn{
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    padding: 16px 21px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 7px 7px 4px rgb(0,0,0);
+}
+
+#dark .oak-btn:active
+ {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    border: 1px solid #00002F;
+}
+
+#dark .oak-btn:hover {
+    background: orangered;
+    color: #fff;
+    transition: 0.5s;
+    border: none;
+}
+
+#dark .oak-task_card{
+    background-color: rgb(37, 34, 34);
+}
+
+#dark .oak-task-brand{
+    color: #FFF;
+}
+
+#dark .oak-task-title{
+    color: #FFF;
+}
+
+#dark .oak-task__description{
+    color: #FFF;
+}

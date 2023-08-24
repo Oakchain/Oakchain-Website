@@ -15,7 +15,7 @@ const NavItems = [
     {
         label: 'Home',
         icon: it1,
-        activeIcon: ait1
+        activeIcon: ait1,
     },
     {
         label: 'News',

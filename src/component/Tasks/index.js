@@ -5,6 +5,7 @@ import ts3 from '../../assets/images/tsk3.svg'
 import ts4 from '../../assets/images/tsk4.svg'
 import ts5 from '../../assets/images/tsk5.svg'
 import './index.css'
+import '../../assets/style/index.css'
 
 const Tasks = () => {
     return (
@@ -47,7 +48,7 @@ const Tasks = () => {
 
                 </div>
                 <div className=''>
-                    <button className='oak-btn btn px-md-5 px-4 w-100'>
+                    <button className='oak-btn px-md-5 px-4 w-100'>
                         Start
                     </button>
                 </div>
