@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react'
 import '../../Header/index.css'
-import '../../../assets/style/index.css'
 import logo from '../../../assets/images/logo.svg'
 import dropdown from '../../../assets/images/dropdown.svg'
 import auth1 from '../../../assets/images/auth1.svg'
@@ -16,6 +15,7 @@ import { useNavigate } from "react-router-dom";
 import AccountSettings from '../../../component/AccountSettings';
 import OakWallet from '../../../component/oakwallet'
 import { ThemeContext } from '../../../App';
+import '../../../assets/style/index.css'
 
 
 const Header = ({ toggle }) => {
@@ -88,7 +88,7 @@ const Header = ({ toggle }) => {
                             <div className='oak-profile'>
                                 <ul>
                                     <li>
-                                        <img src={accountS} alt='account Settings' />
+                                        <img src={accountS} alt='account Settings'className='accountIcon' />
                                         <button onClick={toggleModal}>
                                             <h3>Account Settings</h3></button>
                                     </li>

@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../../assets/style/index.css'
 import './index.css'
 import Marquee from "react-fast-marquee";
 

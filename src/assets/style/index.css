@@ -148,44 +148,60 @@ input:focus {
 }
 
 #dark .nav-item{
-    color:#FFF
+    color:#FFF;
+    transition: ease-in 1s;   
 }
 
 #dark .oak-crypto_key{
     color: #FFF;
+    transition: ease-in 1s; 
 }
 
 #dark .nav-items{
-    color:#FFF
+    color:#FFF;
+    transition: ease-in 1s; 
+}
+
+#dark .oak-wallet_point{
+    color:#FFF;
+    transition: ease-in 1s; 
 }
 
 #dark .oak-section__title{
-    color:#FFF
+    color:#FFF;
+    transition: ease-in 1s; 
 }
 
 #dark .oak-redirect__text{
-    color:#FFF
+    color:#FFF;
+    transition: ease-in 1s; 
 }
 
 #dark .oak-news__text{
-    color:#FFF
+    color:#FFF;
+    transition: ease-in 1s; 
 }
 
 #dark .oak-news-title{
-    color:#FFF
+    color:#FFF;
+    transition: ease-in 1s; 
+
 }
 
 #dark .oak-news-date{
-    color:#FFF
+    color:#FFF;
+    transition: ease-in 1s; 
 }
 
 #dark .oak-academy__banner_title{
-    color:#FFF
+    color:#FFF;
+    transition: ease-in 1s; 
 }
 
 
 #dark .academy-info {
-    color:#FFF
+    color:#FFF;
+    transition: ease-in 1s; 
 }
 
 #dark .dark-btn{
@@ -197,6 +213,7 @@ input:focus {
     font-size: 15px;
     font-weight: 500;
     box-shadow: 7px 7px 4px rgb(0,0,0);
+    transition: ease-in 1s; 
 }
 
 #dark .oak-btn:active
@@ -204,6 +221,7 @@ input:focus {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transform: translateY(2px);
     border: 1px solid #00002F;
+    transition: ease-in 1s; 
 }
 
 #dark .oak-btn:hover {
@@ -211,32 +229,54 @@ input:focus {
     color: #fff;
     transition: 0.5s;
     border: none;
+    transition: ease-in 1s; 
 }
 
 #dark .oak-task_card{
     background-color: rgb(37, 34, 34);
+    transition: ease-in 1s; 
 }
 
 #dark .oak-task-brand{
     color: #FFF;
+    transition: ease-in 1s; 
 }
 
 #dark .oak-task-title{
     color: #FFF;
+    transition: ease-in 1s; 
 }
 
 #dark .oak-task__description{
     color: #FFF;
+    transition: ease-in 1s; 
 }
 
 #dark .page-details__title{
     color: #FFF;
+    transition: ease-in 1s; 
 }
 
 #dark .academy-tab__item{
     color: #FFF;
+    transition: ease-in 1s; 
 }
 
 #dark .news-details__title{
     color: #FFF;
+    transition: ease-in 1s; 
 }
+
+#dark .oak-profile{
+    background-color: rgb(37, 34, 34)
+}
+
+#dark .oak-profile h3{
+    color: #fff
+}
+
+#dark .accountIcon{
+    border:none;
+    outline: none;
+}
+

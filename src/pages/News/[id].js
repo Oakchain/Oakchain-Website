@@ -13,7 +13,7 @@ import { Row, Col } from 'reactstrap'
 import { Grid, List } from "../../component/News";
 import { arrayGenerator } from "../../utils";
 import { useNavigate } from "react-router-dom";
-import '../../assets/style/index.css'
+
 
 const NewsDetails = () => {
     const navigate = useNavigate()

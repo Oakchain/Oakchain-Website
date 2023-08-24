@@ -5,6 +5,7 @@ import './index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import fatimes from '../../assets/images/userP/fatimes.svg'
 import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import '../../assets/style/index.css'
 const AccountSettings = ({ isOpen, toggle }) => {
  const fileInputRef = useRef(null); // Reference to the file input
 
@@ -34,6 +35,7 @@ const AccountSettings = ({ isOpen, toggle }) => {
    isOpen={isOpen}
    toggle={toggle} className='modal-dialog-centered'
    modalClassName='oak-modal__card user-card'
+  
   >
    <div className='accountTop'>
     <h3>Account Settings</h3>

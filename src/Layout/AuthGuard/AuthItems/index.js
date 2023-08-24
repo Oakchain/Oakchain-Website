@@ -4,7 +4,7 @@ import { Nav } from 'reactstrap';
 import { Link, useLocation } from 'react-router-dom';
 import SearchIcon from '../../../assets/images/searchIc.svg'
 import './index.css'
-import '../../../assets/style/index.css'
+
 
 const AuthItems = () => {
     const location = useLocation()
