@@ -25,10 +25,10 @@ const NewsGrid = ({ image, type }) => {
                     <p className='mb-0 oak-news__text pt-1'>Oak News</p>
                 </div>
 
-                <h3 className={`oak-news__title ${type === 'all-news' ? 'all-news' : ""}`}>
+                <h3 className={`oak-news__title oak-news-title ${type === 'all-news' ? 'all-news' : ""}`}>
                     Lorem ipsum dolor sit amet consectetur dolor sit amet consectetur.
                 </h3>
-                <p className='text-right oak-news__date mb-0 d-flex justify-content-end'>
+                <p className='text-right oak-news__date mb-0 d-flex justify-content-end oak-news-date'>
                     Apr 25, 2023 . 3 min read
                 </p>
             </div>

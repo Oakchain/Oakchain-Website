@@ -171,11 +171,11 @@ input:focus {
     color:#FFF
 }
 
-#dark .oak-news__title{
+#dark .oak-news-title{
     color:#FFF
 }
 
-#dark .oak-news__date{
+#dark .oak-news-date{
     color:#FFF
 }
 
@@ -226,5 +226,13 @@ input:focus {
 }
 
 #dark .oak-task__description{
+    color: #FFF;
+}
+
+#dark .page-details__title{
+    color: #FFF;
+}
+
+#dark .academy-tab__item{
     color: #FFF;
 }
