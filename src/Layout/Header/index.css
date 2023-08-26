@@ -172,9 +172,21 @@
     margin-left: 15rem;
 }
 
+@media (max-width:800px) and (min-width: 768px) {
 
+    .oak-profile {
+        right: -30px;
+    }
+}
 
-@media only screen and (max-width: 900px) {
+@media (max-width:900px) and (min-width: 801px) {
+
+    .oak-profile {
+        right: 0px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
     .oak-profile {
         display: none;
     }
