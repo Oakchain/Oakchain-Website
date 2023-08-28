@@ -20,9 +20,9 @@ export const useGetAllArticlesQuery = () => {
 }
 
 export const useGetSingleArticlesQuery = (id) => {
-    const { data, isLoading, error } = useQuery(['single_articles'], () => Client.news.single({ id }), {
+    const { data, isLoading, error } = useQuery(['single_article'], () => Client.news.single(id), {
         onSuccess: (data) => {
-            console.log(data)
+            // console.log(data)
         },
         onError: (err) => {
             console.log(err)
@@ -31,7 +31,7 @@ export const useGetSingleArticlesQuery = (id) => {
     })
 
     return {
-        article: data,
+        article: data?.data ?? {},
         error: error ?? null,
         isLoading
     }
