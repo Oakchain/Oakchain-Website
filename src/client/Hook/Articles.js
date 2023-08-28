@@ -13,7 +13,7 @@ export const useGetAllArticlesQuery = () => {
     })
 
     return {
-        articles: data.data,
+        articles: data?.data ?? [],
         error: error ?? null,
         isLoading
     }
