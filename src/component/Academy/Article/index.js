@@ -15,7 +15,7 @@ const Article = ({ image, id, article }) => {
             role='button'
             onClick={
                 () => {
-                    navigate('/academy/article/1')
+                    navigate(`/academy/article/${article?.id}`)
                 }
             }>
             <div className='oak-grid__article_img__wrapper position-relative'>

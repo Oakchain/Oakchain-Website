@@ -15,7 +15,6 @@ const ArticleCourses = () => {
 
     const { articles, error, isLoading } = useGetAllArticlesQuery()
 
-    console.log(articles)
 
     return (
         <div>
