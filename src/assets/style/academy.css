@@ -52,13 +52,17 @@
     border-bottom: 1px solid #D4D4D4;
 }
 
+.oak-medium-description h3 strong,.oak-medium-description h3,
 .oak-article-title {
     color: var(--primary-color);
     font-family: var(--cd500);
     font-size: 30px;
 }
 
+.oak-medium-description h3{
+    font-weight: 400;
 
+}
 
 .timeline {
     /* max-width: 600px; */
@@ -260,7 +264,7 @@
         padding: 7px 15px
     }
 
-    .oak-article-title {
+    .oak-medium-description h3 strong, .oak-article-title {
 
         font-size: 25px;
         line-height: normal;
@@ -310,7 +314,8 @@
     .main-episode__img_container {
         height: 320px;
     }
-    .player-icon{
+
+    .player-icon {
         width: 25% !important;
     }
 }

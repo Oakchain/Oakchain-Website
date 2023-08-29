@@ -38,7 +38,7 @@ const CryptoUpdate = () => {
                 </div>
             </div>
 
-            <div className='d-block d-md-none px-0 oak-container-fluid  py-3 oak-crypto_updates'>
+            <div className='d-block d-md-none px-0 oak-container-fluid pt-0 pb-3 py-md-3 oak-crypto_updates'>
                 <Marquee>
                     <div className='pe-3'>
                         <p className='oak-crypto_key mb-0'>Cryptos:
