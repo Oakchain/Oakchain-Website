@@ -52,7 +52,7 @@
     border-bottom: 1px solid #D4D4D4;
 }
 
-.oak-medium-description strong,.oak-medium-description h3,
+.oak-medium-description h3 strong,.oak-medium-description h3,
 .oak-article-title {
     color: var(--primary-color);
     font-family: var(--cd500);
@@ -264,7 +264,7 @@
         padding: 7px 15px
     }
 
-    .oak-medium-description strong, .oak-article-title {
+    .oak-medium-description h3 strong, .oak-article-title {
 
         font-size: 25px;
         line-height: normal;

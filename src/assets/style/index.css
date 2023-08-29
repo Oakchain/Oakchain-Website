@@ -26,6 +26,10 @@ li {
 
 }
 
+.header-logo img {
+    width: 80px !important;
+    object-fit: contain !important;
+}
 
 .oak-btn,
 .oak-btn:hover,
@@ -126,14 +130,20 @@ input:focus {
 @media (max-width:767px) {
     .oak-mb {
         margin-bottom: 30px;
-    } 
-    .oak-btn, .oak-btn:hover, .oak-btn-secondary, .oak-btn-secondary:hover, .oak-tertiary-btn, .oak-tertiary-btn:hover {
-  
+    }
+
+    .oak-btn,
+    .oak-btn:hover,
+    .oak-btn-secondary,
+    .oak-btn-secondary:hover,
+    .oak-tertiary-btn,
+    .oak-tertiary-btn:hover {
+
         padding: 12px 15px;
         font-size: 11.914px;
-    }   
+    }
+
     .oak-cstm__row {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
