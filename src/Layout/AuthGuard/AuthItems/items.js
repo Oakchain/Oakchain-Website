@@ -15,6 +15,7 @@ import darkNews from '../../../assets/images/newsDark.svg';
 import darkAcademy from '../../../assets/images/academyDark.svg';
 import darkTasks from '../../../assets/images/taskDark.svg';
 import darkMarket from '../../../assets/images/marketDark.svg';
+import darkPodcast from '../../../assets/images/podcastDark.svg';
 
 
 const NavItems = [
@@ -39,7 +40,8 @@ const NavItems = [
     {
         label: 'Podcast',
         icon: it4,
-        activeIcon: ait4
+        activeIcon: ait4,
+        darkIcon:darkPodcast
     },
     {
         label: 'Tasks',
