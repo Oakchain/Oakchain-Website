@@ -42,6 +42,13 @@ const ArticleDetails = () => {
 
     }, [article]);
 
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth', // This creates a smooth scrolling effect
+        });
+    }, [])
+
     return (
         <AuthGuard>
             <div className="oak-container-fluid">
