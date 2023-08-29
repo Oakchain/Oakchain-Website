@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useContext} from 'react'
 import binance from '../../assets/images/ts1.svg'
 import ts2 from '../../assets/images/tsk2.svg'
 import ts3 from '../../assets/images/tsk3.svg'
 import ts4 from '../../assets/images/tsk4.svg'
 import ts5 from '../../assets/images/tsk5.svg'
+import ts2Dark from '../../assets/images/ts2Dark.svg';
+import ts3Dark from '../../assets/images/ts3Dark.svg';
+import ts4Dark from '../../assets/images/ts4Dark.svg';
+import ts5Dark from '../../assets/images/ts5Dark.svg';
+import { ThemeContext } from '../../App'
 import './index.css'
 import '../../assets/style/index.css'
 
 const Tasks = () => {
+    const {theme} = useContext(ThemeContext)
     return (
         <div className='oak-task_card'>
             <div className='d-flex align-items-center mb-3'>
@@ -24,24 +30,24 @@ const Tasks = () => {
                 <div className='d-flex align-items-center'>
                     <div className='d-flex align-items-center  py-2 pe-3'>
                         <div className='pe-2 oak-stats__icon'>
-                            <img src={ts2} alt='icon' />
+                            <img src={theme === 'dark' ? ts2Dark : ts2} alt='icon' />
                         </div>
                         <p className='mb-0 oak-news__stats pt-1'>54k</p>
                     </div>
                     <div className='d-flex align-items-center  py-2 pe-3'>
                         <div className='pe-2 oak-stats__icon'>
-                            <img src={ts3} alt='icon' />
+                        <img src={theme === 'dark' ? ts3Dark : ts3} alt='icon' />
                         </div>
                         <p className='mb-0 oak-news__stats pt-1'>28</p>
                     </div>
                     <div className='d-flex align-items-center  py-2 pe-3'>
                         <div className='pe-2 oak-stats__icon'>
-                            <img src={ts4} alt='icon' />
+                        <img src={theme === 'dark' ? ts4Dark : ts4} alt='icon' />
                         </div>
                     </div>
                     <div className='d-flex align-items-center  py-2 pe-3'>
                         <div className='pe-1 oak-stats__icon'>
-                            <img src={ts5} alt='icon' />
+                        <img src={theme === 'dark' ? ts5Dark : ts5} alt='icon' />
                         </div>
                         <p className='mb-0 oak-news__stats pt-1'></p>
                     </div>

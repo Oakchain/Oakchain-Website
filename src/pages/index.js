@@ -123,7 +123,7 @@ const LandingPage = () => {
 
                 <div className=" hero-cta_btn">
 
-                  <button className="btn oak-btn mb-5"
+                  <button className=" oak-btn mb-5"
                     onClick={() => {
                       navigate('/home')
                     }}

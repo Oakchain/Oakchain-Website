@@ -15,11 +15,14 @@ import { useNavigate } from "react-router-dom";
 import AccountSettings from '../../../component/AccountSettings';
 import OakWallet from '../../../component/oakwallet'
 import { ThemeContext } from '../../../App';
+import dropdownDark from '../../../assets/images/dropDownDark.svg';
+import auth1Dark from '../../../assets/images/acornDark.svg';
+import auth2Dark from "../../../assets/images/modeIcon.svg"
 import '../../../assets/style/index.css'
 
 
 const Header = ({ toggle }) => {
-    const { toggler } = useContext(ThemeContext);
+    const {theme, toggler } = useContext(ThemeContext);
 
     const navigate = useNavigate()
     // State to keep track of whether the profile is displayed or not
@@ -58,7 +61,8 @@ const Header = ({ toggle }) => {
                     <li className='nav-item d-flex align-items-center'>
                         Resources
                         <span className='dropdown-wrapper'>
-                            <img src={dropdown} alt='logo' className='dropdown'/>
+                        <img src={theme === 'dark' ? dropdownDark : dropdown} alt='logo' className='dropdown'/>
+
                         </span>
 
                     </li>
@@ -66,7 +70,8 @@ const Header = ({ toggle }) => {
                         Company
 
                         <span className='dropdown-wrapper'>
-                            <img src={dropdown} alt='logo' className='dropdown' />
+                        <img src={theme === 'dark' ? dropdownDark : dropdown} alt='logo' className='dropdown'/>
+
                         </span>
                     </li>
 
@@ -75,12 +80,14 @@ const Header = ({ toggle }) => {
                 <div className='d-none d-md-flex align-items-center'>
                     <div className='header-auth_item d-flex align-items-center px-3'>
                         <div>
-                            <img src={auth1} alt='icon' />
+                        <img src={theme === 'dark' ? auth1Dark : auth1} alt='icon' />
+
                         </div>
                         <p className='ps-2 oak-wallet_point mb-0'>11.5k</p>
                     </div>
                     <div className='header-auth_item px-3' id='toggleSwitch' onClick={toggler}>
-                        <img src={auth2} alt='icon' />
+                    <img src={theme === 'dark' ? auth2Dark : auth2} alt='icon' />
+
                     </div>
                     <div className='px-3'>
                         <img src={userP} alt='userProfile' className=' oak-wallet_name mb-0' onClick={toggleProfileDisplay}></img>
