@@ -43,7 +43,7 @@ const Header = ({ toggle }) => {
                 </ul>
 
                 <div className='d-md-block d-none'>
-                    <button className='oak-btn btn' onClick={toggleModal}>
+                    <button className='oak-btn' onClick={toggleModal}>
                         Connect to Web3 <span>
                             <img src={arrow} alt='icon' />
                         </span>

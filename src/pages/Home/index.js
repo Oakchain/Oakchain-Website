@@ -9,6 +9,7 @@ import { FuturePodcast } from "../../component/Podcast";
 import Tasks from "../../component/Tasks";
 import { Row, Col } from 'reactstrap'
 import { useNavigate } from "react-router-dom";
+import oakwriter from "../../../src/assets/images/oakwriter.svg"
 
 const Home = () => {
     const navigate = useNavigate()
@@ -25,6 +26,9 @@ const Home = () => {
                         <img src={bannerImg} alt='banner-img' />
                     </div>
                 </div>
+                
+                
+
                 <section className="oak-container-fluid oak-mb ">
                     <div className="d-flex align-items-center justify-content-between oak-mobile-news__wrpper oak-mb">
                         <h5 className="oak-section__title">Get Updated with Web3 News</h5>
@@ -104,7 +108,7 @@ const Home = () => {
                     {/* <Trending /> */}
                 </section>
 
-
+                <img src={oakwriter} alt="oakwriter" className="oakWriter"/>
 
             </div>
         </AuthGuard>

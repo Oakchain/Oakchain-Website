@@ -66,10 +66,14 @@ li {
 
 .oak-btn-secondary,
 .oak-btn-secondary:hover {
-    background: var(--secondary-color);
+    background: var(--secondary-color) !important;
     box-shadow: unset;
-    border: var(--secondary-color) 1px solid;
-    color: #FFF;
+    border: var(--secondary-color) 1px solid !important;
+    color: #FFF !important;
+    padding: 16px 21px !important;
+    font-family: var(--cd500) !important;
+
+
 }
 
 .oak-tertiary-btn,
@@ -147,3 +151,165 @@ input:focus {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+#light{
+
+    background-color: white;
+    transition: ease-in 1s;
+}
+
+#dark{
+    background-color: #000018;
+    transition: ease-in 1s;
+    
+}
+
+#dark .nav-item{
+    color:#FFF;
+    
+}
+
+#dark .oak-crypto_key{
+    color: #FFF;
+ 
+}
+
+#dark .nav-items{
+    color:#FFF;
+ 
+}
+
+#dark .oak-wallet_point{
+    color:#FFF;
+ 
+}
+
+#dark .oak-section__title{
+    color:#FFF;
+ 
+}
+
+#dark .oak-redirect__text{
+    color:#FFF;
+ 
+}
+
+#dark .oak-news__text{
+    color:#FFF;
+ 
+}
+
+#dark .oak-news-title{
+    color:#FFF;
+ 
+
+}
+
+#dark .oak-news-date{
+    color:#FFF;
+ 
+}
+
+#dark .oak-academy__banner_title{
+    color:#FFF;
+ 
+}
+
+
+#dark .academy-info {
+    color:#FFF;
+ 
+}
+
+#dark .dark-btn{
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    padding: 16px 21px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 7px 7px 4px rgb(0,0,0);
+ 
+}
+
+#dark .oak-btn:active
+ {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    border: 1px solid #00002F;
+ 
+}
+
+#dark .oak-btn:hover {
+    background: orangered;
+    color: #fff;
+    transition: 0.5s;
+    border: none;
+ 
+}
+
+#dark .oak-task_card{
+    background-color: #00002F;
+ 
+}
+
+#dark .oak-task-brand{
+    color: #FFF;
+ 
+}
+
+#dark .oak-task-title{
+    color: #FFF;
+ 
+}
+
+#dark .oak-task__description{
+    color: #FFF;
+ 
+}
+
+#dark .page-details__title{
+    color: #FFF;
+ 
+}
+
+#dark .academy-tab__item{
+    color: #FFF;
+ 
+}
+
+#dark .news-details__title{
+    color: #FFF;
+ 
+}
+
+#dark .oak-profile{
+    background-color: #00002F;
+}
+
+#dark .oak-profile h3{
+    color: #fff
+}
+
+#dark .accountIcon{
+    border:none;
+    outline: none;
+}
+
+#dark .oak-main-news_details__wrapper{
+    background-color: #00002F;
+}
+
+#dark .oak-news__stats{
+    color:white;
+}
+
+#dark .oak-news__title{
+    color: white;
+}
+
+#dark .bannerWrapper{
+    background-color: #00002F;
+}
+

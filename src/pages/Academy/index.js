@@ -3,6 +3,7 @@ import AuthGuard from "../../Layout/AuthGuard";
 import '../../assets/style/academy.css'
 import ArticleCourses from './Article';
 import VideoCourses from './Video';
+import '../../assets/style/index.css'
 
 const Academy = () => {
     const [activeTab, setActiveTab] = useState('article')

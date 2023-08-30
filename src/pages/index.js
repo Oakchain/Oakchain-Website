@@ -123,7 +123,7 @@ const LandingPage = () => {
 
                 <div className=" hero-cta_btn">
 
-                  <button className="btn oak-btn mb-5"
+                  <button className=" oak-btn mb-5"
                     onClick={() => {
                       navigate('/home')
                     }}
@@ -717,8 +717,8 @@ const LandingPage = () => {
               <img className="review-quote" alt="quote" src={quote} />
               <p>
                 Working with Oakchain has been a fantastic experience. Their
-                technology-driven approach to digital experience is
-                unmatched, and the results have been phenomenal.
+                technology-driven <br/> approach to digital experience is
+                unmatched, and the results have been<br/> phenomenal.
               </p>
             </div>
             <img className="review-img" alt="user-img" src={userTwo} />

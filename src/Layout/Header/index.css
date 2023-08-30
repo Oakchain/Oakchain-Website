@@ -302,3 +302,7 @@
 
     /* menu items styling // */
 }
+
+#toggleSwitch{
+    cursor: pointer;
+}

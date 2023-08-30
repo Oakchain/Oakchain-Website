@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../../assets/images/onLogo.svg'
-
+import '../../../assets/style/index.css'
 import duration from '../../../assets/images/duration.svg'
 import { useNavigate } from 'react-router-dom'
 import moment from 'moment'

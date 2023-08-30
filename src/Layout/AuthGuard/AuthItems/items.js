@@ -10,37 +10,50 @@ import ait3 from '../../../assets/images/ait3.svg'
 import ait4 from '../../../assets/images/ait4.svg'
 import ait5 from '../../../assets/images/ait5.svg'
 import ait6 from '../../../assets/images/ait6.svg'
+import darkHome from '../../../assets/images/homeDark.svg';
+import darkNews from '../../../assets/images/newsDark.svg';
+import darkAcademy from '../../../assets/images/academyDark.svg';
+import darkTasks from '../../../assets/images/taskDark.svg';
+import darkMarket from '../../../assets/images/marketDark.svg';
+import darkPodcast from '../../../assets/images/podcastDark.svg';
+
 
 const NavItems = [
     {
         label: 'Home',
         icon: it1,
-        activeIcon: ait1
+        activeIcon: ait1,
+        darkIcon:darkHome
     },
     {
         label: 'News',
         icon: it2,
-        activeIcon: ait2
+        activeIcon: ait2,
+        darkIcon: darkNews
     },
     {
         label: 'Academy',
         icon: it3,
-        activeIcon: ait3
+        activeIcon: ait3,
+        darkIcon:darkAcademy
     },
     {
         label: 'Podcast',
         icon: it4,
-        activeIcon: ait4
+        activeIcon: ait4,
+        darkIcon:darkPodcast
     },
     {
         label: 'Tasks',
         icon: it5,
-        activeIcon: ait5
+        activeIcon: ait5,
+        darkIcon:darkTasks
     },
     {
         label: 'Marketplace',
         icon: it6,
-        activeIcon: ait6
+        activeIcon: ait6,
+        darkIcon:darkMarket
     },
 ]
 

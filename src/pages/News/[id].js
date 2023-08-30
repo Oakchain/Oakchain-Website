@@ -14,6 +14,7 @@ import { Grid, List } from "../../component/News";
 import { arrayGenerator } from "../../utils";
 import { useNavigate } from "react-router-dom";
 
+
 const NewsDetails = () => {
     const navigate = useNavigate()
     return (

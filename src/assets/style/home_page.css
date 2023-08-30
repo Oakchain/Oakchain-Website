@@ -181,3 +181,11 @@
         flex-shrink: 0;
     }
 }
+
+.oakWriter{
+  position: fixed;
+  top:83%;
+  left:87%;
+  cursor: pointer;
+  z-index: 1000;
+}
