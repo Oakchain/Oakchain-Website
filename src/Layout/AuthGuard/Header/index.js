@@ -56,7 +56,7 @@ const Header = ({ toggle }) => {
                     <img src={logo} alt='logo' />
                 </div>
 
-                <ul className='d-none d-md-flex align-items-center justify-content-between nav-items__wrapper'>
+                <ul className='d-none d-md-flex align-items-center justify-content-between nav-items__wrapper mb-0'>
                     <li className='nav-item'>How it Works</li>
                     <li className='nav-item d-flex align-items-center'>
                         Resources
