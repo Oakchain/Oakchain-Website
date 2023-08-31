@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import '../../Header/index.css'
 import logo from '../../../assets/images/logo.svg'
+import logoDark from '../../../assets/images/logoDark.svg'
 import dropdown from '../../../assets/images/dropdown.svg'
 import auth1 from '../../../assets/images/auth1.svg'
 import auth2 from '../../../assets/images/auth2.svg'
@@ -53,7 +54,7 @@ const Header = ({ toggle }) => {
         <div className='  position-fixe w-100'>
             <div className='oak-container-fluid d-flex align-items-center justify-content-between oak-header'>
                 <div className='header-logo'>
-                    <img src={logo} alt='logo' />
+                    <img src={theme === 'dark' ? logoDark : logo} alt='logo' />
                 </div>
 
                 <ul className='d-none d-md-flex align-items-center justify-content-between nav-items__wrapper'>

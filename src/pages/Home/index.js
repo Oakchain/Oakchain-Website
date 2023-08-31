@@ -1,5 +1,5 @@
 import AuthGuard from "../../Layout/AuthGuard";
-import React from 'react'
+import React, { useEffect, useState} from 'react'
 import "../../assets/style/home_page.css";
 import bannerImg from '../../assets/images/hand-banner.svg'
 import rightArrow from '../../assets/images/rightArrow.svg'
@@ -9,10 +9,22 @@ import { FuturePodcast } from "../../component/Podcast";
 import Tasks from "../../component/Tasks";
 import { Row, Col } from 'reactstrap'
 import { useNavigate } from "react-router-dom";
-import oakwriter from "../../../src/assets/images/oakwriter.svg"
+import oakwriter from "../../../src/assets/images/oakwriter.svg";
+import Writermodal from "./writerModal";
+import Usermodal from "./userModal";
 
 const Home = () => {
     const navigate = useNavigate()
+    const [showModal, setShowModal] = useState(false);
+    const [showUserModal, setShowUserModal] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowModal(true);
+        }, 2000);
+
+        return () => clearTimeout(timer);
+    }, []);
     return (
         <AuthGuard>
             <div className=" ">
@@ -108,7 +120,12 @@ const Home = () => {
                     {/* <Trending /> */}
                 </section>
 
-                <img src={oakwriter} alt="oakwriter" className="oakWriter"/>
+
+                <img src={oakwriter} alt="oakwriter" className="oakWriter" onClick={() => setShowUserModal(true)}/>  
+               
+               
+                <Writermodal show={showModal} onClose={() => setShowModal(false)} />
+                <Usermodal show={showUserModal} onClose={() => setShowUserModal(false)} />
 
             </div>
         </AuthGuard>
