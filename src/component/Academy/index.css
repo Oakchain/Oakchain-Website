@@ -44,6 +44,11 @@
     border-radius: 15px;
 }
 
+.oak-grid__article {
+    border-radius: 15px;
+
+}
+
 .oak-main-article_details__wrapper {
     background: #ffff;
     border-radius: 0 0 10px 10px;
@@ -277,17 +282,21 @@
         object-fit: cover;
         margin-bottom: 21px;
     }
+
     .oak-video_description {
         font-size: 12px !important;
     }
+
     .video-episode__img_wrapper {
         height: 112.7px !important;
         flex-shrink: 0;
     }
+
     .oak-video_episode__title {
         font-size: 12px !important;
     }
-    .video-feature{
+
+    .video-feature {
         font-size: 15px !important;
     }
 }

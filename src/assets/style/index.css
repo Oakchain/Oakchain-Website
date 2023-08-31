@@ -66,10 +66,14 @@ li {
 
 .oak-btn-secondary,
 .oak-btn-secondary:hover {
-    background: var(--secondary-color);
+    background: var(--secondary-color) !important;
     box-shadow: unset;
-    border: var(--secondary-color) 1px solid;
-    color: #FFF;
+    border: var(--secondary-color) 1px solid !important;
+    color: #FFF !important;
+    padding: 16px 21px !important;
+    font-family: var(--cd500) !important;
+
+
 }
 
 .oak-tertiary-btn,
