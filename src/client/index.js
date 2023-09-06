@@ -7,8 +7,11 @@ const Client = {
     },
     news: {
         all: () => HttpClient.get(ENDPOINTS.GET_ARTICLES),
-        single: ( id ) => HttpClient.get(`${ENDPOINTS.GET_ARTICLES}/${id}`)
+        single: (id) => HttpClient.get(`${ENDPOINTS.GET_ARTICLES}/${id}`)
     },
+    crypto: {
+        all: () => HttpClient.get(ENDPOINTS.CRYPTO_DATA)
+    }
 }
 
 
