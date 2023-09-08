@@ -49,7 +49,7 @@ const LandingPage = () => {
   const year = myDate.getFullYear();
   const mins = myDate.getMinutes();
 
-  console.log(mins);
+  // console.log(mins);
   const date = `${month} ${day}, ${year}. ${mins} mins read`;
   // const [isOpen, setIsOpen] = useState(false)
 

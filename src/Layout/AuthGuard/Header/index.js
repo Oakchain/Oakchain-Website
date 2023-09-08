@@ -19,6 +19,8 @@ import dropdownDark from '../../../assets/images/dropDownDark.svg';
 import auth1Dark from '../../../assets/images/acornDark.svg';
 import auth2Dark from "../../../assets/images/modeIcon.svg"
 import '../../../assets/style/index.css'
+import { useAccount, useConnect } from 'wagmi'
+import truncate from 'truncate'
 
 
 // Custom hook to handle clicking outside an element
@@ -101,6 +103,13 @@ const Header = ({ toggle }) => {
         setIsWOpen(!isWOpen);
     };
 
+
+
+    const { connector: activeConnector, isConnected, address } = useAccount()
+    const { connect, connectors, error, isLoading, pendingConnector } = useConnect()
+
+
+    console.log('---<<connectors>>---', activeConnector, isConnected, connect, address)
     return (
         <div className='  position-fixe w-100'>
             <div className='oak-container-fluid d-flex align-items-center justify-content-between oak-header'>
@@ -193,7 +202,11 @@ const Header = ({ toggle }) => {
 
                     </div>
                     <div className='px-3'>
-                        <img src={userP} alt='userProfile' className=' oak-wallet_name mb-0' onClick={toggleProfileDisplay}></img>
+                        <p className=' oak-wallet_name mb-0'
+                            onClick={toggleProfileDisplay}
+                            role='button'
+                        >{address.slice(0, 2)}</p>
+                        {/* <img src={userP} alt='userProfile' className=' oak-wallet_name mb-0' onClick={toggleProfileDisplay}></img> */}
                         {isProfileDisplayed && (
                             <div className='oak-profile' ref={profileDropdownRef}>
                                 <ul>

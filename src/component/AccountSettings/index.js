@@ -6,7 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import fatimes from '../../assets/images/userP/fatimes.svg'
 import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import '../../assets/style/index.css'
+
+import { useAccount, useConnect } from 'wagmi'
+
+
 const AccountSettings = ({ isOpen, toggle }) => {
+  const { connector: activeConnector, isConnected, address } = useAccount()
+  const { connect, connectors, error, isLoading, pendingConnector } = useConnect()
+
   const fileInputRef = useRef(null); // Reference to the file input
 
   // State to hold the image URL
@@ -35,7 +42,7 @@ const AccountSettings = ({ isOpen, toggle }) => {
       isOpen={isOpen}
       toggle={toggle} className='modal-dialog-centered'
       modalClassName='oak-modal__card'
-  
+
     >
       <section className='desktopView'> <div className='accountTop'>
         <h3>Account Settings</h3>
@@ -65,7 +72,7 @@ const AccountSettings = ({ isOpen, toggle }) => {
           <h1 className='username'>Username</h1>
           <input id='inPut' placeholder='Enter your username'></input>
           <h1 className='username'>Ethereum address</h1>
-          <input id='eth' placeholder='0x1B191b208666Dd7584fE3A04556Ff195Fe14FFEf'></input>
+          <input id='eth' placeholder='0x1B191b208666Dd7584fE3A04556Ff195Fe14FFEf' value={address}></input>
           <div className='socialCon'><h1>Twitter</h1>  <FontAwesomeIcon className='brands' icon={faTwitter} /></div>
           <div className='socialConne'><input placeholder='Connect your Twitter to access all campaigns'></input> <button>Connect</button></div>
 

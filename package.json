@@ -16,6 +16,9 @@
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "qs": "^6.11.2",
+    "@web3modal/ethereum": "^2.7.1",
+    "@web3modal/react": "^2.7.1",
+    "ethers": "^6.7.1",
     "react": "^18.2.0",
     "react-content-loader": "^6.2.1",
     "react-dom": "^18.2.0",
@@ -26,8 +29,11 @@
     "react-scripts": "5.0.1",
     "reactstrap": "^9.2.0",
     "truncate": "^3.0.0",
+    "viem": "^1.10.7",
+    "wagmi": "^1.4.1",
     "url": "^0.11.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "web3modal": "^1.9.12"
   },
   "scripts": {
     "start": "react-scripts start",

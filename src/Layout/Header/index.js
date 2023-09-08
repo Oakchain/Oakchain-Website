@@ -6,6 +6,9 @@ import dropdown from '../../assets/images/dropdown.svg'
 import arrow from '../../assets/images/arrow.svg'
 // import { connectWallet } from '../../utils/walletConnect'
 import WalletModal from '../../component/WalletModal'
+import { useWeb3Modal } from '@web3modal/react'
+
+import { useAccount, useConnect } from 'wagmi'
 
 import { useNavigate } from "react-router-dom";
 
@@ -58,7 +61,14 @@ const Header = ({ toggle }) => {
 
     }
 
+    const { open, close } = useWeb3Modal()
+
     const [isOpen, setIsOpen] = useState(false)
+    const { connector: activeConnector, isConnected, address } = useAccount()
+    const { connect, connectors, error, isLoading, pendingConnector } = useConnect()
+
+
+    // console.log('---<<connectors>>---', activeConnector, isConnected, connect, address)
 
     const toggleModal = () => {
         setIsOpen(!isOpen)
@@ -145,7 +155,10 @@ const Header = ({ toggle }) => {
                 </ul>
 
                 <div className='d-md-block d-none'>
-                    <button className='oak-btn' onClick={toggleModal}>
+                    {/* <button className='oak-btn' onClick={toggleModal}> */}
+                    <button className='oak-btn' onClick={() => {
+                        open()
+                    }}>
                         Connect to Web3 <span>
                             <img src={arrow} alt='icon' />
                         </span>
