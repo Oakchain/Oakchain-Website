@@ -6,6 +6,8 @@ import arrow from '../../assets/images/arrow.svg'
 import dropdown from '../../assets/images/dropdown.svg'
 
 import { useNavigate } from "react-router-dom";
+import { useWeb3Modal } from '@web3modal/react'
+
 
 
 const Sidebar = ({ show, toggle }) => {
@@ -34,6 +36,8 @@ const Sidebar = ({ show, toggle }) => {
         setIsOpen(!isOpen)
     }
 
+    const { open, close } = useWeb3Modal()
+
     return (
         <>
             <div className={`oak-sidebar d-block d-md-none ${show ? 'show w-100' : ""}`}>
@@ -43,7 +47,10 @@ const Sidebar = ({ show, toggle }) => {
                             <img src={closeIcon} />
                         </div>
                         <div className='mb-4'>
-                            <button className='oak-btn btn py-3' onClick={toggleModal}>
+                            <button className='oak-btn  py-3' onClick={() => {
+                                toggle()
+                                open()
+                            }}>
                                 Connect to Web3 <span>
                                     <img src={arrow} alt='icon' />
                                 </span>
@@ -126,7 +133,7 @@ const Sidebar = ({ show, toggle }) => {
 
             </div>
 
-            <WalletModal toggle={toggleModal} isOpen={isOpen} />
+            {/* <WalletModal toggle={toggleModal} isOpen={isOpen} /> */}
 
         </>
 
