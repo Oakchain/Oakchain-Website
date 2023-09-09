@@ -7,10 +7,9 @@ import arrow from '../../assets/images/arrow.svg'
 // import { connectWallet } from '../../utils/walletConnect'
 import WalletModal from '../../component/WalletModal'
 import { useWeb3Modal } from '@web3modal/react'
-
-import { useAccount, useConnect } from 'wagmi'
-
+import { useAccount } from 'wagmi'
 import { useNavigate } from "react-router-dom";
+import { useLogin} from '../../client/Hook/Auth'
 
 
 // Custom hook to handle clicking outside an element
@@ -28,6 +27,7 @@ function useClickOutside(ref, callback) {
         };
     }, [ref, callback]);
 }
+
 
 const Header = ({ toggle }) => {
 
@@ -64,11 +64,18 @@ const Header = ({ toggle }) => {
     const { open, close } = useWeb3Modal()
 
     const [isOpen, setIsOpen] = useState(false)
-    const { connector: activeConnector, isConnected, address } = useAccount()
-    const { connect, connectors, error, isLoading, pendingConnector } = useConnect()
+    const { address } = useAccount()
 
+    const { login } = useLogin()
 
-    // console.log('---<<connectors>>---', activeConnector, isConnected, connect, address)
+    useEffect(() => {
+        if (address) {
+            const data = {
+                wallet_address: address
+            }
+            login(data)
+        }
+    }, [address])
 
     const toggleModal = () => {
         setIsOpen(!isOpen)

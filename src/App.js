@@ -39,8 +39,8 @@ function App() {
           themeVariables={{
             '--w3m-overlay-background-color': 'rgba(0,0,0,0.5)',
             '--w3m-overlay-backdrop-filter': "blur(20px)",
-            '--w3m-logo-image-url':'https://res.cloudinary.com/dmgydkvnt/image/upload/v1694268719/logo_qo4eoh.png',
-            '--w3m-background-color':"#fff"
+            '--w3m-logo-image-url': 'https://res.cloudinary.com/dmgydkvnt/image/upload/v1694268719/logo_qo4eoh.png',
+            '--w3m-background-color': '#fff'
           }}
         />
       </div>
