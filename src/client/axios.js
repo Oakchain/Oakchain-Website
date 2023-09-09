@@ -6,7 +6,7 @@ import _ from 'lodash'
 
 const Axios = axios.create({
     // baseURL: process.env.NODE_ENV === 'development' ? process.env.REACT_APP_LOCAL_URL : process.env.REACT_APP_PRODUCTION_BASE_URL,
-    baseURL: 'http://localhost:8080/api/v1/',
+    baseURL: 'https://oak-api.vercel.app/api/v1/',
     timeout: 5000000,
     headers: {
         'Content-Type': 'application/json',

@@ -87,7 +87,7 @@ const Header = ({ toggle }) => {
                     <img src={logo} alt='logo' />
                 </div>
 
-                <ul className='d-md-flex d-none align-items-center justify-content-between nav-items__wrapper'>
+                <ul className='d-md-flex d-none align-items-center justify-content-between nav-items__wrapper mb-0'>
                     <li className='nav-item'>How it Works</li>
                     <li className='nav-item d-flex align-items-center' onClick={toggleResourcesDisplay}>
                         Resources
