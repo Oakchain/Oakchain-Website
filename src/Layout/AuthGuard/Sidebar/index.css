@@ -108,7 +108,7 @@
     outline: none;
     background-color: transparent;
     margin: 0;
-    height: 35px;
+    height: 30px;
     width: 100%;
     border: 0;
     display: flex;
@@ -140,4 +140,62 @@
     background-color: #FF4E00;
     color: #FFFFFF;
     font-weight: 500;
+}
+
+@media (max-width: 399px) and (min-width: 300px) {
+
+    .oak-profilee {
+        height: 148px;
+        width: 230px;
+        z-index: 10;
+    }
+
+    .oak-profilee ul li {
+        height: 30px;
+        width: 210px;
+    }
+
+    .oak-profilee ul li img {
+        height: 20px;
+        width: 20px;
+        margin-right: 15px;
+    }
+
+    .oak-profilee ul li button {
+        height: 35px;
+        width: 100%;
+    }
+
+    .oak-profilee ul li h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 299px) and (min-width: 260px) {
+
+    .oak-profilee {
+        height: 133px;
+        width: 180px;
+        z-index: 10;
+    }
+
+    .oak-profilee ul li {
+        height: 25px;
+        width: 160px;
+    }
+
+    .oak-profilee ul li img {
+        height: 15px;
+        width: 15px;
+        margin-right: 10px;
+    }
+
+    .oak-profilee ul li button {
+        height: 25px;
+        width: 100%;
+    }
+
+    .oak-profilee ul li h3 {
+        font-size: 13px;
+    }
 }
