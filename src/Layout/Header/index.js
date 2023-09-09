@@ -6,8 +6,10 @@ import dropdown from '../../assets/images/dropdown.svg'
 import arrow from '../../assets/images/arrow.svg'
 // import { connectWallet } from '../../utils/walletConnect'
 import WalletModal from '../../component/WalletModal'
-
+import { useWeb3Modal } from '@web3modal/react'
+import { useAccount } from 'wagmi'
 import { useNavigate } from "react-router-dom";
+import { useLogin} from '../../client/Hook/Auth'
 
 
 // Custom hook to handle clicking outside an element
@@ -25,6 +27,7 @@ function useClickOutside(ref, callback) {
         };
     }, [ref, callback]);
 }
+
 
 const Header = ({ toggle }) => {
 
@@ -58,7 +61,21 @@ const Header = ({ toggle }) => {
 
     }
 
+    const { open, close } = useWeb3Modal()
+
     const [isOpen, setIsOpen] = useState(false)
+    const { address } = useAccount()
+
+    const { login } = useLogin()
+
+    useEffect(() => {
+        if (address) {
+            const data = {
+                wallet_address: address
+            }
+            login(data)
+        }
+    }, [address])
 
     const toggleModal = () => {
         setIsOpen(!isOpen)
@@ -70,7 +87,7 @@ const Header = ({ toggle }) => {
                     <img src={logo} alt='logo' />
                 </div>
 
-                <ul className='d-md-flex d-none align-items-center justify-content-between nav-items__wrapper'>
+                <ul className='d-md-flex d-none align-items-center justify-content-between nav-items__wrapper mb-0'>
                     <li className='nav-item'>How it Works</li>
                     <li className='nav-item d-flex align-items-center' onClick={toggleResourcesDisplay}>
                         Resources
@@ -145,7 +162,10 @@ const Header = ({ toggle }) => {
                 </ul>
 
                 <div className='d-md-block d-none'>
-                    <button className='oak-btn' onClick={toggleModal}>
+                    {/* <button className='oak-btn' onClick={toggleModal}> */}
+                    <button className='oak-btn' onClick={() => {
+                        open()
+                    }}>
                         Connect to Web3 <span>
                             <img src={arrow} alt='icon' />
                         </span>

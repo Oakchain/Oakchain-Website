@@ -3,7 +3,9 @@ import { HttpClient, unauthorizedAxios } from './axios';
 
 const Client = {
     auth: {
-        // login: (data) => HttpClient.post(ENDPOINTS.LOGIN, { ...data }),
+        login: (data) => HttpClient.post(ENDPOINTS.LOGIN, { ...data }),
+        user: (data) => HttpClient.get(ENDPOINTS.USER, { ...data })
+        // me: (data) => HttpClient.get(`${ENDPOINTS.USER}?${data?.wallet_address}`)
     },
     news: {
         all: () => HttpClient.get(ENDPOINTS.GET_ARTICLES),

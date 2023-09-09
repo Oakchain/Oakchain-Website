@@ -19,7 +19,9 @@ import dropdownDark from '../../../assets/images/dropDownDark.svg';
 import auth1Dark from '../../../assets/images/acornDark.svg';
 import auth2Dark from "../../../assets/images/modeIcon.svg"
 import '../../../assets/style/index.css'
-
+import { useAccount, useDisconnect } from 'wagmi'
+import Cookies from 'js-cookie'
+import { useUser } from '../../../client/Hook/Auth'
 
 // Custom hook to handle clicking outside an element
 function useClickOutside(ref, callback) {
@@ -38,6 +40,8 @@ function useClickOutside(ref, callback) {
 }
 
 const Header = ({ toggle }) => {
+    const { disconnect } = useDisconnect()
+
     const { theme, toggler } = useContext(ThemeContext);
 
     const navigate = useNavigate()
@@ -101,6 +105,14 @@ const Header = ({ toggle }) => {
         setIsWOpen(!isWOpen);
     };
 
+
+
+    const { address } = useAccount()
+    const { user } = useUser({ wallet_address: address })
+
+
+
+    // console.log('---<<connectors>>---', activeConnector, isConnected, connect, address)
     return (
         <div className='  position-fixe w-100'>
             <div className='oak-container-fluid d-flex align-items-center justify-content-between oak-header'>
@@ -186,14 +198,18 @@ const Header = ({ toggle }) => {
                             <img src={theme === 'dark' ? auth1Dark : auth1} alt='icon' />
 
                         </div>
-                        <p className='ps-2 oak-wallet_point mb-0'>11.5k</p>
+                        <p className='ps-2 oak-wallet_point mb-0'>{user?.points ?? 0}</p>
                     </div>
                     <div className='header-auth_item px-3' id='toggleSwitch' onClick={toggler}>
                         <img src={theme === 'dark' ? auth2Dark : auth2} alt='icon' />
 
                     </div>
                     <div className='px-3'>
-                        <img src={userP} alt='userProfile' className=' oak-wallet_name mb-0' onClick={toggleProfileDisplay}></img>
+                        <p className=' oak-wallet_name mb-0'
+                            onClick={toggleProfileDisplay}
+                            role='button'
+                        >{user?.username?.length > 0 ? user?.username?.slice(0, 2) : address?.slice(0, 2) ?? 'N/A'}</p>
+                        {/* <img src={userP} alt='userProfile' className=' oak-wallet_name mb-0' onClick={toggleProfileDisplay}></img> */}
                         {isProfileDisplayed && (
                             <div className='oak-profile' ref={profileDropdownRef}>
                                 <ul>
@@ -210,9 +226,11 @@ const Header = ({ toggle }) => {
                                     <li>
                                         <img src={login} alt='login' />
                                         <button onClick={() => {
-                                            navigate('/login')
+                                            Cookies.remove('OAK_AUTH_TOKEN')
+                                            disconnect()
+                                            window.location.href = '/'
                                         }}>
-                                            <h3>Login</h3></button>
+                                            <h3>Logout</h3></button>
                                     </li>
                                 </ul>
                             </div>
@@ -233,7 +251,7 @@ const Header = ({ toggle }) => {
                     </div>
                 </div>
             </div>
-            <AccountSettings toggle={toggleModal} isOpen={isOpen} />
+            <AccountSettings toggle={toggleModal} isOpen={isOpen} user={user} />
             <OakWallet toggle={toggleWModal} isWOpen={isWOpen} />
         </div>
 

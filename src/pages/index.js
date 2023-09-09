@@ -1,4 +1,4 @@
-// import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/style/home.css";
 import Layout from "../Layout";
 import discord from "../assets/images/discord.svg";
@@ -38,6 +38,8 @@ import { useNavigate } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Row, Col } from 'reactstrap'
+import { useWeb3Modal } from '@web3modal/react'
+
 
 // import connectWallet from '../utils/walletConnect'
 
@@ -49,7 +51,7 @@ const LandingPage = () => {
   const year = myDate.getFullYear();
   const mins = myDate.getMinutes();
 
-  console.log(mins);
+  // console.log(mins);
   const date = `${month} ${day}, ${year}. ${mins} mins read`;
   // const [isOpen, setIsOpen] = useState(false)
 
@@ -60,6 +62,7 @@ const LandingPage = () => {
     return Array.from({ length }, (_, index) => index + 1);
   };
 
+  const { open, close } = useWeb3Modal()
 
   return (
     <Layout>
@@ -118,18 +121,15 @@ const LandingPage = () => {
                       <img src={reddit} alt="icon" />
                     </div>
                   </div>
-
                 </div>
 
                 <div className=" hero-cta_btn">
-
                   <button className=" oak-btn mb-5"
                     onClick={() => {
-                      navigate('/home')
+                      open()
                     }}
                   >Get Started</button>
                 </div>
-
 
                 <div className="oak-newsletter__wrapper d-flex align-items-center mb-3">
                   <input
@@ -717,8 +717,8 @@ const LandingPage = () => {
               <img className="review-quote" alt="quote" src={quote} />
               <p>
                 Working with Oakchain has been a fantastic experience. Their
-                technology-driven <br/> approach to digital experience is
-                unmatched, and the results have been<br/> phenomenal.
+                technology-driven <br /> approach to digital experience is
+                unmatched, and the results have been<br /> phenomenal.
               </p>
             </div>
             <img className="review-img" alt="user-img" src={userTwo} />
