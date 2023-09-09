@@ -210,6 +210,7 @@ const Sidebar = ({ show, toggle }) => {
                                         <p className='mb-0 '>
                                             {el?.label}
                                         </p>
+
                                     </Link>
                                 </div>
                             )
