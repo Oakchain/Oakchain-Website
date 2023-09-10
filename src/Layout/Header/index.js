@@ -10,8 +10,7 @@ import { useWeb3Modal } from '@web3modal/react'
 import { useAccount } from 'wagmi'
 import { useNavigate } from "react-router-dom";
 import { useLogin} from '../../client/Hook/Auth'
-import jwt_decode from 'jwt-decode'
-import Cookies from 'js-cookie';
+
 
 // Custom hook to handle clicking outside an element
 function useClickOutside(ref, callback) {
@@ -69,8 +68,7 @@ const Header = ({ toggle }) => {
 
     const { login } = useLogin()
 
-    // const accessToken = Cookies.get("OAK_AUTH_TOKEN")
-
+    
     useEffect(() => {
         if (address) {
             const data = {
