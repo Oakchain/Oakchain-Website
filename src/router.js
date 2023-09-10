@@ -9,7 +9,7 @@ import ArticleDetails from './pages/Academy/Article/[id]'
 import VideoDetails from './pages/Academy/Video/[id]'
 import EpisodeDetails from './pages/Academy/Video/Episode/[id]';
 import ProtectedeRoute from './component/ProtectedRoute'
-
+import ComingSoonPage from './pages/ComingSoon'
 
 const RouterConfig = () => {
 
@@ -26,6 +26,10 @@ const RouterConfig = () => {
                     <Route exact path='/academy/article/:id' element={<ArticleDetails />} />
                     <Route exact path='/academy/video/:id' element={<VideoDetails />} />
                     <Route exact path='/academy/episode/:id' element={<EpisodeDetails />} />
+                    <Route exact path='/podcast' element={<ComingSoonPage />} />
+                    <Route exact path='/tasks' element={<ComingSoonPage />} />
+                    <Route exact path='/marketplace' element={<ComingSoonPage />} />
+
                 </Route>
 
             </Routes>
