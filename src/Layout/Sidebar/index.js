@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './index.css'
 import closeIcon from '../../assets/images/closeIcon.svg'
 import WalletModal from '../../component/WalletModal'
@@ -14,7 +14,13 @@ const Sidebar = ({ show, toggle }) => {
 
     const navigate = useNavigate()
     const [isResourcesDisplayed, setIsResourcesDisplayed] = useState(false);
-
+    useEffect(() => {
+        // Close the profile when the sidebar is closed
+        if (!show) {
+            setIsResourcesDisplayed(false);
+            setIsCompanyDisplayed(false);
+        }
+    }, [show]);
     // Function to toggle the Resources display
     const toggleResourcesDisplay = () => {
         console.log("working")

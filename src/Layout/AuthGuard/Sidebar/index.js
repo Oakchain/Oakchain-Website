@@ -16,15 +16,7 @@ import oakWal from '../../../assets/images/userP/walletSettings.svg'
 import login from '../../../assets/images/userP/login.svg'
 import AccountSettings from '../../../component/AccountSettings';
 import OakWallet from '../../../component/oakwallet'
-import { useAccount, useDisconnect } from 'wagmi'
-import { useUser } from '../../../client/Hook/Auth'
-import Cookies from 'js-cookie'
-import truncate from 'truncate'
-import { formatWalletAddress } from '../../../utils'
-
 const Sidebar = ({ show, toggle }) => {
-
-    const { disconnect } = useDisconnect()
     const location = useLocation()
     const [isOpen, setIsOpen] = useState(false)
 
@@ -36,6 +28,8 @@ const Sidebar = ({ show, toggle }) => {
         // Close the profile when the sidebar is closed
         if (!show) {
             setIsProfileDisplayed(false);
+            setIsResourcesDisplayed(false);
+            setIsCompanyDisplayed(false);
         }
     }, [show]);
 
@@ -81,11 +75,6 @@ const Sidebar = ({ show, toggle }) => {
         setIsWOpen(!isWOpen);
     };
 
-
-    const { address } = useAccount()
-    const { user } = useUser({ wallet_address: address })
-
-
     return (
         <>
             <div className={`oak-sidebar d-block d-md-none ${show ? 'show w-100' : ""}`}>
@@ -97,7 +86,7 @@ const Sidebar = ({ show, toggle }) => {
                                     <div>
                                         <img src={auth1} alt='icon' />
                                     </div>
-                                    <p className='ps-2 oak-wallet_point mb-0'>{user?.points ?? 0}</p>
+                                    <p className='ps-2 oak-wallet_point mb-0'>11.5k</p>
                                 </div>
                                 <div className=' px-3'>
                                     <img src={auth2} alt='icon' />
@@ -111,10 +100,9 @@ const Sidebar = ({ show, toggle }) => {
                     </div>
 
                     <div className='mb-4 oak-user__details-mobile d-flex align-items-center ' onClick={toggleProfileDisplay}>
+                        <img src={userP} alt='userProfile' className=' oak-wallet_name mb-0' ></img>
 
-                        <img src={user?.profile_picture?.length > 0 ? user?.profile_picture : userP} alt='userProfile' className=' oak-wallet_name mb-0' ></img>
-
-                        <p className=' oak-wallet_user-name mb-0 text-center px-3'>{user?.username?.length > 0 ? user?.username : address ? formatWalletAddress(address) : 'N/A'}</p>
+                        <p className=' oak-wallet_user-name mb-0 text-center px-3'>Patrick James</p>
 
 
                     </div>
@@ -135,11 +123,9 @@ const Sidebar = ({ show, toggle }) => {
                                 <li>
                                     <img src={login} alt='login' />
                                     <button onClick={() => {
-                                        Cookies.remove('OAK_AUTH_TOKEN')
-                                        disconnect()
-                                        window.location.href = '/'
+                                        navigate('/login')
                                     }}>
-                                        <h3>Logout</h3></button>
+                                        <h3>Login</h3></button>
                                 </li>
                             </ul>
                         </div>
