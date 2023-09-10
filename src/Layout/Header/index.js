@@ -68,6 +68,7 @@ const Header = ({ toggle }) => {
 
     const { login } = useLogin()
 
+    
     useEffect(() => {
         if (address) {
             const data = {

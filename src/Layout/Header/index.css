@@ -54,6 +54,7 @@
 @media (max-width:767px) {
     .oak-header {
         border-bottom: none;
+        width: 90% !important;
     }
 
     .mobile-auth__items {

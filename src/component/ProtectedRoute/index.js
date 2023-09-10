@@ -7,6 +7,7 @@ const ProtectedeRoute = () => {
 
     const intent_url = window.location.pathname;
     const accessToken = Cookies.get("OAK_AUTH_TOKEN")
+    
     // console.log(accessToken)
     let authorized = false
     if (accessToken) {
