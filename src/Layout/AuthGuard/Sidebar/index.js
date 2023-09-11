@@ -28,6 +28,8 @@ const Sidebar = ({ show, toggle }) => {
         // Close the profile when the sidebar is closed
         if (!show) {
             setIsProfileDisplayed(false);
+            setIsResourcesDisplayed(false);
+            setIsCompanyDisplayed(false);
         }
     }, [show]);
 
@@ -39,6 +41,23 @@ const Sidebar = ({ show, toggle }) => {
         console.log("SAdsd")
         setIsProfileDisplayed((prevState) => !prevState);
     };
+    const [isResourcesDisplayed, setIsResourcesDisplayed] = useState(false);
+
+    // Function to toggle the Resources display
+    const toggleResourcesDisplay = () => {
+        console.log("working")
+        setIsResourcesDisplayed((prevState) => !prevState);
+
+    }
+    const [isCompanyDisplayed, setIsCompanyDisplayed] = useState(false);
+
+    // Function to toggle the Company display
+    const toggleCompanyDisplay = () => {
+        console.log("working")
+        setIsCompanyDisplayed((prevState) => !prevState);
+
+    }
+
 
     // State for AccountSettings modal
     const [isOpenn, setIsOpenn] = useState(false);
@@ -114,20 +133,72 @@ const Sidebar = ({ show, toggle }) => {
 
                     <ul className=' nav-items__wrapper'>
                         <li className='nav-item mobile'>How it Works</li>
-                        <li className='nav-item mobile d-flex align-items-center'>
+                        <li className='nav-item mobile d-flex align-items-center' onClick={toggleResourcesDisplay}>
                             Resources
                             <span className='dropdown-wrapper'>
                                 <img src={dropdown} alt='logo' />
                             </span>
 
                         </li>
-                        <li className='nav-item mobile d-flex align-items-center'>
+                        {isResourcesDisplayed && (
+                            <div className='oak-resourcess'>
+                                <ul>
+                                    <li onClick={() => {
+                                        navigate('/Community')
+                                    }}>
+                                        <h3>Community</h3>
+                                    </li>
+                                    <li onClick={() => {
+                                        navigate('/Learn')
+                                    }}>
+                                        <h3>Learn</h3>
+                                    </li>
+                                    <li onClick={() => {
+                                        navigate('/Blog')
+                                    }}>
+                                        <h3>Our Blog</h3>
+                                    </li>
+                                    <li onClick={() => {
+                                        navigate('/Server')
+                                    }}>
+                                        <h3>Discord Server</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        )}
+                        <li className='nav-item mobile d-flex align-items-center' onClick={toggleCompanyDisplay}>
                             Company
 
                             <span className='dropdown-wrapper'>
                                 <img src={dropdown} alt='logo' />
                             </span>
                         </li>
+                        {isCompanyDisplayed && (
+                            <div className='oak-companyy'>
+                                <ul>
+                                    <li onClick={() => {
+                                        navigate('/about')
+                                    }}>
+                                        <h3>About Us</h3>
+                                    </li>
+                                    <li onClick={() => {
+                                        navigate('/team')
+                                    }}>
+                                        <h3>Our Team</h3>
+                                    </li>
+                                    <li onClick={() => {
+                                        navigate('/faqs')
+                                    }}>
+                                        <h3>FAQs</h3>
+                                    </li>
+                                    <li onClick={() => {
+                                        navigate('/help')
+                                    }}>
+                                        <h3>Help Center</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        )}
 
                     </ul>
                     <Nav className=" d-block " >
@@ -141,6 +212,7 @@ const Sidebar = ({ show, toggle }) => {
                                         <p className='mb-0 '>
                                             {el?.label}
                                         </p>
+
                                     </Link>
                                 </div>
                             )

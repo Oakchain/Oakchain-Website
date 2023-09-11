@@ -13,7 +13,7 @@ const Axios = axios.create({
     },
 });
 Axios.interceptors.request.use((config) => {
-    const token = Cookies.get("OAK_TOKEN");
+    const token = Cookies.get("OAK_AUTH_TOKEN");
     config.headers = {
         ...config.headers,
         Authorization: token ? `Bearer ${token}` : '',

@@ -18,6 +18,10 @@
 
 }
 
+.nav-items__wrapper li {
+    cursor: pointer;
+}
+
 .dropdown-wrapper {
     margin-left: 8px;
 }
@@ -50,6 +54,7 @@
 @media (max-width:767px) {
     .oak-header {
         border-bottom: none;
+        width: 90% !important;
     }
 
     .mobile-auth__items {
@@ -73,6 +78,125 @@
 
 }
 
+.oak-resources {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    border-radius: 10px;
+    top: 66px;
+    padding: 0;
+    gap: 10px;
+    box-shadow: 4px 4px 0px 0px #00002F;
+    border-radius: 5px;
+    border: 1px solid #00002F;
+    background: #FFF;
+    height: 124px;
+    width: 158px;
+    z-index: 10;
+}
+
+.oak-resources ul {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.oak-resources ul li {
+    height: 25px;
+    width: 141px;
+    padding: 0;
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+}
+
+.oak-resources ul li h3 {
+    color: #00002F;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-left: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.oak-resources ul li:hover {
+    background-color: #FF4E00;
+}
+
+.oak-resources ul li:hover h3 {
+    color: #FFF;
+    font-weight: 500;
+}
+
+.oak-company {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    border-radius: 10px;
+    top: 66px;
+    padding: 0;
+    gap: 10px;
+    box-shadow: 4px 4px 0px 0px #00002F;
+    border-radius: 5px;
+    border: 1px solid #00002F;
+    background: #FFF;
+    height: 124px;
+    width: 158px;
+    z-index: 10;
+}
+
+.oak-company ul {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.oak-company ul li {
+    height: 25px;
+    cursor: pointer;
+    width: 141px;
+    padding: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+}
+
+.oak-company ul li h3 {
+    color: #00002F;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-left: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.oak-company ul li:hover {
+    background-color: #FF4E00;
+}
+
+.oak-company ul li:hover h3 {
+    color: #FFF;
+    font-weight: 500;
+}
 
 .oak-profile {
     display: flex;
@@ -171,6 +295,7 @@
 #connect__btn {
     margin-left: 15rem;
 }
+
 
 @media (max-width:800px) and (min-width: 768px) {
 
@@ -303,6 +428,6 @@
     /* menu items styling // */
 }
 
-#toggleSwitch{
+#toggleSwitch {
     cursor: pointer;
 }

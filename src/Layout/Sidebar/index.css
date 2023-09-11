@@ -34,3 +34,140 @@
     width: 75%;
 
 }
+
+.oak-resourcess {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 0;
+    gap: 10px;
+    box-shadow: 4px 4px 0px 0px #00002F;
+    border-radius: 5px;
+    border: 1px solid #00002F;
+    background: #FFF;
+    height: 124px;
+    width: 158px;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.oak-resourcess ul {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.oak-resourcess ul li {
+    height: 25px;
+    width: 141px;
+    padding: 0;
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+}
+
+.oak-resourcess ul li h3 {
+    color: #00002F;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-left: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.oak-resourcess ul li:hover {
+    background-color: #FF4E00;
+}
+
+.oak-resourcess ul li:hover h3 {
+    color: #FFF;
+    font-weight: 500;
+}
+
+.oak-companyy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 0;
+    gap: 10px;
+    box-shadow: 4px 4px 0px 0px #00002F;
+    border-radius: 5px;
+    border: 1px solid #00002F;
+    background: #FFF;
+    height: 124px;
+    width: 158px;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.oak-companyy ul {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.oak-companyy ul li {
+    height: 25px;
+    cursor: pointer;
+    width: 141px;
+    padding: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+}
+
+.oak-companyy ul li h3 {
+    color: #00002F;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-left: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.oak-companyy ul li:hover {
+    background-color: #FF4E00;
+}
+
+.oak-companyy ul li:hover h3 {
+    color: #FFF;
+    font-weight: 500;
+}
+
+@media (max-width: 280px) and (min-width: 260px) {
+
+    .oak-resourcess {
+        height: 110px;
+        width: 148px;
+        z-index: 10;
+        margin-bottom: 10px;
+    }
+
+    .oak-companyy {
+        height: 110px;
+        width: 148px;
+        z-index: 10;
+        margin-bottom: 10px;
+    }
+
+
+}
