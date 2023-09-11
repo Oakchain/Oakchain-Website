@@ -57,20 +57,21 @@ const Footer = () => {
       </div>
 
       <div className="footer-social">
+
         <div className="discord">
-        <img className="discordIcon" alt="discord-icon" src={discordIcon} width="60%"/>
+        <img className="discordIcon" alt="discord-icon" src={discordIcon} />
         </div>
 
         <div className="twitter">
-        <img className="twitterIcon" alt="twitter-icon" src={twitterIcon} width="60%"/>
+        <img className="twitterIcon" alt="twitter-icon" src={twitterIcon} />
         </div>
 
         <div className="telegram">
-        <img className="telegramIcon" alt="telegram-icon" src={telegramIcon} width="53%"/>
+        <img className="telegramIcon" alt="telegram-icon" src={telegramIcon} />
         </div>
 
       <div className="reddit">
-      <img className="redditIcon" alt="reddit-icon" src={redditIcon} width="60%"/>
+      <img className="redditIcon" alt="reddit-icon" src={redditIcon}/>
       </div>
         
         
