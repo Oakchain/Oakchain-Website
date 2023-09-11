@@ -520,7 +520,8 @@
   display: contents !important;
   color: #00002F;
   font-family: 'Clash Display';
-  font-size: 15px;
+  font-size: 14px;
+  padding: 0;
   font-style: normal;
   text-align: center;
   font-weight: 700;
