@@ -535,6 +535,107 @@
   transform: translateX(0);
   visibility: visible;
   padding: .5rem 2rem;
-
- 
 }
+
+@media screen and (max-width:428px) {
+  .oakWriter{
+    width: 87px;
+    top: 86.5%;
+    left: 79%;
+  }
+
+  .oakWriter-container{
+    top: 55%;
+    left: 50%;
+    width: 375px;
+    height: 58vh;
+  }
+
+  .oakWriter:hover{
+    transform: none ;
+  }
+
+  .cautionModal{
+    margin-top: .6rem;
+    width: 373px;
+    height: 60vh;
+  }
+
+  .cautionImg{
+    margin-bottom: 1rem;
+  }
+
+  .caution_header-text{
+    margin-bottom: 1rem;
+  }
+
+  .cautionContainer{
+    margin-top: 4rem;
+  }
+
+  .caution-btn{
+    margin-top: .5rem;
+  }
+
+  .userModal{
+    width:100%;
+    height:100%;
+    padding:.7rem;
+    border-radius:none;
+  }
+
+  .oakWriter-img img{
+    width: 130px;
+  }
+
+  .userModalContainer{
+    margin-top: 1rem;
+  }
+
+  .userModal-modalCloser{
+    font-size: 25px;
+  }
+
+  .userModal-textArea::placeholder {
+    font-size: 20px;
+    margin-top: .5rem;
+}
+
+.userModal-buttons{
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 44%;
+  
+}
+
+
+.userModal-icon{
+  width: 36.5px;
+  height:36.5px
+}
+
+.userModal-icon img{
+  width: 20px;
+}
+
+.userModal-tagIcon{
+  width: 36.5px;
+  height:36.5px
+}
+
+.userModal-input {
+  width: 95px;
+  font-size: 12px;
+}
+
+.userModal-pushButton{
+  width: 98%;
+}
+
+.userModal-icons{
+  margin-bottom: 1.3rem;
+}
+
+
+}
+

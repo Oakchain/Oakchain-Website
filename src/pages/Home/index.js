@@ -25,6 +25,15 @@ const Home = () => {
 
         return () => clearTimeout(timer);
     }, []);
+
+
+    const handleUserModalClick = () => {
+        if (!showModal) {
+            setShowUserModal(true);
+        } 
+    }
+
+
     return (
         <AuthGuard>
             <div className=" ">
@@ -121,7 +130,7 @@ const Home = () => {
                 </section>
 
 
-                <img src={oakwriter} alt="oakwriter" className="oakWriter" onClick={() => setShowUserModal(true)}/>  
+                <img src={oakwriter} alt="oakwriter" className="oakWriter" onClick={handleUserModalClick}/>  
                
                
                 <Writermodal show={showModal} onClose={() => setShowModal(false)} />
