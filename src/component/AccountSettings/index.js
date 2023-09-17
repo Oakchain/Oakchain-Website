@@ -4,7 +4,7 @@ import upload from '../../assets/images/userP/upload.svg'
 import './index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import fatimes from '../../assets/images/userP/fatimes.svg'
-import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faDiscord, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import '../../assets/style/index.css'
 
 import { useAccount, useConnect } from 'wagmi'
@@ -72,8 +72,8 @@ const AccountSettings = ({ isOpen, toggle, user }) => {
           <input id='inPut' placeholder='Enter your username' defaultValue={user?.username}></input>
           <h1 className='username'>Ethereum address</h1>
           <input id='eth' placeholder='0x1B191b208666Dd7584fE3A04556Ff195Fe14FFEf' value={address}></input>
-          <div className='socialCon'><h1>Twitter</h1>  <FontAwesomeIcon className='brands' icon={faTwitter} /></div>
-          <div className='socialConne'><input placeholder='Connect your Twitter to access all campaigns'></input> <button>Connect</button></div>
+          <div className='socialCon'><h1><b>X</b></h1>  <FontAwesomeIcon className='brands' icon={faXTwitter} /></div>
+          <div className='socialConne'><input placeholder='Connect your X to access all campaigns'></input> <button>Connect</button></div>
 
           <div className='socialCon'><h1>Discord</h1>  <FontAwesomeIcon className='brands' icon={faDiscord} /></div>
           <div className='socialConne'><input placeholder='Connect your Discord to access all campaigns'></input> <button>Connect</button></div>
@@ -115,8 +115,8 @@ const AccountSettings = ({ isOpen, toggle, user }) => {
           <input id='inPut' placeholder='Enter your username'></input>
           <h1 className='username'>Ethereum address</h1>
           <input id='eth' placeholder='0x1B191b208666Dd7584fE3A04556Ff195Fe14FFEf'></input>
-          <div className='socialCon'><h1>Twitter</h1>  <FontAwesomeIcon className='brands' icon={faTwitter} /></div>
-          <div className='socialConne'><input placeholder='Connect your Twitter to access all campaigns'></input> <button>Connect</button></div>
+          <div className='socialCon'><h1><b>X</b></h1>  <FontAwesomeIcon className='brands' icon={faXTwitter} /></div>
+          <div className='socialConne'><input placeholder='Connect your X to access all campaigns'></input> <button>Connect</button></div>
 
           <div className='socialCon'><h1>Discord</h1>  <FontAwesomeIcon className='brands' icon={faDiscord} /></div>
           <div className='socialConne'><input placeholder='Connect your Discord to access all campaigns'></input> <button>Connect</button></div>
