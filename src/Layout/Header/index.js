@@ -109,12 +109,12 @@ const Header = ({ toggle }) => {
                                         <h3>Learn</h3>
                                     </li>
                                     <li onClick={() => {
-                                        navigate('/Blog')
+                                        navigate('/blog')
                                     }}>
                                         <h3>Our Blog</h3>
                                     </li>
                                     <li onClick={() => {
-                                        navigate('/Server')
+                                        navigate('/server')
                                     }}>
                                         <h3>Discord Server</h3>
                                     </li>

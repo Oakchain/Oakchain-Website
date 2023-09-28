@@ -28,6 +28,10 @@ const RouterConfig = () => {
                     <Route exact path='/academy/episode/:id' element={<EpisodeDetails />} />
                     <Route exact path='/podcast' element={<ComingSoonPage />} />
                     <Route exact path='/tasks' element={<ComingSoonPage />} />
+                    <Route exact path='/about' element={<ComingSoonPage />} />
+                    <Route exact path='/team' element={<ComingSoonPage />} />
+                    <Route exact path='/blog' element={<ComingSoonPage />} />
+                    <Route exact path='/server' element={<ComingSoonPage />} />
                     <Route exact path='/marketplace' element={<ComingSoonPage />} />
 
                 </Route>
