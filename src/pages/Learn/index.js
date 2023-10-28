@@ -62,9 +62,6 @@ const Learn = () => {
                 </button>
                 {dropdownOpen.nfts && (
                   <ul className="oak-content-a-dropdown">
-                    <li><a href="">What is Web3?</a></li>
-                    <li><a href="">What is blockchain?</a></li>
-                    <li><a href="">What is Bitcoin?</a></li>
                     <li><a href="">What is Ethereum?</a></li>
                     <li><a href="">Why invest in crypto?</a></li>
                     <li><a href="">How to use a hot wallet?</a></li>
@@ -85,10 +82,6 @@ const Learn = () => {
                     <li><a href="">What is Bitcoin?</a></li>
                     <li><a href="">What is Ethereum?</a></li>
                     <li><a href="">Why invest in crypto?</a></li>
-                    <li><a href="">How to use a hot wallet?</a></li>
-                    <li><a href="">How to use a cold wallet?</a></li>
-                    <li><a href="">How to avoid wallet scams?</a></li>
-                    <li><a href="">How to get an ens domain?</a></li>
                   </ul>
                 )}
               </li>
@@ -100,10 +93,6 @@ const Learn = () => {
                   <ul className="oak-content-a-dropdown">
                     <li><a href="">What is Web3?</a></li>
                     <li><a href="">What is blockchain?</a></li>
-                    <li><a href="">What is Bitcoin?</a></li>
-                    <li><a href="">What is Ethereum?</a></li>
-                    <li><a href="">Why invest in crypto?</a></li>
-                    <li><a href="">How to use a hot wallet?</a></li>
                     <li><a href="">How to use a cold wallet?</a></li>
                     <li><a href="">How to avoid wallet scams?</a></li>
                     <li><a href="">How to get an ens domain?</a></li>
@@ -117,9 +106,6 @@ const Learn = () => {
                 {dropdownOpen.breakingIntoWeb3 && (
                   <ul className="oak-content-a-dropdown">
                     <li><a href="">What is Web3?</a></li>
-                    <li><a href="">What is blockchain?</a></li>
-                    <li><a href="">What is Bitcoin?</a></li>
-                    <li><a href="">What is Ethereum?</a></li>
                     <li><a href="">Why invest in crypto?</a></li>
                     <li><a href="">How to use a hot wallet?</a></li>
                     <li><a href="">How to use a cold wallet?</a></li>
@@ -135,12 +121,6 @@ const Learn = () => {
                 {dropdownOpen.web3Reference && (
                   <ul className="oak-content-a-dropdown">
                     <li><a href="">What is Web3?</a></li>
-                    <li><a href="">What is blockchain?</a></li>
-                    <li><a href="">What is Bitcoin?</a></li>
-                    <li><a href="">What is Ethereum?</a></li>
-                    <li><a href="">Why invest in crypto?</a></li>
-                    <li><a href="">How to use a hot wallet?</a></li>
-                    <li><a href="">How to use a cold wallet?</a></li>
                     <li><a href="">How to avoid wallet scams?</a></li>
                     <li><a href="">How to get an ens domain?</a></li>
                   </ul>
