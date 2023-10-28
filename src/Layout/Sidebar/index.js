@@ -82,7 +82,7 @@ const Sidebar = ({ show, toggle }) => {
                                         <h3>Community</h3>
                                     </li>
                                     <li onClick={() => {
-                                        navigate('/Learn')
+                                        navigate('/learn')
                                     }}>
                                         <h3>Learn</h3>
                                     </li>
