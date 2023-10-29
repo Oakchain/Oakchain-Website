@@ -16,15 +16,23 @@ contract News{
         string newsBody;
         uint createdNewsTimestamp;
     }
+
+    struct comment_{
+        string newsCom;
+        string comm;
+        uint Timestamp;
+    }
     
     mapping(string => newsUpload) allNews;
     mapping(address => newsDetails) createNewsLogger;
+    mapping(address => comment_[]) allComments;
     mapping(address => bool) insertedLogger;
     string[] newstitles;
     address[] keys;
 
     newsDetails nd;
     newsUpload nu;
+    comment_ c;
     
     
     function creatNews( string memory newsTitle_, string memory body_)  public {
@@ -65,4 +73,16 @@ contract News{
             allData[i] = allNews[newstitles[i]];
         } return allData;
     } 
+
+    function postComment (string memory comment, string memory newscom) public {
+        c.newsCom = comment;
+        c.comm = newscom;
+        c.Timestamp = block.timestamp;
+
+        allComments[msg.sender].push(c);
+    }
+
+    function getcomment(address adr) view  public returns(comment_[] memory){
+        return allComments[adr];
+    }
 }
