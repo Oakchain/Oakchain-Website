@@ -2,7 +2,9 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract News{
-     uint id_;
+    uint id_;
+    string[] newstitles;
+    address[] keys;
      
      struct newsDetails{
         uint id;
@@ -27,8 +29,8 @@ contract News{
     mapping(address => newsDetails) createNewsLogger;
     mapping(address => comment_[]) allComments;
     mapping(address => bool) insertedLogger;
-    string[] newstitles;
-    address[] keys;
+    mapping(address => bool) banList;
+   
 
     newsDetails nd;
     newsUpload nu;
@@ -37,6 +39,7 @@ contract News{
     
     function creatNews( string memory newsTitle_, string memory body_)  public {
         require(msg.sender != address(0), "Error 404");
+        require(!banList[msg.sender], "You are a banned user");
         
         nd.id = id_;
         nd.newsTitle = newsTitle_;
@@ -61,10 +64,12 @@ contract News{
     }
 
     function getSingleNews (string memory title_) view public returns(newsUpload memory) {
+            require(!banList[msg.sender], "You are a banned user");
             return allNews[title_];
     }
 
     function getAllNews () view public returns(newsUpload[] memory){
+         require(!banList[msg.sender], "You are a banned user");
          require(keys.length > 0, "No logged data available");
          
              newsUpload[] memory allData = new newsUpload[](newstitles.length);
@@ -75,6 +80,7 @@ contract News{
     } 
 
     function postComment (string memory comment, string memory newscom) public {
+        require(!banList[msg.sender], "You are a banned user");
         c.newsCom = comment;
         c.comm = newscom;
         c.Timestamp = block.timestamp;
@@ -84,5 +90,11 @@ contract News{
 
     function getcomment(address adr) view  public returns(comment_[] memory){
         return allComments[adr];
+    }
+
+    function banUser (address addr) public returns (string memory){
+        if(!banList[addr]){
+            banList[addr] = true;
+        } return ("Done");
     }
 }
