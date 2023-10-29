@@ -91,8 +91,10 @@ contract News{
     function getcomment(address adr) view  public returns(comment_[] memory){
         return allComments[adr];
     }
+}
 
-    function banUser (address addr) public returns (string memory){
+    contract admin is News {
+        function banUser (address addr) public returns (string memory){
         if(!banList[addr]){
             banList[addr] = true;
         } return ("Done");
