@@ -32,6 +32,18 @@ const News = () => {
     //     });
     // }, [])
 
+    useEffect( () => {
+        fetchItems();
+    }, []);
+
+    const [items, setItems] = useState([]);
+
+    const fetchItems = async() =>{
+        const data = await fetch('/news');
+        const items = data.json();
+        setItems(items);
+    }
+
     return (
         <AuthGuard>
             <div className="">
