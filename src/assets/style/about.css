@@ -603,7 +603,7 @@ width: 750px;
     
 }
 
-@media (max-width: 299px) and (min-width: 270px) {
+@media (max-width: 299px) and (min-width: 271px) {
     .oak-home-bannerr{
         height: 270px !important;
     }
