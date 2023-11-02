@@ -1,3 +1,4 @@
+
 .oak-home__bannerrr-img{
     top: 39px;
     left: 404px;
@@ -40,7 +41,7 @@
     line-height: 25px;
     letter-spacing: 0.05em;
     text-align: left;
-    color: #00002F;    
+    color: #000000;    
 }
 .oak-team-banner {
     padding: 60px;
@@ -175,4 +176,536 @@ width: 1100px;
     letter-spacing: 0em;
     text-align: left;
     color: #00002F;    
+}
+
+
+@media (max-width: 1100px) and (min-width:769px) {
+    .oak-bannerr-header{
+        font-size: 40px !important;
+    }
+.oak-home__bannerrr-img{
+    top: 59px;
+    left: 324px;
+}
+.oak-home__bannerrr-img img{
+    width: 449.98px;
+    height: 298.24px;   
+}
+.oak-tbanner-header {
+    font-size: 40px;
+}
+.oak-team__banner-img{
+    top: 39px;
+    left: 360px;
+}
+.oak-team__banner-img img{
+    width: 400px;
+    height: 268.24px;
+}
+.oak-content2-header{
+    margin-top: 0px;
+}
+.oak-content2-subheader{
+width: 750px;
+}
+}
+
+@media (max-width: 1100px) and (min-width:1001px) {
+    
+    .oak-home__bannerrr-img img{
+        width: 639.98px;
+        height: 298.24px;   
+    }
+    .oak-team__banner-img img{
+        width: 600px;
+        height: 308.24px;
+    }
+    }
+@media (max-width: 1000px) and (min-width:901px) {
+    
+    .oak-home__bannerrr-img img{
+        width: 539.98px;
+        height: 298.24px;   
+    }
+    .oak-team__banner-img img{
+        width: 500px;
+        height: 308.24px;
+    }
+    }
+@media (max-width: 768px) and (min-width: 501px) {
+    .oak-bannerr-header{
+        font-size: 40px !important;
+    }
+    .oak-home-bannerr{
+        height: 360px !important;
+    }
+    .oak-home__bannerrr-img{
+        top: 120px;
+        left: -21px;
+    }
+    .oak-home__bannerrr-img img{
+        width: 730px;
+        height: 296.87px;
+    }
+    .oak-about-content{
+        min-height: 610px;
+        width: 95%;
+        padding: 20px;
+        margin-top: -100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .oak-about-content-header{
+        font-size: 20px;  
+    }
+    .oak-about-content-subheader{
+        font-size: 20px;   
+    }
+    .oak-about-content-headersub1{
+        font-family: Clash Display;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 15px; 
+    }
+    .oak-team-banner {
+        margin-top: -200px;
+        padding: 60px;
+        height: 409px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .oak-tbanner-header {
+        font-size: 40px;margin: 0;
+        line-height: normal;
+    }
+    .oak-team__banner-img{
+        top: 99px;
+        left: -20px;
+    }
+    .oak-team__banner-img img{
+        width: 728.94px;
+        height: 375px;
+    }
+    .oak-content2-header{
+        margin-top: 30px;
+    font-size: 30px;
+    }
+    .oak-content2-subheader{
+    font-size: 18px;
+    width: 619px;
+    line-height: 16px;
+    }
+    .foundersDiv{
+        width: 519px;
+        height: 230px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+    }
+    .founder1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .founder1 img{
+        width: 193px;
+        height: 193px;
+        border-radius: 50%;
+    }
+    .founder1 h1{
+        font-size: 18px;
+        line-height: 17px;
+    }
+    .founder1 p{
+        font-size: 12px;
+        line-height: 9px;    
+    }
+    .staffDiv{
+        margin-top: 100px;
+        height: 230px;
+    }
+    
+    .staff{
+        height: 230px;
+        width: 419px;
+        margin-left: 10px;
+        margin-right: 40px;
+    }
+    .staff img{
+        width: 193px;
+        height: 193px;
+    }
+    .staff h1{
+        font-size: 18px;
+        line-height: 17px;
+    }
+    .staff p{
+        font-size: 12px;
+        line-height: 9px;  
+    }
+    
+}
+@media (max-width: 600px) and (min-width: 501px) {
+    .oak-bannerr-header{
+        font-size: 40px !important;
+    }
+    .oak-home-bannerr{
+        height: 360px !important;
+    }
+    .oak-home__bannerrr-img{
+        top: 120px;
+        left: -21px;
+    }
+    .oak-home__bannerrr-img img{
+        width: 530px;
+        height: 296.87px;
+    }
+    .oak-team-banner {
+        margin-top: -100px;
+        padding: 60px;
+        height: 409px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .oak-tbanner-header {
+        font-size: 40px;margin: 0;
+        line-height: normal;
+    }
+    .oak-team__banner-img{
+        top: 99px;
+        left: -20px;
+    }
+    .oak-team__banner-img img{
+        width: 528.94px;
+        height: 375px;
+    }
+    .oak-content2-header{
+        margin-top: 30px;
+    font-size: 30px;
+    }
+    .oak-content2-subheader{
+    font-size: 18px;
+    width: 490px;
+    line-height: 16px;
+    }
+    .foundersDiv{
+        width: 439px;
+        height: 230px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+    }
+    .founder1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .founder1 img{
+        width: 193px;
+        height: 193px;
+        border-radius: 50%;
+    }
+    .founder1 h1{
+        font-size: 18px;
+        line-height: 17px;
+    }
+    .founder1 p{
+        font-size: 12px;
+        line-height: 9px;    
+    }
+    .staffDiv{
+        margin-top: 100px;
+        height: 230px;
+    }
+    
+    .staff{
+        height: 230px;
+        width: 419px;
+        margin-left: 10px;
+        margin-right: 40px;
+    }
+    .staff img{
+        width: 193px;
+        height: 193px;
+    }
+    .staff h1{
+        font-size: 18px;
+        line-height: 17px;
+    }
+    .staff p{
+        font-size: 12px;
+        line-height: 9px;  
+    }
+    
+}
+@media (max-width: 500px) and (min-width: 300px) {
+    .oak-home-bannerr{
+        height: 360px !important;
+    }
+    .oak-home__bannerrr-img{
+        top: 190px;
+        left: -21px;
+    }
+    .oak-home__bannerrr-img img{
+        width: 420px;
+        height: 196.87px;
+    }
+    .oak-about-content{
+        min-height: 610px;
+        width: 95%;
+        padding: 10px;
+        margin-top: -100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .oak-about-content-header{
+        font-size: 20px;  
+    }
+    .oak-about-content-subheader{
+        font-size: 20px;   
+    }
+    .oak-about-content-headersub1{
+        font-family: Clash Display;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 15px; 
+    }
+    .oak-team-banner {
+        padding: 60px;
+        height: 349px;
+    }
+    
+    .oak-tbanner-header {
+        font-size: 30px;
+        line-height: normal;
+    }
+    .oak-team__banner-img{
+        top: 99px;
+        left: -22px;
+    }
+    .oak-team__banner-img img{
+        width: 418.94px;
+        height: 275px;
+    }
+    .oak-content2-header{
+        margin-top: 10px;
+    font-size: 20px;
+    }
+    .oak-content2-subheader{
+    font-size: 12px;
+    width: 389px;
+    line-height: 14px;
+    }
+    .foundersDiv{
+        width: 389px;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+    }
+    .founder1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .founder1 img{
+        width: 163px;
+        height: 163px;
+        border-radius: 50%;
+    }
+    .founder1 h1{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .founder1 p{
+        font-size: 8px;
+        line-height: 9px;    
+    }
+    .staffDiv{
+        margin-top: 100px;
+        height: 200px;
+    }
+    
+    .staff{
+        height: 200px;
+        width: 389px;
+        margin-left: 10px;
+        margin-right: 40px;
+    }
+    .staff img{
+        width: 163px;
+        height: 163px;
+    }
+    .staff h1{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .staff p{
+        font-size: 8px;
+        line-height: 9px;  
+    }
+    
+}
+@media (max-width: 399px) and (min-width: 300px) {
+    .oak-home-bannerr{
+        height: 360px !important;
+    }
+    .oak-home__bannerrr-img{
+        top: 190px;
+        left: -21px;
+    }
+    .oak-home__bannerrr-img img{
+        width: 360px;
+        height: 196.87px;
+    }
+    .oak-about-content-header{
+        font-size: 20px;  
+    }
+    .oak-about-content-subheader{
+        font-size: 20px;   
+    }
+    .oak-about-content-headersub1{
+        font-family: Clash Display;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 15px; 
+    }
+    .oak-team-banner {
+        padding: 60px;
+        height: 349px;
+    }
+    
+    .oak-tbanner-header {
+        font-size: 25px;
+        line-height: normal;
+    }
+    .oak-team__banner-img img{
+        width: 360px;
+        height: 275px;
+    }
+    .oak-content2-subheader{
+    font-size: 12px;
+    width: 349px;
+    line-height: 14px;
+    }
+    .foundersDiv{
+        width: 350px;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+    }
+    
+}
+
+@media (max-width: 299px) and (min-width: 270px) {
+    .oak-home-bannerr{
+        height: 270px !important;
+    }
+    .oak-home__bannerrr-img{
+        top: 100px;
+        left: -10px;
+    }
+    .oak-home__bannerrr-img img{
+        width: 268px;
+        height: 196.87px;
+    }
+    .oak-about-content{
+        margin-top: -100px;
+        padding: 10px;
+    }
+    .oak-about-content-header{
+        font-size: 20px;  
+    }
+    .oak-about-content-subheader{
+        font-size: 20px;   
+    }
+    .oak-about-content-headersub1{
+        font-family: Clash Display;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 15px; 
+    }
+    .oak-team-banner {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        height: 279px;
+    }
+    
+    .oak-tbanner-header {
+        font-size: 20px;
+    }
+    .oak-team__banner-img{
+        left: 0;
+        top: 100px;
+    }
+    .oak-team__banner-img img{
+        width: 260px;
+        height: 205px;
+    }
+    .oak-content2-header{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .oak-content2-subheader{
+    font-size: 9px;
+    width: 249px;
+    line-height: 14px;
+    }
+    .foundersDiv{
+        width: 250px;
+        height: 140px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+    }
+    .founder1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .founder1 img{
+        width: 103px;
+        height: 103px;
+        border-radius: 50%;
+    }
+    .founder1 h1{
+        font-size: 10px;
+        line-height: 17px;
+    }
+    .founder1 p{
+        font-size: 6px;
+        line-height: 9px;    
+    }
+    .staffDiv{
+        margin-top: 50px;
+        height: 140px;
+    }
+    
+    .staff{
+        height: 140px;
+        width: 250px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .staff img{
+        width: 103px;
+        height: 103px;
+    }
+    .staff h1{
+        font-size: 10px;
+        line-height: 17px;
+    }
+    .staff p{
+        font-size: 6px;
+        line-height: 9px;  
+    }
+    
 }

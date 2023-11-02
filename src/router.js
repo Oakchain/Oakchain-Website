@@ -12,7 +12,6 @@ import VideoDetails from './pages/Academy/Video/[id]'
 import EpisodeDetails from './pages/Academy/Video/Episode/[id]';
 import ProtectedeRoute from './component/ProtectedRoute'
 import ComingSoonPage from './pages/ComingSoon'
-import OurTeam from './pages/OurTeam'
 const RouterConfig = () => {
 
     return (
@@ -33,7 +32,6 @@ const RouterConfig = () => {
                     <Route exact path='/podcast' element={<ComingSoonPage />} />
                     <Route exact path='/tasks' element={<ComingSoonPage />} />
                     <Route exact path='/about' element={<Aboutus />} />
-                    <Route exact path='/team' element={<OurTeam />} />
                     <Route exact path='/blog' element={<ComingSoonPage />} />
                     <Route exact path='/server' element={<ComingSoonPage />} />
                     <Route exact path='/marketplace' element={<ComingSoonPage />} />

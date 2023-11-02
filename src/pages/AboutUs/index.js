@@ -7,6 +7,7 @@ import founder2 from "../../assets/images/founder2.png"
 import staff1 from '../../assets/images/s1.png'
 import staff2 from '../../assets/images/s2.png'
 import staff3 from '../../assets/images/s3.png'
+import staff4 from '../../assets/images/s4.png'
 import '../../assets/style/event.css'
 import '../../assets/style/about.css'
 const Aboutus = () => {
@@ -14,7 +15,7 @@ const Aboutus = () => {
     return (
         <AuthGuard>
              <div className=" ">
-                <div className=" oak-container-fluid oak-home-bannerr d-flex position-relative oak-mb">
+                <div className=" oak-container-fluid oak-home-bannerr oak-home-bannerrr d-flex position-relative oak-mb">
                     <div className="oak-bannerr__text-wrapper">
                         <h3 className="oak-bannerr-header mb-4">About Oak</h3>
                     </div>
@@ -71,6 +72,11 @@ How We Do It</h4>
                         <img src={staff3}></img>
                         <h1>Benedict Kabiawu</h1>
                         <p>Software Engineer</p>
+                    </div>
+                    <div className='staff'>
+                        <img src={staff4}></img>
+                        <h1>Peace Okafor</h1>
+                        <p>Technical Writer</p>
                     </div>
                     <div className='staff'>
                         <img></img>

@@ -140,11 +140,6 @@ const Header = ({ toggle }) => {
                                         <h3>About Us</h3>
                                     </li>
                                     <li onClick={() => {
-                                        navigate('/team')
-                                    }}>
-                                        <h3>Our Team</h3>
-                                    </li>
-                                    <li onClick={() => {
                                         navigate('/faqs')
                                     }}>
                                         <h3>FAQs</h3>
