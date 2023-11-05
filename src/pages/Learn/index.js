@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AuthGuard from '../../Layout/AuthGuard';
 import bannerImg from '../../assets/images/hand-banner.svg';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
@@ -20,6 +20,18 @@ const Learn = () => {
           [dropdownName]: !dropdownOpen[dropdownName],
         });
       };
+    
+    useEffect( () => {
+      fectdata();
+    }, []);
+
+    const [items, setItems] = useState([]);
+    
+    const fectdata = async() =>{
+      const data = await fetch('/Learn');
+      const items = data.json();
+      setItems(items);
+    };
     
   return (
     <AuthGuard>
