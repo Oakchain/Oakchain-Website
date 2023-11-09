@@ -21,9 +21,11 @@ const RouterConfig = () => {
                 <Route exact path='/' element ={<LandingPage />} />
                 
                 <Route exact path='/learn' element={<Learn />} />
+                <Route exact path='/about' element={<Aboutus />} />
+                <Route exact path='/news' element={<News />} />
                 <Route exact element={<ProtectedeRoute />}>
                     <Route exact path='/home' element={<Home />} />
-                    <Route exact path='/news' element={<News />} />
+                    
                     <Route exact path='/news/:id' element={<NewsDetails />} />
                     <Route exact path='/academy' element={<Academy />} />
                     <Route exact path='/academy/article/:id' element={<ArticleDetails />} />
@@ -31,7 +33,7 @@ const RouterConfig = () => {
                     <Route exact path='/academy/episode/:id' element={<EpisodeDetails />} />
                     <Route exact path='/podcast' element={<ComingSoonPage />} />
                     <Route exact path='/tasks' element={<ComingSoonPage />} />
-                    <Route exact path='/about' element={<Aboutus />} />
+                    
                     <Route exact path='/blog' element={<ComingSoonPage />} />
                     <Route exact path='/server' element={<ComingSoonPage />} />
                     <Route exact path='/marketplace' element={<ComingSoonPage />} />

@@ -21,8 +21,20 @@ const Learn = () => {
           [dropdownName]: !dropdownOpen[dropdownName],
         });
       };
+
+    const [backEndData, setData] = useState([{}])
     
-  return (
+    useEffect(() =>{
+      fetch("/learn").then(
+        response => response.json()
+      ).then(
+        data => {
+          setData(data)
+        }
+      )
+    }, [])
+  
+    return (
     <AuthGuard>
       <div className="oak-container-fluid">
         <div className="oak-home-bannerr d-flex position-relative oak-mb">
