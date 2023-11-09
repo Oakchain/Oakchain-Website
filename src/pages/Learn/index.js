@@ -3,6 +3,7 @@ import AuthGuard from '../../Layout/AuthGuard';
 import bannerImg from '../../assets/images/hand-banner.svg';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import '../../assets/style/learn.css';
+import {Link} from 'react-router-dom';
 
 const Learn = () => {
     const [dropdownOpen, setDropdownOpen] = useState({
@@ -20,18 +21,18 @@ const Learn = () => {
           [dropdownName]: !dropdownOpen[dropdownName],
         });
       };
-    
-    useEffect( () => {
-      fectdata();
-    }, []);
-
-    const [items, setItems] = useState([]);
-    
-    const fectdata = async() =>{
-      const data = await fetch('/Learn');
-      const items = data.json();
-      setItems(items);
-    };
+      
+      const [items, setItems] = useState([{}])
+      
+      useEffect(() => {
+        fetch("/Learn").then(
+          response => response.json()
+        ).then(
+          data => {
+            setItems(data)
+          }
+        )
+    }, [])
     
   return (
     <AuthGuard>

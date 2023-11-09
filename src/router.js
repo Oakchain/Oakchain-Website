@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Switch, Route } from 'react-router-dom'
 import LandingPage from './pages/'
 import Home from './pages/Home'
 import News from './pages/News'
@@ -17,8 +17,8 @@ const RouterConfig = () => {
     return (
 
         <BrowserRouter>
-            <Routes>
-                <Route exact path='/' element={<LandingPage />} />
+                <Routes>
+                <Route exact path='/' element ={<LandingPage />} />
                 
                 <Route exact path='/learn' element={<Learn />} />
                 <Route exact element={<ProtectedeRoute />}>
@@ -39,7 +39,6 @@ const RouterConfig = () => {
 
             </Routes>
         </BrowserRouter>
-
 
     )
 }

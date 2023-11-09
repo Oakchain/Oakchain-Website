@@ -1,9 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-
-router.get('/learn', (req,res) => {
+router.get('/Learn', (req,res) => {
     //Query db code
+    const str = [{
+        "name": "osemu",
+        "Job role": "Blockchain dev",
+    }];
+    res.end(JSON.stringify(str));
     
     console.log('Learn page');
 })
