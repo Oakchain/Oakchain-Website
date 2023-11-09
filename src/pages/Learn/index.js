@@ -21,18 +21,6 @@ const Learn = () => {
           [dropdownName]: !dropdownOpen[dropdownName],
         });
       };
-      
-      const [items, setItems] = useState([{}])
-      
-      useEffect(() => {
-        fetch("/Learn").then(
-          response => response.json()
-        ).then(
-          data => {
-            setItems(data)
-          }
-        )
-    }, [])
     
   return (
     <AuthGuard>
