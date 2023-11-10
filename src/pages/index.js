@@ -8,8 +8,19 @@ import reddit from "../assets/images/reddit.svg";
 import s1 from "../assets/images/s1.svg";
 import s2 from "../assets/images/s2.svg";
 import p1 from "../assets/images/p1.svg";
+import oakimg from "../assets/images/oakimg.svg"
 import p2 from "../assets/images/p2.svg";
 import p3 from "../assets/images/p3.svg";
+import courseimg1 from "../assets/images/courseimg1.svg"
+import courseimg2 from "../assets/images/courseimg2.svg"
+import courseimg3 from "../assets/images/courseimg3.svg"
+import cardimg1 from '../assets/images/cardimg1.svg'
+import cardimg2 from '../assets/images/cardimg2.svg'
+import cardimg3 from '../assets/images/cardimg3.svg'
+import cardimg4 from '../assets/images/cardimg4.svg'
+import cardimg5 from '../assets/images/cardimg5.svg'
+import cardimg6 from '../assets/images/cardimg6.svg'
+import cardimg7 from '../assets/images/cardimg7.svg'
 import p4 from "../assets/images/p4.svg";
 import feat1 from "../assets/images/feat1.png";
 import feat2 from "../assets/images/feat2.png";
@@ -91,11 +102,10 @@ const LandingPage = () => {
               </div>
 
               <div className="oak-introduction">
-                <h3 className="oak-hero-text">
-                  Step into the future with Web3
-                </h3>
+              <span className="oak-hero-text">The Decentralize platform for Web3 <p > Educators</p></span>
+               
                 <h3 className="oak-hero-header">
-                  Unlocking a new world <br /> of learning and possibilities!
+                  Unlocking a new world of learning and possibilities!
                 </h3>
                 <p className="oak-hero-sub-text">
                   Learning about Web3 is not only important for staying current
@@ -184,64 +194,137 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className=" oak-container-fluid mb-4">
+      <section className=" oak-container-fluid   oak-section-two mb-4">
+        <div className="oak-onmobile">
+           <h3 className="">Our operation across the platform</h3>
+          <div className="bar"></div>
+         <p className="">We have the best strategy
+and the best process</p>
+          <button>Get Started</button>
+           </div>
         <p className="oak-section__subheading mb-0">
-          Our operation across the platform
-          <span className="px-3 d-none d-md-block">
-            <img src={s2} alt="icon" />
-          </span>
+        What is
         </p>
         <h3 className="oak-section__head mb-4">
-          We have the best strategy and the best process
+        OakChain
         </h3>
-        <div className="hero-cta_btn">
-          <button className="btn oak-btn ">Get Started</button>
+        <p className="oak-section-subheader">Web3 is the future, and expertise in this field is in high demand. A handful of experts cannot carry the entire industry, at least not for long. 
+          <br></br>
+          <br></br>
+Oakchain aim to empower a diverse and skilled workforce to drive adoption and innovation in Web3.</p>
 
-        </div>
-      </section>
-
-
-      <section className=" oak-container-fluid d-none d-md-block">
-        <div className="d-flex align-items-center justify-content-center oak-features__container">
-          <div className="oak-feature__wrapper d-flex justify-content-center">
-            <img src={feat1} alt="icon" />
-          </div>
-          <div className="oak-feature__wrapper even-child d-flex justify-content-center">
-            <img src={feat2} alt="icon" />
-          </div>
-          <div className="oak-feature__wrapper d-flex justify-content-center">
-            <img src={feat3} alt="icon" />
-          </div>
-        </div>
-      </section>
-
-      <section className="d-md-none d-block ">
-        <div
-          className="oak-features__container"
-
-        >
-          <Carousel
-            showThumbs={false}
-            emulateTouch
-            showStatus={false}
-            showArrows={false}
-            infiniteLoop={true}
-            showIndicators={false}
-            autoPlay={true}
-          >
-            <div className="oak-feature__wrapper d-flex justify-content-center">
-              <img src={feat1} alt="icon" />
-            </div>
-            <div className="oak-feature__wrapper d-flex justify-content-center">
-              <img src={feat2} alt="icon" />
-            </div>
-            <div className="oak-feature__wrapper d-flex justify-content-center">
-              <img src={feat3} alt="icon" />
-            </div>
-          </Carousel>
-        </div>
+          <img className="oakimg" src={oakimg}></img>
+         <p className="oak-features__container-header">Our operation across the platform</p>
 
       </section>
+
+
+      <section className=" oak-container-fluid oak-mob d-md-block">
+        <div className="oak-features__container">
+        
+         <h3 className="oak-features__container-subheader">We have the best strategy
+and the best process</h3>,
+
+          <div className="oak-feature-div">
+            <div className="oak-main-div">
+              <div className="first">
+                <img src={cardimg1}></img>
+                <button className="status"> <h1>BETA</h1></button>
+              </div>
+              <div className="second">
+                <h3>Academy</h3>
+                <p>Educating you on all the knowledge you need on Bitcoin and Crypto in the simplest form possible.</p>
+              </div>
+              <div className="third">
+                <button></button>
+              </div>
+            </div>
+            <div className="oak-main-div">
+              <div className="first">
+                <img src={cardimg2}></img>
+                <button className="status d-none"> <h1>BETA</h1></button>
+              </div>
+              <div className="second">
+                <h3>Podcast</h3>
+                <p>Feel free to listen on the go, to Web 3 content, specially curated to suit your unique needs  </p>
+              </div>
+              <div className="third">
+                <button></button>
+              </div>
+            </div>
+            <div className="oak-main-div">
+              <div className="first">
+                <img src={cardimg3}></img>
+                <button className="status d-none"> <h1>BETA</h1></button>
+              </div>
+              <div className="second">
+                <h3>Cyptonaire</h3>
+                <p>Compete live and win big. Bring your talents to bear. Lots of gaming adventures awaits</p>
+              </div>
+              <div className="third">
+                <button></button>
+              </div>
+            </div>
+            <div className="oak-main-div">
+              <div className="first">
+                <img src={cardimg4}></img>
+                <button className="status d-none"> <h1>BETA</h1></button>
+              </div>
+              <div className="second">
+                <h3>Marketplace</h3>
+                <p>A wonderful variety to choose from. Shop and sell all things Web 3 on our marketplace </p>
+              </div>
+              <div className="third">
+                <button></button>
+              </div>
+            </div>
+            <div className="oak-main-div">
+              <div className="first">
+                <img src={cardimg5}></img>
+                <button className="status d-none"> <h1>BETA</h1></button>
+              </div>
+              <div className="second">
+                <h3>Reward</h3>
+                <p>Mouthwatering offers and incentives on completion on tasks </p>
+              </div>
+              <div className="third">
+                <button></button>
+              </div>
+            </div>
+            <div className="oak-main-div">
+              <div className="first">
+                <img src={cardimg6}></img>
+                <button className="status"> <h1>BETA</h1></button>
+              </div>
+              <div className="second">
+                <h3>Become a Writer</h3>
+                <p>Got the skills and passion for technology ? Come on board and share your creativity with the world!</p>
+              </div>
+              <div className="third">
+                <button></button>
+              </div>
+            </div>
+            <div className="oak-main-div">
+              <div className="first">
+                <img src={cardimg7}></img>
+                <button className="status d-none"> <h1>BETA</h1></button>
+              </div>
+              <div className="second">
+                <h3>Jobs</h3>
+                <p>Explore exciting opportunities today, discover a world of possibilities with diverse job listings</p>
+              </div>
+              <div className="third">
+                <button></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+     
 
 
 
@@ -251,7 +334,7 @@ const LandingPage = () => {
             <span className="pe-1 pe-md-3">
               <img src={s1} alt="icon" />
             </span>
-            Get Latest Web3 News
+            Get Skilled in Web3
             <span className="ps-1 ps-md-3">
               <img src={s2} alt="icon" />
             </span>
@@ -259,70 +342,86 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="d-md-block d-none oak-container-fluid home-news__card-wrapper">
-        <Row className="gx-4">
-          <Col sm='12' md={4}>
+      <section className="d-md-block  oak-container-fluid home-news__card-wrapper">
+        <Row className="home-course">
+          <Col sm='12' md={4} className="home-course-card">
             <div className="home-news__card">
-              <img src={polygon} className="home-news__card-img" alt="..." />
+              <img src={courseimg1} className="home-news__card-img" alt="..." />
               <div className="home-news__card-body">
                 <div className="card-body__logo d-flex align-items-center">
-                  <img src={logo} alt="logo" />
-                  <h5 className="card-title">Oak news</h5>
+                  <img src={oakimg} alt="logo" />
+                  <h5 className="card-title">Oak Course</h5>
                 </div>
 
                 <p className="card-text">
-                  Polygon Labs and Google Partner to Boost Web3 Development
+                How to be a Web3 Technical Writer - Full Course.
                 </p>
 
                 <p className="card-text__last-child">
-                  Learning about Web3, blockchain, and NFTs can help individuals
-                  understand the potential for decentralized technologies to...
+                Learn from the best web3 technical writers and stand at the edge of digital innovation and exposures.
                 </p>
 
                 <p className="card-time">{date}</p>
               </div>
             </div>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="home-course-card">
             <div className="home-news__card" >
-              <img src={googleCloud} className="home-news__card-img" alt="..." />
+              <img src={courseimg2} className="home-news__card-img" alt="..." />
               <div className="home-news__card-body">
                 <div className="card-body__logo d-flex align-items-center">
-                  <img src={logo} alt="logo" />
-                  <h5 className="card-title">Oak news</h5>
+                  <img src={oakimg} alt="logo" />
+                  <h5 className="card-title">Oak Course</h5>
                 </div>
 
                 <p className="card-text">
-                  Google Cloud broadens Web3 startup program with 11 blockchain
-                  firms
+                How to be a Blockchain Educator  - Full Course.
                 </p>
 
                 <p className="card-text__last-child">
-                  Learning about Web3, blockchain, and NFTs can help individuals
-                  understand the potential for decentralized technologies to...
+                Learn from the best web3 Educators and stand at the edge of digital innovation and exposures.
                 </p>
 
                 <p className="card-time">{date}</p>
               </div>
             </div>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="home-course-card">
+            <div className="home-news__card" >
+              <img src={courseimg3} className="home-news__card-img" alt="..." />
+              <div className="home-news__card-body">
+                <div className="card-body__logo d-flex align-items-center">
+                  <img src={oakimg} alt="logo" />
+                  <h5 className="card-title">Oak Course</h5>
+                </div>
+
+                <p className="card-text">
+                How to be a Web3 Reporter - Full Course.
+                </p>
+
+                <p className="card-text__last-child">
+                Learn from the best web3 technical writers and stand at the edge of digital innovation and exposures.
+                </p>
+
+                <p className="card-time">{date}</p>
+              </div>
+            </div>
+          </Col>
+          <Col md={4} className="home-course-card">
             <div className="home-news__card" >
               <img src={googleEyes} className="home-news__card-img" alt="..." />
               <div className="home-news__card-body">
                 <div className="card-body__logo d-flex align-items-center">
-                  <img src={logo} alt="logo" />
-                  <h5 className="card-title">Oak news</h5>
+                  <img src={oakimg} alt="logo" />
+                  <h5 className="card-title">Oak Course</h5>
                 </div>
 
                 <p className="card-text">
-                  Google Cloud Expands Partnerships, Wants More Web3 Startups To
-                  Leverage
+                How to become an Oak Writer - Full Course.
                 </p>
 
                 <p className="card-text__last-child">
-                  Learning about Web3, blockchain, and NFTs can help individuals
-                  understand the potential for decentralized technologies to...
+                Learn from the best web3 writers and stand at the edge of digital innovation and exposures.
                 </p>
 
                 <p className="card-time">{date}</p>
@@ -336,82 +435,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-
-      <section className="d-block d-md-none home-news__card-wrapper">
-        <div className="d-flex align-items-center overflow-auto flex-nowrap mobile-news__card-wrapper ps-4">
-          <div className="home-news__card me-4">
-            <img src={polygon} className="home-news__card-img" alt="..." />
-            <div className="home-news__card-body">
-              <div className="card-body__logo d-flex align-items-center">
-                <img src={logo} alt="logo" />
-                <h5 className="card-title">Oak news</h5>
-              </div>
-
-              <p className="card-text">
-                Polygon Labs and Google Partner to Boost Web3 Development
-              </p>
-
-              <p className="card-text__last-child">
-                Learning about Web3, blockchain, and NFTs can help individuals
-                understand the potential for decentralized technologies to...
-              </p>
-
-              <p className="card-time">{date}</p>
-            </div>
-          </div>
-
-          <div className="home-news__card me-4" >
-            <img src={googleCloud} className="home-news__card-img" alt="..." />
-            <div className="home-news__card-body">
-              <div className="card-body__logo d-flex align-items-center">
-                <img src={logo} alt="logo" />
-                <h5 className="card-title">Oak news</h5>
-              </div>
-
-              <p className="card-text">
-                Google Cloud broadens Web3 startup program with 11 blockchain
-                firms
-              </p>
-
-              <p className="card-text__last-child">
-                Learning about Web3, blockchain, and NFTs can help individuals
-                understand the potential for decentralized technologies to...
-              </p>
-
-              <p className="card-time">{date}</p>
-            </div>
-          </div>
-
-          <div className="home-news__card me-4" >
-            <img src={googleEyes} className="home-news__card-img" alt="..." />
-            <div className="home-news__card-body">
-              <div className="card-body__logo d-flex align-items-center">
-                <img src={logo} alt="logo" />
-                <h5 className="card-title">Oak news</h5>
-              </div>
-
-              <p className="card-text">
-                Google Cloud Expands Partnerships, Wants More Web3 Startups To
-
-              </p>
-
-              <p className="card-text__last-child">
-                Learning about Web3, blockchain, and NFTs can help individuals
-                understand the potential for decentralized technologies to...
-              </p>
-
-              <p className="card-time">{date}</p>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div className="d-flex align-items-center justify-content-center">
-          <p className="oak-seeMore">See more</p>
-
-        </div>
-      </section>
 
 
       <section className="podcast-section">
@@ -583,38 +606,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* OAK WRITER SECTION */}
-      <section className=" writer-section__header">
-        <div className="d-flex align-items-center justify-content-center writer-section-header">
-          <h3 className="oak-section__wrapper pullUp">
-            <span className="pe-1 pe-md-3">
-              <img src={s1} alt="icon" />
-            </span>
-            Become an Oak writer
-            <span className="ps-1 pe-md-3">
-              <img src={s2} alt="icon" />
-            </span>
-          </h3>
-        </div>
-
-        <div className="oak-writer__container">
-          <img className="writer-img" src={typewriter} alt="typewriter" />
-
-          <div className="writer-text">
-            <h2>
-              Come Onboard become an <br /> Oak writer and earn <br /> rewards
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Faucibus purus consequat
-              cursus iaculis in nulla. Et nascetur vulputate leo ut. Euismod
-              vehicula tincidunt quis nec. Tristique donec ipsum non leo a
-              euismod viverra. Risus molestie a tincidunt sed. At id consectetur
-              sit a metus urna mattis. Eu nibh.
-            </p>
-            <button className="btn oak-btn writeBTN">Learn more</button>
-          </div>
-        </div>
-      </section>
 
 
 
@@ -647,40 +638,31 @@ const LandingPage = () => {
       </section>
 
 
-      {/* OAK VICE SECTION */}
+      {/* OAK roadmap SECTION */}
       <section className="  oakvice-section">
         <div className=" align-items-center oakvice-section__header">
           <h3 className="oak-section__wrapper viceUp">
             <span className="pe-1 pe-md-3">
               <img src={s1} alt="icon" />
             </span>
-            Introducting Oakvice
+            Our RoadMap
             <span className="ps-1 ps-md-3">
               <img src={s2} alt="icon" />
             </span>
           </h3>
+          <h3 className="roadmaph3">Explore the Journey Ahead</h3>
         </div>
-
+<br></br>
+<br></br>
+<br></br>
         <div className="oakvice-container">
-          <div className="oakvice-container__text">
-            <h2>Learn about Web3 in multiple Languages</h2>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Molestie pulvinar quis
-              dignissim nulla dolor tincidunt integer amet fermentum. Penatibus
-              tempor non nec pharetra. Viverra amet vel a eu maecenas. Ac
-              viverra pellentesque suspendisse sed ut aliquam.
-            </p>
-            <button className="btn oak-btn viceBTN">Learn more</button>
-          </div>
-
-          <img src={oakvice} alt="oakvice" className="oakvice-img" />
+          
         </div>
       </section>
       {/* USERS REVIEW SECTION */}
 
       <section className=" review-section__header">
-        <div className="d-flex align-items-center justify-content-center review-section-header">
+        <div className="d-flex-column align-items-center justify-content-center review-section-header">
           <h3 className="oak-section__wrapper shift">
             <span className="px-3">
               <img src={s1} alt="icon" />
@@ -690,6 +672,7 @@ const LandingPage = () => {
               <img src={s2} alt="icon" />
             </span>
           </h3>
+        <h3 className="userreviewh3">What Educators & Learners Say <br></br> About Us</h3>
         </div>
 
         <div className="review-section">

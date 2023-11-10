@@ -14,7 +14,15 @@
     font-size: 30px;
     line-height: normal;
 }
-
+.oak-banner-text p{
+    font-family: Clash Display;
+font-size: 30px;
+font-weight: 600;
+line-height: 37px;
+letter-spacing: 0em;
+text-align: left;
+color:  #FF4E00;
+}
 .oak-banner-header {
     color: #FFF;
     font-family: var(--cd600);
