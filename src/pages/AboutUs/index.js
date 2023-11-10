@@ -12,6 +12,18 @@ import '../../assets/style/event.css'
 import '../../assets/style/about.css'
 const Aboutus = () => {
    
+    const [backEndData, setData] = useState([{}])
+    
+    useEffect(() =>{
+      fetch("/about").then(
+        response => response.json()
+      ).then(
+        data => {
+          setData(data)
+        }
+      )
+    }, [])
+    
     return (
         <AuthGuard>
              <div className=" ">

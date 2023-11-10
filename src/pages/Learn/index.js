@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AuthGuard from '../../Layout/AuthGuard';
 import bannerImg from '../../assets/images/hand-banner.svg';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import '../../assets/style/learn.css';
+import {Link} from 'react-router-dom';
 
 const Learn = () => {
     const [dropdownOpen, setDropdownOpen] = useState({
@@ -20,8 +21,20 @@ const Learn = () => {
           [dropdownName]: !dropdownOpen[dropdownName],
         });
       };
+
+    const [backEndData, setData] = useState([{}])
     
-  return (
+    useEffect(() =>{
+      fetch("/learn").then(
+        response => response.json()
+      ).then(
+        data => {
+          setData(data)
+        }
+      )
+    }, [])
+  
+    return (
     <AuthGuard>
       <div className="oak-container-fluid">
         <div className="oak-home-bannerr d-flex position-relative oak-mb">

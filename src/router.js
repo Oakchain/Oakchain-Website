@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Switch, Route } from 'react-router-dom'
 import LandingPage from './pages/'
 import Home from './pages/Home'
 import News from './pages/News'
@@ -17,13 +17,15 @@ const RouterConfig = () => {
     return (
 
         <BrowserRouter>
-            <Routes>
-                <Route exact path='/' element={<LandingPage />} />
+                <Routes>
+                <Route exact path='/' element ={<LandingPage />} />
                 
                 <Route exact path='/learn' element={<Learn />} />
+                <Route exact path='/about' element={<Aboutus />} />
+                <Route exact path='/news' element={<News />} />
                 <Route exact element={<ProtectedeRoute />}>
                     <Route exact path='/home' element={<Home />} />
-                    <Route exact path='/news' element={<News />} />
+                    
                     <Route exact path='/news/:id' element={<NewsDetails />} />
                     <Route exact path='/academy' element={<Academy />} />
                     <Route exact path='/academy/article/:id' element={<ArticleDetails />} />
@@ -31,7 +33,7 @@ const RouterConfig = () => {
                     <Route exact path='/academy/episode/:id' element={<EpisodeDetails />} />
                     <Route exact path='/podcast' element={<ComingSoonPage />} />
                     <Route exact path='/tasks' element={<ComingSoonPage />} />
-                    <Route exact path='/about' element={<Aboutus />} />
+                    
                     <Route exact path='/blog' element={<ComingSoonPage />} />
                     <Route exact path='/server' element={<ComingSoonPage />} />
                     <Route exact path='/marketplace' element={<ComingSoonPage />} />
@@ -39,7 +41,6 @@ const RouterConfig = () => {
 
             </Routes>
         </BrowserRouter>
-
 
     )
 }
