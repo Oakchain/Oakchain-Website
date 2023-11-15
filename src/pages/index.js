@@ -225,7 +225,9 @@ Oakchain aim to empower a diverse and skilled workforce to drive adoption and in
          <h3 className="oak-features__container-subheader">We have the best strategy
 and the best process</h3>,
 
-          <div className="oak-feature-div">
+          <div className=" oak-feature-div">
+            
+         
             <div className="oak-main-div">
               <div className="first">
                 <img src={cardimg1}></img>

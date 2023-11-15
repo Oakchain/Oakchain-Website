@@ -1742,7 +1742,7 @@ text-align: center;
     width: 100%;
     overflow-x: scroll;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: left;
     align-items: center;
 }
 
@@ -1985,7 +1985,7 @@ text-align: center;
     width: 100%;
     overflow-x: scroll;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: left;
     align-items: center;
 }
 
@@ -2228,14 +2228,16 @@ text-align: center;
     width: 100%;
     overflow-x: scroll;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: left;
     align-items: center;
 }
 
 .oak-feature-div .oak-main-div{
     width: 367px !important;
     margin: 0;
+    position: relative;
 height: 367px !important;
+left: 0 !important;
 margin-right: 10px !important;
 margin-left: 10px !important;
 flex-shrink: 0;
@@ -2307,7 +2309,11 @@ width: 100%;
     margin-top: 0;
 }
 }
-@media (max-width:500px) and (min-width:300px) {
+@media (max-width:500px) and (min-width:200px) {
+    
+.news-section-header {
+    background-size: contain;
+}
     .oak-onmobile{
         display: flex;
         flex-direction: column;
@@ -2405,25 +2411,25 @@ line-height: 27px;
 letter-spacing: 0em;
 text-align: center;
 }
-.oak-feature-div{
-    margin-top: 0;
-    height: 370px;
-    width: 387px;
+.oak-feature-div {
+    width: 100%;
     overflow-x: scroll;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+    display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+    justify-content: left;
     align-items: center;
-}
-
-.oak-feature-div .oak-main-div{
+  }
+  
+  .oak-feature-div .oak-main-div {
     width: 367px !important;
+    height: 367px !important;
     margin: 0;
-height: 367px !important;
-margin-right: 10px !important;
-margin-left: 10px !important;
-flex-shrink: 0;
-
-}
+    margin-right: 20px;
+    margin-left: 0px;
+    flex-shrink: 0;
+  }
+  
 .oak-feature-div .oak-main-div .first{
     height: 190px;
 }
@@ -2490,7 +2496,6 @@ width: 100%;
     margin-top: 0;
 }
 }
-
 @media (max-width:399px) and (min-width:200px) {
 .oak-feature-div{
     margin-top: 0;
