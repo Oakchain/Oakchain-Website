@@ -215,15 +215,15 @@ Oakchain aim to empower a diverse and skilled workforce to drive adoption and in
 
           <img className="oakimg" src={oakimg}></img>
          <p className="oak-features__container-header">Our operation across the platform</p>
-
+         <h3 className="oak-features__container-subheader">We have the best strategy
+and the best process</h3>,
       </section>
 
 
       <section className=" oak-container-fluid oak-mob d-md-block">
         <div className="oak-features__container">
         
-         <h3 className="oak-features__container-subheader">We have the best strategy
-and the best process</h3>,
+        
 
           <div className=" oak-feature-div">
             

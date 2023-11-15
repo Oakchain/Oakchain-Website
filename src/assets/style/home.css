@@ -180,7 +180,7 @@ color: #000000;
 
 }
 .oak-features__container {
-    min-height: 80vh;
+    height: 80vh;
     background: url('../images/oak.png');
     background-position: top center;
     background-size: contain;
@@ -1733,6 +1733,7 @@ font-size: 37px;
 font-weight: 600;
 width: 490px;
 line-height: 27px;
+margin-top: 20px;
 letter-spacing: 0em;
 text-align: center;
 }
@@ -1973,6 +1974,7 @@ text-align: center;
 .oak-features__container-subheader{
     font-family: Clash Display;
 font-size: 37px;
+margin-top: 20px;
 font-weight: 600;
 width: 490px;
 line-height: 27px;
@@ -2218,6 +2220,7 @@ text-align: center;
 font-size: 27px;
 font-weight: 600;
 width: 350px;
+margin-top: 20px;
 line-height: 27px;
 letter-spacing: 0em;
 text-align: center;
@@ -2391,7 +2394,17 @@ height: 40.71px;
 margin-top: 50px;
 }
 .oak-mob{
-    height: 550px;
+    height: 100%;
+    padding: 0;
+}
+.oak-features__container{
+    height: 550px !important;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
 .oak-features__container-header{
     font-family: Clash Display;
@@ -2407,14 +2420,16 @@ text-align: center;
 font-size: 22px;
 font-weight: 600;
 width: 300px;
+margin-top: 20px;
 line-height: 27px;
-letter-spacing: 0em;
+letter-spacing: 0em;;
 text-align: center;
 }
 .oak-feature-div {
     width: 100%;
     overflow-x: scroll;
     display: flex;
+    height: 370px;
    flex-direction: row;
    flex-wrap: nowrap;
     justify-content: left;
