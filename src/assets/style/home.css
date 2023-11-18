@@ -440,6 +440,47 @@ align-items: center;
     text-align: right;
     margin-bottom: 0;
 }
+.containerBeam{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 393px;
+    margin-right: 575px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.beam{
+    position: absolute;
+    background-color: #FF4E00;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;  
+  animation: pulse 1.5s ease-out infinite;
+}
+.point{
+    position: absolute;
+    background-color: #FF4E00;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;  
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
 
 .oak-seeMore {
     text-align: center;
@@ -450,7 +491,13 @@ align-items: center;
     margin-top: 20px;
 }
 
-
+@media (min-width:1000px) and (max-width:1100px) {
+    
+.containerBeam{
+    margin-top: 303px;
+    margin-right: 460px;
+}
+}
 
 .oak-introduction__mobile-view {
     background-image: url('../images/h1.png'), url('../images/h3.svg'), url('../images/h1.svg');
@@ -483,7 +530,7 @@ align-items: center;
     }
 
     .oak-hero-text {
-        font-size: 15px;
+        font-size: 13px;
         text-align: center;
         margin-bottom: 7px;
     }
@@ -1657,6 +1704,20 @@ menu-btn__container {
 
 
 @media (max-width:1000px) and (min-width:801px) {
+    
+    .oak-hero-text {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 7px;
+    }
+    .containerBeam{
+        margin-top: 40%;
+        margin-right: 74%;
+    }
+    .point{
+        width: 25px;
+        height: 25px;
+    }
     .oak-onmobile{
         display: flex;
         flex-direction: column;
@@ -1900,7 +1961,21 @@ width: 100%;
     margin-top: 0;
 }
 }
+@media (max-width:1000px) and (min-width: 900px) {
+    .containerBeam{
+        margin-top: 43%;
+        margin-right: 74%;
+    }
+}
 @media (max-width:800px) and (min-width:701px) {
+    .containerBeam{
+        margin-top: -65%;
+        margin-right: 75%;
+    }
+    .point{
+        width: 20px;
+        height: 20px;
+    }
     .oak-onmobile{
         display: flex;
         flex-direction: column;
@@ -2145,6 +2220,14 @@ width: 100%;
 }
 }
 @media (max-width:700px) and (min-width:501px) {
+    .containerBeam{
+        margin-top: -66%;
+        margin-right: 75%;
+    }
+    .point{
+        width: 20px;
+        height: 20px;
+    }
     .oak-onmobile{
         display: flex;
         flex-direction: column;
@@ -2331,7 +2414,14 @@ width: 100%;
 }
 }
 @media (max-width:500px) and (min-width:200px) {
-    
+    .containerBeam{
+        margin-top: -108%;
+        margin-right: 69%;
+    }
+    .point{
+        width: 18px;
+        height: 18px;
+    }
 .news-section-header {
     background-size: contain;
 }
@@ -2529,7 +2619,12 @@ width: 100%;
     margin-top: 0;
 }
 }
+
 @media (max-width:399px) and (min-width:200px) {
+    .containerBeam{
+        margin-top: -100%;
+        margin-right: 69%;
+    }
 .oak-feature-div{
     margin-top: 0;
     height: 370px;
@@ -2583,4 +2678,25 @@ font-size: 19px;
 font-size: 19px;
 }
 
+}
+
+@media (max-width:389px) and (min-width:370px) {
+    .containerBeam{
+        margin-top: -89%;
+        margin-right: 71%;
+    }
+}
+
+@media (max-width:399px) and (min-width:390px) {
+    .containerBeam{
+        margin-top: -105%;
+        margin-right: 69%;
+    }
+}
+
+@media (max-width:300px) and (min-width:280px) {
+    .containerBeam{
+        margin-top: -115%;
+        margin-right: 67%;
+    }
 }

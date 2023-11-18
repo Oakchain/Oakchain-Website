@@ -665,7 +665,11 @@ and the best process</h3>,
 <br></br>
 <br></br>
         <div className="oakvice-container">
-          
+          <div className="containerBeam">
+          <div className="point"></div>
+          <div className="beam"></div>
+          </div>
+         
         </div>
       </section>
       {/* USERS REVIEW SECTION */}
