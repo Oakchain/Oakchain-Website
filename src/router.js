@@ -33,7 +33,10 @@ const RouterConfig = () => {
                     <Route exact path='/academy/episode/:id' element={<EpisodeDetails />} />
                     <Route exact path='/podcast' element={<ComingSoonPage />} />
                     <Route exact path='/tasks' element={<ComingSoonPage />} />
-                    
+                    <Route exact path='/cypotnaire' element={<ComingSoonPage />} />
+                    <Route exact path='/reward' element={<ComingSoonPage />} />
+                    <Route exact path='/jobs' element={<ComingSoonPage />} />
+                    <Route exact path='/writer' element={<ComingSoonPage />} />
                     <Route exact path='/blog' element={<ComingSoonPage />} />
                     <Route exact path='/server' element={<ComingSoonPage />} />
                     <Route exact path='/marketplace' element={<ComingSoonPage />} />

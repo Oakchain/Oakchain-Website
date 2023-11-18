@@ -74,6 +74,19 @@ const LandingPage = () => {
   };
 
   const { open, close } = useWeb3Modal()
+    const words = ["Learners", "Writers", "Designers", "Developers", "Educators"]; // Array of words to cycle through
+    const [currentWordIndex, setCurrentWordIndex] = useState(0);
+    const [displayText, setDisplayText] = useState(`The Decentralized platform for Web3 Educators`);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        const nextIndex = (currentWordIndex + 1) % words.length;
+        setCurrentWordIndex(nextIndex);
+        setDisplayText(`The Decentralized platform for Web3 <p style="color: red">${words[nextIndex]}</p>`);
+      }, 2000);
+  
+      return () => clearInterval(interval);
+    }, [currentWordIndex, words]);
 
   return (
     <Layout>
@@ -102,7 +115,7 @@ const LandingPage = () => {
               </div>
 
               <div className="oak-introduction">
-              <span className="oak-hero-text">The Decentralize platform for Web3 <p > Educators</p></span>
+              <span className="oak-hero-text" dangerouslySetInnerHTML={{ __html: displayText }} />
                
                 <h3 className="oak-hero-header">
                   Unlocking a new world of learning and possibilities!
@@ -195,13 +208,7 @@ const LandingPage = () => {
       </section>
 
       <section className=" oak-container-fluid   oak-section-two mb-4">
-        <div className="oak-onmobile">
-           <h3 className="">Our operation across the platform</h3>
-          <div className="bar"></div>
-         <p className="">We have the best strategy
-and the best process</p>
-          <button>Get Started</button>
-           </div>
+        
         <p className="oak-section__subheading mb-0">
         What is
         </p>
@@ -238,7 +245,7 @@ and the best process</h3>,
                 <p>Educating you on all the knowledge you need on Bitcoin and Crypto in the simplest form possible.</p>
               </div>
               <div className="third">
-                <button></button>
+                <button onClick={() => {navigate('/academy')}}></button>
               </div>
             </div>
             <div className="oak-main-div">
@@ -251,7 +258,7 @@ and the best process</h3>,
                 <p>Feel free to listen on the go, to Web 3 content, specially curated to suit your unique needs  </p>
               </div>
               <div className="third">
-                <button></button>
+                <button onClick={() => {navigate('/podcast')}}></button>
               </div>
             </div>
             <div className="oak-main-div">
@@ -264,7 +271,7 @@ and the best process</h3>,
                 <p>Compete live and win big. Bring your talents to bear. Lots of gaming adventures awaits</p>
               </div>
               <div className="third">
-                <button></button>
+                <button onClick={() => {navigate('/cypotnaire')}}></button>
               </div>
             </div>
             <div className="oak-main-div">
@@ -277,7 +284,7 @@ and the best process</h3>,
                 <p>A wonderful variety to choose from. Shop and sell all things Web 3 on our marketplace </p>
               </div>
               <div className="third">
-                <button></button>
+                <button onClick={() => {navigate('/marketplace')}}></button>
               </div>
             </div>
             <div className="oak-main-div">
@@ -290,7 +297,7 @@ and the best process</h3>,
                 <p>Mouthwatering offers and incentives on completion on tasks </p>
               </div>
               <div className="third">
-                <button></button>
+                <button onClick={() => {navigate('/reward')}}></button>
               </div>
             </div>
             <div className="oak-main-div">
@@ -303,7 +310,7 @@ and the best process</h3>,
                 <p>Got the skills and passion for technology ? Come on board and share your creativity with the world!</p>
               </div>
               <div className="third">
-                <button></button>
+                <button onClick={() => {navigate('/writer')}}></button>
               </div>
             </div>
             <div className="oak-main-div">
@@ -316,7 +323,7 @@ and the best process</h3>,
                 <p>Explore exciting opportunities today, discover a world of possibilities with diverse job listings</p>
               </div>
               <div className="third">
-                <button></button>
+                <button onClick={() => {navigate('/jobs')}}></button>
               </div>
             </div>
           </div>
