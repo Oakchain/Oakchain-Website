@@ -10,20 +10,8 @@ import staff3 from '../../assets/images/s3.png'
 import staff4 from '../../assets/images/s4.png'
 import '../../assets/style/event.css'
 import '../../assets/style/about.css'
+
 const Aboutus = () => {
-   
-    const [backEndData, setData] = useState([{}])
-    
-    useEffect(() =>{
-      fetch("/about").then(
-        response => response.json()
-      ).then(
-        data => {
-          setData(data)
-        }
-      )
-    }, [])
-    
     return (
         <AuthGuard>
              <div className=" ">
