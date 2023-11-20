@@ -1,8 +1,10 @@
+//To call the function once the website loads
+
 window.onload = (event) =>{
     isConnected();
 };
 
-async function isConnected(){
+export default async function isConnected(){
     let provider = await web3.isConnected();
     if (provider){
         console.log("wallect connected");
