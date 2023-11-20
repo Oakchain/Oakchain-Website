@@ -20,12 +20,11 @@ const RouterConfig = () => {
                 <Routes>
                 <Route exact path='/' element ={<LandingPage />} />
                 
-                <Route exact path='/learn' element={<Learn />} />
                 <Route exact path='/about' element={<Aboutus />} />
-                <Route exact path='/news' element={<News />} />
                 <Route exact element={<ProtectedeRoute />}>
                     <Route exact path='/home' element={<Home />} />
-                    
+                    <Route exact path='/news' element={<News />} />
+                    <Route exact path='/learn' element={<Learn />} />
                     <Route exact path='/news/:id' element={<NewsDetails />} />
                     <Route exact path='/academy' element={<Academy />} />
                     <Route exact path='/academy/article/:id' element={<ArticleDetails />} />
