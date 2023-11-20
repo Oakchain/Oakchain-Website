@@ -67,21 +67,24 @@
 .article-tag {
     color: #4D4D4D;
     font-family: var(--cd500);
-    font-size: 15px;
+    font-size: 10px;
     padding: 8px 14px;
     border-radius: 7px;
 }
 
 .article-tag.tag-1 {
     background-color: #CBDCFF;
+    width: 100px;
 }
 
 .article-tag.tag-2 {
     background-color: #FDBFA3;
+    width: 100px;
 }
 
 .article-tag.tag-3 {
     background-color: #FD97AC;
+    width: 100px;
 }
 
 .dot-icon {
