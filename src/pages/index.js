@@ -82,7 +82,7 @@ const LandingPage = () => {
       const interval = setInterval(() => {
         const nextIndex = (currentWordIndex + 1) % words.length;
         setCurrentWordIndex(nextIndex);
-        setDisplayText(`The Decentralized platform for Web3 <p style="color: red">${words[nextIndex]}</p>`);
+        setDisplayText(`The Decentralized platform for Web3 <p style="color: #FF4E00">${words[nextIndex]}</p>`);
       }, 2000);
   
       return () => clearInterval(interval);
@@ -329,10 +329,10 @@ and the best process</h3>,
           </div>
         </div>
       </section>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
+<br className="oL"></br>
+<br className="oL"></br>
+<br className="oL"></br>
+<br className="oL"></br>
      
 
 

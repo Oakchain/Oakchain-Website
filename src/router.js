@@ -20,25 +20,24 @@ const RouterConfig = () => {
                 <Routes>
                 <Route exact path='/' element ={<LandingPage />} />
                 
+                <Route exact path='/learn' element={<Learn />} />
                 <Route exact path='/about' element={<Aboutus />} />
-                <Route exact element={<ProtectedeRoute />}>
-                    <Route exact path='/home' element={<Home />} />
-                    <Route exact path='/news' element={<News />} />
-                    <Route exact path='/learn' element={<Learn />} />
-                    <Route exact path='/news/:id' element={<NewsDetails />} />
-                    <Route exact path='/academy' element={<Academy />} />
-                    <Route exact path='/academy/article/:id' element={<ArticleDetails />} />
-                    <Route exact path='/academy/video/:id' element={<VideoDetails />} />
-                    <Route exact path='/academy/episode/:id' element={<EpisodeDetails />} />
-                    <Route exact path='/podcast' element={<ComingSoonPage />} />
+                <Route exact path='/news' element={<News />} />
+                <Route exact path='/podcast' element={<ComingSoonPage />} />
                     <Route exact path='/tasks' element={<ComingSoonPage />} />
                     <Route exact path='/cypotnaire' element={<ComingSoonPage />} />
                     <Route exact path='/reward' element={<ComingSoonPage />} />
                     <Route exact path='/jobs' element={<ComingSoonPage />} />
-                    <Route exact path='/writer' element={<ComingSoonPage />} />
                     <Route exact path='/blog' element={<ComingSoonPage />} />
                     <Route exact path='/server' element={<ComingSoonPage />} />
-                    <Route exact path='/marketplace' element={<ComingSoonPage />} />
+
+                    <Route exact path='/academy' element={<Academy />} />
+                <Route exact element={<ProtectedeRoute />}>
+                    <Route exact path='/home' element={<Home />} />
+                    <Route exact path='/news/:id' element={<NewsDetails />} />
+                    <Route exact path='/academy/article/:id' element={<ArticleDetails />} />
+                    <Route exact path='/academy/video/:id' element={<VideoDetails />} />
+                    <Route exact path='/academy/episode/:id' element={<EpisodeDetails />} />
                 </Route>
 
             </Routes>

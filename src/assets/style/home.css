@@ -135,6 +135,7 @@ margin-left: 5px;
 .oak-section__wrapper {
     color: var(--primary-color);
     font-size: 30px;
+    margin-top: 10px;
     font-family: var(--cd600);
     text-align: center;
 }
@@ -363,7 +364,7 @@ align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    padding-top: 8em;
+    padding-top: 7em;
 }
 
 
@@ -520,6 +521,9 @@ align-items: center;
         width: 100%;
         padding-top: 5px;
     }
+    .oL{
+        display: none;
+    }
 
     .hero-cta__wrapper {
         background-image: unset;
@@ -653,11 +657,11 @@ align-items: center;
     }
 
 
-    .podcast-section-header {
+    /* .podcast-section-header {
         padding-top: 4em !important;
         width: 80% !important;
     }
-
+ */
     .down {
         margin-top: -35px !important;
         font-size: 17px;
@@ -677,13 +681,18 @@ align-items: center;
         align-items: center;
     }
 
-
-    .nest-section-header {
-
-        width: 70%;
-        margin: auto;
-        padding-top: 1.5em !important;
+    .news-section-header{
+        padding-top: 3em;
     }
+
+    .podcast-section-header{
+        padding-top: 5em !important;
+    }
+    
+    .nest-section-header{
+        padding-top: 3em !important;
+    }
+   
 
     .nft-mobile__text {
         font-size: 16px !important;
@@ -698,7 +707,9 @@ align-items: center;
     .oak-nest__img {
         background-size: cover !important;
     }
-
+    .nft-img__container{
+        flex-shrink: 0;
+    }
     .nft-animation-wrapper {
         height: 448px;
     }
@@ -810,7 +821,7 @@ align-items: center;
     .oakvice-section__header {
         /* background-size: 0% !important; */
         background-position: top center;
-        padding-top: 0px !important;
+        padding-top: 3em !important;
         margin-top: 0px !important;
         overflow: hidden;
     }
@@ -878,7 +889,7 @@ align-items: center;
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: top center;
-        padding-top: 0em !important;
+        padding-top: 2em !important;
         margin-top: 5rem;
         overflow: hidden;
     }
@@ -1346,10 +1357,13 @@ align-items: center;
     }
 
     .nft-img__container {
-        width: 190px !important;
-        height: 220px !important;
+        width: 100px !important;
+        height: 110px !important;
         border-radius: 10.26px;
 
+    }
+    .nft-img__container img{
+        width: 100%;
     }
 }
 

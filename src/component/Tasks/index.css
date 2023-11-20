@@ -8,10 +8,18 @@
 .oak-task-brand {
     color: var(--primary-color);
     font-family: var(--cd500);
-    font-size: 15px;
+    font-size: 13px;
     line-height: normal;
 }
-
+.oak-stats__icon{
+width: 9px;
+height: 9px;
+}
+.oak-news__stats{
+    font-size: 9px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
 .oak-task-title {
     color: var(--primary-color);
     font-family: var(--cd500);
@@ -29,6 +37,16 @@
 }
 
 @media (max-width:767px) {
+   
+.oak-stats__icon{
+    width: 16px !important;
+    height: 16px !important;
+    } 
+.oak-news__stats{
+    font-size: 9px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
     .oak-task__description {
         font-size: 10px;
     }
