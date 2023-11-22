@@ -310,7 +310,8 @@ and the best process</h3>,
                 <p>Got the skills and passion for technology ? Come on board and share your creativity with the world!</p>
               </div>
               <div className="third">
-                <button onClick={() => {navigate('/https://docs.google.com/forms/d/e/1FAIpQLSdT3kMs5Dk0XqGFExS9k68u3y3Yf_W5eTnLOqkCcBJr3lvcxQ/viewform')}}></button>
+                <button onClick={() => { window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdT3kMs5Dk0XqGFExS9k68u3y3Yf_W5eTnLOqkCcBJr3lvcxQ/viewform'; }}
+></button>
               </div>
             </div>
             <div className="oak-main-div">
