@@ -108,7 +108,8 @@ const Home = () => {
                     {/* <Trending /> */}
                 </section>
 
-                <img src={oakwriter} alt="oakwriter" className="oakWriter"/>
+                <img onClick={() => { window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdT3kMs5Dk0XqGFExS9k68u3y3Yf_W5eTnLOqkCcBJr3lvcxQ/viewform'; }}
+ src={oakwriter} alt="oakwriter" className="oakWriter"/>
 
             </div>
         </AuthGuard>
