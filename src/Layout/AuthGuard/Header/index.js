@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect, useRef } from 'react';
 import '../../Header/index.css'
 import logo from '../../../assets/images/logo.svg'
 import dropdown from '../../../assets/images/dropdown.svg'
-import auth1 from '../../../assets/images/auth1.svg'
+import auth1 from '../../../assets/images/oakimg.svg'
 import auth2 from '../../../assets/images/auth2.svg'
 import oakMenu from '../../../assets/images/oak_menu.svg'
 import searchIcon from '../../../assets/images/searchIc.svg'
@@ -190,7 +190,7 @@ const Header = ({ toggle }) => {
                 <div className='d-none d-md-flex align-items-center'>
                     <div className='header-auth_item d-flex align-items-center px-3'>
                         <div>
-                            <img src={theme === 'dark' ? auth1Dark : auth1} alt='icon' />
+                            <img className='log' src={theme === 'dark' ? auth1Dark : auth1} alt='icon' />
 
                         </div>
                         <p className='ps-2 oak-wallet_point mb-0'>{user?.points ?? 0}</p>

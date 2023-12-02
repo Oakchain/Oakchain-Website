@@ -9,7 +9,10 @@
     transition: all 0.5s ease-in-out;
     display: none;
 }
-
+.log{
+    width: 30px;
+    height: 30px;
+}
 
 .oak-sidebar.show {
     display: block;
@@ -145,7 +148,10 @@
 
 
 @media (max-width: 399px) and (min-width: 300px) {
-
+    .log{
+        width: 28px;
+        height: 28px;
+    }
     .oak-profilee {
         height: 148px;
         width: 230px;

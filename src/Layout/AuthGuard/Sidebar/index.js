@@ -7,7 +7,7 @@ import NavItems from '../AuthItems/items'
 import { Nav } from 'reactstrap';
 import { Link, useLocation } from 'react-router-dom';
 import dropdown from '../../../assets/images/dropdown.svg'
-import auth1 from '../../../assets/images/auth1.svg'
+import auth1 from '../../../assets/images/oakimg.svg'
 import auth2 from '../../../assets/images/auth2.svg'
 import { useNavigate } from "react-router-dom";
 import userP from '../../../assets/images/userP/user1a.svg'
@@ -84,7 +84,7 @@ const Sidebar = ({ show, toggle }) => {
                             <div className='d-flex align-items-center'>
                                 <div className='header-auth_item d-flex align-items-center pe-3'>
                                     <div>
-                                        <img src={auth1} alt='icon' />
+                                        <img className='log' src={auth1} alt='icon' />
                                     </div>
                                     <p className='ps-2 oak-wallet_point mb-0'>11.5k</p>
                                 </div>
