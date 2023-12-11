@@ -53,7 +53,7 @@ const Sidebar = ({ show, toggle }) => {
                             <img src={closeIcon} />
                         </div>
                         <div className='mb-4'>
-                            <button className='oak-btn  py-3' onClick={() => {
+                            <button className='oak-btn oak-connect py-3' onClick={() => {
                                 toggle()
                                 open()
                             }}>

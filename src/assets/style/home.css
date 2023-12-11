@@ -56,7 +56,29 @@ margin-left: 5px;
     justify-content: left;
     align-items: center;
 }
+#dark .oak-hero-text{
+ color: #fff;
+}
 
+ #dark .oak-section__subheading, #dark .oak-section__head, #dark .oak-features__container-subheader, #dark .podcast-text, #dark .nest-text, #dark .oak-nest__text p{
+    color: #fff;
+   }
+#dark .oak-hero-header, #dark .roadmaph3{
+    color: #fff;
+   }
+   #dark .oak-hero-sub-text,#dark .oak-section-subheader, #dark .oak-features__container-header, #dark .oak-seeMore{
+    color: #ffffffcb;
+   }
+   
+   #dark .oak-hero-subscribe-text, #dark .podcast-text-p, #dark .oak-podcast__text .oak-btn, #dark .nestBtn{
+    color: #ffffffcb;
+   }
+   #dark .review-text{
+    background-color: #ffffffcb;
+   }
+   #dark .oak-section__wrapper, #dark .oak-nest__text p, #dark .userreviewh3{
+    color: #ffffffcb;
+   }
 .oak-hero-header {
     color: var(--primary-color);
     font-size: 50px;
@@ -605,7 +627,7 @@ align-items: center;
     }
 
     .oak-section__wrapper {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .partner__brands {

@@ -43,7 +43,10 @@
     color: var(--primary-color) !important;
 
 }
+#dark .mobile-nav_item .nav-link {
+   color: #fff !important;
 
+}
 .mobile-nav_item {
     margin-bottom: 5px;
 }

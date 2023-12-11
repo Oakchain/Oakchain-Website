@@ -33,6 +33,12 @@
     text-align: left;
     color: #00002F;    
 }
+#dark .oak-about-content-header, #dark .oak-content2-header, #dark .oak-about-content-subheader, #dark .founder1 h1, #dark .staff h1{
+    color: #FFF;
+}
+#dark .oak-about-content-headersub1, #dark .oak-content2-subheader, #dark .founder1 p, #dark .staff p{
+    color: #ffffffcb;
+}
 .oak-about-content-headersub1{
     font-family: Clash Display;
     font-size: 20px;

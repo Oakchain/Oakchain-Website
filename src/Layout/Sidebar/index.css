@@ -28,7 +28,16 @@
     padding: 0 15px;
     display: none;
 }
-
+#dark .oak-left__sidebar{
+    background-color: #00002F;
+}
+#dark .oak-connect{
+    box-shadow: 4px 4px 0px 0px #fff;
+    border-radius: 5px;
+    color: #FFF;
+    border: 1px solid #fff;
+    background: #00002F;
+}
 .oak-sidebar.show.w-100 .oak-left__sidebar {
     display: block;
     width: 75%;

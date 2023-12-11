@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import './index.css'
 import closeIcon from '../../../assets/images/closeIcon.svg'
 import WalletModal from '../../../component/WalletModal'
@@ -9,6 +9,10 @@ import { Link, useLocation } from 'react-router-dom';
 import dropdown from '../../../assets/images/dropdown.svg'
 import auth1 from '../../../assets/images/oakimg.svg'
 import auth2 from '../../../assets/images/auth2.svg'
+import { ThemeContext } from '../../../App';
+import dropdownDark from '../../../assets/images/dropDownDark.svg';
+import auth1Dark from '../../../assets/images/acornDark.svg';
+import auth2Dark from "../../../assets/images/modeIcon.svg"
 import { useNavigate } from "react-router-dom";
 import userP from '../../../assets/images/userP/user1a.svg'
 import accountS from '../../../assets/images/userP/accountSettings.svg'
@@ -32,6 +36,8 @@ const Sidebar = ({ show, toggle }) => {
             setIsCompanyDisplayed(false);
         }
     }, [show]);
+    
+    const { theme, toggler } = useContext(ThemeContext);
 
     // State to keep track of whether the profile is displayed or not
     const [isProfileDisplayed, setIsProfileDisplayed] = useState(false);
@@ -89,7 +95,7 @@ const Sidebar = ({ show, toggle }) => {
                                     <p className='ps-2 oak-wallet_point mb-0'>11.5k</p>
                                 </div>
                                 <div className=' px-3'>
-                                    <img src={auth2} alt='icon' />
+                                <img onClick={toggler} src={theme === 'dark' ? auth2Dark : auth2} alt='icon' />
                                 </div>
                             </div>
 
