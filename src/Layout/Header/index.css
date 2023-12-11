@@ -5,6 +5,14 @@
     width: 100%;
 }
 
+
+/* @media (min-width:200px) and (max-width:768px) {
+ 
+#dark .position-fixe{
+    background-color: #fff !important;
+}
+} */
+
 .nav-item {
     color: var(--primary-color);
     font-size: 15px;

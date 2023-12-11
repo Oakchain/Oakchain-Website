@@ -2,7 +2,6 @@
     background-color:rgba(0, 0, 47, 1);
     
 }
-
 .footer-text{
     display: flex;
     padding-top: 2rem;
@@ -40,7 +39,25 @@
     font-weight: 600;
     
 }
+/* @media (min-width:200px) and (max-width:768px) {
+    
+#dark .footer, #dark .join-btn:hover{
+    background-color: #fff;
+}
 
+#dark .logo-text, #dark .links-title, #dark .links-title::after, #dark .link a, #dark .join-title {
+    color: #00002F;
+}
+#dark .join-title::after, #dark .join-text, #dark .join-btn:active, #dark .number {
+    color: #00002F;
+}
+#dark .join-btn{
+    background-color: #fff;
+    color: #00002F;
+    
+    box-shadow: 3px 3px 1px rgb(0, 0, 46, 1)
+}
+} */
 .footerLogo{
     width: 40%;
 }
