@@ -1,0 +1,227 @@
+.publishContent{
+    height: 910px;
+    background-color: #DEDCDC;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.firstCont{
+    width: 610px;
+    border-radius: 10px;
+    height: 940px;
+    display: flex;
+    flex-direction: column;
+}
+.firstCont .poDiv{
+    width: 610px;
+    background-color: #fff;
+    height: 120px;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.firstCont .poDiv .div{
+    height: 80px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;justify-content: center;
+}
+.firstCont .poDiv .div h1{
+    color: #00002f;
+    font-size: 16px;
+}
+
+.firstCont .poDiv .div h2{
+    color: #00002f;
+    font-size: 18px;
+    font-weight: 700;
+}
+.firstCont .publDiv{
+    width: 610px;
+    height: 820px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.firstCont .publDiv .headdd h1{
+    height: 26px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #FF4E00;
+}
+.firstCont .publDiv .headdd h1{
+    font-size: 14px;
+    color: #00002f;
+    font-weight: 800;
+}
+.firstCont .publDiv .ender{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstCont .publDiv .ender button{
+    border-radius: 10px;
+    border: 1px solid #000000a1;
+    width: 104px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.firstCont .publDiv .ender button h1{
+    color: #000000a1;
+    font-size: 14px;
+    margin: 0;
+}
+.firstCont .publDiv .bodyyy{
+    margin-top: 10px;
+    width: 100%;
+    height: 674px;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+}
+.firstCont .publDiv .bodyyy li{
+    margin-top: 10px;
+    border: 1px solid #000000a1;
+    border-radius: 10px;
+    height: 122px;
+    width: 100%;
+    display: flex; flex-direction: row;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: left;
+}
+.firstCont .publDiv .bodyyy img{
+    width: 102px;
+    height: 102px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.firstCont .publDiv .bodyyy .secPul{
+    width: 368px;
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.firstCont .publDiv .bodyyy .secPul h1{
+    color: #00002f;
+    font-size: 12px;
+}
+.firstCont .publDiv .bodyyy .secPul .secBtn{
+    width: 242px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 27px;
+}
+
+.firstCont .publDiv .bodyyy .secPul .secBtn button{
+    width: 74px;
+    background-color: #FF4E00;
+    border-radius: 5px;
+    height: 27px;
+    outline: 0;
+    text-align: center;
+    border: 0;
+}
+.firstCont .publDiv .bodyyy .secPul .secBtn button h1{
+   color: #fff;
+   font-size: 9px;
+   margin: 0;
+}
+
+.firstCont .publDiv .bodyyy .thirdPul{
+   width: 74px;
+   height: 102px;
+   display: flex;
+   flex-direction: row;
+   align-items: end;
+ }
+ .firstCont .publDiv .bodyyy .thirdPul h1{  
+   font-size: 12px;
+   color: #000000a1;
+ }
+.secondCont{
+    width: 250px;
+    height: 910px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.secondCont h1{
+    color: #00002f;
+    font-size: 18px;
+    font-weight: 700;
+}
+.secondCont .ul{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    height: 630px;
+    padding: 0;
+    flex-direction: column;
+    list-style-type: disc !important;
+    color: #FF4E00;
+}
+.secondCont .ul li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 60px;
+}
+.secondCont .ul li h1{
+    color: #00002f;
+    margin: 0;
+    list-style: circle !important;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.secondCont .ul li h2{
+    color: rgb(0, 0, 46, 0.50);
+    font-size: 10px;
+    text-align: right;
+}
+.createContent{
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    top: 0;
+    background-color: #FF4E00;
+    border-radius: 10px;
+    border: 0;
+    margin-left: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 0;
+}
+.createContent .h11{
+    color: #fff;
+    margin: 0;
+    font-size: 18px;
+}

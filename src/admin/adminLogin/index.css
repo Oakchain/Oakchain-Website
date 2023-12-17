@@ -1,0 +1,39 @@
+.adminLogin{
+    width: 100%;
+    background-image: url(./../../assets/images/adminBack.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.adminLoginIntro{
+    display: flex;
+    flex-direction: column;
+    height: 263px;
+    align-items: end;
+    width: 550px;
+}
+
+.adminLoginIntro .logo{ 
+    background-image: url(./../../assets/images/adminlog.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 214px;
+    width: 550px;
+}
+.adminLoginIntro .button{
+    height: 49px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    width: 192px;
+    background-color: #FF4E00;
+}
+.adminLoginIntro .button h1{
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+}

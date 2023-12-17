@@ -1,0 +1,430 @@
+.homeee{
+    height: 910px;
+    background-color: #DEDCDC;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+.homeee .header{
+    height: 173px;
+    background-color: #fff;
+    width: 650px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.homeee .header .top{
+    height: 114px;
+    width: 630px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.homeee .header .top div{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.homeee .header .top div h1{
+    color: #00002f;
+    margin: 0;
+    font-size: 14px;
+    line-height: 12px;
+}
+.homeee .header .top div .per{
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.homeee .header .top div .per h2{
+    color: #00002f;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.homeee .header .top div .per span{
+    color: #fff;
+    background-color: green;
+    width: 50px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.homeee .header .top div h3{
+    color: #00002f;
+    font-size: 12px;
+    margin: 0;
+    line-height: 10px;
+}
+.homeee .header .top .connectedwallet{
+    border-left: 1px solid #C6C2C2 ;
+    border-right: 1px solid #C6C2C2 ;
+}
+.homeee .header .bottom{
+    height: 25px;
+    width: 630px;
+    border-top: 1px solid #C6C2C2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.homeee .header .bottom div{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.homeee .header .bottom h1{
+   font-size: 14px;
+   font-weight: 700;
+   color: #00002f;
+}
+.homeee .header .bottom .post{
+    border-right: 1px solid #C6C2C2;
+}
+
+section{
+    width: 880px;
+    margin-top: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section .common{
+    width: 430px;
+    height: 300px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 10px; padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+section .platformDiv  .top{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin-bottom: 0;
+    padding-right: 10px;
+    border: 0;
+    align-items: start;
+    border-radius: 0;
+}
+section .platformDiv  .top h1{
+color: #00002f;
+font-weight: 800;
+font-size: 14px;
+margin: 0;
+}
+section .platformDiv .graph{
+    margin: 0;
+    margin-top: 10px;
+    height: 245px;
+    width: 100%;
+}
+
+
+section .connectedDiv  .top{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin-bottom: 0;
+    padding-right: 10px;
+    border: 0;
+    align-items: start;
+    border-radius: 0;
+}
+section .connectedDiv  .top h1{
+color: #00002f;
+font-weight: 800;
+font-size: 14px;
+margin: 0;
+}
+
+section .connectedDiv .graph{
+    margin: 0;
+    margin-top: 10px;
+    height: 245px;
+    width: 100%;
+}
+
+section .postDiv .top{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin-bottom: 0;
+    padding-right: 10px;
+    border: 0;
+    align-items: start;
+    border-radius: 0;
+    border-bottom: 2px solid #FF4E00;
+}
+section .postDiv .top h1{
+color: #00002f;
+font-size: 14px;
+margin: 0;
+font-weight: 800;
+}
+
+section .postDiv .top h2{
+color: rgba(0, 0, 46, 0.50);
+font-size: 14px;
+margin: 0;
+margin-top: -5px;
+}
+section .postDiv ul{
+    height: 200px;
+    margin-top: 10px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+section .postDiv ul li{
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 0;
+    width: 100%;
+    border-bottom:1px solid #C6C2C2;
+}
+
+section .postDiv ul li h1{
+  color: #00002f;
+  padding: 0;
+  margin: 0;line-height: 12px;
+  font-size: 13px;
+}
+
+section .postDiv ul li h2{
+    color: rgb(0, 0, 46, 0.50);
+    font-size: 10px;
+  }
+
+
+  section .postDiv .bottom{
+    height: 45px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section .postDiv .bottom button{
+    height: 30px;
+    outline: 0;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #C6C2C2;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section .postDiv .bottom button h1{
+   color: #00002f;
+   font-size: 16px;
+   margin: 0;
+}
+section .odd{
+    height: 620px;
+    padding: 0;
+    background-color: transparent;
+}
+section .odd .first{
+    width: 100%;
+    height: 220px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+section .odd .first .top{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin-bottom: 0;
+    padding-right: 10px;
+    border: 0;
+    align-items: start;
+    border-radius: 0;
+    border-bottom: 2px solid #FF4E00;
+}
+section .odd .first .top h1{
+color: #00002f;
+font-size: 14px;
+margin: 0;
+font-weight: 800;
+}
+
+section .odd .first .bottom {
+    width: 100%;
+    margin: 0;
+    height: 165px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section .odd .first .bottom label{
+   font-size: 10px;
+   color: #00002f;
+}
+section .odd .first .bottom li{
+    height: 38px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid #C6C2C2;
+}
+
+section .odd .first .bottom li input{
+    height: 38px;
+    border: 0;
+    outline: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 370px;
+}
+
+section .odd .first .bottom li button{
+    height: 38px;
+    border: 0;
+    background-color: #C6C2C2;
+    color: #FF4E00;
+    outline: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 40px;
+}
+
+
+section .odd .second{
+    width: 100%;
+    height: 360px;
+    background-color: #fff;
+}
+
+section .odd .second .top{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin-bottom: 0;
+    padding-right: 10px;
+    border: 0;
+    align-items: start;
+    border-radius: 0;
+    border-bottom: 2px solid #FF4E00;
+}
+section .odd .second .top h1{
+color: #00002f;
+font-size: 14px;
+font-weight: 800;
+margin: 0;
+}
+
+section .odd .second .top h2{
+color: #FF4E00;
+font-size: 20px;
+margin: 0;
+margin-top: -5px;
+}
+section .odd .second .bottom{
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+section .odd .second .bottom li{
+    display: flex;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid#C6C2C2;
+}
+
+section .odd .second .bottom li .names{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    margin: 0;
+    margin-top: 10px;
+    height: 50px;
+}
+
+section .odd .second .bottom li .names h1{
+    color: #00002f;
+    font-size: 16px;
+    margin: 0;
+    line-height: 14px;
+}
+
+section .odd .second .bottom li .names h2{
+   color: #00002f;
+   font-size: 10px;
+}
+section .odd .second .bottom li .view{
+    width: 65px;
+    border-radius: 10px;
+    border: 1px solid #00002f;
+    height: 26px;
+    display: flex;
+    background-color: #fff;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section .odd .second .bottom li .view h1{
+   font-size: 10px;
+   margin: 0;
+   color: #00002f;
+}
+

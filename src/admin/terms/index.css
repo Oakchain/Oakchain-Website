@@ -1,0 +1,44 @@
+.termsDiv{
+    height: 910px;
+    background-color: #DEDCDC;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.termsContent{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    flex-direction: column;
+    height: 870px;
+}
+.termsContent .firstContt{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid #FF4E00;
+}
+
+.termsContent .firstContt .termh1{
+font-size: 20px;
+font-weight: 700;
+color: #00002f;
+}
+
+.termsContent .secondContt{
+    width: 100%;
+    margin-top: 10px;
+    height: 790px;
+}
+
+.termsContent .secondContt .termh2{
+font-size: 14px;
+font-weight: 500;
+color: #00002f;
+}

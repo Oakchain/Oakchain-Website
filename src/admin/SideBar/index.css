@@ -1,0 +1,67 @@
+.sideBar{
+    width: 310px;
+    background-color: #fff;
+    height: 910px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.profile{
+    width: 249px;
+    height: 149px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(255, 77, 0, 0.50);
+}
+.profile img{
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+}
+.profile .name{
+    color: #00002F;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+}
+.profile .level{
+    color: #00002F;
+    font-size: 20px;
+    line-height: 18px;
+}
+.checkk{
+    width: 249px;
+    height: 315px;
+    list-style: none !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.checkk li{
+    width: 239px;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    height: 48px;
+
+}
+.checkk #active {
+    box-shadow: inset -3.5px 1.5px 3px 0.5px #00002fae;
+}
+
+.checkk li h1{
+    line-height: 18px;
+    margin: 0;
+    margin-left: 5px;
+    font-size: 20px;
+    color: #00002F;
+}
+.logoutt{
+    color: #ED0412 !important;
+}

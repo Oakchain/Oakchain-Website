@@ -1,0 +1,53 @@
+.adminLogin{
+    width: 100%;
+    background-image: url(./../../assets/images/adminBack.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.loginForm{
+    display: flex;
+    background-color: #00002f;
+    flex-direction: column;
+    height: 363px;
+    align-items: center;
+    padding: 90px;
+    width: 650px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+.loginForm .holderr{
+    width: 520px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 30px;
+}
+.loginForm .holderr .font{
+    font-size: 40px;
+    color: #fff;
+}
+.loginForm .holderr input{
+    height: 50px;
+    border-radius: 0;
+    width: 460px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-bottom: 1px solid #FF4E00;
+}
+.logBtn{
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+}
