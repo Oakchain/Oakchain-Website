@@ -12,10 +12,10 @@ const AdminLogin = () => {
         <>
           <div className='adminLogin'>
                 <div className='adminLoginIntro'>
-                    <div className='logo'></div>
+                    <div className='adminlogo'></div>
                     <button onClick={() => {
                         navigate('/loginAdmin')
-                      }} className='button'><h1>ADMIN PORTAL</h1></button>
+                      }} className='adminbutton'><h1 className='adminh1'>ADMIN PORTAL</h1></button>
                 </div>
             </div> 
 

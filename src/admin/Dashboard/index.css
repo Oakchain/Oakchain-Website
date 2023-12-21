@@ -1,4 +1,4 @@
-.homeee{
+.homeeeee{
     height: 910px;
     background-color: #DEDCDC;
     width: 100%;
@@ -7,7 +7,7 @@
     padding: 20px;
     flex-direction: column;
 }
-.homeee .header{
+.homeeeee .homeeeheader{
     height: 173px;
     background-color: #fff;
     width: 650px;
@@ -17,25 +17,25 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.homeee .header .top{
+.homeeeee .homeeeheader .homeeetop{
     height: 114px;
     width: 630px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.homeee .header .top div{
+.homeeeee .homeeeheader .homeeetop div{
     display: flex;
     padding: 20px;
     flex-direction: column;
     justify-content: space-evenly;
 }
-.homeee .header .top div h1{
+.homeeeee .homeeeheader .homeeetop div h1{
     color: #00002f;
     margin: 0;
     font-size: 14px;
     line-height: 12px;
 }
-.homeee .header .top div .per{
+.homeeeee .homeeeheader .homeeetop div .homeeeper{
     width: 100%;
     padding: 0;
     margin-top: 10px;
@@ -45,14 +45,14 @@
     justify-content: space-between;
     align-items: center;
 }
-.homeee .header .top div .per h2{
+.homeeeee .homeeeheader .homeeetop div .homeeeper h2{
     color: #00002f;
     margin: 0;
     font-size: 24px;
     font-weight: 700;
 }
 
-.homeee .header .top div .per span{
+.homeeeee .homeeeheader .homeeetop div .homeeeper span{
     color: #fff;
     background-color: green;
     width: 50px;
@@ -62,40 +62,40 @@
 }
 
 
-.homeee .header .top div h3{
+.homeeeee .homeeeheader .homeeetop div h3{
     color: #00002f;
     font-size: 12px;
     margin: 0;
     line-height: 10px;
 }
-.homeee .header .top .connectedwallet{
+.homeeeee .homeeeheader .homeeetop .homeeeconnectedwallet{
     border-left: 1px solid #C6C2C2 ;
     border-right: 1px solid #C6C2C2 ;
 }
-.homeee .header .bottom{
+.homeeeee .homeeeheader .homeeebottom{
     height: 25px;
     width: 630px;
     border-top: 1px solid #C6C2C2;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.homeee .header .bottom div{
+.homeeeee .homeeeheader .homeeebottom div{
     margin-top: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.homeee .header .bottom h1{
+.homeeeee .homeeeheader .homeeebottom h1{
    font-size: 14px;
    font-weight: 700;
    color: #00002f;
 }
-.homeee .header .bottom .post{
+.homeeeee .homeeeheader .homeeebottom .homeeepost{
     border-right: 1px solid #C6C2C2;
 }
 
-section{
+.secttt{
     width: 880px;
     margin-top: 40px;
     height: 100%;
@@ -104,7 +104,7 @@ section{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-section .common{
+.secttt .homeeecommon{
     width: 430px;
     height: 300px;
     margin-bottom: 40px;
@@ -114,7 +114,7 @@ section .common{
     flex-direction: column;
 }
 
-section .platformDiv  .top{
+.secttt .homeeeplatformDiv  .homeeetop{
     width: 100%;
     height: 25px;
     display: flex;
@@ -127,13 +127,13 @@ section .platformDiv  .top{
     align-items: start;
     border-radius: 0;
 }
-section .platformDiv  .top h1{
+.secttt .homeeeplatformDiv  .homeeetop h1{
 color: #00002f;
 font-weight: 800;
 font-size: 14px;
 margin: 0;
 }
-section .platformDiv .graph{
+.secttt .homeeeplatformDiv .graph{
     margin: 0;
     margin-top: 10px;
     height: 245px;
@@ -141,7 +141,7 @@ section .platformDiv .graph{
 }
 
 
-section .connectedDiv  .top{
+.secttt .homeeeconnectedDiv  .homeeetop{
     width: 100%;
     height: 25px;
     display: flex;
@@ -154,21 +154,21 @@ section .connectedDiv  .top{
     align-items: start;
     border-radius: 0;
 }
-section .connectedDiv  .top h1{
+.secttt .homeeeconnectedDiv  .homeeetop h1{
 color: #00002f;
 font-weight: 800;
 font-size: 14px;
 margin: 0;
 }
 
-section .connectedDiv .graph{
+.secttt .homeeeconnectedDiv .graph{
     margin: 0;
     margin-top: 10px;
     height: 245px;
     width: 100%;
 }
 
-section .postDiv .top{
+.secttt .homeeepostDiv .homeeetop{
     width: 100%;
     height: 25px;
     display: flex;
@@ -182,20 +182,20 @@ section .postDiv .top{
     border-radius: 0;
     border-bottom: 2px solid #FF4E00;
 }
-section .postDiv .top h1{
+.secttt .homeeepostDiv .homeeetop h1{
 color: #00002f;
 font-size: 14px;
 margin: 0;
 font-weight: 800;
 }
 
-section .postDiv .top h2{
+.secttt .homeeepostDiv .homeeetop h2{
 color: rgba(0, 0, 46, 0.50);
 font-size: 14px;
 margin: 0;
 margin-top: -5px;
 }
-section .postDiv ul{
+.secttt .homeeepostDiv ul{
     height: 200px;
     margin-top: 10px;
     width: 100%;
@@ -205,7 +205,7 @@ section .postDiv ul{
     flex-direction: column;
     justify-content: space-evenly;
 }
-section .postDiv ul li{
+.secttt .homeeepostDiv ul li{
     height: 40px;
     display: flex;
     flex-direction: column;
@@ -216,20 +216,20 @@ section .postDiv ul li{
     border-bottom:1px solid #C6C2C2;
 }
 
-section .postDiv ul li h1{
+.secttt .homeeepostDiv ul li h1{
   color: #00002f;
   padding: 0;
   margin: 0;line-height: 12px;
   font-size: 13px;
 }
 
-section .postDiv ul li h2{
+.secttt .homeeepostDiv ul li h2{
     color: rgb(0, 0, 46, 0.50);
     font-size: 10px;
   }
 
 
-  section .postDiv .bottom{
+  .secttt .homeeepostDiv .homeeebottom{
     height: 45px;
     width: 100%;
     margin: 0;
@@ -239,7 +239,7 @@ section .postDiv ul li h2{
     align-items: center;
 }
 
-section .postDiv .bottom button{
+.secttt .homeeepostDiv .homeeebottom button{
     height: 30px;
     outline: 0;
     margin: 0;
@@ -253,24 +253,24 @@ section .postDiv .bottom button{
     align-items: center;
 }
 
-section .postDiv .bottom button h1{
+.secttt .homeeepostDiv .homeeebottom button h1{
    color: #00002f;
    font-size: 16px;
    margin: 0;
 }
-section .odd{
+.secttt .homeeeodd{
     height: 620px;
     padding: 0;
     background-color: transparent;
 }
-section .odd .first{
+.secttt .homeeeodd .homeeefirst{
     width: 100%;
     height: 220px;
     margin-bottom: 30px;
     background-color: #fff;
 }
 
-section .odd .first .top{
+.secttt .homeeeodd .homeeefirst .homeeetop{
     width: 100%;
     height: 25px;
     display: flex;
@@ -284,14 +284,14 @@ section .odd .first .top{
     border-radius: 0;
     border-bottom: 2px solid #FF4E00;
 }
-section .odd .first .top h1{
+.secttt .homeeeodd .homeeefirst .homeeetop h1{
 color: #00002f;
 font-size: 14px;
 margin: 0;
 font-weight: 800;
 }
 
-section .odd .first .bottom {
+.secttt .homeeeodd .homeeefirst .homeeebottom {
     width: 100%;
     margin: 0;
     height: 165px;
@@ -301,11 +301,11 @@ section .odd .first .bottom {
     justify-content: space-evenly;
 }
 
-section .odd .first .bottom label{
+.secttt .homeeeodd .homeeefirst .homeeebottom label{
    font-size: 10px;
    color: #00002f;
 }
-section .odd .first .bottom li{
+.secttt .homeeeodd .homeeefirst .homeeebottom li{
     height: 38px;
     width: 100%;
     display: flex;
@@ -315,7 +315,7 @@ section .odd .first .bottom li{
     border: 1px solid #C6C2C2;
 }
 
-section .odd .first .bottom li input{
+.secttt .homeeeodd .homeeefirst .homeeebottom li input{
     height: 38px;
     border: 0;
     outline: 0;
@@ -324,7 +324,7 @@ section .odd .first .bottom li input{
     width: 370px;
 }
 
-section .odd .first .bottom li button{
+.secttt .homeeeodd .homeeefirst .homeeebottom li button{
     height: 38px;
     border: 0;
     background-color: #C6C2C2;
@@ -336,13 +336,13 @@ section .odd .first .bottom li button{
 }
 
 
-section .odd .second{
+.secttt .homeeeodd .second{
     width: 100%;
     height: 360px;
     background-color: #fff;
 }
 
-section .odd .second .top{
+.secttt .homeeeodd .second .homeeetop{
     width: 100%;
     height: 25px;
     display: flex;
@@ -356,20 +356,20 @@ section .odd .second .top{
     border-radius: 0;
     border-bottom: 2px solid #FF4E00;
 }
-section .odd .second .top h1{
+.secttt .homeeeodd .second .homeeetop h1{
 color: #00002f;
 font-size: 14px;
 font-weight: 800;
 margin: 0;
 }
 
-section .odd .second .top h2{
+.secttt .homeeeodd .second .homeeetop h2{
 color: #FF4E00;
 font-size: 20px;
 margin: 0;
 margin-top: -5px;
 }
-section .odd .second .bottom{
+.secttt .homeeeodd .second .homeeebottom{
     height: 300px;
     width: 100%;
     margin-top: 10px;
@@ -377,7 +377,7 @@ section .odd .second .bottom{
     flex-direction: column;
     justify-content: space-evenly;
 }
-section .odd .second .bottom li{
+.secttt .homeeeodd .second .homeeebottom li{
     display: flex;
     height: 50px;
     margin: 0;
@@ -389,7 +389,7 @@ section .odd .second .bottom li{
     border-bottom: 1px solid#C6C2C2;
 }
 
-section .odd .second .bottom li .names{
+.secttt .homeeeodd .second .homeeebottom li .names{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -399,18 +399,18 @@ section .odd .second .bottom li .names{
     height: 50px;
 }
 
-section .odd .second .bottom li .names h1{
+.secttt .homeeeodd .second .homeeebottom li .names h1{
     color: #00002f;
     font-size: 16px;
     margin: 0;
     line-height: 14px;
 }
 
-section .odd .second .bottom li .names h2{
+.secttt .homeeeodd .second .homeeebottom li .names h2{
    color: #00002f;
    font-size: 10px;
 }
-section .odd .second .bottom li .view{
+.secttt .homeeeodd .second .homeeebottom li .view{
     width: 65px;
     border-radius: 10px;
     border: 1px solid #00002f;
@@ -422,7 +422,7 @@ section .odd .second .bottom li .view{
     align-items: center;
 }
 
-section .odd .second .bottom li .view h1{
+.secttt .homeeeodd .second .homeeebottom li .view h1{
    font-size: 10px;
    margin: 0;
    color: #00002f;

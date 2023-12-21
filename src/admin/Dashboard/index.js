@@ -8,54 +8,54 @@ const AdminPage = () => {
   
   return (
     <Admin>
-      <div className="homeee">
-        <header className="header">
-          <div className="top">
-            <div className="platformvisit">
+      <div className="homeeeee">
+        <header className="homeeeheader">
+          <div className="homeeetop">
+            <div className="homeeeplatformvisit">
               <h1>Platform Visit</h1>
-              <div className="per">
+              <div className="homeeeper">
                 <h2>20,000</h2>
                 <span>30%</span>
               </div>
               <h3>from 17,500</h3>
             </div>
-            <div className="connectedwallet">
+            <div className="homeeeconnectedwallet">
             <h1>Connected Wallet</h1>
-              <div className="per">
+              <div className="homeeeper">
                 <h2>200,000</h2>
                 <span>30%</span>
               </div>
               <h3>from 190,000</h3>
             </div>
-            <div className="nestholders">
+            <div className="homeeenestholders">
             <h1>Verified Nest Holders</h1>
-              <div className="per">
+              <div className="homeeeper">
                 <h2>3333</h2>
                 
               </div>
               <h3>.</h3>
             </div>
           </div>
-          <div className="bottom">
-            <div className="post"><h1>65 Posts</h1></div>
+          <div className="homeeebottom">
+            <div className="homeeepost"><h1>65 Posts</h1></div>
             <div><h1>1M impressions</h1></div>
           </div>
         </header>
-        <section>
-          <div className="common platformDiv"> 
-          <div className="top">
+        <section className="secttt">
+          <div className="homeeecommon homeeeplatformDiv"> 
+          <div className="homeeetop">
             <h1>Platform Visit</h1>
           </div>
           <div className="graph" >
           
           </div>
           </div>
-        <div className="common postDiv">
-          <div className="top">
+        <div className="homeeecommon homeeepostDiv">
+          <div className="homeeetop">
             <h1>All Post</h1>
             <h2>Most Recent</h2>
           </div>
-          <ul className="middle">
+          <ul className="homeeemiddle">
             <li>
               <h1>What is Smart Contracts, and how to read it and detect scams</h1>
               <h2>Learn what smart contracts are and how to read them to detect scams.</h2>
@@ -73,24 +73,24 @@ const AdminPage = () => {
               <h2>Learn what smart contracts are and how to read them to detect scams.</h2>
             </li>
           </ul>
-          <div className="bottom">
+          <div className="homeeebottom">
             <button>
               <h1>View All</h1>
             </button>
           </div>
         </div>
-        <div className="common connectedDiv">
-        <div className="top">
+        <div className="homeeecommon homeeeconnectedDiv">
+        <div className="homeeetop">
             <h1>Connected Wallet</h1>
           </div>
           <div className="graph"></div>
         </div>
-        <div className="common odd">
-          <div className="common first">
-          <div className="top">
+        <div className="homeeecommon homeeeodd">
+          <div className="homeeecommon homeeefirst">
+          <div className="homeeetop">
             <h1>Official Project Link</h1>
           </div>
-          <div className="bottom">
+          <div className="homeeebottom">
             <label>Official website URL</label>
             <li><input></input><button><FontAwesomeIcon icon={faCopy} ></FontAwesomeIcon></button></li>
             <label>Official Discord</label>
@@ -101,12 +101,12 @@ const AdminPage = () => {
               </button></li>
           </div>
           </div>
-          <div className="common second">
-          <div className="top">
+          <div className="homeeecommon second">
+          <div className="homeeetop">
             <h1>Team</h1>
             <h2>+</h2>
           </div>
-          <div className="bottom">
+          <div className="homeeebottom">
             <li>
               <div className="names">
                 <h1>Nansel Rimsah</h1>
@@ -118,7 +118,7 @@ const AdminPage = () => {
             </li>
             <li>
               <div className="names">
-                <h1>Peri Nwolisa</h1>
+                <h1>homeeePeri Nwolisa</h1>
                 <h2>Admin, Oakchain</h2>
               </div>
               <button className="view">

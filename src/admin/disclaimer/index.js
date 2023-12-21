@@ -11,8 +11,8 @@ const Disclaimer = () => {
     <Admin>
       <div className="disclaimerDiv">
         <div className="disclaimerContent">
-            <div className="firstCon"><h1 className="workedd">Admin Disclaimer</h1></div>
-            <div className="secondCon">
+            <div className="dCfirstCon"><h1 className="workedd">Admin Disclaimer</h1></div>
+            <div className="dCsecondCon">
               <h1 className="worked"><b>Oakchain Administrators,</b></h1>
               
               <h1 className="worked">Welcome to Oakchain, where your commitment to excellence plays a pivotal role in shaping the future of our blockchain community. As stewards of this dynamic ecosystem, we emphasize the paramount importance of maintaining confidentiality and upholding the highest standards of security. This disclaimer serves as a solemn reminder of the sensitive nature of the information entrusted to you and outlines key protocols to ensure the safeguarding of our platform.</h1>
