@@ -1,34 +1,31 @@
 :root {
-    --primary-color: #00002F;
-    --secondary-color: #FF4E00;
-    --cd100: 'ClashDisplay-Variable';
-    --cd200: 'ClashDisplay-Extralight';
-    --cd300: 'ClashDisplay-Light';
-    --cd400: 'ClashDisplay-Regular';
-    --cd500: 'ClashDisplay-Medium';
-    --cd600: 'ClashDisplay-Semibold';
-    --cd700: 'ClashDisplay-Bold';
+  --primary-color: #00002f;
+  --secondary-color: #ff4e00;
+  --cd100: "ClashDisplay-Variable";
+  --cd200: "ClashDisplay-Extralight";
+  --cd300: "ClashDisplay-Light";
+  --cd400: "ClashDisplay-Regular";
+  --cd500: "ClashDisplay-Medium";
+  --cd600: "ClashDisplay-Semibold";
+  --cd700: "ClashDisplay-Bold";
 }
 
 .oak-container-fluid {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 ul,
 li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .header-logo img {
-    width: 80px !important;
-    object-fit: contain !important;
+  width: 80px !important;
+  object-fit: contain !important;
 }
 
 .oak-btn,
@@ -37,313 +34,278 @@ li {
 .oak-btn-secondary:hover,
 .oak-tertiary-btn,
 .oak-tertiary-btn:hover {
-    font-family: var(--cd500);
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #00002F;
-    background: #FFF;
-    padding: 16px 21px;
-    font-size: 15px;
-    font-weight: 500;
-    box-shadow: 7px 7px 4px rgb(0, 0, 47);
+  font-family: var(--cd500) !important;
+  background-color: #fff !important;
+  border-radius: 5px !important;
+  border: 1px solid #00002f !important;
+  background: #fff !important;
+  padding: 16px 21px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  box-shadow: 7px 7px 4px rgb(0, 0, 47) !important;
 }
 
 .oak-btn:hover {
-    background: orangered;
-    color: #fff;
-    transition: 0.5s;
-    border: none;
-
+  background: orangered !important;
+  color: #fff !important;
+  transition: 0.5s !important;
+  border: none !important;
 }
 
 .oak-btn:active,
 .oak-btn-secondary:active {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transform: translateY(2px);
-    border: 1px solid #00002F;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+  transform: translateY(2px) !important;
+  border: 1px solid #00002f !important;
 }
-
 
 .oak-btn-secondary,
 .oak-btn-secondary:hover {
-    background: var(--secondary-color) !important;
-    box-shadow: unset;
-    border: var(--secondary-color) 1px solid !important;
-    color: #FFF !important;
-    padding: 16px 21px !important;
-    font-family: var(--cd500) !important;
-
-
+  background: var(--secondary-color) !important;
+  box-shadow: unset !important;
+  border: var(--secondary-color) 1px solid !important;
+  color: #fff !important;
+  padding: 16px 21px !important;
+  font-family: var(--cd500) !important;
 }
 
 .oak-tertiary-btn,
 .oak-btn-tertiary:hover {
-    background: var(--primary-color) !important;
-    box-shadow: unset;
-    border: var(--primary-color) 1px solid;
-    color: #FFF !important;
-    box-shadow: 7px 7px 4px #fff;
-    border: 1px solid #fff;
-
+  background: var(--primary-color) !important;
+  box-shadow: unset;
+  border: var(--primary-color) 1px solid;
+  color: #fff !important;
+  box-shadow: 7px 7px 4px #fff;
+  border: 1px solid #fff;
 }
-
 
 input,
 input:active,
 input:focus {
-    background: transparent !important;
-    outline: none !important;
-    display: block;
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    background-clip: padding-box;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    border: none;
+  background: transparent !important;
+  outline: none !important;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: none;
 }
 
 .oak-mb {
-    margin-bottom: 43px;
+  margin-bottom: 43px;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .page-details__title {
-    color: var(--primary-color);
-    font-family: var(--cd500);
-    font-size: 15px;
+  color: var(--primary-color);
+  font-family: var(--cd500);
+  font-size: 15px;
 }
 
 .oak-cstm__row {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    /* Create five equal-width columns */
-    grid-gap: 17px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* Create five equal-width columns */
+  grid-gap: 17px;
 }
 
 .oak-cstm__col {
-    /* padding: 10px; */
-    box-sizing: border-box;
+  /* padding: 10px; */
+  box-sizing: border-box;
 }
 
-@media (max-width:767px) {
-    .oak-mb {
-        margin-bottom: 30px;
-    }
+@media (max-width: 767px) {
+  .oak-mb {
+    margin-bottom: 30px;
+  }
 
-    .oak-btn,
-    .oak-btn:hover,
-    .oak-btn-secondary,
-    .oak-btn-secondary:hover,
-    .oak-tertiary-btn,
-    .oak-tertiary-btn:hover {
+  .oak-btn,
+  .oak-btn:hover,
+  .oak-btn-secondary,
+  .oak-btn-secondary:hover,
+  .oak-tertiary-btn,
+  .oak-tertiary-btn:hover {
+    padding: 12px 15px;
+    font-size: 11.914px;
+  }
 
-        padding: 12px 15px;
-        font-size: 11.914px;
-    }
-
-    .oak-cstm__row {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .oak-cstm__row {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 #light {
-
-    background-color: white;
-    transition: ease-in 1s;
+  background-color: white;
+  transition: ease-in 1s;
 }
 
 #dark {
-    background-color: #000018;
-    transition: ease-in 1s;
-
+  background-color: #000018;
+  transition: ease-in 1s;
 }
 
 #dark .nav-item {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .oak-crypto_key {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .nav-items {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .oak-wallet_point {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .oak-section__title {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .oak-redirect__text {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .oak-news__text {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .oak-news-title {
-    color: #FFF;
-
-
+  color: #fff;
 }
 
 #dark .oak-news-date {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .oak-academy__banner_title {
-    color: #FFF;
-
+  color: #fff;
 }
 
-
 #dark .academy-info {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .dark-btn {
-    color: black;
-    border-radius: 5px;
-    border: 1px solid #FFF;
-    background: #FFF;
-    padding: 16px 21px;
-    font-size: 15px;
-    font-weight: 500;
-    box-shadow: 7px 7px 4px rgb(0, 0, 0);
-
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: #fff;
+  padding: 16px 21px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 7px 7px 4px rgb(0, 0, 0);
 }
 
 #dark .oak-btn:active {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transform: translateY(2px);
-    border: 1px solid #00002F;
-
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+  border: 1px solid #00002f;
 }
 
 #dark .oak-btn:hover {
-    background: orangered;
-    color: #fff;
-    transition: 0.5s;
-    border: none;
-
+  background: orangered;
+  color: #fff;
+  transition: 0.5s;
+  border: none;
 }
 
 #dark .oak-task_card {
-    background-color: #00002F;
-
+  background-color: #00002f;
 }
 
 #dark .oak-task-brand {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .oak-task-title {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .oak-task__description {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .page-details__title {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .academy-tab__item {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .news-details__title {
-    color: #FFF;
-
+  color: #fff;
 }
 
 #dark .oak-profile {
-    background-color: #00002F;
+  background-color: #00002f;
 }
 
 #dark .oak-profile h3 {
-    color: #fff
+  color: #fff;
 }
 
 #dark .accountIcon {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 #dark .oak-main-news_details__wrapper {
-    background-color: #00002F;
+  background-color: #00002f;
 }
 
 #dark .oak-news__stats {
-    color: white;
+  color: white;
 }
 
 #dark .oak-news__title {
-    color: white;
+  color: white;
 }
 
 #dark .bannerWrapper {
-    background-color: #00002F;
+  background-color: #00002f;
 }
 
 .coming-soon-page {
-    height: calc(100vh - 200px);
+  height: calc(100vh - 200px);
 }
 
 .coming-soon-main-text {
-    color: #000;
-    text-align: center;
-    font-family: var(--cd500);
-    font-size: 48.87px;
+  color: #000;
+  text-align: center;
+  font-family: var(--cd500);
+  font-size: 48.87px;
 }
 
 .coming-soon-sub-text {
-    color: #000;
-    text-align: center;
-    font-family: var(--cd400);
-    font-size: 19.4px;
+  color: #000;
+  text-align: center;
+  font-family: var(--cd400);
+  font-size: 19.4px;
 }
 
-@media (max-width:767px) {
-    .coming-soon-main-text {
-        font-size: 35px;
-    }
+@media (max-width: 767px) {
+  .coming-soon-main-text {
+    font-size: 35px;
+  }
 
-    .coming-soon-sub-text {
+  .coming-soon-sub-text {
+    font-size: 16.4px;
+  }
 
-        font-size: 16.4px;
-    }
-
-    .coming-soon-page {
-        width: 90%;
-        margin: auto;
-    }
-
-
+  .coming-soon-page {
+    width: 90%;
+    margin: auto;
+  }
 }

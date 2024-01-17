@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./index.css";
 import logo from "../../assets/images/logo.svg";
 import oakMenu from "../../assets/images/oak_menu.svg";
+import oakimg from "../../assets/images/oakimg.svg";
 import dropdown from "../../assets/images/dropdown.svg";
 import arrow from "../../assets/images/arrow.svg";
 // import { connectWallet } from '../../utils/walletConnect'
@@ -9,7 +10,7 @@ import WalletModal from "../../component/WalletModal";
 import { useNavigate } from "react-router-dom";
 import { useLogin } from "../../client/Hook/Auth";
 import useWeb3Modal from "../../hooks/useWeb3Modal";
-import { useAddress } from "@thirdweb-dev/react";
+import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
 
 // Custom hook to handle clicking outside an element
 function useClickOutside(ref, callback) {
@@ -73,7 +74,7 @@ const Header = ({ toggle }) => {
 
   return (
     <div className="  position-fixe w-100">
-      <div className="oak-container-fluid d-flex align-items-center justify-content-between oak-header">
+      <div className="oak-container-fluid d-flex align-items-center justify-content-between oak-header ">
         <div className="header-logo">
           <img src={logo} alt="logo" />
         </div>
@@ -161,20 +162,21 @@ const Header = ({ toggle }) => {
             )}
           </li>
         </ul>
-
         <div className="d-md-block d-none">
-          {/* <button className='oak-btn' onClick={toggleModal}> */}
-          <button
-            className="oak-btn"
-            onClick={() => {
-              open();
-            }}
-          >
-            Connect to Web3{" "}
-            <span>
-              <img src={arrow} alt="icon" />
+          <div className=" oak-btn-connect">
+            <ConnectWallet
+              modalSize={"compact"}
+              open={open}
+              className="oak-btn"
+              btnTitle="Connect to Web3"
+              modalTitle=" "
+              modalTitleIconUrl={oakimg}
+              theme={"light"}
+            />
+            <span className="oak-btn-arrow">
+              <img src={arrow} alt="icon" style={{ width: "16px" }} />
             </span>
-          </button>
+          </div>
         </div>
 
         <div className="d-block d-md-none" onClick={toggle}>
