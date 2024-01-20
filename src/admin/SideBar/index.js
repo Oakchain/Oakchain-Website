@@ -16,6 +16,15 @@ const Sidebar = () => {
         // Set the activePage state based on the pathname
         setActivePage(pathname);
     }, [location]);
+
+    const handleLogout = () => {
+      // Clear the token and any other user-related data
+      localStorage.removeItem('token');
+      localStorage.removeItem('tokenExpiration');
+      // Redirect to the login page
+      navigate('/loginadmin');
+    };
+
     return (
         <>
           <div className='sideBar'>
@@ -49,9 +58,9 @@ const Sidebar = () => {
                         <h1>Admin Disclaimer</h1>
                     </li>
                     
-                    <li id={activePage === '/adminlogin' ? 'active' : ''} onClick={() => {
-                        navigate('/adminlogin')
-                      }}>
+                    <li id={activePage === '/adminlogin' ? 'active' : ''}  onClick={() => {
+              handleLogout();
+            }}>
                         <h1 className='logoutt'>Logout</h1>
                     </li>
                     

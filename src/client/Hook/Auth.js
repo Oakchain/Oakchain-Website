@@ -11,6 +11,7 @@ export const useLogin = () => {
             if (data.error) {
                 console.log(data.error.message)
             } else {
+                console.log("load")
                 Cookies.set("OAK_AUTH_TOKEN", data.data.token)
                 navigate('/home')
             }
