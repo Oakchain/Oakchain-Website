@@ -16,24 +16,44 @@ const PublishContent = () => {
     setIsOpen(!isOpen);
   };
 
+  const oakBaseUrl = "http://18.134.208.237:5000";
+
   useEffect(() => {
-    const fetchPosts = async () => {
-      const oakBaseUrl = "http://18.134.208.237:5000";
+    fetchPost();
+    // const fetchPosts = async () => {
+    //   try {
+    //     const response = await axios.get(`${oakBaseUrl}/api/blog`);
+    //     const res = response.data;
+    //     const allPosts = res.data.blogPosts;
+    //     const fetchedPosts = await Promise.all(
+    //       allPosts.map(async (post) => {
+    //         const additionalData = await fetchPost(post.authorId);
+    //         return additionalData;
+    //       })
+    //     );
+    //     console.log(fetchedPosts);
+    //     setPosts((prevPosts) => [...prevPosts, ...fetchedPosts]);
+    //     setLoading(false);
+    //   } catch (error) {
+    //     console.error("Error fetching posts:", error);
+    //     setLoading(false);
+    //   }
+    // };
 
-      try {
-        const response = await axios.get(`${oakBaseUrl}/api/blog`);
-        const res = response.data;
-        console.log(res.data);
-        setPosts(res.data.blogPosts);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching posts:", error);
-        setLoading(false);
-      }
-    };
-
-    fetchPosts();
+    // fetchPosts();
   }, []);
+
+  const fetchPost = async () => {
+    try {
+      const response = await axios.get(
+        `${oakBaseUrl}/api/blog/65b0310b37efd4f6b7cb244b`
+      );
+      const res = response.data;
+      return res.data.blogPost;
+    } catch (error) {
+      console.error("Error fetching post:", error);
+    }
+  };
 
   return (
     <Admin>
@@ -70,14 +90,15 @@ const PublishContent = () => {
               <h1>All published contents</h1>
             </div>
             <div className="bodyyy">
-              {posts.map((post) => (
-                <li>
+              {posts.map((post, index) => (
+                <li key={index}>
                   <img src={bit}></img>
                   <div className="secPul">
                     <h1>
                       Bitcoin breaks new all time high after SEC chair
                       acknowledged he holds BTC{" "}
                     </h1>
+                    <p>{post.authorId}</p>
                     <div className="secBtn">
                       <button>
                         <h1>Pin Article</h1>
@@ -95,100 +116,8 @@ const PublishContent = () => {
                   </div>
                 </li>
               ))}
-
-              <li>
-                <img src={bit}></img>
-                <div className="secPul">
-                  <h1>
-                    Bitcoin breaks new all time high after SEC chair
-                    acknowledged he holds BTC{" "}
-                  </h1>
-                  <div className="secBtn">
-                    <button>
-                      <h1>Pin Article</h1>
-                    </button>
-                    <button>
-                      <h1>Edit Article</h1>
-                    </button>
-                    <button>
-                      <h1>Delete Article</h1>
-                    </button>
-                  </div>
-                </div>
-                <div className="thirdPul">
-                  <h1>24-5-2023</h1>
-                </div>
-              </li>
-              <li>
-                <img src={bit}></img>
-                <div className="secPul">
-                  <h1>
-                    Bitcoin breaks new all time high after SEC chair
-                    acknowledged he holds BTC{" "}
-                  </h1>
-                  <div className="secBtn">
-                    <button>
-                      <h1>Pin Article</h1>
-                    </button>
-                    <button>
-                      <h1>Edit Article</h1>
-                    </button>
-                    <button>
-                      <h1>Delete Article</h1>
-                    </button>
-                  </div>
-                </div>
-                <div className="thirdPul">
-                  <h1>24-5-2023</h1>
-                </div>
-              </li>
-              <li>
-                <img src={bit}></img>
-                <div className="secPul">
-                  <h1>
-                    Bitcoin breaks new all time high after SEC chair
-                    acknowledged he holds BTC{" "}
-                  </h1>
-                  <div className="secBtn">
-                    <button>
-                      <h1>Pin Article</h1>
-                    </button>
-                    <button>
-                      <h1>Edit Article</h1>
-                    </button>
-                    <button>
-                      <h1>Delete Article</h1>
-                    </button>
-                  </div>
-                </div>
-                <div className="thirdPul">
-                  <h1>24-5-2023</h1>
-                </div>
-              </li>
-              <li>
-                <img src={bit}></img>
-                <div className="secPul">
-                  <h1>
-                    Bitcoin breaks new all time high after SEC chair
-                    acknowledged he holds BTC{" "}
-                  </h1>
-                  <div className="secBtn">
-                    <button>
-                      <h1>Pin Article</h1>
-                    </button>
-                    <button>
-                      <h1>Edit Article</h1>
-                    </button>
-                    <button>
-                      <h1>Delete Article</h1>
-                    </button>
-                  </div>
-                </div>
-                <div className="thirdPul">
-                  <h1>24-5-2023</h1>
-                </div>
-              </li>
             </div>
+
             <div className="ender">
               <button>
                 <h1>See More</h1>
