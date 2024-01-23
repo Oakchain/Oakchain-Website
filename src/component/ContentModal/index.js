@@ -7,44 +7,49 @@ import ul from "../../assets/images/ul.svg";
 import ol from "../../assets/images/ol.svg";
 import link from "../../assets/images/link.svg";
 import gallery from "../../assets/images/gallery.svg";
+import axios from "axios";
 import "./index.css";
 import { set } from "lodash";
-const ContentModal = ({ isOpen, toggle }) => {
+import { toast } from "react-toastify";
+const ContentModal = ({ isOpen, toggle, setIsOpen }) => {
   const [section, setSection] = useState("scan-page");
+  const [loading, setLoading] = useState(true);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
   const data = {
     title,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "",
     image: {
-      0: "https://example.com/header.jpg",
-      1: "https://example.com/body11.jpg",
+      0: "",
+      1: "",
     },
     content,
   };
 
   const publish = async () => {
     const oakBaseUrl = "http://18.134.208.237:5000";
-    const oakToken = process.env.OAK_API_TOKEN;
+    const oakToken =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9ha0BnbWFpbC5jb20iLCJpYXQiOjE3MDYwMDY1NDYsImV4cCI6MTcwNjE3OTM0Nn0.cxtgq9R88uoL_9-2LkkWAvgQDGGveirZNTnXPa79GSQ";
 
-    const requestOptions = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${oakToken}`,
-      },
-      body: JSON.stringify(data),
-      redirect: "follow",
+    const headers = {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${oakToken}`,
     };
 
+    setLoading(true);
     try {
-      const response = await fetch(`${oakBaseUrl}/api/blog`, requestOptions);
-      const result = await response.text();
-      console.log(result);
+      const response = await axios.post(`${oakBaseUrl}/api/blog`, data, {
+        headers,
+      });
+      const res = response.data;
+      console.log(res.data);
+      toast.success(res.message);
     } catch (error) {
       console.error("Error:", error);
     }
+    setIsOpen(false);
+    setLoading(true);
   };
 
   return (
@@ -81,7 +86,7 @@ const ContentModal = ({ isOpen, toggle }) => {
           <img src={gallery} alt="gallery"></img>
         </div>
         <button className="publishBtn" onClick={publish}>
-          <h1 className="hh1">Publish</h1>
+          <h1 className="hh1">{loading ? "Publishing..." : "Publish"}</h1>
         </button>
       </div>
     </Modal>
