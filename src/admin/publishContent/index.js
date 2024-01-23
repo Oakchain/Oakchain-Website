@@ -19,7 +19,6 @@ const PublishContent = () => {
   const oakBaseUrl = "http://18.134.208.237:5000";
 
   useEffect(() => {
-    // fetchPost();
     const fetchPosts = async () => {
       try {
         const response = await axios.get(`${oakBaseUrl}/api/blog`);
@@ -27,6 +26,7 @@ const PublishContent = () => {
         const allPosts = res.data.blogPosts;
         const fetchedPosts = await Promise.all(
           allPosts.map(async (post) => {
+            //post.authorId
             const additionalData = await fetchPost();
             return additionalData;
           })
@@ -90,29 +90,32 @@ const PublishContent = () => {
               <h1>All published contents</h1>
             </div>
             <div className="bodyyy">
-              {posts.map((post, index) => (
-                <li key={index}>
-                  <img src={bit}></img>
-                  <div className="secPul">
-                    <h1>{post.title}</h1>
-                    <p>{post.authorId}</p>
-                    <div className="secBtn">
-                      <button>
-                        <h1>Pin Article</h1>
-                      </button>
-                      <button>
-                        <h1>Edit Article</h1>
-                      </button>
-                      <button>
-                        <h1>Delete Article</h1>
-                      </button>
-                    </div>
-                  </div>
-                  <div className="thirdPul">
-                    <h1>24-5-2023</h1>
-                  </div>
-                </li>
-              ))}
+              {posts.map(
+                (post, index) =>
+                  index < 5 && (
+                    <li key={index}>
+                      <img src={bit}></img>
+                      <div className="secPul">
+                        <h1>{post.title}</h1>
+                        <p>{post.authorId}</p>
+                        <div className="secBtn">
+                          <button>
+                            <h1>Pin Article</h1>
+                          </button>
+                          <button>
+                            <h1>Edit Article</h1>
+                          </button>
+                          <button>
+                            <h1>Delete Article</h1>
+                          </button>
+                        </div>
+                      </div>
+                      <div className="thirdPul">
+                        <h1>24-5-2023</h1>
+                      </div>
+                    </li>
+                  )
+              )}
             </div>
 
             <div className="ender">
