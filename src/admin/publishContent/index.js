@@ -19,28 +19,28 @@ const PublishContent = () => {
   const oakBaseUrl = "http://18.134.208.237:5000";
 
   useEffect(() => {
-    fetchPost();
-    // const fetchPosts = async () => {
-    //   try {
-    //     const response = await axios.get(`${oakBaseUrl}/api/blog`);
-    //     const res = response.data;
-    //     const allPosts = res.data.blogPosts;
-    //     const fetchedPosts = await Promise.all(
-    //       allPosts.map(async (post) => {
-    //         const additionalData = await fetchPost(post.authorId);
-    //         return additionalData;
-    //       })
-    //     );
-    //     console.log(fetchedPosts);
-    //     setPosts((prevPosts) => [...prevPosts, ...fetchedPosts]);
-    //     setLoading(false);
-    //   } catch (error) {
-    //     console.error("Error fetching posts:", error);
-    //     setLoading(false);
-    //   }
-    // };
+    // fetchPost();
+    const fetchPosts = async () => {
+      try {
+        const response = await axios.get(`${oakBaseUrl}/api/blog`);
+        const res = response.data;
+        const allPosts = res.data.blogPosts;
+        const fetchedPosts = await Promise.all(
+          allPosts.map(async (post) => {
+            const additionalData = await fetchPost();
+            return additionalData;
+          })
+        );
+        console.log(fetchedPosts);
+        setPosts((prevPosts) => [...prevPosts, ...fetchedPosts]);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching posts:", error);
+        setLoading(false);
+      }
+    };
 
-    // fetchPosts();
+    fetchPosts();
   }, []);
 
   const fetchPost = async () => {
@@ -94,10 +94,7 @@ const PublishContent = () => {
                 <li key={index}>
                   <img src={bit}></img>
                   <div className="secPul">
-                    <h1>
-                      Bitcoin breaks new all time high after SEC chair
-                      acknowledged he holds BTC{" "}
-                    </h1>
+                    <h1>{post.title}</h1>
                     <p>{post.authorId}</p>
                     <div className="secBtn">
                       <button>
