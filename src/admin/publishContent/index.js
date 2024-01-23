@@ -26,8 +26,7 @@ const PublishContent = () => {
         const allPosts = res.data.blogPosts;
         const fetchedPosts = await Promise.all(
           allPosts.map(async (post) => {
-            //post.authorId
-            const additionalData = await fetchPost();
+            const additionalData = await fetchPost(post.id);
             return additionalData;
           })
         );
@@ -43,11 +42,9 @@ const PublishContent = () => {
     fetchPosts();
   }, []);
 
-  const fetchPost = async () => {
+  const fetchPost = async (id) => {
     try {
-      const response = await axios.get(
-        `${oakBaseUrl}/api/blog/65b0310b37efd4f6b7cb244b`
-      );
+      const response = await axios.get(`${oakBaseUrl}/api/blog/${id}`);
       const res = response.data;
       return res.data.blogPost;
     } catch (error) {
@@ -97,7 +94,7 @@ const PublishContent = () => {
                       <img src={bit}></img>
                       <div className="secPul">
                         <h1>{post.title}</h1>
-                        <p>{post.authorId}</p>
+                        <p>{post.content}</p>
                         <div className="secBtn">
                           <button>
                             <h1>Pin Article</h1>
