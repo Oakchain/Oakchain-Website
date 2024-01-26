@@ -11,9 +11,9 @@ import axios from "axios";
 import "./index.css";
 import { set } from "lodash";
 import { toast } from "react-toastify";
-const ContentModal = ({ isOpen, toggle, setIsOpen }) => {
+const ContentModal = ({ isOpen, toggle, setIsOpen, edit, postIds, fetchPost }) => {
   const [section, setSection] = useState("scan-page");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
@@ -27,8 +27,10 @@ const ContentModal = ({ isOpen, toggle, setIsOpen }) => {
     content,
   };
 
+  const oakBaseUrl = "https://api.oakchain.io";
+
+
   const publish = async () => {
-    const oakBaseUrl = "https://api.oakchain.io";
     const oakToken =
       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9ha0BnbWFpbC5jb20iLCJpYXQiOjE3MDYwMDY1NDYsImV4cCI6MTcwNjE3OTM0Nn0.cxtgq9R88uoL_9-2LkkWAvgQDGGveirZNTnXPa79GSQ";
 
@@ -52,12 +54,15 @@ const ContentModal = ({ isOpen, toggle, setIsOpen }) => {
     setLoading(true);
   };
 
+
   return (
     <Modal
       isOpen={isOpen}
       toggle={toggle}
       className="adminCreateContent modal-dialog-centered"
       modalClassName="oak-modal__card"
+      title={title}
+      content={content}
     >
       <div className="contentInput">
         <input

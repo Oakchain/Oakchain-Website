@@ -11,6 +11,8 @@ const PublishContent = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [editPostData, setEditPostData] = useState({});
+
 
   const toggleModal = () => {
     setIsOpen(!isOpen);
@@ -52,8 +54,22 @@ const PublishContent = () => {
     }
   };
 
-  const editPost = () => {
-    //call update endpoint and use put
+  const editPost = (post) => {
+    setEditPostData(post);
+    toggleModal();
+  };
+
+  const updatePost = async (updatedData) => {
+    try {
+      const response = await axios.put(`${oakBaseUrl}/api/update`, updatedData);
+      // Handle success, maybe fetch updated data and refresh the state
+      console.log("Post updated successfully:", response.data);
+    } catch (error) {
+      console.error("Error updating post:", error);
+    }
+  };
+  
+  
 
   return (
     <Admin>
@@ -90,34 +106,32 @@ const PublishContent = () => {
               <h1>All published contents</h1>
             </div>
             <div className="bodyyy">
-              {posts.map(
-                (post, index) =>
-                  index < 5 && (
-                    <li key={index}>
-                      <img src={bit}></img>
-                      <div className="secPul">
-                        <h1>{post.title}</h1>
-                        <p>{post.content}</p>
-                        <div className="secBtn">
-                          <button>
-                            <h1>Pin Article</h1>
-                          </button>
-                          <button onClick={editPost}>
-                            <h1>Edit Article</h1>
-                          </button>
-                          <button>
-                            <h1>Delete Article</h1>
-                          </button>
-                        </div>
+              {posts.slice(0, 5).map((post, index) => {
+                return (
+                  <li key={index}>
+                    <img src={bit} alt="Bitcoin"></img>
+                    <div className="secPul">
+                      <h1>{post.title}</h1>
+                      <p>{post.content}</p>
+                      <div className="secBtn">
+                        <button>
+                          <h1>Pin Article</h1>
+                        </button>
+                        <button onClick={() => editPost(post)}>
+                          <h1>Edit Article</h1>
+                        </button>
+                        <button>
+                          <h1>Delete Article</h1>
+                        </button>
                       </div>
-                      <div className="thirdPul">
-                        <h1>24-5-2023</h1>
-                      </div>
-                    </li>
-                  )
-              )}
+                    </div>
+                    <div className="thirdPul">
+                      <h1>24-5-2023</h1>
+                    </div>
+                  </li>
+                );
+              })}
             </div>
-
             <div className="ender">
               <button>
                 <h1>See More</h1>
