@@ -62,7 +62,6 @@ const PublishContent = () => {
   const updatePost = async (updatedData) => {
     try {
       const response = await axios.put(`${oakBaseUrl}/api/update`, updatedData);
-      // Handle success, maybe fetch updated data and refresh the state
       console.log("Post updated successfully:", response.data);
     } catch (error) {
       console.error("Error updating post:", error);
