@@ -52,6 +52,9 @@ const PublishContent = () => {
     }
   };
 
+  const editPost = () => {
+    //call update endpoint and use put
+
   return (
     <Admin>
       <div className="publishContent">
@@ -99,7 +102,7 @@ const PublishContent = () => {
                           <button>
                             <h1>Pin Article</h1>
                           </button>
-                          <button>
+                          <button onClick={editPost}>
                             <h1>Edit Article</h1>
                           </button>
                           <button>
