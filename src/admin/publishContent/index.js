@@ -16,7 +16,7 @@ const PublishContent = () => {
     setIsOpen(!isOpen);
   };
 
-  const oakBaseUrl = "http://18.134.208.237:5000";
+  const oakBaseUrl = "https://api.oakchain.io";
 
   useEffect(() => {
     const fetchPosts = async () => {

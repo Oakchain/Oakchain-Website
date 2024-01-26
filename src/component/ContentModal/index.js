@@ -28,7 +28,7 @@ const ContentModal = ({ isOpen, toggle, setIsOpen }) => {
   };
 
   const publish = async () => {
-    const oakBaseUrl = "http://18.134.208.237:5000";
+    const oakBaseUrl = "https://api.oakchain.io";
     const oakToken =
       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9ha0BnbWFpbC5jb20iLCJpYXQiOjE3MDYwMDY1NDYsImV4cCI6MTcwNjE3OTM0Nn0.cxtgq9R88uoL_9-2LkkWAvgQDGGveirZNTnXPa79GSQ";
 
