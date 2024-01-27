@@ -34,7 +34,9 @@ const PublishContent = () => {
           })
         );
         console.log(fetchedPosts);
-        setPosts((prevPosts) => [...prevPosts, ...fetchedPosts]);
+        const updatedPosts = [...posts, ...fetchedPosts];
+        const sortedPosts = updatedPosts.reverse().sort((a, b) => (b.isPinned ? 1 : -1));
+        setPosts(sortedPosts);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching posts:", error);
@@ -43,7 +45,8 @@ const PublishContent = () => {
     };
 
     fetchPosts();
-  }, []);
+    console.log(posts);
+  }, [posts]);
 
   const fetchPost = async (id) => {
     try {
@@ -53,6 +56,13 @@ const PublishContent = () => {
     } catch (error) {
       console.error("Error fetching post:", error);
     }
+  };
+
+  const pinPost = (postId) => {
+    // const updatedPosts = posts.map((post) =>
+    //   post.id === postId ? { ...post, isPinned: !post.isPinned } : post
+    // );
+    // setPosts(updatedPosts);
   };
 
   const editPost = (post) => {
@@ -84,8 +94,6 @@ const PublishContent = () => {
     }
   };
   
-  
-
   return (
     <Admin>
       <div className="publishContent">
@@ -131,7 +139,7 @@ const PublishContent = () => {
                       <h1>{post.title}</h1>
                       <p>{post.content}</p>
                       <div className="secBtn">
-                        <button>
+                        <button onClick={() => pinPost(post.id)}>
                           <h1>Pin Article</h1>
                         </button>
                         <button onClick={() => editPost(post)}>
