@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Modal } from "reactstrap";
 import bold from "../../assets/images/bold.svg";
 import italic from "../../assets/images/italic.svg";
@@ -11,11 +11,18 @@ import axios from "axios";
 import "./index.css";
 import { set } from "lodash";
 import { toast } from "react-toastify";
-const ContentModal = ({ isOpen, toggle, setIsOpen, edit, postIds, fetchPost }) => {
+const ContentModal = ({ isOpen, toggle, setIsOpen, editPostData, updatePost }) => {
   const [section, setSection] = useState("scan-page");
   const [loading, setLoading] = useState(false);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+
+  useEffect(() => {
+    if (editPostData) {
+      setTitle(editPostData.title || "");
+      setContent(editPostData.content || "");
+    }
+  }, [editPostData]);
 
   const data = {
     title,
@@ -40,18 +47,34 @@ const ContentModal = ({ isOpen, toggle, setIsOpen, edit, postIds, fetchPost }) =
     };
 
     setLoading(true);
+
     try {
-      const response = await axios.post(`${oakBaseUrl}/api/blog`, data, {
-        headers,
-      });
-      const res = response.data;
-      console.log(res.data);
-      toast.success(res.message);
+      if (editPostData) {
+        await updatePost(editPostData.id, {
+          title,
+          description: "",
+          image: {
+            0: "",
+            1: "",
+          },
+          content,
+        });
+      } else {
+        const response = await axios.post(`${oakBaseUrl}/api/blog`, data, {
+          headers,
+        });
+        const res = response.data;
+        console.log(res.data);
+        toast.success(res.message);
+      }
     } catch (error) {
       console.error("Error:", error);
     }
+
+    setTitle("");
+    setContent("");
     setIsOpen(false);
-    setLoading(true);
+    setLoading(false);
   };
 
 
@@ -91,7 +114,7 @@ const ContentModal = ({ isOpen, toggle, setIsOpen, edit, postIds, fetchPost }) =
           <img src={gallery} alt="gallery"></img>
         </div>
         <button className="publishBtn" onClick={publish}>
-          <h1 className="hh1">{loading ? "Publishing..." : "Publish"}</h1>
+          <h1 className="hh1">{loading ? (editPostData ? "Updating..." : "Publishing") : (editPostData ? "Update" : "Publish")}</h1>
         </button>
       </div>
     </Modal>

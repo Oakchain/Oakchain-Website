@@ -6,6 +6,7 @@ import bit from "../../assets/images/bit.svg";
 import "./index.css";
 import axios from "axios";
 import ContentModal from "../../component/ContentModal";
+import { toast } from "react-toastify";
 
 const PublishContent = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,10 +60,25 @@ const PublishContent = () => {
     toggleModal();
   };
 
-  const updatePost = async (updatedData) => {
+  const updatePost = async (postId, updatedData) => {
+    const oakToken =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9ha0BnbWFpbC5jb20iLCJpYXQiOjE3MDYwMDY1NDYsImV4cCI6MTcwNjE3OTM0Nn0.cxtgq9R88uoL_9-2LkkWAvgQDGGveirZNTnXPa79GSQ";
+
+    const headers = {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${oakToken}`,
+    };
+
+    console.log({postId, updatedData})
+
     try {
-      const response = await axios.put(`${oakBaseUrl}/api/update`, updatedData);
+      const response = await axios.put(`${oakBaseUrl}/api/blog/${postId}`, updatedData, {
+        headers
+      });
       console.log("Post updated successfully:", response.data);
+      const res = response.data;
+      console.log(res.data);
+      toast.success(res.message);
     } catch (error) {
       console.error("Error updating post:", error);
     }
@@ -77,6 +93,8 @@ const PublishContent = () => {
           toggle={toggleModal}
           isOpen={isOpen}
           setIsOpen={setIsOpen}
+          editPostData={editPostData}
+          updatePost={updatePost}
         />
         <button className="createContent" onClick={toggleModal}>
           <h1 className="h11">Create Content</h1>
