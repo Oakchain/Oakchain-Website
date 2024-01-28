@@ -70,18 +70,18 @@ const multiaddrs = node2.libp2p.getMultiaddrs()
 await node1.libp2p.dial(multiaddrs[0])
 
 app.post('/postContent', async (req, res) => {
-  // req.body.'Title';
-  // req.body.'content';
+  // const title = req.body.title;
+  // const content = req.body.content;
   const fs = unixfs(node1);
   const encoder = new TextEncoder();
-  const cid = await fs.addBytes(encoder.encode('Hello World 201'));
+  const cid = await fs.addBytes(encoder.encode(`${content}`));
   // mongodb storage of CID, content title.
-  console.log('Added file:', cid.toString())
+  // console.log('Added file:', cid.toString())
 });
 
 app.get('/getContent', async (req, res) => {
-  // req.body.'Title';
-  // Get CID by Title name;
+  // const title = req.body.title;
+  // Get CID by Title name from mongodb;
   const fs2 = unixfs(node2);
   const decoder = new TextDecoder();
   let text = '';
@@ -91,7 +91,7 @@ app.get('/getContent', async (req, res) => {
       stream: true
     })
   };
-  console.log('Added file contents:', text);
+  // console.log('Added file contents:', text);
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
