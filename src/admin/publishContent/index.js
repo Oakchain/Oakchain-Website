@@ -20,6 +20,7 @@ const PublishContent = () => {
   };
 
   const oakBaseUrl = "https://api.oakchain.io";
+  const accessToken = localStorage.getItem('token');
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -46,7 +47,7 @@ const PublishContent = () => {
 
     fetchPosts();
     console.log(posts);
-  }, [posts]);
+  }, [updatePost]);
 
   const fetchPost = async (id) => {
     try {
@@ -71,10 +72,9 @@ const PublishContent = () => {
   };
 
   const updatePost = async (postId, updatedData) => {
-    const oakToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9ha0BnbWFpbC5jb20iLCJpYXQiOjE3MDYzNzg1NjgsImV4cCI6MTcwNjU1MTM2OH0.YcAnJUO5-lSucXbuDWvwLHO1X-ZOXMBX7AAyrR8p_I4"
     const headers = {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${oakToken}`,
+      Authorization: `Bearer ${accessToken}`,
     };
 
     console.log({postId, updatedData})

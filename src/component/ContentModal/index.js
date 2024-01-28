@@ -35,14 +35,14 @@ const ContentModal = ({ isOpen, toggle, setIsOpen, editPostData, updatePost }) =
   };
 
   const oakBaseUrl = "https://api.oakchain.io";
+  const accessToken = localStorage.getItem('token');
 
 
   const publish = async () => {
-    const oakToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9ha0BnbWFpbC5jb20iLCJpYXQiOjE3MDYzNzg1NjgsImV4cCI6MTcwNjU1MTM2OH0.YcAnJUO5-lSucXbuDWvwLHO1X-ZOXMBX7AAyrR8p_I4"
     
     const headers = {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${oakToken}`,
+      Authorization: `Bearer ${accessToken}`,
     };
 
     setLoading(true);
