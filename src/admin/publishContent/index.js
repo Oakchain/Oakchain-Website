@@ -13,16 +13,18 @@ const PublishContent = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [editPostData, setEditPostData] = useState({});
-
+  const [refresh, setRefresh] = useState(false);
 
   const toggleModal = () => {
     setIsOpen(!isOpen);
   };
+  
 
   const oakBaseUrl = "https://api.oakchain.io";
   const accessToken = localStorage.getItem('token');
 
   useEffect(() => {
+    console.log(refresh);
     const fetchPosts = async () => {
       try {
         const response = await axios.get(`${oakBaseUrl}/api/blog`);
@@ -34,10 +36,10 @@ const PublishContent = () => {
             return additionalData;
           })
         );
-        console.log(fetchedPosts);
-        const updatedPosts = [...posts, ...fetchedPosts];
-        // const sortedPosts = updatedPosts.sort((a, b) => (b.isPinned ? 1 : -1));
-        setPosts(updatedPosts);
+        setPosts((prevPosts) => [...prevPosts, ...fetchedPosts]);
+        // console.log(fetchedPosts);
+        // const updatedPosts = [...posts, ...fetchedPosts];
+        // setPosts(updatedPosts);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching posts:", error);
@@ -47,7 +49,7 @@ const PublishContent = () => {
 
     fetchPosts();
     console.log(posts);
-  }, []);
+  }, [refresh]);
 
   const fetchPost = async (id) => {
     try {
@@ -101,6 +103,7 @@ const PublishContent = () => {
           setIsOpen={setIsOpen}
           editPostData={editPostData}
           updatePost={updatePost}
+          setRefresh={setRefresh}
         />
         <button className="createContent" onClick={toggleModal}>
           <h1 className="h11">Create Content</h1>

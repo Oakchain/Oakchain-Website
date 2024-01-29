@@ -11,7 +11,7 @@ import axios from "axios";
 import "./index.css";
 import { set } from "lodash";
 import { toast } from "react-toastify";
-const ContentModal = ({ isOpen, toggle, setIsOpen, editPostData, updatePost }) => {
+const ContentModal = ({ isOpen, toggle, setIsOpen, editPostData, updatePost, setRefresh }) => {
   const [section, setSection] = useState("scan-page");
   const [loading, setLoading] = useState(false);
   const [title, setTitle] = useState("");
@@ -69,7 +69,8 @@ const ContentModal = ({ isOpen, toggle, setIsOpen, editPostData, updatePost }) =
     } catch (error) {
       console.error("Error:", error);
     }
-
+    
+    setRefresh((prevRefresh) => !prevRefresh);
     setTitle("");
     setContent("");
     setIsOpen(false);
