@@ -36,8 +36,8 @@ const PublishContent = () => {
         );
         console.log(fetchedPosts);
         const updatedPosts = [...posts, ...fetchedPosts];
-        const sortedPosts = updatedPosts.reverse().sort((a, b) => (b.isPinned ? 1 : -1));
-        setPosts(sortedPosts);
+        // const sortedPosts = updatedPosts.sort((a, b) => (b.isPinned ? 1 : -1));
+        setPosts(updatedPosts);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching posts:", error);
@@ -47,7 +47,7 @@ const PublishContent = () => {
 
     fetchPosts();
     console.log(posts);
-  }, [updatePost]);
+  }, []);
 
   const fetchPost = async (id) => {
     try {

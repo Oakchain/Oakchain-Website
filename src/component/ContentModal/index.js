@@ -48,7 +48,7 @@ const ContentModal = ({ isOpen, toggle, setIsOpen, editPostData, updatePost }) =
     setLoading(true);
 
     try {
-      if (editPostData) {
+      if (editPostData.id) {
         await updatePost(editPostData.id, {
           title,
           description: "",
@@ -113,7 +113,7 @@ const ContentModal = ({ isOpen, toggle, setIsOpen, editPostData, updatePost }) =
           <img src={gallery} alt="gallery"></img>
         </div>
         <button className="publishBtn" onClick={publish}>
-          <h1 className="hh1">{loading ? (editPostData ? "Updating..." : "Publishing") : (editPostData ? "Update" : "Publish")}</h1>
+          <h1 className="hh1">{loading ? (editPostData.id ? "Updating..." : "Publishing") : (editPostData.id ? "Update" : "Publish")}</h1>
         </button>
       </div>
     </Modal>
