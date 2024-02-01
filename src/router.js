@@ -31,12 +31,17 @@ const RouterConfig = () => {
                 <Route exact path='/adminlogin' element={<AdminLogin />} />
                 <Route exact path='/loginAdmin' element={<LoginAdmin />} />
                 <Route exact path='/learn' element={<Learn />} />
+                
                 <Route exact path='/about' element={<Aboutus />} />
                 <Route exact path='/news' element={<News />} />
                 <Route exact path='/podcast' element={<ComingSoonPage />} />
                 <Route exact path='/tasks' element={<ComingSoonPage />} />
                 <Route exact path='/cypotnaire' element={<ComingSoonPage />} />
                 <Route exact path='/reward' element={<ComingSoonPage />} />
+                
+                <Route exact path='/Community' element={<ComingSoonPage />} />
+                <Route exact path='/faqs' element={<ComingSoonPage />} />
+                <Route exact path='/help' element={<ComingSoonPage />} />
                 <Route exact path='/jobs' element={<ComingSoonPage />} />
                 <Route exact path='/blog' element={<ComingSoonPage />} />
                 <Route exact path='/server' element={<ComingSoonPage />} />

@@ -75,8 +75,10 @@ const Header = ({ toggle }) => {
   return (
     <div className="  position-fixe w-100">
       <div className="oak-container-fluid d-flex align-items-center justify-content-between oak-header ">
-        <div className="header-logo">
-          <img src={logo} alt="logo" />
+        <div className="header-logo" onClick={() => {
+                      navigate("/");
+                    }}>
+          <img className="logooo" src={logo} alt="logoo"  />
         </div>
 
         <ul className="d-md-flex d-none align-items-center justify-content-between nav-items__wrapper mb-0">

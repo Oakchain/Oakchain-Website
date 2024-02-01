@@ -26,6 +26,7 @@ li {
 .header-logo img {
   width: 80px !important;
   object-fit: contain !important;
+  cursor: pointer;
 }
 
 .oak-btn,

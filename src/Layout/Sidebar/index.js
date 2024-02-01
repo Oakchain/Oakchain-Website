@@ -50,7 +50,6 @@ const Sidebar = ({ show, toggle }) => {
               <button
                 className="oak-btn oak-connect py-3"
                 onClick={() => {
-                  toggle();
                   open();
                 }}
               >
