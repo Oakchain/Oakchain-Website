@@ -1,24 +1,23 @@
-import React, { useState } from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import Sidebar from './Sidebar'
+import React, { useState } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import Sidebar from "./Sidebar";
 
+const Layout = ({ children, hideFooter = false }) => {
+  const [showSideBar, setShowSidebar] = useState(false);
 
-const Layout = ({ children }) => {
-    const [showSideBar, setShowSidebar] = useState(false)
+  const toggleSidebar = () => {
+    setShowSidebar(!showSideBar);
+  };
 
-    const toggleSidebar = () => {
-        setShowSidebar(!showSideBar)
-    }
+  return (
+    <>
+      <Header toggle={toggleSidebar} />
+      <Sidebar show={showSideBar} toggle={toggleSidebar} />
+      {children}
+      {hideFooter ? null : <Footer />}
+    </>
+  );
+};
 
-    return (
-        <>
-            <Header toggle={toggleSidebar} />
-            <Sidebar show={showSideBar} toggle={toggleSidebar} />
-            {children}
-            <Footer />
-        </>
-    )
-}
-
-export default Layout
+export default Layout;
