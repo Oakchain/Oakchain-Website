@@ -1,12 +1,15 @@
 import React from "react";
 import Layout from "../../Layout";
 import "../../assets/style/survey.css";
+import "../../assets/style/coming-soon.css";
 import blue_hand_img from "../../assets/images/hand-blue-extract.svg";
+import worker from "../../assets/images/construction.svg";
+import near_icon from "../../assets/images/Near.svg";
 
-const Survey = () => {
+const ComingSoon2 = () => {
   return (
     <Layout hideFooter>
-      <main>
+      <main className="coming-soon">
         <div className="oak-container-fluid">
           <div className="bg-img">
             <img
@@ -16,32 +19,23 @@ const Survey = () => {
           </div>
           <div className="oak-survey-fluid">
             <div className="oak-survey-text-container">
-              <div className="text-align-right">
-                <p className="oak-survey-text-top">Reward : XP Oaknut</p>
-              </div>
               <div className="oak-survey-text-main">
-                <h3>We want YOUR insights! 🧠</h3>
-                <p>
-                  Join our user research today and shape the future of education
-                  together. Click, engage, and let your voice be the key to
-                  unlocking Oakchain's full potential!
-                </p>
+                <p>Devs at work.</p>
+                <h3>COMING SOON!</h3>
+                <p>on</p>
+                <img src={near_icon} alt="" className="near-icon" />
+                <p>NEAR</p>
               </div>
+              <img src={worker} alt="" className="worker-img" />
             </div>
 
             <div className="oak-survey-action-container">
-              <p>What best describes you?</p>
-              <div className="oak-survey-action">
-                <button className="oak-btn-secondary btn">
-                  <a href="#" target="_blank">
-                    Educator
-                  </a>
-                </button>
-                <button className="oak-btn-secondary btn">
-                  <a href="#" target="_blank">
-                    Learner
-                  </a>
-                </button>
+              <p className="oak-cta-text">
+                Be among the first to know when we go Live.
+              </p>
+              <div className="oak-cta-form">
+                <input type="text" placeholder="Enter your email" />
+                <button className="oak-btn-secondary btn">Subscribe</button>
               </div>
             </div>
 
@@ -77,4 +71,4 @@ const Survey = () => {
   );
 };
 
-export default Survey;
+export default ComingSoon2;
