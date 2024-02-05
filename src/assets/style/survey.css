@@ -1,4 +1,4 @@
-main {
+.oak-survey {
   width: 100vw;
   overflow-x: hidden;
   position: relative;
@@ -105,14 +105,14 @@ main {
   width: 26px;
 }
 
-footer {
+.oak-survey footer {
   text-align: center;
   width: max-content;
   position: absolute;
   right: 0;
   bottom: 0;
 }
-footer p {
+.oak-survey footer p {
   font-weight: 600;
   font-family: "ClashDisplay-Semibold";
   font-size: 18px;
@@ -196,7 +196,7 @@ footer p {
     border-radius: 12px !important;
   }
 
-  footer {
+  .oak-survey footer {
     position: static;
   }
 }

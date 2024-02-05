@@ -6,7 +6,7 @@ import blue_hand_img from "../../assets/images/hand-blue-extract.svg";
 const Survey = () => {
   return (
     <Layout hideFooter>
-      <main>
+      <main className="oak-survey">
         <div className="oak-container-fluid">
           <div className="bg-img">
             <img
