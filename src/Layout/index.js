@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, hideFooter = false }) => {
   const [showSideBar, setShowSidebar] = useState(false);
 
   const toggleSidebar = () => {
@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
       <Header toggle={toggleSidebar} />
       <Sidebar show={showSideBar} toggle={toggleSidebar} />
       {children}
-      <Footer />
+      {hideFooter ? null : <Footer />}
     </>
   );
 };
