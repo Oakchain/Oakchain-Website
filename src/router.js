@@ -45,6 +45,7 @@ const RouterConfig = () => {
         <Route exact path="/jobs" element={<ComingSoonPage />} />
         <Route exact path="/blog" element={<ComingSoonPage />} />
         <Route exact path="/server" element={<ComingSoonPage />} />
+        <Route exact path="/marketplace" element={<ComingSoonPage />} />
 
         <Route exact path="/loginAdmin" element={<LoginAdmin />} />
         <Route exact path="/academy" element={<Academy />} />

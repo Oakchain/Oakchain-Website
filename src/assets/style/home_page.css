@@ -1,9 +1,8 @@
 .oak-home-banner {
     padding: 60px;
-    background-image: linear-gradient(180deg, rgba(0, 0, 47, 0.00) 0%, #00002F 70.99%), url('../../assets/images/coursesBG.png');
+    background-image: url('../../assets/images/BANN.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     border-radius: 10px;
     /* overflow: hidden; */
 }
