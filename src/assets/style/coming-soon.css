@@ -45,9 +45,20 @@
   font-size: 20px !important;
 }
 
+@media (max-width: 1200px) {
+  .coming-soon .oak-survey-text-container {
+    min-width: 500px;
+  }
+  .coming-soon .worker-img {
+    right: 0;
+    width: 250px;
+    bottom: -120px;
+  }
+}
 @media (max-width: 900px) {
   .coming-soon .oak-survey-text-container {
     height: auto;
+    margin-bottom: 100px;
   }
   .coming-soon .worker-img {
     right: 0;
@@ -56,9 +67,14 @@
 }
 
 @media (max-width: 600px) {
+  .coming-soon .oak-survey-text-container {
+    min-width: 350px;
+
+    margin-bottom: 20px;
+  }
   .coming-soon .worker-img {
     width: 150px;
-    /* bottom: -120px; */
+    bottom: -90px;
   }
 
   .near-icon {
