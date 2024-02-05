@@ -9,7 +9,7 @@ import near_icon from "../../assets/images/Near.svg";
 const ComingSoon2 = () => {
   return (
     <Layout hideFooter>
-      <main className="coming-soon">
+      <main className="oak-survey coming-soon">
         <div className="oak-container-fluid">
           <div className="bg-img">
             <img
