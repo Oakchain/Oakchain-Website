@@ -17,10 +17,9 @@ import ArticleDetails from "./pages/Academy/Article/[id]";
 import VideoDetails from "./pages/Academy/Video/[id]";
 import EpisodeDetails from "./pages/Academy/Video/Episode/[id]";
 import ProtectedeRoute from "./component/ProtectedRoute";
-import ComingSoonPage from "./pages/ComingSoon";
+import ComingSoonPage from "./pages/ComingSoon2";
 import PrivateRoute from "./admin/PrivateRoute";
 import Survey from "./pages/Survey";
-import ComingSoon2 from "./pages/ComingSoon2";
 
 const RouterConfig = () => {
   return (
@@ -39,7 +38,6 @@ const RouterConfig = () => {
         <Route exact path="/cypotnaire" element={<ComingSoonPage />} />
         <Route exact path="/reward" element={<ComingSoonPage />} />
         <Route exact path="/survey" element={<Survey />} />
-        <Route exact path="/test" element={<ComingSoon2 />} />
 
         <Route exact path="/Community" element={<ComingSoonPage />} />
         <Route exact path="/faqs" element={<ComingSoonPage />} />
