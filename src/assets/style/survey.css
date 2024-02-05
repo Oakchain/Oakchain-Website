@@ -1,0 +1,240 @@
+.oak-survey {
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  font-family: Clash Display;
+}
+
+.oak-survey-fluid {
+  display: flex;
+  gap: 5rem;
+  min-height: 800px;
+  align-items: center;
+  position: relative;
+}
+
+.bg-img {
+  position: absolute;
+  width: 100%;
+  max-width: max-content;
+  top: 0;
+  left: 0;
+  transform: rotate(-8deg);
+}
+
+.bg-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.oak-survey-text-container {
+  border-radius: 36px;
+  backdrop-filter: blur(5px);
+  padding: 2.5rem 3rem;
+  color: white;
+  border: 0.3rem solid #a3746f73;
+  min-width: 700px;
+  background-image: url("../../assets/images/fill-bg.svg"),
+    linear-gradient(
+      171.25deg,
+      rgba(2, 2, 48, 0.8) -16.99%,
+      rgba(219, 75, 18, 0) 164.37%
+    );
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+.oak-survey-text-top {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "ClashDisplay-Semibold";
+}
+
+.oak-survey-text-main {
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.oak-survey-text-main h3 {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "ClashDisplay-Semibold";
+}
+
+.oak-survey-text-main p {
+  font-size: 32px;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.oak-survey-action-container {
+  font-size: 20px;
+  max-width: 450px;
+  width: 100%;
+  font-weight: 500;
+  font-family: "ClashDisplay-Semibold";
+}
+
+.oak-survey-action {
+  display: grid;
+  gap: 20px;
+}
+
+.oak-survey-action .oak-btn-secondary.btn {
+  border-radius: 1rem !important;
+}
+
+.oak-survey-action a {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "ClashDisplay-Semibold";
+  color: white;
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.socials img {
+  width: 26px;
+}
+
+.oak-survey footer {
+  text-align: center;
+  width: max-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.oak-survey footer p {
+  font-weight: 600;
+  font-family: "ClashDisplay-Semibold";
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .oak-survey-fluid {
+    gap: 2.5rem;
+  }
+  .bg-img {
+    width: 70%;
+  }
+  .oak-survey-text-container {
+    border-radius: 28px;
+    padding: 2.5rem 2rem;
+    min-width: 350px;
+  }
+
+  .oak-survey-text-main {
+    padding: 2rem 0;
+  }
+
+  .oak-survey-text-main h3 {
+    font-size: 28px;
+  }
+
+  .oak-survey-text-main p {
+    font-size: 26px;
+  }
+
+  .oak-survey-action-container {
+    max-width: auto;
+    min-width: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .oak-survey-fluid {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .bg-img {
+    width: 100%;
+
+    min-width: 450px;
+    transform: rotate(0);
+  }
+  .oak-survey-text-container {
+    min-width: 100%;
+
+    border-radius: 20px;
+  }
+  .oak-survey-text-top {
+    font-size: 16px;
+  }
+  .oak-survey-text-main {
+    gap: 1.5rem;
+    padding: 3rem 0;
+  }
+  .oak-survey-text-main h3 {
+    font-size: 24px;
+  }
+
+  .oak-survey-text-main p {
+    font-size: 20px;
+  }
+  .oak-survey-action-container {
+    font-size: 20px;
+    max-width: auto;
+    min-width: 100%;
+  }
+
+  .oak-survey-action {
+    grid-template-columns: 1fr 1fr;
+  }
+  .oak-survey-action a {
+    font-size: 20px;
+  }
+  .oak-survey-action .oak-btn-secondary.btn {
+    border-radius: 12px !important;
+  }
+
+  .oak-survey footer {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .oak-survey-text-container {
+    border-radius: 16px;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .oak-survey-text-top {
+    font-size: 12px;
+  }
+  .oak-survey-text-main {
+    gap: 1rem;
+    padding: 2.5rem 0;
+  }
+  .oak-survey-text-main h3 {
+    font-size: 20px;
+  }
+
+  .oak-survey-text-main p {
+    font-size: 16px;
+  }
+  .oak-survey-action-container {
+    min-width: auto;
+    font-size: 16px;
+  }
+
+  .oak-survey-action {
+    grid-template-columns: 1fr;
+  }
+  .oak-survey-action a {
+    font-size: 16px;
+  }
+}

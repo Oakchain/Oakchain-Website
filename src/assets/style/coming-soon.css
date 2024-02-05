@@ -1,0 +1,96 @@
+.coming-soon .oak-survey-text-main {
+  gap: 0;
+}
+
+.coming-soon .oak-survey-text-container {
+  width: 100%;
+  height: 530px;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+.coming-soon .worker-img {
+  position: absolute;
+  bottom: -90px;
+  right: -60px;
+}
+
+.near-icon {
+  margin: 0 auto 10px;
+}
+
+.oak-cta-form {
+  border: 1px solid #00002f;
+  border-radius: 12px;
+  padding: 0.5rem;
+  display: flex;
+}
+
+.oak-cta-form input {
+  border: none;
+  outline: none;
+  flex: 1 1 0px;
+  font-size: 14px;
+}
+
+.oak-cta-text {
+  font-size: 28px;
+  text-align: center;
+}
+
+.coming-soon .oak-btn-secondary {
+  border-radius: 14px !important;
+  padding: 8px 20px !important;
+  font-size: 20px !important;
+}
+
+@media (max-width: 1200px) {
+  .coming-soon .oak-survey-text-container {
+    min-width: 500px;
+  }
+  .coming-soon .worker-img {
+    right: 0;
+    width: 250px;
+    bottom: -120px;
+  }
+}
+@media (max-width: 900px) {
+  .coming-soon .oak-survey-text-container {
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .coming-soon .worker-img {
+    right: 0;
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .coming-soon .oak-survey-text-container {
+    min-width: 350px;
+
+    margin-bottom: 20px;
+  }
+  .coming-soon .worker-img {
+    width: 150px;
+    bottom: -90px;
+  }
+
+  .near-icon {
+    width: 2rem;
+  }
+  .coming-soon .oak-btn-secondary {
+    font-size: 16px !important;
+  }
+
+  .oak-cta-form {
+    border-radius: 10px;
+    padding: 6px;
+  }
+  .oak-cta-text {
+    font-size: 20px;
+    text-align: left;
+    width: 200px;
+  }
+}
