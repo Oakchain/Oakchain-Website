@@ -8,7 +8,7 @@
 .oak-survey-fluid {
   display: flex;
   gap: 5rem;
-  min-height: 800px;
+  min-height: calc(100vh - 100px);
   align-items: center;
   position: relative;
 }
@@ -24,7 +24,7 @@
 
 .bg-img img {
   width: 100%;
-  height: auto;
+  height: calc(100vh - 100px);
   object-fit: cover;
 }
 
@@ -165,6 +165,11 @@
     min-width: 450px;
     transform: rotate(0);
   }
+
+  .bg-img img {
+    height: auto;
+  }
+
   .oak-survey-text-container {
     min-width: 100%;
 
