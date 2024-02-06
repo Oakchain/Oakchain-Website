@@ -223,7 +223,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className=" oak-container-fluid   oak-section-two mb-4">
+      <section className=" oak-container-fluid   oak-section-two ">
         <p className="oak-section__subheading mb-0">What is</p>
         <h3 className="oak-section__head mb-4">OakChain</h3>
         <p className="oak-section-subheader">
@@ -244,7 +244,7 @@ const LandingPage = () => {
         </h3>
         ,
       </section>
-
+      <section className="leafAnimation"></section>
       <section className=" oak-container-fluid oak-mob d-md-block">
         <div className="oak-features__container">
           <div className=" oak-feature-div">
@@ -430,10 +430,10 @@ const LandingPage = () => {
           </h3>
         </div>
       </section>
-
-      <section className="d-md-block  oak-container-fluid home-news__card-wrapper">
-        <Row className="home-course">
-          <Col sm="12" md={4} className="home-course-card">
+                
+      <section className="d-block  oak-container-fluid home-news__card-wrapper" id="settt">
+        <Row className="d-flex home-course">
+          <Col  className="home-course-card">
             <div className="home-news__card">
               <img src={courseimg1} className="home-news__card-img" alt="..." />
               <div className="home-news__card-body">
@@ -455,7 +455,7 @@ const LandingPage = () => {
               </div>
             </div>
           </Col>
-          <Col md={4} className="home-course-card">
+          <Col  className="home-course-card">
             <div className="home-news__card">
               <img src={courseimg2} className="home-news__card-img" alt="..." />
               <div className="home-news__card-body">
@@ -477,7 +477,7 @@ const LandingPage = () => {
               </div>
             </div>
           </Col>
-          <Col md={4} className="home-course-card">
+          <Col  className="home-course-card">
             <div className="home-news__card">
               <img src={courseimg3} className="home-news__card-img" alt="..." />
               <div className="home-news__card-body">
@@ -499,7 +499,7 @@ const LandingPage = () => {
               </div>
             </div>
           </Col>
-          <Col md={4} className="home-course-card">
+          <Col  className="home-course-card">
             <div className="home-news__card">
               <img src={googleEyes} className="home-news__card-img" alt="..." />
               <div className="home-news__card-body">
