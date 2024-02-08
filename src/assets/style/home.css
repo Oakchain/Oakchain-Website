@@ -120,7 +120,17 @@ margin-left: 5px;
     font-size: 12px;
     font-family: var(--cd100);
 }
-
+.holderrrrrr{
+    width: calc(100% - 40px);
+    height: 441px;
+    border-radius: 20px;
+    background-color: #00002F1A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 30px 0px #00000040 inset;
+}
 .oak-hero-subscribe-text {
     color: #434343;
     font-size: 12px;
@@ -193,10 +203,10 @@ margin-left: 5px;
     color:#00002F   ; 
 }
 .oak-section-subheader{
-    font-family: Clash Display;
+    font-family: 'Clash Display';
 font-size: 20px;
 font-weight: 500;
-line-height: 31px;
+width: calc(100% - 135px);
 letter-spacing: 0em;
 text-align: center;
 color: #000000;
@@ -2227,6 +2237,10 @@ width: 100%;
         margin-top: 43%;
         margin-right: 74%;
     }
+    .oak-section__head{
+        font-family: "ClashDisplay-Semibold";
+        margin-top: 10px;
+    }
 }
 @media (max-width:800px) and (min-width:701px) {
     .containerBeam{
@@ -2285,6 +2299,11 @@ background-color: #fff;
 height: 84px;
 
     }
+    
+.holderrrrrr{
+    height: 441px;
+    width: calc(100% - 10px);
+}
 .oak-section__subheading {
 font-size: 29px !important;
 font-weight: 500;
@@ -2293,7 +2312,7 @@ margin-bottom: 0px !important;
 }
 
 .oak-section__head {
-    font-family: Clash Display;
+    font-family: 'ClashDisplay-Semibold';
     font-size: 82px !important;
     font-weight: 600;
     line-height: 76px;
@@ -2303,7 +2322,7 @@ margin-bottom: 0px !important;
 .oak-section-subheader{
    font-family: Clash Display;
    font-size: 25px;
-   font-weight: 500;
+   font-weight: 800;
    line-height: 29px;
    letter-spacing: 0em;
    text-align: center;
@@ -2544,17 +2563,22 @@ margin-bottom: 0px !important;
 }
 
 .oak-section__head {
-    font-family: Clash Display;
+    font-family: 'ClashDisplay-Semibold';
     font-size: 62px !important;
     font-weight: 600;
     line-height: 76px;
     letter-spacing: 0em;
     text-align: center;
 }
+
+.holderrrrrr{
+    height: 314px;
+    width: calc(100% - 10px);
+}
 .oak-section-subheader{
-   font-family: Clash Display;
+   font-family: 'Clash Display';
    font-size: 15px;
-   font-weight: 500;
+   font-weight: 800;
    line-height: 19px;
    letter-spacing: 0em;
    text-align: center;
@@ -2743,16 +2767,23 @@ margin-bottom: 0px !important;
 .oak-section__head {
     
     font-family: 'ClashDisplay-Semibold';
-    font-size: 62px !important;
+    font-size: 52px !important;
     font-weight: 600;
-    line-height: 76px;
+    line-height: 36px;
+    margin-top: 10px;
     letter-spacing: 0em;
     text-align: center;
 }
+.holderrrrrr{
+    height: 314px;
+    width: calc(100% - 10px);
+}
 .oak-section-subheader{
-   font-family: Clash Display;
+   font-family: 'Clash Display';
    font-size: 15px;
-   font-weight: 500;
+   font-weight: 800;
+   
+width: calc(100% - 60px);
    line-height: 19px;
    letter-spacing: 0em;
    text-align: center;

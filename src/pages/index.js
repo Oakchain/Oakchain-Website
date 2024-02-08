@@ -224,7 +224,7 @@ const LandingPage = () => {
       </section>
 
       <section className=" oak-container-fluid   oak-section-two ">
-        <p className="oak-section__subheading mb-0">What is</p>
+        <div className="holderrrrrr"> <p className="oak-section__subheading mb-0">What is</p>
         <h3 className="oak-section__head mb-4">OakChain</h3>
         <p className="oak-section-subheader">
           Web3 is the future, and expertise in this field is in high demand. A
@@ -234,7 +234,8 @@ const LandingPage = () => {
           <br></br>
           Oakchain aim to empower a diverse and skilled workforce to drive
           adoption and innovation in Web3.
-        </p>
+        </p></div>
+       
         <img className="oakimg" src={oakimg}></img>
         <p className="oak-features__container-header">
           Our operation across the platform
