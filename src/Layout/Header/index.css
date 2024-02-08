@@ -118,8 +118,8 @@ color: #FF4E00;
   
 .nav-items__wrapper{
   padding-left: 0 !important;
-  width: 500px;
-  margin-left: -100px;
+  width: 400px;
+  margin-left: -150px;
 }
 .nav-item {
   color: var(--primary-color);
@@ -129,7 +129,7 @@ color: #FF4E00;
   margin-right: 0px;
 }
 .takesurvey{
-  margin-top: 15px;
+  margin-top: 12px;
   height: 30px;
   width: fit-content;
   display: flex;

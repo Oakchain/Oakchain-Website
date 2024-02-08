@@ -201,7 +201,11 @@ const Sidebar = ({ show, toggle }) => {
                                 </ul>
                             </div>
                         )}
-
+     <li className="nav-item takesurvey mobile"  onClick={() => {
+                      navigate("/survey");
+                    }}>Take Survey
+                    <button disabled className="takesurveybtn mobile">Rewards</button>
+          </li>
                     </ul>
                     <Nav className=" d-block " >
                         {

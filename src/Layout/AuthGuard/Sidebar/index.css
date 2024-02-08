@@ -24,6 +24,17 @@
     margin-bottom: 20px;
 }
 
+.takesurvey.mobile{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin-top: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.takesurveybtn.mobile{
+    margin-left: 10px;
+}
 .oak-left__sidebar {
     background: #fff;
     width: 0%;

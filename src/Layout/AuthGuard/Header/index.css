@@ -1,0 +1,26 @@
+.nav-items__wrapper.lo{
+    margin-left: 50px;
+  }
+
+  @media (min-width:800px) and (max-width:1000px) {
+  
+    .nav-items__wrapper.lo{
+      padding-left: 0 !important;
+      width: 400px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+      
+    }
+    
+    
+    
+    
+    @media (min-width:768px) and (max-width:799px) {
+     
+    .nav-items__wrapper{
+      width: 350px;
+      margin-left: -150px;
+    }
+      
+    }

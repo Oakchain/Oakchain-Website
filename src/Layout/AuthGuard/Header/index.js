@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect, useRef } from "react";
 import "../../Header/index.css";
+import "./index.css"
 import logo from "../../../assets/images/logo.svg";
 import dropdown from "../../../assets/images/dropdown.svg";
 import auth1 from "../../../assets/images/oakimg.svg";
@@ -111,8 +112,13 @@ const Header = ({ toggle }) => {
                     }}/>
         </div>
 
-        <ul className="d-none d-md-flex align-items-center justify-content-between nav-items__wrapper mb-0">
+        <ul className="d-none d-md-flex align-items-center justify-content-between nav-items__wrapper lo mb-0">
           <li className="nav-item">How it Works</li>
+          <li className="nav-item takesurvey"  onClick={() => {
+                      navigate("/survey");
+                    }}>Take Survey
+                    <button disabled className="takesurveybtn">Rewards</button>
+          </li>
           <li
             className="nav-item d-flex align-items-center"
             onClick={toggleResourcesDisplay}
