@@ -507,7 +507,7 @@ align-items: center;
     color: #FFF;
     font-family: var(--cd300);
     font-size: 12px;
-    width: 260px;
+    width: calc(100% - 3px);
     height:  70px;
 }
 
@@ -735,8 +735,8 @@ align-items: center;
             flex-shrink: 0;
         }
         .home-news__card {
-            height: 450px;
-            width: 310px;
+            height: 400px;
+            width: 270px;
             justify-content: space-between;
         }
         
@@ -753,8 +753,11 @@ align-items: center;
         
         .home-news__card-body {
             padding: 15px;
-            height: 200px;
+            height: 210px;
             flex-shrink: 0;
+        }
+        .home-news__card .card-text{
+            font-size: 15px;
         }
         
         }
