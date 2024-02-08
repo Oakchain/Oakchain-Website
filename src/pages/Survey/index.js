@@ -33,12 +33,20 @@ const Survey = () => {
               <p>What best describes you?</p>
               <div className="oak-survey-action">
                 <button className="oak-btn-secondary btn">
-                  <a href="#" target="_blank">
+                  <a
+                    href="https://forms.gle/fteF5dtJv5btqrVo9"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Educator
                   </a>
                 </button>
                 <button className="oak-btn-secondary btn">
-                  <a href="#" target="_blank">
+                  <a
+                    href="https://forms.gle/HiHXb8vZ6AnkQZfs5"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Learner
                   </a>
                 </button>
@@ -70,7 +78,7 @@ const Survey = () => {
               </div>
               <p>All right reserved. Designed with by Oakchain. </p>
             </footer>
-          </div>{" "}
+          </div>
         </div>
       </main>
     </Layout>
