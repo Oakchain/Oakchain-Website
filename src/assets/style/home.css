@@ -497,7 +497,7 @@ align-items: center;
 .home-news__card .card-text {
     color: #FFF;
     font-family: var(--cd600);
-    font-size: 21px;
+    font-size: 19px;
     margin-bottom: 0px;
     width: 100%;
     line-height: normal;
@@ -508,6 +508,7 @@ align-items: center;
     font-family: var(--cd300);
     font-size: 12px;
     width: 260px;
+    height:  70px;
 }
 
 .home-news__card .card-time {
@@ -735,7 +736,7 @@ align-items: center;
         }
         .home-news__card {
             height: 450px;
-            width: 350px;
+            width: 310px;
             justify-content: space-between;
         }
         
@@ -2836,7 +2837,7 @@ text-align: center;
   }
   
   .oak-feature-div .oak-main-div {
-    width: 367px !important;
+    width: 317px !important;
     height: 367px !important;
     margin: 0;
     margin-right: 20px;
