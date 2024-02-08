@@ -60,7 +60,17 @@
     z-index: 10;
     margin-bottom: 10px;
 }
-
+.takesurvey.mobile{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin-top: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.takesurveybtn.mobile{
+    margin-left: 10px;
+}
 .oak-resourcess ul {
     width: 100%;
     padding: 0;

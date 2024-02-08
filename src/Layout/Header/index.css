@@ -14,13 +14,39 @@
     background-color: #fff !important;
 }
 } */
-
+.nav-items__wrapper{
+  padding-left: 0 !important;
+  width: 500px;
+  margin-left: -100px;
+}
 .nav-item {
   color: var(--primary-color);
   font-size: 15px;
   font-family: var(--cd500);
   font-weight: 500;
-  margin-right: 100px;
+  margin-right: 0px;
+}
+.takesurvey{
+  margin-top: 15px;
+  height: 40px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.takesurveybtn{
+  width: 58px;
+  height: 16px;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  background-color: #FF4E0033;
+  text-align: center;
+  font-family: 'Clash Display';
+font-size: 10px;
+font-weight: 500;
+color: #FF4E00;
+
 }
 
 .nav-item:last-child {
@@ -88,6 +114,85 @@
 .oak-btn-connect:hover .oak-btn-arrow {
   opacity: 1;
 }
+@media (min-width:800px) and (max-width:1000px) {
+  
+.nav-items__wrapper{
+  padding-left: 0 !important;
+  width: 500px;
+  margin-left: -100px;
+}
+.nav-item {
+  color: var(--primary-color);
+  font-size: 11px;
+  font-family: var(--cd500);
+  font-weight: 500;
+  margin-right: 0px;
+}
+.takesurvey{
+  margin-top: 15px;
+  height: 30px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.takesurveybtn{
+  width: 48px;
+  height: 12px;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  background-color: #FF4E0033;
+  text-align: center;
+  font-family: 'Clash Display';
+font-size: 8px;
+font-weight: 500;
+color: #FF4E00;
+
+}
+  
+}
+
+
+
+
+@media (min-width:768px) and (max-width:799px) {
+ 
+.nav-items__wrapper{
+  width: 350px;
+  margin-left: -150px;
+}
+.nav-item {
+  color: var(--primary-color);
+  font-size: 11px;
+  font-family: var(--cd500);
+  font-weight: 500;
+  margin-right: 0px;
+}
+.takesurvey{
+  margin-top: 15px;
+  height: 30px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.takesurveybtn{
+  width: 48px;
+  height: 12px;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  background-color: #FF4E0033;
+  text-align: center;
+  font-family: 'Clash Display';
+font-size: 8px;
+font-weight: 500;
+color: #FF4E00;
+
+}
+  
+}
 
 @media (max-width: 767px) {
   .oak-header {
@@ -95,6 +200,11 @@
     width: 90% !important;
   }
 
+  .nav-items__wrapper{
+    padding-left: 32px !important;
+  width: 100%;
+  margin-left: 0px;
+  }
   .mobile-auth__items {
     width: 35px;
     height: 35px;
@@ -356,11 +466,6 @@
     display: none !important;
   }
 
-  #resources,
-  #company,
-  .nav-item {
-    display: none !important;
-  }
 
   #logo img {
     width: 4rem;

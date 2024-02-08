@@ -83,6 +83,11 @@ const Header = ({ toggle }) => {
 
         <ul className="d-md-flex d-none align-items-center justify-content-between nav-items__wrapper mb-0">
           <li className="nav-item">How it Works</li>
+          <li className="nav-item takesurvey"  onClick={() => {
+                      navigate("/survey");
+                    }}>Take Survey
+                    <button disabled className="takesurveybtn">Rewards</button>
+          </li>
           <li
             className="nav-item d-flex align-items-center"
             onClick={toggleResourcesDisplay}
