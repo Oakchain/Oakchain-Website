@@ -14,6 +14,8 @@ import p3 from "../assets/images/p3.svg";
 import courseimg1 from "../assets/images/courseimg1.svg";
 import courseimg2 from "../assets/images/courseimg2.svg";
 import courseimg3 from "../assets/images/courseimg3.svg";
+
+import courseimg4 from "../assets/images/courseimg4.svg";
 import cardimg1 from "../assets/images/cardimg1.svg";
 import cardimg2 from "../assets/images/cardimg2.svg";
 import cardimg3 from "../assets/images/cardimg3.svg";
@@ -502,7 +504,7 @@ const LandingPage = () => {
           </Col>
           <Col  className="home-course-card">
             <div className="home-news__card">
-              <img src={googleEyes} className="home-news__card-img" alt="..." />
+              <img src={courseimg4} className="home-news__card-img" alt="..." />
               <div className="home-news__card-body">
                 <div className="card-body__logo d-flex align-items-center">
                   <img src={oakimg} alt="logo" />
