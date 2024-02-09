@@ -455,7 +455,7 @@ align-items: center;
     image-resolution: 100%;
     border-radius: 10px;
     margin-top: 0;
-    height: calc(100% - 209px);
+    height: calc(100% - 278px);
     border-bottom-left-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
     
@@ -719,7 +719,7 @@ line-height: 20px;
     
         }
         
-@media (min-width:1101px) and (max-width:1200px) {
+@media (min-width:1111px) and (max-width:1200px) {
     
     .containerBeam{
         margin-top: 303px;
