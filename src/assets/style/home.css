@@ -581,6 +581,57 @@ align-items: center;
     margin-bottom: 20px;
  }
     }
+    
+@media (min-width:1301px) and (max-width:2000px) {
+    .oak-feature-div {
+        height: 50vh;
+    }
+    .leafAnimation{
+        height: 70vh;
+    }
+    .containerBeam{
+        margin-top: calc(100% - 71.5%);
+        margin-right: calc(100% - 62%);
+    }
+    .home-news__card .card-text{
+        font-size: 21px;
+    }
+    
+.oak-features__container {
+    height: 720px;
+
+}
+    .home-course-card{
+        margin-right: 0px;
+        flex-shrink: 0;
+    }
+    .home-news__card {
+        backdrop-filter: blur(50px) !important;
+        background: rgba(0, 0, 0, 0.50);
+        border-radius: 10px;
+        height: 500px;
+        width: 450px;
+        justify-content: space-between;
+    }
+    
+    .home-news__card-img {
+        width: 100%;
+        image-resolution: 100%;
+        border-radius: 10px;
+        margin-top: 0;
+        height: calc(100% - 247px);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        
+    }
+    
+    .home-news__card-body {
+        padding: 15px;
+        height: 200px;
+        flex-shrink: 0;
+    }
+    
+    }
 @media (min-width:1201px) and (max-width:1300px) {
     
     .containerBeam{
