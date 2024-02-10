@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "../../Layout";
 import "../../assets/style/survey.css";
 import blue_hand_img from "../../assets/images/hand-blue-extract.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const Survey = () => {
   return (
@@ -76,7 +78,15 @@ const Survey = () => {
                   />
                 </a>
               </div>
-              <p>All right reserved. Designed with by Oakchain. </p>
+              <p className="oak-actual-about-footer-sub">
+                All right reserved. Designed with{" "}
+                <span className="theHeart">
+                  &nbsp;
+                  <FontAwesomeIcon icon={faHeart} />
+                  &nbsp;
+                </span>{" "}
+                by Oakchain.{" "}
+              </p>
             </footer>
           </div>
         </div>

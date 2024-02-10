@@ -33,14 +33,10 @@
   backdrop-filter: blur(5px);
   padding: 2.5rem 3rem;
   color: white;
-  border: 0.3rem solid #a3746f73;
+  border: 0.3rem solid #d6c0be;
+  /* rgb(177, 177, 191); */
   min-width: 700px;
-  background-image: url("../../assets/images/fill-bg.svg"),
-    linear-gradient(
-      171.25deg,
-      rgba(2, 2, 48, 0.8) -16.99%,
-      rgba(219, 75, 18, 0) 164.37%
-    );
+  background-image: url("../../assets/images/fill-bg.svg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
