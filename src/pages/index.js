@@ -175,7 +175,7 @@ const LandingPage = () => {
                     className="oak-newsletter-input "
                     placeholder="Enter your email"
                   />
-                  <button className="oak-btn-secondary btn">Subscribe</button>
+                  <button className="oak-btn-secondary btn">WaitList</button>
                 </div>
 
                 <p className="oak-hero-subscribe-text">
@@ -193,7 +193,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <section id="partners__overflow" className="oak-container-fluid py-3">
+     {/*  <section id="partners__overflow" className="oak-container-fluid py-3">
         <div className="d-flex align-items-center justify-content-center">
           <h3 className="oak-section__wrapper">
             <span className="px-3">
@@ -223,9 +223,9 @@ const LandingPage = () => {
             <img src={p4} alt="icon" />
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className=" oak-container-fluid   oak-section-two ">
+      <section className=" oak-container-fluid mt-5  oak-section-two ">
         <div className="holderrrrrr"> <p className="oak-section__subheading mb-0">What is</p>
         <h3 className="oak-section__head mb-4">OakChain</h3>
         <p className="oak-section-subheader">

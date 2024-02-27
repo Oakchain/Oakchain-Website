@@ -144,7 +144,7 @@ margin-left: 5px;
 .oak-newsletter-input:focus {
     background: transparent !important;
     border: none !important;
-    outline: none !important;
+    outline: none !important; 
 }
 
 .hero-cta__wrapper {
@@ -455,7 +455,7 @@ align-items: center;
     image-resolution: 100%;
     border-radius: 10px;
     margin-top: 0;
-    height: calc(100% - 278px);
+    height: calc(100% - 209px);
     border-bottom-left-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
     
