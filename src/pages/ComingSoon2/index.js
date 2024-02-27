@@ -5,6 +5,8 @@ import "../../assets/style/coming-soon.css";
 import blue_hand_img from "../../assets/images/hand-blue-extract.svg";
 import worker from "../../assets/images/construction.svg";
 import near_icon from "../../assets/images/Near.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const ComingSoon2 = () => {
   return (
@@ -62,7 +64,15 @@ const ComingSoon2 = () => {
                   />
                 </a>
               </div>
-              <p>All right reserved. Designed with by Oakchain. </p>
+              <p className="oak-actual-about-footer-sub">
+                All right reserved. Designed with{" "}
+                <span className="theHeart">
+                  &nbsp;
+                  <FontAwesomeIcon icon={faHeart} />
+                  &nbsp;
+                </span>{" "}
+                by Oakchain.{" "}
+              </p>
             </footer>
           </div>{" "}
         </div>
