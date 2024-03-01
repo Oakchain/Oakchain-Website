@@ -49,13 +49,13 @@ const RouterConfig = () => {
 
         <Route exact path="/loginAdmin" element={<LoginAdmin />} />
         <Route exact path="/academy" element={<Academy />} />
-        <Route element={<PrivateRoute />}>
-          <Route exact path="/adminpage" element={<AdminPage />} />
+        {/* <Route element={<PrivateRoute />}>
+          
+        </Route> */}
+        <Route exact path="/adminpage" element={<AdminPage />} />
           <Route exact path="/publish" element={<PublishContent />} />
           <Route exact path="/terms" element={<Terms />} />
           <Route exact path="/disclaimer" element={<Disclaimer />} />
-        </Route>
-
         <Route exact element={<ProtectedeRoute />}>
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/news/:id" element={<NewsDetails />} />
