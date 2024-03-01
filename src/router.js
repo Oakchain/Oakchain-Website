@@ -56,8 +56,9 @@ const RouterConfig = () => {
           <Route exact path="/publish" element={<PublishContent />} />
           <Route exact path="/terms" element={<Terms />} />
           <Route exact path="/disclaimer" element={<Disclaimer />} />
-        <Route exact element={<ProtectedeRoute />}>
           <Route exact path="/home" element={<Home />} />
+        <Route exact element={<ProtectedeRoute />}>
+          
           <Route exact path="/news/:id" element={<NewsDetails />} />
           <Route
             exact
