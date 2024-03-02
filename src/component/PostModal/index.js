@@ -14,28 +14,30 @@ const PostModal = ({toggle, isOpen, setIsOpen}) => {
     className="modal-dialog-centered"
     // modalClassName="oak-modal__card"
   >
-    <div>
+    <div className="container">
         <div className="top">
           <div className="name">
-              <p className="initial">P</p>
+              <div className="initial">
+                <p>P</p>
+              </div>
               <p>Patrick James</p>
           </div>
-          <RxCross2/>
+          <RxCross2 style={{cursor: "pointer"}} onClick={()=>setIsOpen(false)} size={32}/>
         </div>
-        <textarea placeholder="What's happening..."/>
-        <div>
-          <div>
-            <div><img src={gallery} alt="gallery"></img></div>
-            <div><img src={face} alt="face"></img></div>
-            <div><img src={gif} alt="gif"></img></div>
-            <div>
-              <div>
-              <img src={tag} alt="tag"></img>
-              <p>E.g Bitcoin</p>
+        <input placeholder="What's happening..."/>
+        <div className="bottom">
+          <div className="icons">
+            <div className="icon"><img src={gallery} alt="gallery"></img></div>
+            <div className="icon"><img src={face} alt="face"></img></div>
+            <div className="icon"><img src={gif} alt="gif"></img></div>
+            <div className="icon-extra">
+              <div className="icon" style={{backgroundColor: "#FFE0D2"}}>
+                <img src={tag} alt="tag"></img>
               </div>
+              <p>E.g Bitcoin</p>
             </div>
           </div>
-          <button>Push</button>
+          <button className="button" disabled>Push</button>
         </div>
     </div>
   </Modal>
