@@ -1,5 +1,5 @@
 import AuthGuard from "../../Layout/AuthGuard";
-import React from 'react'
+import React, { useState } from 'react'
 import "../../assets/style/home_page.css";
 import bannerImg from '../../assets/images/hand-banner.svg'
 import rightArrow from '../../assets/images/rightArrow.svg'
@@ -10,12 +10,27 @@ import Tasks from "../../component/Tasks";
 import { Row, Col } from 'reactstrap'
 import { useNavigate } from "react-router-dom";
 import oakwriter from "../../../src/assets/images/oakwriter.svg"
+import PostModal from "../../component/PostModal";
 
 const Home = () => {
     const navigate = useNavigate()
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleModal = () => {
+        setIsOpen(!isOpen);
+      };
+
     return (
         <AuthGuard>
             <div className=" ">
+
+        <PostModal
+          toggle={toggleModal}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+        />
+
                 <div className=" oak-container-fluid oak-home-banner d-flex position-relative oak-mb">
                     <div className="oak-banner__text-wrapper">
                         <p className="oak-banner-text">Step into the future with Web3</p>
@@ -108,8 +123,10 @@ const Home = () => {
                     {/* <Trending /> */}
                 </section>
 
-                <img onClick={() => { window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdT3kMs5Dk0XqGFExS9k68u3y3Yf_W5eTnLOqkCcBJr3lvcxQ/viewform'; }}
- src={oakwriter} alt="oakwriter" className="oakWriter"/>
+                {/* <img onClick={() => { window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdT3kMs5Dk0XqGFExS9k68u3y3Yf_W5eTnLOqkCcBJr3lvcxQ/viewform'; }}
+ src={oakwriter} alt="oakwriter" className="oakWriter"/> */}
+ 
+                <img onClick={toggleModal} src={oakwriter} alt="oakwriter" className="oakWriter"/>
 
             </div>
         </AuthGuard>
