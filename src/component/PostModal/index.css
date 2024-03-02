@@ -7,6 +7,24 @@
     height: 300px !important;
     padding: 20px !important;
 }
+
+.name {
+    background-color: #EFEFFF;
+    border-radius: 40px;
+    display: flex;
+}
+
+.initial {
+    color: #FF4E00;
+    background-color: #00002F;
+    border-radius: 50%;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* .contentInput{
     width: 100%;
     height: 40px;
