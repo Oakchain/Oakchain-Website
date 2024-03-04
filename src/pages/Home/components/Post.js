@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
 import dpdemo from "../../../assets/images/dpdemo.png";
-import upvote from "../../../assets/images/share.svg";
-import bookmark from "../../../assets/images/share.svg";
-import share from "../../../assets/images/share.svg";
+import upvote from "../../../assets/images/upvote.png";
+import bookmark from "../../../assets/images/bookmark.png";
+import share from "../../../assets/images/share.png";
 
 const Post = ({poster, content}) => {
   return (
