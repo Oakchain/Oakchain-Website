@@ -86,7 +86,8 @@
 }
 
 .post:nth-child(odd) {
-  border-right: 1px solid #584d4d;
+ border-right: 1px solid #584d4d;
+ padding-right: 2%;
 }
 
 .post-header {
