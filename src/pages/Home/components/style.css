@@ -21,6 +21,12 @@
   font-size: 13px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.highlighted {
+  background-color: #00002f;
+  color: #FFF;
 }
 
 .filter-icons {
@@ -51,6 +57,8 @@
   align-items: center;
   gap: 20px;
   padding: auto 4% !important;
+  cursor: pointer;
+  position: relative;
 }
 
 .filter-text {
@@ -70,6 +78,68 @@
 
 .drop {
   width: 10%;
+}
+
+.dropdown-menuu {
+  display: flex;
+  flex-direction: column;
+  width: 158px;
+  align-items: flex-start;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 0;
+  height: 70px;
+  top: 30px;
+  position: absolute;
+  box-shadow: 4px 4px 0px 0px #00002F;
+  border-radius: 5px;
+  border: 1px solid #00002F;
+  background: #FFF;
+  position: absolute;
+  z-index: 10;
+}
+
+.dropdown-menuu ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menuu ul li {
+  height: 25px;
+  cursor: pointer;
+  width: 141px;
+  padding: 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+}
+
+.dropdown-menuu ul li h3 {
+  color: #00002F;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  margin-left: 9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.dropdown-menuu ul li:hover {
+  background-color: #FF4E00;
+}
+
+.dropdown-menuu ul li:hover h3 {
+  color: #FFF;
+  font-weight: 500;
 }
 
 /* Post Styles */
