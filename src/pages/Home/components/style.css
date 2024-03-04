@@ -41,6 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .grid img,
@@ -57,7 +58,6 @@
   align-items: center;
   gap: 20px;
   padding: auto 4% !important;
-  cursor: pointer;
   position: relative;
 }
 
