@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 import oakwriter from "../../../src/assets/images/oakwriter.svg";
 import PostModal from "../../component/PostModal";
 import Category from "./components/Category";
+import Posts from "./components/Posts";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ const Home = () => {
       <div className=" ">
         <PostModal toggle={toggleModal} isOpen={isOpen} setIsOpen={setIsOpen} />
 
-        <div className=" oak-container-fluid oak-home-banner d-flex position-relative oak-mb">
+        <div className="oak-container-fluid oak-home-banner d-flex position-relative oak-mb">
           <div className="oak-banner__text-wrapper">
             <h3 className="oak-banner-header mb-4">LOREM IPSUM</h3>
             <p className="oak-banner-sub-text">
@@ -48,12 +49,10 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
+        <section className="oak-container-fluid">
           <Category />
-        </div>
 
-        <section>
-          <div>
+          <div className="featured">
             <h4>Featured</h4>
             <p>Contents here are upvoted by the community</p>
           </div>

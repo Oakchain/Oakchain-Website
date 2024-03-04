@@ -39,7 +39,7 @@ const Category = () => {
             <img src={filter} alt="filter" />
             <p>Filter</p>
           </div>
-          <img src={drop} alt="drop" />
+          <img className="drop" src={drop} alt="drop" />
         </div>
       </div>
     </div>
