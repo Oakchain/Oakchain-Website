@@ -111,12 +111,9 @@
   color: #ff4e00;
 }
 
-.post-text {
-  /* font-size: 16px; */
-}
-
 .see-more {
   color: #ff4e00;
+  margin-left: 5px;
 }
 
 .post-actions {
@@ -136,10 +133,34 @@
   gap: 5px;
 }
 
-/* Post Styles */
+/* Posts Styles */
 
 .posts {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 2%;
+}
+
+/* PostList Styles */
+
+.img-demo {
+  width: 30vw;
+  height: 70%;
+  background-color: #D9D9D9;
+}
+
+.postList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid #6c6868;
+}
+
+.postList .post {
+  width: unset;
+  border: none;
+}
+
+.postList .post-text {
+  width: 58vw;
 }
