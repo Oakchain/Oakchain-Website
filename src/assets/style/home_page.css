@@ -1,198 +1,191 @@
 .oak-home-banner {
-    padding: 60px;
-    background-image: url('../../assets/images/BANN.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    /* overflow: hidden; */
+  padding: 60px;
+  background-image: url("../../assets/images/BANN.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  /* overflow: hidden; */
 }
 
 .oak-banner-text {
-    color: #FFF;
-    font-family: var(--cd500);
-    font-size: 30px;
-    line-height: normal;
+  color: #fff;
+  font-family: var(--cd500);
+  font-size: 30px;
+  line-height: normal;
 }
-.oak-banner-text p{
-    font-family: Clash Display;
-font-size: 30px;
-font-weight: 600;
-line-height: 37px;
-letter-spacing: 0em;
-text-align: left;
-color:  #FF4E00;
+.oak-banner-text p {
+  font-family: Clash Display;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff4e00;
 }
 .oak-banner-header {
-    color: #FFF;
-    font-family: var(--cd600);
-    font-size: 60px;
-    line-height: normal;
+  color: #fff;
+  font-family: var(--cd600);
+  font-size: 60px;
+  line-height: normal;
 }
 
 .oak-banner-sub-text {
-    color: #FFF;
-    font-family: var(--cd300);
-    font-size: 20px;
-
+  color: #fff;
+  font-family: var(--cd300);
+  font-size: 20px;
 }
 
 .oak-home__banner-img {
-    top: 45px;
-    right: 0px;
+  top: 45px;
+  right: 0px;
 }
 
 .oak-banner__text-wrapper {
-    width: 60%;
+  width: 60%;
 }
 
 .oak-section__title {
-    color: var(--primary-color);
-    font-family: var(--cd500);
-    font-size: 25px;
-    position: relative
+  color: var(--primary-color);
+  font-family: var(--cd500);
+  font-size: 25px;
+  position: relative;
 }
 
 .oak-section__title::after {
-    content: '';
-    position: absolute;
-    width: 35%;
-    height: 3px;
-    background: var(--secondary-color);
-    right: 0;
-    bottom: -10px;
-    border-radius: 7px;
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 3px;
+  background: var(--secondary-color);
+  right: 0;
+  bottom: -10px;
+  border-radius: 7px;
 }
 
 .oak-redirect__text {
-    color: var(--primary-color);
-    font-family: var(--cd500);
-    font-size: 15px;
-    font-style: normal;
+  color: var(--primary-color);
+  font-family: var(--cd500);
+  font-size: 15px;
+  font-style: normal;
 }
 
 .home-future__podcast_wrapper {
-    background: url('../images/sphere.svg'), url('../images/fdBg2.svg');
-    background-repeat: no-repeat;
-    background-position: left 47%, 100% 47%;
-    background-size: contain, 30%;
+  background: url("../images/sphere.svg"), url("../images/fdBg2.svg");
+  background-repeat: no-repeat;
+  background-position: left 47%, 100% 47%;
+  background-size: contain, 30%;
 }
 
-@media(max-width:767px) {
-    .oak-home-banner {
-        padding: 30px 10px 0 10px;
-        background-position: center;
-        height: 390px;
-        margin-bottom: 150px !important;
-    }
+@media (max-width: 767px) {
+  .oak-home-banner {
+    padding: 30px 10px 0 10px;
+    background-position: center;
+    height: 390px;
+    margin-bottom: 150px !important;
+  }
 
-    .oak-banner__text-wrapper {
-        width: 100%;
-        text-align: center;
+  .oak-banner__text-wrapper {
+    width: 100%;
+    text-align: center;
+  }
 
-    }
+  .oak-banner-text {
+    font-size: 15px;
+    margin-bottom: 7px;
+  }
 
-    .oak-banner-text {
-        font-size: 15px;
-        margin-bottom: 7px;
-    }
+  .oak-banner-header {
+    font-size: 27px;
+    margin-bottom: 7px;
+  }
 
-    .oak-banner-header {
-        font-size: 27px;
-        margin-bottom: 7px;
-    }
+  .oak-banner-sub-text {
+    color: #fff;
+    font-family: var(--cd300);
+    font-size: 12px;
+    line-height: normal;
+  }
 
-    .oak-banner-sub-text {
-        color: #FFF;
-        font-family: var(--cd300);
-        font-size: 12px;
-        line-height: normal;
-    }
+  .oak-home__banner-img {
+    bottom: 0;
+    right: 0;
+    height: 345px;
+    top: 55%;
+  }
 
-    .oak-home__banner-img {
-        bottom: 0;
-        right: 0;
-        height: 345px;
-        top: 55%;
-    }
+  .oak-home__banner-img img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
 
-    .oak-home__banner-img img {
-        object-fit: contain;
-        height: 100%;
-        width: 100%;
-        ;
-    }
+  .oak-section__title {
+    font-size: 15px;
+  }
 
-    .oak-section__title {
+  .oak-redirect__text {
+    font-size: 13px;
+    flex-shrink: 0;
+  }
 
-        font-size: 15px;
-    }
+  .redirect-arrow,
+  .redirect-arrow img {
+    width: 70%;
+    object-fit: contain;
+  }
 
-    .oak-redirect__text {
-        font-size: 13px;
-        flex-shrink: 0;
+  .oak-section__title::after {
+    bottom: -5px;
+  }
 
-    }
+  .oak-mobile-news__wrpper.oak-mb {
+    margin-bottom: 20px;
+  }
 
-    .redirect-arrow,
-    .redirect-arrow img {
-        width: 70%;
-        object-fit: contain;
-    }
+  .trending-main_img {
+    height: 226px !important;
+  }
 
-    .oak-section__title::after {
-        bottom: -5px;
-    }
+  .oak-news__title.w-50 {
+    font-size: 16px !important;
+    width: 90% !important;
+    margin-bottom: 5px !important;
+  }
 
-    .oak-mobile-news__wrpper.oak-mb {
-        margin-bottom: 20px;
+  .oak-main-news_details__wrapper {
+    padding: 0px 10px 10px 10px !important;
+  }
 
-    }
+  .oak-news__stats {
+    font-size: 10px !important;
+  }
 
-    .trending-main_img {
-        height: 226px !important;
-    }
+  .oak-stats__icon,
+  .oak-stats__icon img {
+    width: 14px !important;
+    height: 10.804px !important;
+    flex-shrink: 0;
+    object-fit: contain !important;
+    margin-top: 1px;
+    display: flex;
+    margin-right: 2px;
+  }
 
-    .oak-news__title.w-50 {
-        font-size: 16px !important;
-        width: 90% !important;
-        margin-bottom: 5px !important;
-    }
+  .oak-news__text {
+    font-size: 12px !important;
+  }
 
-    .oak-main-news_details__wrapper {
-        padding: 0px 10px 10px 10px !important;
-    }
-
-    .oak-news__stats {
-        font-size: 10px !important;
-    }
-
-    .oak-stats__icon,
-    .oak-stats__icon img {
-        width: 14px !important;
-        height: 10.804px !important;
-        flex-shrink: 0;
-        object-fit: contain !important;
-        margin-top: 1px;
-        display: flex;
-        margin-right: 2px;
-    }
-
-    .oak-news__text {
-
-        font-size: 12px !important;
-    }
-
-    .future-podcast__img_wrapper {
-        width: 287px !important;
-        height: 287px !important;
-        flex-shrink: 0;
-    }
+  .future-podcast__img_wrapper {
+    width: 287px !important;
+    height: 287px !important;
+    flex-shrink: 0;
+  }
 }
 
-.oakWriter{
+.oakWriter {
   position: fixed;
-  top:83%;
-  left:87%;
+  top: 83%;
+  left: 87%;
   cursor: pointer;
   z-index: 1000;
 }

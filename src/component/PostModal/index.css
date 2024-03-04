@@ -1,102 +1,105 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: "ClashDisplay-Medium";
 }
 
 .modal-content {
-    border-radius: 23px;
-    overflow: hidden;
-    background: none;
-    background-color: #fff;
-    width: 1300px;
-    height: 450px;
-    padding: 40px;
-    
+  border-radius: 23px;
+  overflow: hidden;
+  background: none;
+  background-color: #fff;
+  width: 1400px;
+  height: 450px;
+  padding: 40px 25px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .top {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .name {
-    background-color: #EFEFFF;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    width: 174px;
-    height: 40px;
+  background-color: #efefff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 40px;
 }
 
 .initial {
-    background-color: #00002F;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
+  background-color: #00002f;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
 .initial p {
-    color: #FF4E00;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-align: center;
+  color: #ff4e00;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-input {
-   font-family: "ClashDisplay-Medium"; 
-   padding: 2%;
-   width: 80%;
-   height: 280px;
-   justify-items: start;
+.full {
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+.inputBox {
+  padding: 2%;
+  width: 80%;
+  height: 280px;
 }
 
 .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
 }
 
 .icon {
-    background-color: #EFEFFF;
-    justify-content: center;
-    align-items: center;
-    padding: 4%;
-    border-radius: 50%;
+  background-color: #efefff;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  border-radius: 50%;
 }
 
 .icon-extra {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    font-size: smaller;
-    background-color: #EFEFFF;
-    border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  font-size: smaller;
+  background-color: #efefff;
+  border-radius: 24px;
+}
+
+.icon-extra p {
+  margin-top: 10px;
 }
 
 .button {
-    background-color: #00002F;
-    color: white;
-    border-radius: 48px;
-    padding: 3% 7%;
+  background-color: #00002f;
+  color: white;
+  border-radius: 48px;
+  padding: 2.5% 8%;
 }
 
 /* .contentInput{

@@ -1,0 +1,123 @@
+.oak-home-banner {
+  padding: 60px;
+  background-image: url("../../assets/images/BANN.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  /* overflow: hidden; */
+}
+
+.oak-banner-text {
+  color: #fff;
+  font-family: var(--cd500);
+  font-size: 30px;
+  line-height: normal;
+}
+.oak-banner-text p {
+  font-family: Clash Display;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff4e00;
+}
+.oak-banner-header {
+  color: #fff;
+  font-family: var(--cd600);
+  font-size: 60px;
+  line-height: normal;
+}
+
+.oak-banner-sub-text {
+  color: #fff;
+  font-family: var(--cd300);
+  font-size: 20px;
+}
+
+.oak-home__banner-img {
+  top: 45px;
+  right: 0px;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.mid-text {
+  color: #00002f;
+  font-size: 20px;
+}
+
+.oakWriter {
+  position: fixed;
+  top: 83%;
+  left: 87%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.buttons {
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+}
+
+.button {
+  background-color: #ff4e00 !important;
+  color: white;
+  width: fit;
+  height: unset;
+  font-size: 20px;
+  border-radius: 24px !important;
+  padding: 3% 6% !important;
+}
+
+@media (max-width: 767px) {
+  .oak-home-banner {
+    padding: 30px 10px 0 10px;
+    background-position: center;
+    height: 390px;
+    margin-bottom: 150px !important;
+  }
+
+  /* .oak-banner__text-wrapper {
+    width: 100%;
+    text-align: center;
+  } */
+
+  .oak-banner-text {
+    font-size: 15px;
+    margin-bottom: 7px;
+  }
+
+  .oak-banner-header {
+    font-size: 27px;
+    margin-bottom: 7px;
+  }
+
+  .oak-banner-sub-text {
+    color: #fff;
+    font-family: var(--cd300);
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .oak-home__banner-img {
+    bottom: 0;
+    right: 0;
+    height: 345px;
+    top: 55%;
+  }
+
+  .oak-home__banner-img img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+}
