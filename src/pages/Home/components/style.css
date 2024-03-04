@@ -78,7 +78,7 @@
   width: 45vw;
   padding-top: 2%;
   padding-bottom: 2%;
-  border-top: 1px solid #584d4d;
+  border-top: 1px solid #6c6868;
 }
 
 .post:nth-child(even) {
@@ -86,7 +86,7 @@
 }
 
 .post:nth-child(odd) {
- border-right: 1px solid #584d4d;
+ border-right: 1px solid #6c6868;
  padding-right: 2%;
 }
 
@@ -107,7 +107,7 @@
   padding: 0.5% 2%;
   border: 1px solid #ff4e00;
   border-radius: 8px;
-  background-color: #e7bfad;
+  background-color: rgba(255, 78, 0, 0.1);
   color: #ff4e00;
 }
 
@@ -141,4 +141,5 @@
 .posts {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 2%;
 }
