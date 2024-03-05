@@ -6,8 +6,54 @@ import gif from "../../assets/images/gif.png";
 import tag from "../../assets/images/tag.png";
 import { RxCross2 } from "react-icons/rx";
 import RichTextEditor from "../RichTextEditor";
+import { useState } from "react";
+import { toast } from "react-toastify";
+
+const validateArticle = (text) => {
+  if (text.length < 100) {
+    return {
+      validStatus: false,
+      errors: "Article should be atleast 100 characters",
+    };
+  }
+
+  return {
+    validStatus: true,
+    errors: "",
+  };
+};
 
 const PostModal = ({ toggle, isOpen, setIsOpen }) => {
+  const [convertedText, setConvertedText] = useState("");
+
+  const uploadPost = (text) => {
+    // TODO: upload post to server
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve();
+      }, 2000);
+    });
+  };
+
+  const handleAddPost = (e) => {
+    e.preventDefault();
+    console.log(convertedText);
+    const { validStatus, errors } = validateArticle(convertedText);
+    if (!validStatus) {
+      toast.error(errors);
+    } else {
+      uploadPost(convertedText)
+        .then(() => {
+          setIsOpen(false);
+          setConvertedText("");
+          toast.success("Post added successfully");
+        })
+        .catch(() => {
+          toast.error("Something went wrong");
+        });
+    }
+  };
+
   return (
     <Modal
       isOpen={isOpen}
@@ -29,7 +75,10 @@ const PostModal = ({ toggle, isOpen, setIsOpen }) => {
             size={28}
           />
         </div>
-        <RichTextEditor />
+        <RichTextEditor
+          convertedText={convertedText}
+          setConvertedText={setConvertedText}
+        />
         <div className="bottom">
           <div className="icons">
             <div className="icon">
@@ -48,7 +97,7 @@ const PostModal = ({ toggle, isOpen, setIsOpen }) => {
               <p>E.g Bitcoin</p>
             </div>
           </div>
-          <button className="button" disabled>
+          <button className="button" onClick={handleAddPost}>
             Push
           </button>
         </div>

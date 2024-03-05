@@ -4,8 +4,7 @@ import "react-quill/dist/quill.snow.css";
 
 import "./index.css";
 
-const RichTextEditor = () => {
-  const [convertedText, setConvertedText] = useState("");
+const RichTextEditor = ({ convertedText, setConvertedText }) => {
   return (
     <div className="RichTextEditor">
       <ReactQuill
