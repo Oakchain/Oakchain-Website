@@ -18,12 +18,11 @@ const postData = [
   { id: 6, poster: "DegenPoet", type: "Post", content: "At Oak, our mission is to facilitate the adoption of Web3 technology by providing accessible education, fostering skill development, and bridging the gap between talent and opportunity. We believe that a well-rounded, empowered and diverse community is essential for the sustainable growth of the Web3 ecosystem..." }
 ];
 
-const Posts = () => {
+const Posts = ({view}) => {
   return (
     <div className="posts">
       {postData.map(post => (
-        <Post key={post.id} poster={post.poster} type={post.type} content={post.content} />
-        // <PostList key={post.id} poster={post.poster} content={post.content} />
+        view === 'grid' ? <Post key={post.id} poster={post.poster} type={post.type} content={post.content} /> : <PostList key={post.id} poster={post.poster} content={post.content} />
       ))}
     </div>
   );
