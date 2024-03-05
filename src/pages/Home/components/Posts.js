@@ -22,7 +22,7 @@ const Posts = ({view}) => {
   return (
     <div className="posts">
       {postData.map(post => (
-        view === 'grid' ? <Post key={post.id} poster={post.poster} type={post.type} content={post.content} /> : <PostList key={post.id} poster={post.poster} content={post.content} />
+        view === 'grid' ? <Post key={post.id} poster={post.poster} type={post.type} content={post.content} /> : <PostList key={post.id} poster={post.poster} type={post.type} content={post.content} />
       ))}
     </div>
   );
