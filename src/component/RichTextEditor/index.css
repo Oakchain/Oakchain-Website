@@ -1,0 +1,7 @@
+.RichTextEditor {
+  padding: 1rem 0;
+
+  .ql-editor {
+    min-height: 200px;
+  }
+}

@@ -5,6 +5,7 @@ import face from "../../assets/images/face.png";
 import gif from "../../assets/images/gif.png";
 import tag from "../../assets/images/tag.png";
 import { RxCross2 } from "react-icons/rx";
+import RichTextEditor from "../RichTextEditor";
 
 const PostModal = ({ toggle, isOpen, setIsOpen }) => {
   return (
@@ -28,7 +29,7 @@ const PostModal = ({ toggle, isOpen, setIsOpen }) => {
             size={28}
           />
         </div>
-        <input className="inputBox" placeholder="What's happening..." />
+        <RichTextEditor />
         <div className="bottom">
           <div className="icons">
             <div className="icon">
