@@ -5,7 +5,7 @@ import upvote from "../../../assets/images/share.svg";
 import bookmark from "../../../assets/images/share.svg";
 import share from "../../../assets/images/share.svg";
 
-const PostList = ({poster, content}) => {
+const PostList = ({poster, type, content}) => {
   return (
     <div className="postList">
     <div className="img-demo"><img></img></div>
@@ -15,7 +15,7 @@ const PostList = ({poster, content}) => {
           <img src={dpdemo} alt="" />
           <h6>{poster}</h6>
         </div>
-        <button className="p-button">Post</button>
+        <button className="p-button">{type}</button>
       </div>
       <p className="post-text">
         {content}

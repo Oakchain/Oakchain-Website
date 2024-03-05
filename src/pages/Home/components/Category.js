@@ -19,12 +19,17 @@ const categories = [
   "Education",
 ];
 
-const Category = () => {
+const Category = ({view, onView}) => {
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+  // const [view, setView] = useState('grid');
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
+  };
+  
+  const handleViewClick = (view) => {
+    onView(view);
   };
 
   const handleFilter = () => {
@@ -39,10 +44,10 @@ const Category = () => {
         ))}
       </div>
       <div className="filter-icons">
-        <div className="box color grid">
+        <div onClick={() => handleViewClick('grid')} className={`box grid ${view === 'grid' && 'color'}`}>
           <img src={grid} alt="grid" />
         </div>
-        <div className="box list">
+        <div onClick={() => handleViewClick('list')} className={`box list ${view === 'list' && 'color'}`}>
           <img src={list} alt="list" />
         </div>
         <div className="box filter" onClick={handleFilter}>

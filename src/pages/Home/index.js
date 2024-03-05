@@ -17,10 +17,15 @@ import Posts from "./components/Posts";
 const Home = () => {
   const navigate = useNavigate();
 
+  const [view, setView] = useState('grid');
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleModal = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleView = (view) => {
+    setView(view);
   };
 
   return (
@@ -50,7 +55,7 @@ const Home = () => {
         </div>
 
         <section className="oak-container-fluid">
-          <Category />
+          <Category view={view} onView={handleView} />
 
           <div className="featured">
             <h4>Featured</h4>
@@ -58,7 +63,7 @@ const Home = () => {
           </div>
 
           <div>
-            <Posts />
+            <Posts view={view} />
           </div>
         </section>
 

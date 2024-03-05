@@ -5,7 +5,7 @@ import upvote from "../../../assets/images/upvote.png";
 import bookmark from "../../../assets/images/bookmark.png";
 import share from "../../../assets/images/share.png";
 
-const Post = ({poster, content}) => {
+const Post = ({poster, type, content}) => {
   return (
     <div className="post">
       <div className="post-header">
@@ -13,7 +13,7 @@ const Post = ({poster, content}) => {
           <img src={dpdemo} alt="" />
           <h6>{poster}</h6>
         </div>
-        <button className="p-button">Post</button>
+        <button className="p-button">{type}</button>
       </div>
       <p className="post-text">
         {content}
