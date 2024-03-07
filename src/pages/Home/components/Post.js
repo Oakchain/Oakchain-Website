@@ -16,7 +16,7 @@ const Post = ({poster, type, content}) => {
         <button className="p-button">{type}</button>
       </div>
       <p className="post-text">
-        {content}
+          {content?.match(/<p>(.*?)<\/p>/g)?.[0].slice(3, -4) ?? content}
         <span className="see-more">See more</span>
       </p>
       <div className="post-actions">

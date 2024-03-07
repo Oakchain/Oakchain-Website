@@ -10,7 +10,7 @@
   background: none;
   background-color: #fff;
   width: 1400px;
-  height: 450px;
+  /* height: 450px; */
   padding: 40px 25px;
 }
 
@@ -77,7 +77,7 @@
   background-color: #efefff;
   justify-content: center;
   align-items: center;
-  padding: 2%;
+  padding: 12px;
   border-radius: 50%;
 }
 

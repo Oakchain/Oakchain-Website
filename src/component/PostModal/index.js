@@ -5,13 +5,74 @@ import face from "../../assets/images/face.png";
 import gif from "../../assets/images/gif.png";
 import tag from "../../assets/images/tag.png";
 import { RxCross2 } from "react-icons/rx";
+import RichTextEditor from "../RichTextEditor";
+import { useState } from "react";
+import { toast } from "react-toastify";
+import axios from "axios";
+
+const validateArticle = (text) => {
+  if (text.length < 10) {
+    return {
+      validStatus: false,
+      errors: "Article should be atleast 100 characters",
+    };
+  }
+
+  return {
+    validStatus: true,
+    errors: "",
+  };
+};
+
+const oakBaseUrl = "https://api.oakchain.io";
+const accessToken = localStorage.getItem('token');
+
+const headers = {
+  "Content-Type": "application/json",
+  Authorization: `Bearer ${accessToken}`,
+};
 
 const PostModal = ({ toggle, isOpen, setIsOpen }) => {
+  const [convertedText, setConvertedText] = useState("");
+
+  const uploadPost = async (post) => {
+    try {
+      const response = await axios.post(`${oakBaseUrl}/api/blog`,  JSON.stringify(post) , {
+        headers
+      });
+      console.log("Post added successfully:", response.data);
+    } catch (error) {
+      console.error("Error adding post:", error);
+    }
+
+  };
+
+  const handleAddPost = (e) => {
+    e.preventDefault();
+    console.log(convertedText);
+    const { validStatus, errors } = validateArticle(convertedText);
+    if (!validStatus) {
+      toast.error(errors);
+    } else {
+      uploadPost({content: convertedText})
+        .then(() => {
+          setIsOpen(false);
+          setConvertedText("");
+          toast.success("Post added successfully");
+        })
+        .catch(() => {
+          toast.error("Something went wrong");
+        });
+    }
+  };
+
   return (
     <Modal
       isOpen={isOpen}
       toggle={toggle}
       className="modal-dialog-centered"
+      size="lg"
+      fullscreen="md"
       // modalClassName="oak-modal__card"
     >
       <div className="container">
@@ -28,7 +89,10 @@ const PostModal = ({ toggle, isOpen, setIsOpen }) => {
             size={28}
           />
         </div>
-        <input className="inputBox" placeholder="What's happening..." />
+        <RichTextEditor
+          convertedText={convertedText}
+          setConvertedText={setConvertedText}
+        />
         <div className="bottom">
           <div className="icons">
             <div className="icon">
@@ -47,7 +111,7 @@ const PostModal = ({ toggle, isOpen, setIsOpen }) => {
               <p>E.g Bitcoin</p>
             </div>
           </div>
-          <button className="button" disabled>
+          <button className="button" onClick={handleAddPost}>
             Push
           </button>
         </div>
