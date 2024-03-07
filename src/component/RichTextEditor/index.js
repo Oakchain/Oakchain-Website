@@ -5,6 +5,13 @@ import "react-quill/dist/quill.snow.css";
 import "./index.css";
 
 const RichTextEditor = ({ convertedText, setConvertedText }) => {
+  const quillModules = {
+    toolbar: [
+      [{ header: [2, 3, false] }],
+      ["bold", "italic", "underline", "strike"],
+      ["image", "video", "link"],
+    ],
+  };
   return (
     <div className="RichTextEditor">
       <ReactQuill
@@ -12,6 +19,7 @@ const RichTextEditor = ({ convertedText, setConvertedText }) => {
         value={convertedText}
         onChange={setConvertedText}
         placeholder="Write something awesome..."
+        modules={quillModules}
       />
     </div>
   );

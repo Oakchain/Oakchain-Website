@@ -8,6 +8,7 @@ import { RxCross2 } from "react-icons/rx";
 import RichTextEditor from "../RichTextEditor";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import axios from "axios";
 
 const validateArticle = (text) => {
   if (text.length < 100) {
@@ -23,16 +24,27 @@ const validateArticle = (text) => {
   };
 };
 
+const oakBaseUrl = "https://api.oakchain.io";
+const accessToken = localStorage.getItem('token');
+
+const headers = {
+  "Content-Type": "application/json",
+  Authorization: `Bearer ${accessToken}`,
+};
+
 const PostModal = ({ toggle, isOpen, setIsOpen }) => {
   const [convertedText, setConvertedText] = useState("");
 
-  const uploadPost = (text) => {
-    // TODO: upload post to server
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve();
-      }, 2000);
-    });
+  const uploadPost = async (post) => {
+    try {
+      const response = await axios.post(`${oakBaseUrl}/api/blog`, { post }, {
+        headers
+      });
+      console.log("Post added successfully:", response.data);
+    } catch (error) {
+      console.error("Error adding post:", error);
+    }
+
   };
 
   const handleAddPost = (e) => {
@@ -42,7 +54,7 @@ const PostModal = ({ toggle, isOpen, setIsOpen }) => {
     if (!validStatus) {
       toast.error(errors);
     } else {
-      uploadPost(convertedText)
+      uploadPost({content: convertedText})
         .then(() => {
           setIsOpen(false);
           setConvertedText("");
@@ -59,6 +71,8 @@ const PostModal = ({ toggle, isOpen, setIsOpen }) => {
       isOpen={isOpen}
       toggle={toggle}
       className="modal-dialog-centered"
+      size="lg"
+      fullscreen="md"
       // modalClassName="oak-modal__card"
     >
       <div className="container">
