@@ -1,7 +1,6 @@
 import AuthGuard from "../../Layout/AuthGuard";
 import React, { useState } from "react";
 import "./index.css";
-import bannerImg from "../../assets/images/hand-banner.svg";
 import rightArrow from "../../assets/images/rightArrow.svg";
 import { Trending } from "../../component/News";
 import { Banner as AcademyBanner } from "../../component/Academy";
@@ -13,6 +12,8 @@ import oakwriter from "../../../src/assets/images/oakwriter.svg";
 import PostModal from "../../component/PostModal";
 import Category from "./components/Category";
 import Posts from "./components/Posts";
+import { Carousel } from "react-responsive-carousel";
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -33,18 +34,37 @@ const Home = () => {
       <div className=" ">
         <PostModal toggle={toggleModal} isOpen={isOpen} setIsOpen={setIsOpen} />
 
-        <div className="oak-container-fluid oak-home-banner d-flex position-relative oak-mb">
-          <div className="oak-banner__text-wrapper">
-            <h3 className="oak-banner-header mb-4">LOREM IPSUM</h3>
-            <p className="oak-banner-sub-text">
-              Porro odio voluptatum dolorem alias debitis nesciunt, atque
-              mollitia officiis exercitationem? Error?
-            </p>
+        <Carousel autoPlay interval={3000} infiniteLoop>
+          <div className="oak-container-fluid oak-home-banner d-flex position-relative oak-mb">
+            <div className="oak-banner__text-wrapper">
+              <h3 className="oak-banner-header mb-4">LOREM IPSUM</h3>
+              <p className="oak-banner-sub-text">
+                Porro odio voluptatum dolorem alias debitis nesciunt, atque
+                mollitia officiis exercitationem? Error?
+              </p>
+            </div>
           </div>
-          {/* <div className="position-absolute oak-home__banner-img ">
-            <img src={bannerImg} alt="banner-img" />
-          </div> */}
-        </div>
+          <div className="oak-container-fluid oak-home-banner d-flex position-relative oak-mb">
+            <div className="oak-banner__text-wrapper">
+              <h3 className="oak-banner-header mb-4">LOREM IPSUM</h3>
+              <p className="oak-banner-sub-text">
+                Porro odio voluptatum dolorem alias debitis nesciunt, atque
+                mollitia officiis exercitationem? Error?
+              </p>
+            </div>
+          </div>
+          <div className="oak-container-fluid oak-home-banner d-flex position-relative oak-mb">
+            <div className="oak-banner__text-wrapper">
+              <h3 className="oak-banner-header mb-4">LOREM IPSUM</h3>
+              <p className="oak-banner-sub-text">
+                Porro odio voluptatum dolorem alias debitis nesciunt, atque
+                mollitia officiis exercitationem? Error?
+              </p>
+            </div>
+          </div>
+        </Carousel>
+
+        
 
         <div className="mid">
           <h3 className="mid-text">One stop platform for everything web3</h3>

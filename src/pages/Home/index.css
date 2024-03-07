@@ -45,13 +45,16 @@
   flex-direction: column;
   gap: 5%;
   align-items: center;
-  margin-top: 2%;
-  margin-bottom: 3%;
+  /* margin-top: 2%; */
+  margin-bottom: 5%;
 }
 
 .mid-text {
   color: #00002f;
-  font-size: 26px;
+  font-family: var(--cd600);
+  font-size: 38px;
+  margin-bottom: 1.5%;
+  line-height: normal;
 }
 
 .oakWriter {
@@ -64,7 +67,7 @@
 
 .buttons {
   display: flex;
-  gap: 20px;
+  gap: 28px;
 }
 
 .button {
@@ -72,7 +75,7 @@
   color: white;
   width: 120px;
   font-size: 14px;
-  border-radius: 24px !important;
+  border-radius: 12px !important;
   padding: 2% 3% !important;
 }
 
