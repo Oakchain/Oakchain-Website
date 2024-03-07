@@ -31,7 +31,7 @@ const Posts = ({view}) => {
 
   const fetchPosts = async () => {
     try {
-      const response = await axios.get(`${oakBaseUrl}/api/blog`);
+      const response = await axios.get(`${oakBaseUrl}/api/blog?limit=10&page=0`);
       const res = response.data;
       const allPosts = res.data.blogPosts;
 

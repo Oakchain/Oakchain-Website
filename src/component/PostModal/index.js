@@ -37,7 +37,7 @@ const PostModal = ({ toggle, isOpen, setIsOpen }) => {
 
   const uploadPost = async (post) => {
     try {
-      const response = await axios.post(`${oakBaseUrl}/api/blog`, { post }, {
+      const response = await axios.post(`${oakBaseUrl}/api/blog`,  JSON.stringify(post) , {
         headers
       });
       console.log("Post added successfully:", response.data);
