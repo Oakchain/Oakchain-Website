@@ -11,7 +11,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 
 const validateArticle = (text) => {
-  if (text.length < 100) {
+  if (text.length < 10) {
     return {
       validStatus: false,
       errors: "Article should be atleast 100 characters",
