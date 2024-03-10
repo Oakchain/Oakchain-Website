@@ -15,7 +15,7 @@ const PostList = ({poster, type, content}) => {
           <img src={dpdemo} alt="" />
           <h6>{poster}</h6>
         </div>
-        <button className="p-button">{type}</button>
+        <button className="p-button">Post</button>
       </div>
       <p className="post-text">
         {content}
