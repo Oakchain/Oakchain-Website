@@ -20,6 +20,7 @@ import ProtectedeRoute from "./component/ProtectedRoute";
 import ComingSoonPage from "./pages/ComingSoon2";
 import PrivateRoute from "./admin/PrivateRoute";
 import Survey from "./pages/Survey";
+import SeeMore from "./pages/Home/components/SeeMore";
 
 const RouterConfig = () => {
   return (
@@ -57,7 +58,8 @@ const RouterConfig = () => {
           <Route exact path="/terms" element={<Terms />} />
           <Route exact path="/disclaimer" element={<Disclaimer />} />
           <Route exact path="/home" element={<Home />} />
-        <Route exact element={<ProtectedeRoute />}>
+          <Route exact path="/more" element={<SeeMore />} />
+          <Route exact element={<ProtectedeRoute />}>
           
           <Route exact path="/news/:id" element={<NewsDetails />} />
           <Route

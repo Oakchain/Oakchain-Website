@@ -1,14 +1,19 @@
-import React from "react";
+import AuthGuard from "../../../Layout/AuthGuard";
 import "./style.css";
+import { IoArrowBackCircleSharp } from "react-icons/io5";
 import dpdemo from "../../../assets/images/dpdemo.png";
 import upvote from "../../../assets/images/upvote.png";
 import bookmark from "../../../assets/images/bookmark.png";
 import share from "../../../assets/images/share.png";
-import { Link } from "react-router-dom";
 
-const Post = ({poster, type, content}) => {
+const SeeMore = () => {
   return (
-    <div className="post">
+    <AuthGuard>
+        <div className="back">
+          <IoArrowBackCircleSharp color="var(--secondary-color)"  />
+        </div>
+        <div>
+        <div className="post">
       <div className="post-header">
         <div className="poster">
           <img src={dpdemo} alt="" />
@@ -18,7 +23,7 @@ const Post = ({poster, type, content}) => {
       </div>
       <p className="post-text">
           {content?.match(/<p>(.*?)<\/p>/g)?.[0].slice(3, -4) ?? content}
-        <Link to="/more" className="see-more">See more</Link>
+        <span className="see-more">See more</span>
       </p>
       <div className="img-demo mobile"><img></img></div>
       <div className="post-actions">
@@ -36,7 +41,9 @@ const Post = ({poster, type, content}) => {
         </div>
       </div>
     </div>
-  );
-};
+        </div>
+    </AuthGuard>
+  )
+}
 
-export default Post;
+export default SeeMore;
