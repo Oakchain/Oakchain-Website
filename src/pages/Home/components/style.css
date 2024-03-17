@@ -1,5 +1,5 @@
 /* * { */
-/* color: #00002F; */
+/* color:  var(--primary-color); */
 /* font-family: "ClashDisplay-Medium"; */
 /* } */
 
@@ -15,7 +15,7 @@
 }
 
 .category {
-  border: 1px solid #00002f;
+  border: 1px solid  var(--primary-color);
   border-radius: 24px;
   padding: 1px 10px;
   font-size: 13px;
@@ -25,7 +25,7 @@
 }
 
 .highlighted {
-  background-color: #00002f;
+  background-color:  var(--primary-color);
   color: #FFF;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .color {
-  background-color: #00002f;
+  background-color:  var(--primary-color);
 }
 
 .filter {
@@ -91,9 +91,9 @@
   height: 70px;
   top: 30px;
   position: absolute;
-  box-shadow: 4px 4px 0px 0px #00002F;
+  box-shadow: 4px 4px 0px 0px  var(--primary-color);
   border-radius: 5px;
-  border: 1px solid #00002F;
+  border: 1px solid  var(--primary-color);
   background: #FFF;
   position: absolute;
   z-index: 10;
@@ -123,7 +123,7 @@
 }
 
 .dropdown-menuu ul li h3 {
-  color: #00002F;
+  color:  var(--primary-color);
   font-size: 12px;
   padding: 0;
   margin: 0;
@@ -134,12 +134,25 @@
 }
 
 .dropdown-menuu ul li:hover {
-  background-color: #FF4E00;
+  background-color:  var(--secondary-color);
 }
 
 .dropdown-menuu ul li:hover h3 {
   color: #FFF;
   font-weight: 500;
+}
+
+.back {
+  position: absolute;
+  left: 5%;
+}
+
+.fullpost {
+  margin: 4% 15%;
+}
+
+.fullpost .post-text img {
+  width: 70vw;
 }
 
 /* Post Styles */
@@ -175,14 +188,14 @@
 
 .p-button {
   padding: 0.5% 2%;
-  border: 1px solid #ff4e00;
+  border: 1px solid  var(--secondary-color);
   border-radius: 8px;
   background-color: rgba(255, 78, 0, 0.1);
-  color: #ff4e00;
+  color:  var(--secondary-color);
 }
 
 .see-more {
-  color: #ff4e00;
+  color:  var(--secondary-color);
   margin-left: 5px;
 }
 
@@ -269,5 +282,9 @@
     width: 100%;
     height: 150px;
     margin-bottom: 6%;
+   }
+
+   .fullpost {
+    margin-top: 10% !important;
    }
 }

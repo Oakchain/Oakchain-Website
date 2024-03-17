@@ -16,7 +16,7 @@ const AuthItems = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   const handleMouseEnter = () => {
-    console.log("ASDa")
+    // console.log("ASDa")
     setIsDropdownVisible(true);
   };
 

@@ -21,7 +21,7 @@
   line-height: 37px;
   letter-spacing: 0em;
   text-align: left;
-  color: #ff4e00;
+  color:  var(--secondary-color);
 }
 
 .oak-banner-header {
@@ -52,7 +52,7 @@
 }
 
 .mid-text {
-  color: #00002f;
+  color:  var(--primary-color);
   font-family: var(--cd600);
   font-size: 38px;
   margin-bottom: 1.5%;
@@ -75,7 +75,7 @@
 }
 
 .button {
-  background-color: #ff4e00 !important;
+  background-color:  var(--secondary-color) !important;
   color: white;
   width: 120px;
   font-size: 14px;
