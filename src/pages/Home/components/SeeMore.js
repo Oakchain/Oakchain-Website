@@ -5,15 +5,21 @@ import dpdemo from "../../../assets/images/dpdemo.png";
 import upvote from "../../../assets/images/upvote.png";
 import bookmark from "../../../assets/images/bookmark.png";
 import share from "../../../assets/images/share.png";
+import { usePostContext } from "../../../App";
+import { Link } from "react-router-dom";
 
 const SeeMore = () => {
+  const { postContent } = usePostContext();
+  const { poster, content } = postContent;
+  console.log(postContent);
+  
   return (
     <AuthGuard>
-        <div className="back">
-          <IoArrowBackCircleSharp color="var(--secondary-color)"  />
-        </div>
+        <Link className="back" to="/home">
+          <IoArrowBackCircleSharp size={44} color="var(--secondary-color)"  />
+        </Link>
         <div>
-        <div className="post">
+        <div className="fullpost">
       <div className="post-header">
         <div className="poster">
           <img src={dpdemo} alt="" />
@@ -21,11 +27,8 @@ const SeeMore = () => {
         </div>
         <button className="p-button">Post</button>
       </div>
-      <p className="post-text">
-          {content?.match(/<p>(.*?)<\/p>/g)?.[0].slice(3, -4) ?? content}
-        <span className="see-more">See more</span>
+      <p className="post-text" dangerouslySetInnerHTML={{ __html: content }}>
       </p>
-      <div className="img-demo mobile"><img></img></div>
       <div className="post-actions">
         <div>
           <img src={upvote} alt="" />
