@@ -34,7 +34,7 @@ const Home = () => {
       <div className=" ">
         <PostModal toggle={toggleModal} isOpen={isOpen} setIsOpen={setIsOpen} />
 
-        <Carousel autoPlay interval={3000} infiniteLoop>
+        <Carousel autoPlay interval={3000} showStatus={false} showIndicators={false} infiniteLoop>
           <div className="oak-container-fluid oak-home-banner d-flex position-relative oak-mb">
             <div className="oak-banner__text-wrapper">
               <h3 className="oak-banner-header mb-4">LOREM IPSUM</h3>

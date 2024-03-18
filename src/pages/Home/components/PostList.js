@@ -15,10 +15,10 @@ const PostList = ({poster, type, content}) => {
           <img src={dpdemo} alt="" />
           <h6>{poster}</h6>
         </div>
-        <button className="p-button">{type}</button>
+        <button className="p-button">Post</button>
       </div>
       <p className="post-text">
-        {content}
+        {content?.match(/<p>(.*?)<\/p>/g)?.[0].slice(3, -4) ?? content}
         <span className="see-more">See more</span>
       </p>
       <div className="post-actions">

@@ -65,7 +65,7 @@
     flex-direction: row;
     height: fit-content;
     margin-top: 0px;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
 }
 .takesurveybtn.mobile{
@@ -81,6 +81,17 @@
     justify-content: center;
 }
 
+.nav-items__wrapper{
+    height: fit-content;
+}
+.nav-item.mobile{
+    height: fit-content;
+}
+.takesurveybtn.mobile{
+    width: 51px;
+    margin-bottom: 0 !important;
+    height: 13px;
+}
 .oak-resourcess ul li {
     height: 25px;
     width: 141px;

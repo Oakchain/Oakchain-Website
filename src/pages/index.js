@@ -52,10 +52,30 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Row, Col } from "reactstrap";
 import useWeb3Modal from "../hooks/useWeb3Modal";
+import usePostManager from "./post_controller_template";
 
 // import connectWallet from '../utils/walletConnect'
 
 const LandingPage = () => {
+
+
+  const [email, setEmail] = useState('');
+  const {  postCaller, mutation } = usePostManager("/email", true); 
+  const handleSubmit = async () => {
+     try {
+      const details = {
+       email
+      };
+      console.log(details)
+      await postCaller(details);
+    } catch (error) {
+      console.error('Error updating:', error);
+    } 
+  };
+
+  const responseData = mutation && mutation.data;
+
+
   const navigate = useNavigate();
   const myDate = new Date();
   const month = myDate.toLocaleString("default", { month: "long" });
@@ -174,14 +194,14 @@ const LandingPage = () => {
                   <input
                     className="oak-newsletter-input "
                     placeholder="Enter your email"
+                    value={email} onChange={(e) => setEmail((e.target.value))
+                    }
                   />
-                  <button className="oak-btn-secondary btn">WaitList</button>
+                  <button onClick={handleSubmit} className="oak-btn-secondary btn">WaitList</button>
                 </div>
 
                 <p className="oak-hero-subscribe-text">
-                  Join our newsletter and be the first to know about the latest
-                  trends and innovations in the web3, blockchain,
-                  cryptocurrencies, and digital space.
+                Be the first to know about exciting news, product launches, and special offers by joining our waitlist today.
                 </p>
               </div>
             </div>

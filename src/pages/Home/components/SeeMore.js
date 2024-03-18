@@ -1,21 +1,25 @@
-import React from "react";
+import AuthGuard from "../../../Layout/AuthGuard";
 import "./style.css";
+import { IoArrowBackCircleSharp } from "react-icons/io5";
 import dpdemo from "../../../assets/images/dpdemo.png";
 import upvote from "../../../assets/images/upvote.png";
 import bookmark from "../../../assets/images/bookmark.png";
 import share from "../../../assets/images/share.png";
-import { Link } from "react-router-dom";
 import { usePostContext } from "../../../App";
+import { Link } from "react-router-dom";
 
-const Post = ({poster, type, content}) => {
-  const { setPost } = usePostContext();
-
-  const handleSeeMore = () => {
-    setPost({poster, content});
-  };
-
+const SeeMore = () => {
+  const { postContent } = usePostContext();
+  const { poster, content } = postContent;
+  console.log(postContent);
+  
   return (
-    <div className="post">
+    <AuthGuard>
+        <Link className="back" to="/home">
+          <IoArrowBackCircleSharp size={44} color="var(--secondary-color)"  />
+        </Link>
+        <div>
+        <div className="fullpost">
       <div className="post-header">
         <div className="poster">
           <img src={dpdemo} alt="" />
@@ -23,11 +27,8 @@ const Post = ({poster, type, content}) => {
         </div>
         <button className="p-button">Post</button>
       </div>
-      <p className="post-text">
-          {content?.match(/<p>(.*?)<\/p>/g)?.[0].slice(3, -4) ?? content}
-        <Link to="/more" className="see-more" onClick={handleSeeMore}>See more</Link>
+      <p className="post-text" dangerouslySetInnerHTML={{ __html: content }}>
       </p>
-      <div className="img-demo mobile"><img></img></div>
       <div className="post-actions">
         <div>
           <img src={upvote} alt="" />
@@ -43,7 +44,9 @@ const Post = ({poster, type, content}) => {
         </div>
       </div>
     </div>
-  );
-};
+        </div>
+    </AuthGuard>
+  )
+}
 
-export default Post;
+export default SeeMore;
