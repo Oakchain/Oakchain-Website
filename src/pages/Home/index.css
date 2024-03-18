@@ -73,10 +73,12 @@
 .button {
   background-color: #ff4e00 !important;
   color: white;
-  width: 120px;
+  width: 135px;
   font-size: 14px;
-  border-radius: 12px !important;
-  padding: 2% 3% !important;
+  outline: none;
+  border: 0;
+  border-radius: 10px !important;
+  height: 41px;
 }
 
 .featured {
@@ -131,4 +133,24 @@
     height: 100%;
     width: 100%;
   }
+}
+
+@media (max-width:400px) and (min-width: 390px) {
+  
+.mid-text {
+  width: calc(100% - 80px);
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 3.5%;
+  line-height: normal;
+}
+
+.featured {
+  margin-top: 15%;
+  margin-bottom: 3%;
+  padding: auto 60px !important;
+}
+.featured p {
+  font-size: 12px;
+}
 }
