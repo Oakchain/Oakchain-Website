@@ -171,3 +171,16 @@
     margin: 0;
     color: #fff;
 } */
+
+@media (max-width: 767px) {
+  .bottom {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 7%;
+  }
+  .icons {
+    justify-content: start;
+    align-items: start;
+  }
+}
