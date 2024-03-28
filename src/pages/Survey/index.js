@@ -58,7 +58,7 @@ const Survey = () => {
             <footer>
               <div className="socials">
                 <a
-                  href="https://twitter.com/oakchain_io"
+                  href="https://twitter.com/oakchain_"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -68,7 +68,7 @@ const Survey = () => {
                   />
                 </a>
                 <a
-                  href="https://www.instagram.com/oakchain_io/"
+                  href="https://www.instagram.com/oak_chain/"
                   target="_blank"
                   rel="noreferrer"
                 >
