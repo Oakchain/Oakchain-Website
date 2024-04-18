@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
-import footerLogo from "../../assets/images/footerIcon.png";
+import footerLogo from "../../assets/images/Oak-New-Logo-White.png";
 import footerPhone from "../../assets/images/Call.png";
 import footerMsg from "../../assets/images/Message 36.png";
 import discordIcon  from "../../assets/images/footerDiscord.png";
