@@ -18,6 +18,7 @@ import VideoDetails from "./pages/Academy/Video/[id]";
 import EpisodeDetails from "./pages/Academy/Video/Episode/[id]";
 import ProtectedeRoute from "./component/ProtectedRoute";
 import ComingSoonPage from "./pages/ComingSoon2";
+import LMS from "./pages/LMS";
 import PrivateRoute from "./admin/PrivateRoute";
 import Survey from "./pages/Survey";
 import SeeMore from "./pages/Home/components/SeeMore";
@@ -30,6 +31,7 @@ const RouterConfig = () => {
         <Route exact path="/adminlogin" element={<AdminLogin />} />
         <Route exact path="/loginAdmin" element={<LoginAdmin />} />
         <Route exact path="/learn" element={<Learn />} />
+        <Route exact path="/lms" element={<LMS />} />
 
         <Route exact path="/about" element={<Aboutus />} />
         <Route exact path="/news" element={<News />} />
@@ -62,11 +64,7 @@ const RouterConfig = () => {
           <Route exact element={<ProtectedeRoute />}>
           
           <Route exact path="/news/:id" element={<NewsDetails />} />
-          <Route
-            exact
-            path="/academy/article/:id"
-            element={<ArticleDetails />}
-          />
+          <Route exact path="/academy/article/:id" element={<ArticleDetails />} />
           <Route exact path="/academy/video/:id" element={<VideoDetails />} />
           <Route
             exact

@@ -10,7 +10,11 @@ import ac3Dark from "../../../assets/images/ac3Dark.svg";
 import '../../../assets/style/index.css'
 import { useContext } from 'react'
 import { ThemeContext } from '../../../App'
+import { useNavigate } from 'react-router-dom'
+
 const Banner = () => {
+    const navigate = useNavigate();
+    
     const {theme} = useContext(ThemeContext)
     return (
         <div className='d-block d-md-flex align-items-center'>
@@ -55,7 +59,10 @@ const Banner = () => {
                         </div>
                         <p className='mb-0 oak-academy__features secondary pt-1'>Receive NFT certificate upon completing all 6 courses</p>
                     </div>
-                    <button className='oak-btn mt-3 dark-btn'>
+                    <button className='oak-btn mt-3 dark-btn' 
+                        onClick={() => {
+                            navigate("/lms")
+                    }} >
                         Start Course
                     </button>
                 </div>

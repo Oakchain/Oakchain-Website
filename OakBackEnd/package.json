@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "start": "nodemon server",
     "dev": "nodemon server"
-
   },
   "author": "",
   "license": "ISC",
@@ -17,16 +16,18 @@
     "@libp2p/bootstrap": "^9.0.8",
     "@libp2p/tcp": "^8.0.9",
     "blockstore-core": "^4.1.0",
-    "datastore-core": "^9.1.1",
-    "helia": "^2.1.0",
-    "libp2p": "^0.46.14",
     "concurrently": "^5.3.0",
     "cors": "^2.8.5",
+    "datastore-core": "^9.1.1",
     "date-fns": "^2.23.0",
+    "dotenv": "^16.4.5",
     "express": "^4.18.2",
-    "mongodb": "^6.2.0"
+    "helia": "^2.1.0",
+    "libp2p": "^0.46.14",
+    "mongodb": "^6.2.0",
+    "mongoose": "^8.4.3"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.1.3"
   }
 }
