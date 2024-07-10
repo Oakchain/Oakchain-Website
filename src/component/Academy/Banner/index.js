@@ -59,12 +59,12 @@ const Banner = () => {
                         </div>
                         <p className='mb-0 oak-academy__features secondary pt-1'>Receive NFT certificate upon completing all 6 courses</p>
                     </div>
-                    <button className='oak-btn mt-3 dark-btn' 
+                    <div className='  oak-btn mt-3 dark-btn' 
                         onClick={() => {
                             navigate("/lms")
                     }} >
                         Start Course
-                    </button>
+                    </div>
                 </div>
             </div>
         </div>
