@@ -22,12 +22,14 @@ import LMS from "./pages/LMS";
 import PrivateRoute from "./admin/PrivateRoute";
 import Survey from "./pages/Survey";
 import SeeMore from "./pages/Home/components/SeeMore";
+import OnboardingScreen from "./pages/OnboardingScreen";
 
 const RouterConfig = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
+        <Route exact path="/onboarding" element={<OnboardingScreen />} />
         <Route exact path="/adminlogin" element={<AdminLogin />} />
         <Route exact path="/loginAdmin" element={<LoginAdmin />} />
         <Route exact path="/learn" element={<Learn />} />

@@ -53,6 +53,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Row, Col } from "reactstrap";
 import useWeb3Modal from "../hooks/useWeb3Modal";
 import usePostManager from "./post_controller_template";
+import OnboardingScreen from "./OnboardingScreen";
 
 // import connectWallet from '../utils/walletConnect'
 
@@ -212,38 +213,7 @@ const LandingPage = () => {
           </div> */}
         </div>
       </div>
-
-     {/*  <section id="partners__overflow" className="oak-container-fluid py-3">
-        <div className="d-flex align-items-center justify-content-center">
-          <h3 className="oak-section__wrapper">
-            <span className="px-3">
-              <img src={s1} alt="icon" />
-            </span>
-            Our Partners
-            <span className="px-3">
-              <img src={s2} alt="icon" />
-            </span>
-          </h3>
-        </div>
-
-        <div
-          id="over-flow__animation"
-          className="d-flex align-items-center justify-content-around oak-partners__wrapper mt-4 mb-5"
-        >
-          <div className="partner__brands">
-            <img src={p1} alt="icon" />
-          </div>
-          <div className="partner__brands">
-            <img src={p2} alt="icon" />
-          </div>
-          <div className="partner__brands">
-            <img src={p3} alt="icon" />
-          </div>
-          <div className="partner__brands">
-            <img src={p4} alt="icon" />
-          </div>
-        </div>
-      </section> */}
+ 
 
       <section className=" oak-container-fluid mt-5  oak-section-two ">
         <div className="holderrrrrr"> <p className="oak-section__subheading mb-0">What is</p>

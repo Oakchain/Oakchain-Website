@@ -1,0 +1,448 @@
+.onboarding{
+    height: 100%;
+    width: 100%;
+    background-color: #0000006c; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+}
+.leftarrow{
+    width: 30px;
+    height: 30px;
+}
+.openForm{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-between;
+    padding: 50px;
+}
+.topper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+ .firstDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+ .firstDiv h1{
+    font-size: 20px;
+    color: #000;
+    line-height: 25px;
+    font-weight: 600;
+}
+ .firstDiv h2{
+    font-size: 13px;
+    color: #00000096;
+    line-height: 14px;
+    font-weight: 500;
+}
+.topper h3{
+    font-size: 50px;
+    color: #000;
+    cursor: pointer;
+}
+.stepBody{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.stepBody .steps{
+    height: 80px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #00000036;
+    
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.stepBody .clickStep{
+    margin-right: 50px;
+    width: 31px;
+    height: 31px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.confirmation{
+    width: 100%;
+    height: 55px;
+    background-color: #00002F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.notconfirmation{
+    width: 100%;
+    height: 55px;
+    flex-shrink: 0;
+    background-color: #00002F80;
+    display: flex;
+    justify-content: center;
+    cursor: not-allowed;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.inputtss{
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.inputtss input{
+    height: 59px;
+    width: 100%;
+    border-radius: 20px !important;
+    border: 2px solid #00000033 !important;
+    outline: none;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    font-size: 20px;
+    color: #00002F;
+}
+.inputtss input::placeholder{
+     
+    color: #00000099;
+}
+.availableName{
+    height: 59px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #00000033 ;
+    outline: none; 
+    padding: 10px 30px 10px 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 5px;
+    font-size: 20px;
+    color: #00002F;
+}
+.availableName input{
+    text-align: right;
+    padding: 0 !important;
+    height: 100%;
+    
+    font-size: 20px;
+    color: #00002F;
+}
+.availableName .barri{
+    background-color: #FF4E00; height: 100%;
+    width: 4px;
+}
+
+.availl{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.status{
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    color: #00000099;
+}
+.statusCheck{
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00002F;
+    border-radius: 50%;
+}
+
+.avatar{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.avat{
+    height: 294px;
+    width: 314px;
+    border-radius: 20px;
+    display: flex;
+    cursor: pointer;
+    flex-shrink: 0;
+    position: relative;
+    flex-direction: column;
+    border: 2px solid #00000033;
+}
+.final{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    position: absolute;
+    background-color: #00002f81;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    gap: 3px;
+    align-items: center;
+}
+.avat .image, .imagee{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.avat .image img{
+    width: 176px;
+    height: 214px;
+    object-fit: cover;
+}
+.avat .imagee img{
+    width: 212px;
+    height: 258px;
+    object-fit: cover;
+}
+.avat .selectimage{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FF4E00;
+    border-radius: 0px 0px 18px 18px;
+}
+.information {
+    width: 641px;
+    height: 294px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.information h1{
+    font-size: 24px;
+    color: #00002F;
+    font-weight: 600;
+}
+.information .buy{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: right;
+}
+.information .buy .buybutton{
+    width: 297px;
+    height: 65px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #00002F;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showavatar{
+    height: fit-content;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.pushPost{
+    height: 470px;
+    width: 630px;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #00002F29;
+    padding: 20px 50px 20px 50px;
+}
+.pushPost .topDivv{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.topDivv .badge{
+    border-radius: 31px;
+    background-color: #EFEFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+.topDivv .innerDiv {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+}
+.topDivv .innerDiv .iconss{
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: #EFEFFF;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.topDivv .innerDiv .badge {
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+.topDivv .innerDiv .badge .initial{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #FFE0D2;
+    color: #00002F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.topDivv .innerDiv .badge h1{
+    color: #BCBCBC;
+    font-weight: 500;
+    line-height: 12px;
+    font-size: 11px;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+}
+.initial .fatag{
+    width: 15px;
+    height: 15px;
+}
+.pushhhh{
+    background-color: #00002F;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 10px 30px 10px 30px;
+}
+.badge .initial{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #00002F;
+    color: #FF4E00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.badge h1{
+    color: #00002F;
+    font-weight: 600;
+    line-height: 12px;
+    font-size: 11px;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+}
+.timess{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.typeBody{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10;
+    overflow: scroll;
+    width: 100%; 
+}
+.typeBody textarea{
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    color: #000;
+    font-size: 23px;
+}
+.typeBody textarea::placeholder{
+    color: #DDDDDD;
+}
+.typeBody .media{
+    width: 100%;
+    height: fit-content;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+.innerDiv .hidden{
+    display: none;
+}
+.typeBody img{
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    height: 230px;
+}
