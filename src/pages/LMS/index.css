@@ -1,0 +1,388 @@
+.wrapper{
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    display: flex;
+    flex-direction: column;
+}
+.holder{
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.main-header-top{
+    position: fixed;
+    height: 50px;
+    background-color: #39444e;
+    display: flex ;
+    flex-direction: row; 
+    padding: 0;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    z-index: 1030;
+    gap: 60px;
+    
+    width: 100%;
+}
+.makeit{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-static-top{
+    display: flex;
+    margin: 0; 
+    width: fit-content;
+    flex-shrink: 0;
+    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+}
+.main-header-top .logoooooo{
+    width: 130px;
+    height: 28px;
+    flex-shrink: 0;
+    padding: 0; 
+}
+.able-logo{
+    height: 28px;
+    flex-shrink: 0;
+    width: 130px;
+}
+.main-header-top  .navbar {
+    margin-bottom: 0;
+    margin-left: 230px;
+    border: none;
+    max-height: 50px;
+    border-radius: 0;
+    padding: 0;
+    background-color: #39444e;
+} 
+.sidebar-logo{
+    display: none;
+}
+.menu-logo{
+    width: 30px;
+    height: 30px;
+}
+a {
+    color: #00b9f5;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    -webkit-transition: all 0.3s 0s;
+    -moz-transition: all 0.3s 0s;
+    -ms-transition: all 0.3s 0s;
+    transition: all 0.3s 0s;
+}
+.main-header-top .top-nav {
+    list-style: none !important;
+    padding-left: 0;
+    display: inline-block;
+    float: right;
+    margin: 0 0  0 20px;
+}
+.main-header-top .top-nav.lft-nav {
+    float: left;
+}
+.main-header-top .top-nav li {
+    display: inline-block;
+    position: relative;
+}
+.downloadd{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block; 
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+.files-logo{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.dashconnect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+.connect{
+    padding: 5px 10px 5px 10px;
+    background-color: #2196F3 ;
+    color: #fff;
+    border-radius: 10px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profileCon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+}
+.profileCon span{
+color: #f6f6f6;
+font-size: 15px;
+font-weight: 400;
+cursor: pointer;
+
+}
+.img-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.settings-menu{
+ position: absolute;
+ margin-top: 10px;
+ width: 100%;
+ padding: 0;
+ border: none;
+ list-style: none;
+ background-color: #fff;
+ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.settings-menu li{
+    padding: 7px 20px;
+    color: #000;
+    font-size: 13px; 
+    text-decoration: none;
+    font-weight: 300;
+}
+.settings-menu li a{
+    color: #000;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    gap: 15px;
+    font-size: 13px;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 300;
+}
+.main-sidebar{
+    width: 24%;
+    background-color: #fff;
+    height: 100%;
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+    
+    overflow: scroll;
+}
+.sidebar-menu{
+    padding: 0;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.courses{
+    padding-left: 20px;
+    width: 100%;
+    height: 46px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.sidebarr-menu{
+    position: static !important;
+    transform: none !important;
+    border: 0 !important;
+    padding-left: 20px;
+    width: 100%;
+}
+.content-wrapper{
+    overflow: scroll;
+     height: 100%;
+}
+
+.coursesitem{
+    padding-left: 40px !important;
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+.connnt{
+    display: flex;
+    flex-direction: column;
+    width: 550px !important; 
+}
+.tab-content {
+    margin-bottom: 100px;
+}
+.mainvideo{
+    width: 1000px;
+    height: 600px;
+}
+
+@media (min-width: 280px) and (max-width: 1023px) {
+    .closee{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-right: 10px;
+        justify-content: right;
+    }
+    .closee div{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 800;
+    }
+    .sidebar-logo{
+        display: flex;
+        cursor: pointer;
+    }
+    .downloadd{
+        display: none;
+    }
+    .navbar-static-top{
+        display: none;
+    }
+   .filt{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #0000006a;
+    z-index: 1031;
+   } 
+   .main-sidebar{
+    display: none;
+   }
+.main-sidebar.mobileSide{
+    padding: 0;
+   display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+}
+.sidebar-menu{
+    padding-top: 10px;
+}
+
+.mbside.profileCon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #000;
+    gap: 10px;
+}
+.mbside.profileCon span{
+color: #000;
+font-size: 15px;
+font-weight: 400;
+cursor: pointer;
+
+} 
+.mbside.settings-menu{
+ position: static !important;
+ transform: none !important;
+ border: 0 !important;
+ margin-top: 10px;
+ width: 100px;
+ background-color: #fff;
+ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.mbside.connect{
+    display: flex;
+    width: 150px;
+}
+.settings-menu li{
+    padding: 7px 20px;
+    color: #000;
+    font-size: 13px; 
+    text-decoration: none;
+    font-weight: 300;
+}
+.settings-menu li a{
+    color: #000;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    gap: 15px;
+    font-size: 13px;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 300;
+}
+.mbside.downloadd{
+   display: block;
+    color: #000; 
+}
+
+.mainvideo{
+    width: 100%;
+    height: 300px;
+}
+.connnt{
+    width: 270px !important;
+}
+
+.main-header-top .logoooooo{
+    width: 100px;
+    height: 28px; 
+}
+.main-header-top{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.able-logo{
+    height: 28px; 
+    width: 100px;
+}
+}
+@media (min-width: 500px) and (max-width: 1023px) {
+
+    .main-header-top{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .main-header-top .logoooooo{
+        width: 130px;
+        height: 28px; 
+    }
+    .able-logo{
+        height: 28px; 
+        width: 130px;
+    }
+    .main-sidebar.mobileSide{
+         
+        width: 400px; 
+    }
+    
+    .mainvideo{
+        width: 100%;
+        height: 500px;
+    }
+    .connnt{
+        width: 550px !important;
+    }
+}

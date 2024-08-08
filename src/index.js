@@ -7,6 +7,11 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import 'node-waves/dist/waves.css'; // Import the Waves CSS
+import Waves from 'node-waves'; 
+
+Waves.init();
+
 const queryClient = new QueryClient();
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

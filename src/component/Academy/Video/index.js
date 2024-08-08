@@ -14,11 +14,11 @@ const VideoCard = ({ type }) => {
         <>
             <div className='d-xs-block d-md-flex align-items-center oak-video__course_wrapper mb-3'
                 onClick={() => {
-                    navigate('/academy/video/1')
+                    navigate('/lms')
                 }}
                 role='button'>
                 <div className='oak-video-course__cover-image'>
-                    <img src={type === 'even' ? images[0] : images[1]} alt='icon' />
+                    <img src={type === 'even' ? images[0] : images[1]} alt='icon'  />
                 </div>
                 <div className='oak-video__course_details__wrapper w-100'>
 
@@ -53,16 +53,16 @@ const VideoCard = ({ type }) => {
                                 </div>
                                 <p className='course-progress__percentage mb-0'>87%</p>
                                 <div>
-                                    <button className='oak-btn btn'>
+                                    <div className='oak-btn btn'>
                                         Continue Course
-                                    </button>
+                                    </div>
                                 </div>
                             </div> :
-                                <div className='d-flex align-items-center justify-content-end'>
+                                <div className='d-flex align-items-center mb-4 justify-content-end'>
                                     <div>
-                                        <button className='oak-btn btn'>
+                                        <div className='oak-btn btn'>
                                             Start Course
-                                        </button>
+                                        </div>
                                     </div>
                                 </div>
                         }
